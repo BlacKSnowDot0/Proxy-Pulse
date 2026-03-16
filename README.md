@@ -5,30 +5,30 @@
 
 | Metric | Value |
 | --- | ---: |
-| Last run status | n/a |
-| Last generated | n/a |
-| Last successful refresh | n/a |
-| Total runs | 0 |
-| Total outbound requests | 0 |
-| Total proxies checked | 0 |
-| Total validated proxies | 0 |
+| Last run status | success |
+| Last generated | 2026-03-16T06:25:23Z |
+| Last successful refresh | 2026-03-16T06:25:23Z |
+| Total runs | 1 |
+| Total outbound requests | 9101 |
+| Total proxies checked | 18222 |
+| Total validated proxies | 1126 |
 
 ## Published Lists
 
 | File | Description | Count |
 | --- | --- | ---: |
-| [http.txt](http.txt) | Validated HTTP proxies | 0 |
-| [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | 0 |
-| [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | 0 |
-| [all.txt](all.txt) | Combined scheme-qualified list | 0 |
+| [http.txt](http.txt) | Validated HTTP proxies | 337 |
+| [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | 177 |
+| [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | 612 |
+| [all.txt](all.txt) | Combined scheme-qualified list | 1126 |
 | [stats.json](stats.json) | Machine-readable run database | 1 |
 
 ## Workflow
 
 1. Search public GitHub repositories and gists using common proxy queries.
-2. Scan `.txt` files and proxy-named text files for candidate `host:port` pairs.
-3. Deduplicate candidates and validate them through a public IP-echo endpoint.
-4. Regenerate the published lists, stats database, and this README.
+2. Scan .txt files and proxy-named text files for candidate host:port pairs.
+3. Deduplicate candidates, split them across validation shards, and check every proxy through a public IP-echo endpoint.
+4. Merge shard results and regenerate the published lists, stats database, and this README.
 
 ## Notes
 
