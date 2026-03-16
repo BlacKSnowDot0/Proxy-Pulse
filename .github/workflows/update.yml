@@ -37,8 +37,10 @@ jobs:
           MAX_REPOS_PER_QUERY: 4
           MAX_GISTS_PER_QUERY: 4
           MAX_FILES_PER_SOURCE: 8
-          MAX_CANDIDATES: 120
-          VALIDATION_TIMEOUT: 3s
+          MAX_CANDIDATES: 90
+          VALIDATION_TIMEOUT: 2s
+          VALIDATION_STAGE_TIMEOUT: 90s
+          VALIDATION_LOG_INTERVAL: 5s
           VALIDATION_CONCURRENCY: 32
         run: go run ./cmd/proxy-updater
 

@@ -6,6 +6,7 @@ import (
 	"encoding/binary"
 	"fmt"
 	"io"
+	"log"
 	"net"
 	"net/http"
 	"net/url"
@@ -43,17 +44,52 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 	var wg sync.WaitGroup
 	var checked atomic.Int64
 	var errorCount atomic.Int64
+	var validatedCount atomic.Int64
+
+	if interval := v.cfg.ValidationLogInterval; interval > 0 {
+		ticker := time.NewTicker(interval)
+		defer ticker.Stop()
+		started := time.Now()
+		done := make(chan struct{})
+		defer close(done)
+
+		go func() {
+			for {
+				select {
+				case <-done:
+					return
+				case <-ticker.C:
+					checkedNow := checked.Load()
+					validNow := validatedCount.Load()
+					errNow := errorCount.Load()
+					rate := float64(checkedNow)
+					if elapsed := time.Since(started).Seconds(); elapsed > 0 {
+						rate = rate / elapsed
+					}
+					log.Printf("validation progress: checked=%d/%d validated=%d errors=%d rate=%.2f/s", checkedNow, len(candidates), validNow, errNow, rate)
+				}
+			}
+		}()
+	}
 
 	worker := func() {
 		defer wg.Done()
 		for candidate := range jobs {
+			if ctx.Err() != nil {
+				return
+			}
 			checked.Add(1)
 			proxy, ok, err := v.ValidateCandidate(ctx, candidate)
 			if err != nil {
+				if ctx.Err() != nil {
+					return
+				}
 				errorCount.Add(1)
 				continue
 			}
 			if ok {
+				validatedCount.Add(1)
+				log.Printf("validated proxy: %s via %s sources=%d", proxy.URI(), proxy.Protocol, len(proxy.Sources))
 				results <- proxy
 			}
 		}
@@ -108,10 +144,13 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 }
 
 func (v *Validator) ValidateCandidate(ctx context.Context, candidate Candidate) (Proxy, bool, error) {
-	protocols := protocolList(candidate.HintProtocols)
+	protocols := preferredProtocols(candidate)
 	for _, protocol := range protocols {
 		ok, err := v.validateProtocol(ctx, protocol, candidate)
 		if err != nil {
+			if ctx.Err() != nil {
+				return Proxy{}, false, ctx.Err()
+			}
 			return Proxy{}, false, err
 		}
 		if ok {
@@ -164,7 +203,10 @@ func (v *Validator) validateHTTP(ctx context.Context, candidate Candidate) (bool
 		Transport: transport,
 	}
 
-	req, err := http.NewRequestWithContext(ctx, http.MethodGet, echoURL.String(), nil)
+	requestCtx, cancel := context.WithTimeout(ctx, v.cfg.ValidationTimeout)
+	defer cancel()
+
+	req, err := http.NewRequestWithContext(requestCtx, http.MethodGet, echoURL.String(), nil)
 	if err != nil {
 		return false, err
 	}

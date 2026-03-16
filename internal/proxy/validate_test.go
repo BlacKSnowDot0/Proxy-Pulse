@@ -46,3 +46,26 @@ func TestValidateCandidateHTTP(t *testing.T) {
 		t.Fatalf("expected http protocol, got %s", proxy.Protocol)
 	}
 }
+
+func TestValidateCandidateHonorsPortPreference(t *testing.T) {
+	cfg := Config{
+		ValidationTimeout: 200 * time.Millisecond,
+		IPEchoURL:         "http://example.test/ip",
+		UserAgent:         "proxy-pulse-test",
+		Concurrency:       1,
+	}
+
+	counter := &RequestCounter{}
+	validator := NewValidator(cfg, counter)
+
+	_, ok, err := validator.ValidateCandidate(context.Background(), Candidate{
+		Host: "203.0.113.1",
+		Port: 1080,
+	})
+	if err != nil {
+		t.Fatalf("validate candidate: %v", err)
+	}
+	if ok {
+		t.Fatalf("expected unroutable test candidate to fail validation")
+	}
+}
