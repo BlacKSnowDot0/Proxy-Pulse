@@ -1,0 +1,173 @@
+package proxy
+
+import (
+	"bytes"
+	"os"
+	"path/filepath"
+	"sort"
+	"strings"
+	"text/template"
+	"time"
+)
+
+type publishView struct {
+	GeneratedAt    string
+	LastSuccessAt  string
+	Status         string
+	RunsTotal      int
+	RequestsTotal  int64
+	CheckedTotal   int
+	ValidatedTotal int
+	PublishedHTTP  int
+	PublishedS4    int
+	PublishedS5    int
+	PublishedAll   int
+}
+
+func PublishOutputs(cfg Config, proxies []Proxy) (map[string]int, error) {
+	if err := os.MkdirAll(cfg.OutputDir, 0o755); err != nil {
+		return nil, err
+	}
+
+	if len(proxies) == 0 {
+		return readOutputCounts(cfg.OutputDir)
+	}
+
+	lines := map[string][]string{
+		"http":   {},
+		"socks4": {},
+		"socks5": {},
+		"all":    {},
+	}
+
+	for _, proxy := range proxies {
+		switch proxy.Protocol {
+		case ProtocolHTTP:
+			lines["http"] = append(lines["http"], proxy.Address())
+		case ProtocolSOCKS4:
+			lines["socks4"] = append(lines["socks4"], proxy.Address())
+		case ProtocolSOCKS5:
+			lines["socks5"] = append(lines["socks5"], proxy.Address())
+		}
+		lines["all"] = append(lines["all"], proxy.URI())
+	}
+
+	for key := range lines {
+		sort.Strings(lines[key])
+		filename := key + ".txt"
+		path := filepath.Join(cfg.OutputDir, filename)
+		content := strings.Join(lines[key], "\n")
+		if content != "" {
+			content += "\n"
+		}
+		if err := os.WriteFile(path, []byte(content), 0o644); err != nil {
+			return nil, err
+		}
+	}
+
+	return readOutputCounts(cfg.OutputDir)
+}
+
+func readOutputCounts(outputDir string) (map[string]int, error) {
+	out := map[string]int{
+		"http":   0,
+		"socks4": 0,
+		"socks5": 0,
+		"all":    0,
+	}
+
+	for _, name := range []string{"http", "socks4", "socks5", "all"} {
+		path := filepath.Join(outputDir, name+".txt")
+		data, err := os.ReadFile(path)
+		if err != nil {
+			if os.IsNotExist(err) {
+				continue
+			}
+			return nil, err
+		}
+
+		lines := 0
+		for _, line := range strings.Split(string(data), "\n") {
+			if strings.TrimSpace(line) != "" {
+				lines++
+			}
+		}
+		out[name] = lines
+	}
+
+	return out, nil
+}
+
+func WriteReadme(outputDir string, stats StatsDB) error {
+	view := publishView{
+		GeneratedAt:    stats.LastRun.FinishedAt,
+		LastSuccessAt:  noneIfEmpty(stats.LastSuccessAt),
+		Status:         noneIfEmpty(stats.LastRun.Status),
+		RunsTotal:      stats.RunsTotal,
+		RequestsTotal:  stats.RequestsTotal,
+		CheckedTotal:   stats.ProxiesCheckedTotal,
+		ValidatedTotal: stats.ValidatedTotal,
+		PublishedHTTP:  stats.LastRun.OutputCounts["http"],
+		PublishedS4:    stats.LastRun.OutputCounts["socks4"],
+		PublishedS5:    stats.LastRun.OutputCounts["socks5"],
+		PublishedAll:   stats.LastRun.OutputCounts["all"],
+	}
+	if view.GeneratedAt == "" {
+		view.GeneratedAt = time.Now().UTC().Format(time.RFC3339)
+	}
+
+	tpl := template.Must(template.New("readme").Parse(readmeTemplate))
+	var buf bytes.Buffer
+	if err := tpl.Execute(&buf, view); err != nil {
+		return err
+	}
+
+	path := filepath.Join(outputDir, "README.md")
+	return os.WriteFile(path, buf.Bytes(), 0o644)
+}
+
+func noneIfEmpty(value string) string {
+	if strings.TrimSpace(value) == "" {
+		return "n/a"
+	}
+	return value
+}
+
+const readmeTemplate = `![Proxy Pulse](assets/banner.svg)
+
+<h1 align="center">Proxy Pulse</h1>
+<p align="center">Automated discovery, validation, and publishing of public proxy lists from GitHub repositories and gists.</p>
+
+| Metric | Value |
+| --- | ---: |
+| Last run status | {{.Status}} |
+| Last generated | {{.GeneratedAt}} |
+| Last successful refresh | {{.LastSuccessAt}} |
+| Total runs | {{.RunsTotal}} |
+| Total outbound requests | {{.RequestsTotal}} |
+| Total proxies checked | {{.CheckedTotal}} |
+| Total validated proxies | {{.ValidatedTotal}} |
+
+## Published Lists
+
+| File | Description | Count |
+| --- | --- | ---: |
+| [http.txt](http.txt) | Validated HTTP proxies | {{.PublishedHTTP}} |
+| [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | {{.PublishedS4}} |
+| [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | {{.PublishedS5}} |
+| [all.txt](all.txt) | Combined scheme-qualified list | {{.PublishedAll}} |
+| [stats.json](stats.json) | Machine-readable run database | 1 |
+
+## Workflow
+
+1. Search public GitHub repositories and gists using common proxy queries.
+2. Scan .txt files and proxy-named text files for candidate host:port pairs.
+3. Deduplicate candidates and validate them through a public IP-echo endpoint.
+4. Regenerate the published lists, stats database, and this README.
+
+## Notes
+
+- Only proxies that pass the latest validation run are published.
+- If a run finds zero valid proxies, the last known good published lists are preserved.
+- Public proxies are unstable; treat every entry as disposable infrastructure.
+`

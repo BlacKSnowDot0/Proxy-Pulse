@@ -1,0 +1,19 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="320" rx="28" fill="#0F172A"/>
+  <rect x="28" y="28" width="1144" height="264" rx="20" fill="url(#paint0_linear)"/>
+  <circle cx="228" cy="160" r="88" fill="#F8FAFC" fill-opacity="0.12"/>
+  <circle cx="952" cy="112" r="54" fill="#F8FAFC" fill-opacity="0.14"/>
+  <circle cx="1016" cy="212" r="76" fill="#F8FAFC" fill-opacity="0.08"/>
+  <path d="M170 104C170 88.536 182.536 76 198 76H260C275.464 76 288 88.536 288 104V216C288 231.464 275.464 244 260 244H198C182.536 244 170 231.464 170 216V104Z" fill="#E2E8F0"/>
+  <path d="M234 112L234 208" stroke="#0F172A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M206 140L262 140" stroke="#0F172A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M206 180L262 180" stroke="#0F172A" stroke-width="18" stroke-linecap="round"/>
+  <text x="360" y="144" fill="#F8FAFC" font-size="58" font-family="Verdana, Geneva, sans-serif" font-weight="700">Proxy Pulse</text>
+  <text x="360" y="198" fill="#DBEAFE" font-size="28" font-family="Verdana, Geneva, sans-serif">GitHub-sourced proxy discovery and validation, rebuilt automatically.</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="68" y1="68" x2="1124" y2="252" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+</svg>
