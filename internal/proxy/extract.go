@@ -11,6 +11,24 @@ import (
 
 var proxyPattern = regexp.MustCompile(`(?i)\b((?:\d{1,3}\.){3}\d{1,3}|(?:[a-z0-9-]+\.)+[a-z]{2,}|localhost):([0-9]{2,5})\b`)
 
+var commonProxyPorts = map[int]int{
+	80:   9,
+	81:   5,
+	83:   5,
+	88:   4,
+	3128: 10,
+	4145: 9,
+	8000: 7,
+	8001: 6,
+	8008: 6,
+	8080: 10,
+	8081: 8,
+	8082: 7,
+	8088: 7,
+	8888: 9,
+	1080: 10,
+}
+
 func shouldInspectPath(path string) bool {
 	base := strings.ToLower(filepath.Base(path))
 	ext := strings.ToLower(filepath.Ext(base))
@@ -97,6 +115,14 @@ func MergeCandidates(items []Candidate) ([]Candidate, int) {
 	}
 
 	sort.Slice(out, func(i, j int) bool {
+		leftScore := candidateScore(out[i])
+		rightScore := candidateScore(out[j])
+		if leftScore != rightScore {
+			return leftScore > rightScore
+		}
+		if len(out[i].Sources) != len(out[j].Sources) {
+			return len(out[i].Sources) > len(out[j].Sources)
+		}
 		if out[i].Host == out[j].Host {
 			return out[i].Port < out[j].Port
 		}
@@ -111,8 +137,16 @@ func validPort(port int) bool {
 }
 
 func validHost(host string) bool {
+	if host == "localhost" {
+		return false
+	}
+
 	if ip := net.ParseIP(host); ip != nil {
-		return ip.To4() != nil
+		ipv4 := ip.To4()
+		if ipv4 == nil {
+			return false
+		}
+		return isPublicIPv4(ipv4)
 	}
 
 	labels := strings.Split(host, ".")
@@ -134,4 +168,70 @@ func validHost(host string) bool {
 		}
 	}
 	return true
+}
+
+func candidateScore(candidate Candidate) int {
+	score := len(candidate.Sources) * 10
+	score += commonProxyPorts[candidate.Port]
+	if len(candidate.HintProtocols) == 1 {
+		score += 6
+	}
+	if net.ParseIP(candidate.Host) != nil {
+		score += 4
+	}
+	return score
+}
+
+func preferredProtocols(candidate Candidate) []Protocol {
+	if len(candidate.HintProtocols) == 1 {
+		return protocolList(candidate.HintProtocols)
+	}
+
+	switch candidate.Port {
+	case 80, 81, 83, 88, 3128, 8000, 8001, 8008, 8080, 8081, 8082, 8088, 8888:
+		return []Protocol{ProtocolHTTP, ProtocolSOCKS5, ProtocolSOCKS4}
+	case 1080:
+		return []Protocol{ProtocolSOCKS5, ProtocolSOCKS4, ProtocolHTTP}
+	case 4145:
+		return []Protocol{ProtocolSOCKS4, ProtocolSOCKS5, ProtocolHTTP}
+	default:
+		return protocolList(candidate.HintProtocols)
+	}
+}
+
+func isPublicIPv4(ip net.IP) bool {
+	if len(ip) != net.IPv4len {
+		return false
+	}
+
+	switch {
+	case ip[0] == 0:
+		return false
+	case ip[0] == 10:
+		return false
+	case ip[0] == 100 && ip[1] >= 64 && ip[1] <= 127:
+		return false
+	case ip[0] == 127:
+		return false
+	case ip[0] == 169 && ip[1] == 254:
+		return false
+	case ip[0] == 172 && ip[1] >= 16 && ip[1] <= 31:
+		return false
+	case ip[0] == 192 && ip[1] == 168:
+		return false
+	case ip[0] == 192 && ip[1] == 0 && ip[2] == 2:
+		return false
+	case ip[0] == 198 && ip[1] == 18:
+		return false
+	case ip[0] == 198 && ip[1] == 19:
+		return false
+	case ip[0] == 198 && ip[1] == 51 && ip[2] == 100:
+		return false
+	case ip[0] == 203 && ip[1] == 0 && ip[2] == 113:
+		return false
+	case ip[0] >= 224:
+		return false
+	default:
+		return true
+	}
 }

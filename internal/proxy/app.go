@@ -59,16 +59,30 @@ func Run(ctx context.Context, cfg Config) error {
 	merged, duplicatesRemoved := MergeCandidates(candidates)
 	run.DuplicatesRemoved = duplicatesRemoved
 	if cfg.MaxCandidates > 0 && len(merged) > cfg.MaxCandidates {
-		log.Printf("candidate cap applied: validating first %d of %d deduped candidates", cfg.MaxCandidates, len(merged))
+		log.Printf("candidate cap applied: validating top %d of %d deduped candidates", cfg.MaxCandidates, len(merged))
 		merged = merged[:cfg.MaxCandidates]
 	}
 	log.Printf("validation starting: dedupedCandidates=%d", len(merged))
 
 	validator := NewValidator(cfg, counter)
-	validated, checked, validationErrors := validator.ValidateAll(ctx, merged)
+	validationCtx := ctx
+	var cancel context.CancelFunc
+	if cfg.ValidationStageTimeout > 0 {
+		validationCtx, cancel = context.WithTimeout(ctx, cfg.ValidationStageTimeout)
+		defer cancel()
+	}
+
+	validated, checked, validationErrors := validator.ValidateAll(validationCtx, merged)
 	run.ProxiesChecked = checked
 	run.Validated = len(validated)
 	run.ErrorCount += discovery.ErrorCount + validationErrors
+	if validationCtx.Err() == context.DeadlineExceeded {
+		run.ErrorCount++
+		if run.Status == "success" {
+			run.Status = "validation_stage_timeout"
+		}
+		log.Printf("validation stage reached timeout after %s; publishing partial results", cfg.ValidationStageTimeout)
+	}
 	log.Printf("validation complete: checked=%d validated=%d validationErrors=%d", checked, len(validated), validationErrors)
 
 	outputCounts, err := PublishOutputs(cfg, validated)
