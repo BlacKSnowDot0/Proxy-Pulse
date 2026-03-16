@@ -17,10 +17,10 @@ permissions:
   contents: write
 
 jobs:
-  update:
+  discover:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,19 +30,93 @@ jobs:
         with:
           go-version: "1.22"
 
-      - name: Run updater
+      - name: Discover candidates
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USER_AGENT: proxy-pulse-action
           MAX_REPOS_PER_QUERY: 4
           MAX_GISTS_PER_QUERY: 4
           MAX_FILES_PER_SOURCE: 8
-          MAX_CANDIDATES: 90
+          VALIDATION_SHARDS: 16
+        run: go run ./cmd/proxy-updater discover --manifest state/manifest.json --candidates state/candidates.json
+
+      - name: Upload discovery state
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-state
+          path: |
+            state/manifest.json
+            state/candidates.json
+
+  validate:
+    needs: discover
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - name: Download discovery state
+        uses: actions/download-artifact@v4
+        with:
+          name: discovery-state
+          path: state
+
+      - name: Validate shard
+        env:
+          USER_AGENT: proxy-pulse-action
+          MAX_CANDIDATES: 0
           VALIDATION_TIMEOUT: 2s
-          VALIDATION_STAGE_TIMEOUT: 90s
+          VALIDATION_STAGE_TIMEOUT: 15m
           VALIDATION_LOG_INTERVAL: 5s
-          VALIDATION_CONCURRENCY: 32
-        run: go run ./cmd/proxy-updater
+          VALIDATION_CONCURRENCY: 64
+        run: go run ./cmd/proxy-updater validate-shard --candidates state/candidates.json --output state/shard-${{ matrix.shard }}.json --shard-index ${{ matrix.shard }} --shard-total 16
+
+      - name: Upload shard result
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.shard }}
+          path: state/shard-${{ matrix.shard }}.json
+
+  finalize:
+    needs: validate
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - name: Download discovery state
+        uses: actions/download-artifact@v4
+        with:
+          name: discovery-state
+          path: state
+
+      - name: Download shard results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: state/shards
+          merge-multiple: true
+
+      - name: Finalize outputs
+        run: go run ./cmd/proxy-updater finalize --manifest state/manifest.json --shard-dir state/shards
 
       - name: Commit generated changes
         run: |

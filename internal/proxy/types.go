@@ -149,3 +149,15 @@ func mergeSources(existing []string, next []string) []string {
 func normalizeHost(host string) string {
 	return strings.ToLower(strings.TrimSpace(host))
 }
+
+func sortProxies(items []Proxy) {
+	sort.Slice(items, func(i, j int) bool {
+		if items[i].Protocol == items[j].Protocol {
+			if items[i].Host == items[j].Host {
+				return items[i].Port < items[j].Port
+			}
+			return items[i].Host < items[j].Host
+		}
+		return items[i].Protocol < items[j].Protocol
+	})
+}

@@ -2,126 +2,23 @@ package proxy
 
 import (
 	"context"
-	"errors"
-	"fmt"
-	"log"
 	"os"
 	"path/filepath"
-	"time"
 )
 
 func Run(ctx context.Context, cfg Config) error {
-	if cfg.ValidationTimeout <= 0 {
-		return errors.New("validation timeout must be positive")
-	}
-
-	statsPath := filepath.Join(cfg.OutputDir, "stats.json")
-	stats, err := LoadStats(statsPath)
+	manifest, candidates, err := DiscoverCandidates(ctx, cfg)
 	if err != nil {
-		return fmt.Errorf("load stats: %w", err)
+		return err
 	}
-
-	startedAt := time.Now().UTC()
-	counter := &RequestCounter{}
-	client := NewGitHubClient(cfg, counter)
-
-	log.Printf("starting updater: queries=%d maxReposPerQuery=%d maxGistsPerQuery=%d maxFilesPerSource=%d maxCandidates=%d validationTimeout=%s concurrency=%d",
-		len(cfg.Queries), cfg.MaxReposPerQuery, cfg.MaxGistsPerQuery, cfg.MaxFilesPerSource, cfg.MaxCandidates, cfg.ValidationTimeout, cfg.Concurrency)
-
-	discovery, err := client.Discover(ctx)
+	if cfg.MaxCandidates > 0 && len(candidates) > cfg.MaxCandidates {
+		candidates = candidates[:cfg.MaxCandidates]
+	}
+	shardResult, err := ValidateShard(ctx, cfg, candidates, 0, 1)
 	if err != nil {
-		return fmt.Errorf("discover sources: %w", err)
+		return err
 	}
-	log.Printf("discovery complete: sources=%d files=%d discoveryErrors=%d", len(uniqueSources(discovery.Files)), len(discovery.Files), discovery.ErrorCount)
-
-	run := LastRun{
-		StartedAt:    startedAt.Format(time.RFC3339),
-		Status:       "success",
-		SourceCounts: discovery.SourceCounts,
-	}
-
-	var candidates []Candidate
-	run.SourcesScanned = len(uniqueSources(discovery.Files))
-	for _, file := range discovery.Files {
-		content, err := client.FetchText(ctx, file)
-		if err != nil {
-			run.ErrorCount++
-			continue
-		}
-		run.FilesScanned++
-
-		extracted := ExtractCandidates(content, file.Path, file.SourceURL)
-		run.CandidatesFound += len(extracted)
-		candidates = append(candidates, extracted...)
-	}
-	log.Printf("extraction complete: filesScanned=%d rawCandidates=%d", run.FilesScanned, len(candidates))
-
-	merged, duplicatesRemoved := MergeCandidates(candidates)
-	run.DuplicatesRemoved = duplicatesRemoved
-	if cfg.MaxCandidates > 0 && len(merged) > cfg.MaxCandidates {
-		log.Printf("candidate cap applied: validating top %d of %d deduped candidates", cfg.MaxCandidates, len(merged))
-		merged = merged[:cfg.MaxCandidates]
-	}
-	log.Printf("validation starting: dedupedCandidates=%d", len(merged))
-
-	validator := NewValidator(cfg, counter)
-	validationCtx := ctx
-	var cancel context.CancelFunc
-	if cfg.ValidationStageTimeout > 0 {
-		validationCtx, cancel = context.WithTimeout(ctx, cfg.ValidationStageTimeout)
-		defer cancel()
-	}
-
-	validated, checked, validationErrors := validator.ValidateAll(validationCtx, merged)
-	run.ProxiesChecked = checked
-	run.Validated = len(validated)
-	run.ErrorCount += discovery.ErrorCount + validationErrors
-	if validationCtx.Err() == context.DeadlineExceeded {
-		run.ErrorCount++
-		if run.Status == "success" {
-			run.Status = "validation_stage_timeout"
-		}
-		log.Printf("validation stage reached timeout after %s; publishing partial results", cfg.ValidationStageTimeout)
-	}
-	log.Printf("validation complete: checked=%d validated=%d validationErrors=%d", checked, len(validated), validationErrors)
-
-	outputCounts, err := PublishOutputs(cfg, validated)
-	if err != nil {
-		return fmt.Errorf("publish outputs: %w", err)
-	}
-	run.OutputCounts = outputCounts
-
-	if len(validated) == 0 {
-		run.Status = "no_valid_proxies"
-	}
-	if run.ErrorCount > 0 && run.Status == "success" {
-		run.Status = "success_with_errors"
-	}
-
-	run.RequestsMade = counter.Load()
-	run.FinishedAt = time.Now().UTC().Format(time.RFC3339)
-	log.Printf("publishing complete: status=%s requests=%d http=%d socks4=%d socks5=%d all=%d",
-		run.Status,
-		run.RequestsMade,
-		run.OutputCounts["http"],
-		run.OutputCounts["socks4"],
-		run.OutputCounts["socks5"],
-		run.OutputCounts["all"],
-	)
-
-	stats.ApplyRun(run)
-	if err := SaveStats(statsPath, stats); err != nil {
-		return fmt.Errorf("save stats: %w", err)
-	}
-	if err := WriteReadme(cfg.OutputDir, stats); err != nil {
-		return fmt.Errorf("write readme: %w", err)
-	}
-
-	if err := ensureBanner(cfg.OutputDir); err != nil {
-		return fmt.Errorf("ensure banner: %w", err)
-	}
-
-	return nil
+	return FinalizeRun(cfg, manifest, []ShardResult{shardResult})
 }
 
 func ensureBanner(outputDir string) error {

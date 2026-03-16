@@ -162,8 +162,8 @@ const readmeTemplate = `![Proxy Pulse](assets/banner.svg)
 
 1. Search public GitHub repositories and gists using common proxy queries.
 2. Scan .txt files and proxy-named text files for candidate host:port pairs.
-3. Deduplicate candidates and validate them through a public IP-echo endpoint.
-4. Regenerate the published lists, stats database, and this README.
+3. Deduplicate candidates, split them across validation shards, and check every proxy through a public IP-echo endpoint.
+4. Merge shard results and regenerate the published lists, stats database, and this README.
 
 ## Notes
 

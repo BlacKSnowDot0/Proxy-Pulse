@@ -18,6 +18,7 @@ type Config struct {
 	ValidationStageTimeout time.Duration
 	ValidationLogInterval  time.Duration
 	Concurrency            int
+	ShardCount             int
 	GitHubToken            string
 	GitHubAPIBase          string
 	GitHubRawBase          string
@@ -33,12 +34,13 @@ func LoadConfigFromEnv() Config {
 		MaxReposPerQuery:       getEnvInt("MAX_REPOS_PER_QUERY", 8),
 		MaxGistsPerQuery:       getEnvInt("MAX_GISTS_PER_QUERY", 8),
 		MaxFilesPerSource:      getEnvInt("MAX_FILES_PER_SOURCE", 24),
-		MaxCandidates:          getEnvInt("MAX_CANDIDATES", 180),
+		MaxCandidates:          getEnvNonNegativeInt("MAX_CANDIDATES", 0),
 		MaxFileBytes:           int64(getEnvInt("MAX_FILE_BYTES", 512*1024)),
 		ValidationTimeout:      getEnvDuration("VALIDATION_TIMEOUT", 8*time.Second),
 		ValidationStageTimeout: getEnvDuration("VALIDATION_STAGE_TIMEOUT", 2*time.Minute),
 		ValidationLogInterval:  getEnvDuration("VALIDATION_LOG_INTERVAL", 5*time.Second),
 		Concurrency:            getEnvInt("VALIDATION_CONCURRENCY", 24),
+		ShardCount:             getEnvInt("VALIDATION_SHARDS", 16),
 		GitHubToken:            strings.TrimSpace(os.Getenv("GITHUB_TOKEN")),
 		GitHubAPIBase:          getEnv("GITHUB_API_BASE", "https://api.github.com"),
 		GitHubRawBase:          getEnv("GITHUB_RAW_BASE", "https://raw.githubusercontent.com"),
@@ -91,6 +93,18 @@ func getEnvInt(key string, fallback int) int {
 	}
 	parsed, err := strconv.Atoi(value)
 	if err != nil || parsed <= 0 {
+		return fallback
+	}
+	return parsed
+}
+
+func getEnvNonNegativeInt(key string, fallback int) int {
+	value := strings.TrimSpace(os.Getenv(key))
+	if value == "" {
+		return fallback
+	}
+	parsed, err := strconv.Atoi(value)
+	if err != nil || parsed < 0 {
 		return fallback
 	}
 	return parsed

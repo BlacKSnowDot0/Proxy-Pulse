@@ -42,7 +42,8 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 	jobs := make(chan Candidate)
 	results := make(chan Proxy, len(candidates))
 	var wg sync.WaitGroup
-	var checked atomic.Int64
+	var startedCount atomic.Int64
+	var completedCount atomic.Int64
 	var errorCount atomic.Int64
 	var validatedCount atomic.Int64
 
@@ -59,14 +60,17 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 				case <-done:
 					return
 				case <-ticker.C:
-					checkedNow := checked.Load()
+					startedNow := startedCount.Load()
+					completedNow := completedCount.Load()
 					validNow := validatedCount.Load()
 					errNow := errorCount.Load()
-					rate := float64(checkedNow)
+					inFlight := startedNow - completedNow
+					rate := float64(completedNow)
 					if elapsed := time.Since(started).Seconds(); elapsed > 0 {
 						rate = rate / elapsed
 					}
-					log.Printf("validation progress: checked=%d/%d validated=%d errors=%d rate=%.2f/s", checkedNow, len(candidates), validNow, errNow, rate)
+					log.Printf("validation progress: started=%d/%d completed=%d/%d inflight=%d validated=%d errors=%d rate=%.2f/s",
+						startedNow, len(candidates), completedNow, len(candidates), inFlight, validNow, errNow, rate)
 				}
 			}
 		}()
@@ -78,8 +82,9 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 			if ctx.Err() != nil {
 				return
 			}
-			checked.Add(1)
+			startedCount.Add(1)
 			proxy, ok, err := v.ValidateCandidate(ctx, candidate)
+			completedCount.Add(1)
 			if err != nil {
 				if ctx.Err() != nil {
 					return
@@ -140,7 +145,7 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 		return out[i].Protocol < out[j].Protocol
 	})
 
-	return out, int(checked.Load()), int(errorCount.Load())
+	return out, int(completedCount.Load()), int(errorCount.Load())
 }
 
 func (v *Validator) ValidateCandidate(ctx context.Context, candidate Candidate) (Proxy, bool, error) {
@@ -286,6 +291,10 @@ func (v *Validator) openSOCKSTunnel(ctx context.Context, proxyAddr string, targe
 	dialer := &net.Dialer{Timeout: v.cfg.ValidationTimeout}
 	conn, err := dialer.DialContext(ctx, "tcp", proxyAddr)
 	if err != nil {
+		return nil, err
+	}
+	if err := conn.SetDeadline(time.Now().Add(v.cfg.ValidationTimeout)); err != nil {
+		_ = conn.Close()
 		return nil, err
 	}
 
