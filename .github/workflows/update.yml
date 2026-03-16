@@ -20,6 +20,7 @@ jobs:
   update:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,8 +34,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USER_AGENT: proxy-pulse-action
-          VALIDATION_TIMEOUT: 8s
-          VALIDATION_CONCURRENCY: 24
+          MAX_REPOS_PER_QUERY: 4
+          MAX_GISTS_PER_QUERY: 4
+          MAX_FILES_PER_SOURCE: 8
+          MAX_CANDIDATES: 120
+          VALIDATION_TIMEOUT: 3s
+          VALIDATION_CONCURRENCY: 32
         run: go run ./cmd/proxy-updater
 
       - name: Commit generated changes

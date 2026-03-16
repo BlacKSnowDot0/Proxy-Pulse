@@ -12,6 +12,7 @@ type Config struct {
 	MaxReposPerQuery  int
 	MaxGistsPerQuery  int
 	MaxFilesPerSource int
+	MaxCandidates     int
 	MaxFileBytes      int64
 	ValidationTimeout time.Duration
 	Concurrency       int
@@ -30,6 +31,7 @@ func LoadConfigFromEnv() Config {
 		MaxReposPerQuery:  getEnvInt("MAX_REPOS_PER_QUERY", 8),
 		MaxGistsPerQuery:  getEnvInt("MAX_GISTS_PER_QUERY", 8),
 		MaxFilesPerSource: getEnvInt("MAX_FILES_PER_SOURCE", 24),
+		MaxCandidates:     getEnvInt("MAX_CANDIDATES", 180),
 		MaxFileBytes:      int64(getEnvInt("MAX_FILE_BYTES", 512*1024)),
 		ValidationTimeout: getEnvDuration("VALIDATION_TIMEOUT", 8*time.Second),
 		Concurrency:       getEnvInt("VALIDATION_CONCURRENCY", 24),
