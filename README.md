@@ -6,21 +6,21 @@
 | Metric | Value |
 | --- | ---: |
 | Last run status | success |
-| Last generated | 2026-03-17T07:17:24Z |
-| Last successful refresh | 2026-03-17T07:17:24Z |
-| Total runs | 6 |
-| Total outbound requests | 88302 |
-| Total proxies checked | 141453 |
-| Total validated proxies | 14191 |
+| Last generated | 2026-03-17T13:44:58Z |
+| Last successful refresh | 2026-03-17T13:44:58Z |
+| Total runs | 7 |
+| Total outbound requests | 99993 |
+| Total proxies checked | 160149 |
+| Total validated proxies | 15728 |
 
 ## Published Lists
 
 | File | Description | Count |
 | --- | --- | ---: |
-| [http.txt](http.txt) | Validated HTTP proxies | 558 |
-| [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | 173 |
-| [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | 755 |
-| [all.txt](all.txt) | Combined scheme-qualified list | 1486 |
+| [http.txt](http.txt) | Validated HTTP proxies | 652 |
+| [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | 168 |
+| [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | 717 |
+| [all.txt](all.txt) | Combined scheme-qualified list | 1537 |
 | [stats.json](stats.json) | Machine-readable run database | 1 |
 
 ## Workflow
