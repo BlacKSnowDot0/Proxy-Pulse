@@ -86,6 +86,9 @@ func TestFinalizeRunWritesDashboardData(t *testing.T) {
 	if dashboard.Summary.CurrentOutputCounts["all"] != 2 {
 		t.Fatalf("expected current all count 2, got %d", dashboard.Summary.CurrentOutputCounts["all"])
 	}
+	if dashboard.Summary.CurrentCountryCounts["unknown"] != 2 {
+		t.Fatalf("expected unknown country count 2, got %d", dashboard.Summary.CurrentCountryCounts["unknown"])
+	}
 	if len(dashboard.History) != 1 {
 		t.Fatalf("expected 1 history entry, got %d", len(dashboard.History))
 	}
@@ -95,5 +98,8 @@ func TestFinalizeRunWritesDashboardData(t *testing.T) {
 
 	if _, err := os.Stat(filepath.Join(dir, "docs", "data", "dashboard.json")); err != nil {
 		t.Fatalf("expected dashboard file to exist: %v", err)
+	}
+	if _, err := os.Stat(filepath.Join(dir, "docs", "data", "proxies.json")); err != nil {
+		t.Fatalf("expected proxies dataset to exist: %v", err)
 	}
 }

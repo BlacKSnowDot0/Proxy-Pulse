@@ -103,10 +103,17 @@ function renderHeroHighlights(summary, history) {
 function renderInsights(summary, history, currentRange) {
   const latest = history.at(-1) || {};
   const sourceCounts = summary.current_source_counts || {};
+  const countryCounts = summary.current_country_counts || {};
+  const anonymityCounts = summary.current_anonymity_counts || {};
   const totalSources = Object.values(sourceCounts).reduce((sum, value) => sum + Number(value || 0), 0);
   const repositoryShare = totalSources ? Math.round((100 * (sourceCounts.repository || 0)) / totalSources) : 0;
   const gistShare = totalSources ? Math.round((100 * (sourceCounts.gist || 0)) / totalSources) : 0;
   const successRate = rate(currentRange.filter((entry) => isHealthyStatus(entry.status)).length, currentRange.length);
+  const topCountry = topCountEntry(countryCounts, "unknown");
+  const topAnonymity = topCountEntry(anonymityCounts, "unknown");
+  const knownCountryTotal = Object.entries(countryCounts)
+    .filter(([key]) => key !== "unknown")
+    .reduce((sum, [, value]) => sum + Number(value || 0), 0);
 
   document.getElementById("run-health").innerHTML = `
     <div class="insight-stack">
@@ -138,6 +145,23 @@ function renderInsights(summary, history, currentRange) {
       <div class="insight-row">
         <span class="insight-label">Total active sources</span>
         <span class="insight-value">${escapeHtml(formatNumber(totalSources))}</span>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("proxy-profile").innerHTML = `
+    <div class="insight-stack">
+      <div class="insight-row">
+        <span class="insight-label">Top country</span>
+        <span class="insight-value">${escapeHtml(topCountry.label.toUpperCase())} <span class="insight-copy">(${escapeHtml(formatNumber(topCountry.value))})</span></span>
+      </div>
+      <div class="insight-row">
+        <span class="insight-label">Top anonymity</span>
+        <span class="insight-value">${escapeHtml(humanizeStatus(topAnonymity.label))} <span class="insight-copy">(${escapeHtml(formatNumber(topAnonymity.value))})</span></span>
+      </div>
+      <div class="insight-row">
+        <span class="insight-label">Known geo coverage</span>
+        <span class="insight-value">${escapeHtml(rate(knownCountryTotal, summary.validated_total || 0))}</span>
       </div>
     </div>
   `;
@@ -480,6 +504,7 @@ function renderError(error) {
   document.getElementById("hero-highlights").innerHTML = `<div class="empty-state">Dashboard data could not be loaded.</div>`;
   document.getElementById("run-health").innerHTML = `<div class="empty-state">No run data</div>`;
   document.getElementById("source-mix").innerHTML = `<div class="empty-state">No source data</div>`;
+  document.getElementById("proxy-profile").innerHTML = `<div class="empty-state">No proxy metadata</div>`;
   document.getElementById("kpi-grid").innerHTML = `<div class="empty-state">Dashboard data could not be loaded.</div>`;
   document.getElementById("chart-validated").innerHTML = `<div class="empty-state">No data</div>`;
   document.getElementById("chart-checked").innerHTML = `<div class="empty-state">No data</div>`;
@@ -510,6 +535,15 @@ function deltaText(current, previous, suffix) {
 
 function metricChip(label, value) {
   return `${label} ${value}`;
+}
+
+function topCountEntry(values, fallbackLabel) {
+  const entries = Object.entries(values || {});
+  if (!entries.length) {
+    return { label: fallbackLabel, value: 0 };
+  }
+  const [label, value] = entries.sort((a, b) => Number(b[1] || 0) - Number(a[1] || 0))[0];
+  return { label, value: Number(value || 0) };
 }
 
 function isHealthyStatus(status) {

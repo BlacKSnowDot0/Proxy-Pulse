@@ -6,6 +6,7 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
+	"strings"
 )
 
 const dashboardHistoryLimit = 180
@@ -17,15 +18,17 @@ type DashboardData struct {
 }
 
 type DashboardSummary struct {
-	Status              string         `json:"status"`
-	LastGenerated       string         `json:"last_generated"`
-	LastSuccessAt       string         `json:"last_success_at"`
-	RunsTotal           int            `json:"runs_total"`
-	RequestsTotal       int64          `json:"requests_total"`
-	ProxiesCheckedTotal int            `json:"proxies_checked_total"`
-	ValidatedTotal      int            `json:"validated_total"`
-	CurrentOutputCounts map[string]int `json:"current_output_counts"`
-	CurrentSourceCounts map[string]int `json:"current_source_counts"`
+	Status                 string         `json:"status"`
+	LastGenerated          string         `json:"last_generated"`
+	LastSuccessAt          string         `json:"last_success_at"`
+	RunsTotal              int            `json:"runs_total"`
+	RequestsTotal          int64          `json:"requests_total"`
+	ProxiesCheckedTotal    int            `json:"proxies_checked_total"`
+	ValidatedTotal         int            `json:"validated_total"`
+	CurrentOutputCounts    map[string]int `json:"current_output_counts"`
+	CurrentSourceCounts    map[string]int `json:"current_source_counts"`
+	CurrentCountryCounts   map[string]int `json:"current_country_counts"`
+	CurrentAnonymityCounts map[string]int `json:"current_anonymity_counts"`
 }
 
 type DashboardHistoryEntry struct {
@@ -63,7 +66,7 @@ func SaveDashboard(path string, dashboard DashboardData) error {
 	return SaveJSON(path, dashboard)
 }
 
-func BuildDashboard(existing DashboardData, stats StatsDB) DashboardData {
+func BuildDashboard(existing DashboardData, stats StatsDB, proxies []Proxy) DashboardData {
 	run := stats.LastRun
 	history := append([]DashboardHistoryEntry(nil), existing.History...)
 	if run.FinishedAt != "" {
@@ -72,22 +75,24 @@ func BuildDashboard(existing DashboardData, stats StatsDB) DashboardData {
 
 	return DashboardData{
 		GeneratedAt: run.FinishedAt,
-		Summary:     buildDashboardSummary(stats),
+		Summary:     buildDashboardSummary(stats, proxies),
 		History:     history,
 	}
 }
 
-func buildDashboardSummary(stats StatsDB) DashboardSummary {
+func buildDashboardSummary(stats StatsDB, proxies []Proxy) DashboardSummary {
 	return DashboardSummary{
-		Status:              stats.LastRun.Status,
-		LastGenerated:       stats.LastRun.FinishedAt,
-		LastSuccessAt:       stats.LastSuccessAt,
-		RunsTotal:           stats.RunsTotal,
-		RequestsTotal:       stats.RequestsTotal,
-		ProxiesCheckedTotal: stats.ProxiesCheckedTotal,
-		ValidatedTotal:      stats.ValidatedTotal,
-		CurrentOutputCounts: dashboardOutputCounts(stats.LastRun.OutputCounts),
-		CurrentSourceCounts: copyIntMap(stats.LastRun.SourceCounts),
+		Status:                 stats.LastRun.Status,
+		LastGenerated:          stats.LastRun.FinishedAt,
+		LastSuccessAt:          stats.LastSuccessAt,
+		RunsTotal:              stats.RunsTotal,
+		RequestsTotal:          stats.RequestsTotal,
+		ProxiesCheckedTotal:    stats.ProxiesCheckedTotal,
+		ValidatedTotal:         stats.ValidatedTotal,
+		CurrentOutputCounts:    dashboardOutputCounts(stats.LastRun.OutputCounts),
+		CurrentSourceCounts:    copyIntMap(stats.LastRun.SourceCounts),
+		CurrentCountryCounts:   countByCountry(proxies),
+		CurrentAnonymityCounts: countByAnonymity(proxies),
 	}
 }
 
@@ -157,4 +162,28 @@ func copyIntMap(values map[string]int) map[string]int {
 
 func dashboardPath(outputDir string) string {
 	return filepath.Join(outputDir, "docs", "data", "dashboard.json")
+}
+
+func countByCountry(proxies []Proxy) map[string]int {
+	counts := make(map[string]int)
+	for _, proxy := range proxies {
+		key := strings.TrimSpace(proxy.CountryCode)
+		if key == "" {
+			key = "unknown"
+		}
+		counts[key]++
+	}
+	return counts
+}
+
+func countByAnonymity(proxies []Proxy) map[string]int {
+	counts := make(map[string]int)
+	for _, proxy := range proxies {
+		key := strings.TrimSpace(string(proxy.Anonymity))
+		if key == "" {
+			key = string(AnonymityUnknown)
+		}
+		counts[key]++
+	}
+	return counts
 }

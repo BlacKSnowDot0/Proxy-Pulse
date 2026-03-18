@@ -4,13 +4,13 @@ import (
 	"bufio"
 	"context"
 	"encoding/binary"
+	"encoding/json"
 	"fmt"
 	"io"
 	"log"
 	"net"
 	"net/http"
 	"net/url"
-	"sort"
 	"strings"
 	"sync"
 	"sync/atomic"
@@ -20,6 +20,20 @@ import (
 type Validator struct {
 	cfg     Config
 	counter *RequestCounter
+
+	directIPOnce sync.Once
+	directIP     string
+	directIPErr  error
+}
+
+type validationAttempt struct {
+	proxy  Proxy
+	reason string
+}
+
+type proxyInspection struct {
+	Origin  string
+	Headers map[string]string
 }
 
 func NewValidator(cfg Config, counter *RequestCounter) *Validator {
@@ -94,7 +108,8 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 			}
 			if ok {
 				validatedCount.Add(1)
-				log.Printf("validated proxy: %s via %s sources=%d", proxy.URI(), proxy.Protocol, len(proxy.Sources))
+				log.Printf("validated proxy: %s via %s exit=%s anonymity=%s country=%s",
+					proxy.URI(), proxy.Protocol, proxy.ExitIP, proxy.Anonymity, proxy.CountryCode)
 				results <- proxy
 			}
 		}
@@ -119,58 +134,35 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 	wg.Wait()
 	close(results)
 
-	seen := make(map[string]Proxy)
+	collected := make([]Proxy, 0, len(results))
 	for proxy := range results {
-		key := proxy.URI()
-		if existing, ok := seen[key]; ok {
-			existing.Sources = mergeSources(existing.Sources, proxy.Sources)
-			seen[key] = existing
-			continue
-		}
-		proxy.Sources = mergeSources(nil, proxy.Sources)
-		seen[key] = proxy
+		collected = append(collected, proxy)
 	}
 
-	out := make([]Proxy, 0, len(seen))
-	for _, proxy := range seen {
-		out = append(out, proxy)
-	}
-	sort.Slice(out, func(i, j int) bool {
-		if out[i].Protocol == out[j].Protocol {
-			if out[i].Host == out[j].Host {
-				return out[i].Port < out[j].Port
-			}
-			return out[i].Host < out[j].Host
-		}
-		return out[i].Protocol < out[j].Protocol
-	})
-
-	return out, int(completedCount.Load()), int(errorCount.Load())
+	return mergeProxySlice(collected), int(completedCount.Load()), int(errorCount.Load())
 }
 
 func (v *Validator) ValidateCandidate(ctx context.Context, candidate Candidate) (Proxy, bool, error) {
 	protocols := preferredProtocols(candidate)
 	for _, protocol := range protocols {
-		ok, err := v.validateProtocol(ctx, protocol, candidate)
+		attempt, err := v.validateProtocol(ctx, protocol, candidate)
 		if err != nil {
 			if ctx.Err() != nil {
 				return Proxy{}, false, ctx.Err()
 			}
 			return Proxy{}, false, err
 		}
-		if ok {
-			return Proxy{
-				Protocol: protocol,
-				Host:     candidate.Host,
-				Port:     candidate.Port,
-				Sources:  candidate.Sources,
-			}, true, nil
+		if attempt.proxy.Protocol != "" {
+			return attempt.proxy, true, nil
+		}
+		if attempt.reason != "" {
+			log.Printf("rejected proxy: %s via %s reason=%s", candidate.Address(), protocol, attempt.reason)
 		}
 	}
 	return Proxy{}, false, nil
 }
 
-func (v *Validator) validateProtocol(ctx context.Context, protocol Protocol, candidate Candidate) (bool, error) {
+func (v *Validator) validateProtocol(ctx context.Context, protocol Protocol, candidate Candidate) (validationAttempt, error) {
 	switch protocol {
 	case ProtocolHTTP:
 		return v.validateHTTP(ctx, candidate)
@@ -179,125 +171,475 @@ func (v *Validator) validateProtocol(ctx context.Context, protocol Protocol, can
 	case ProtocolSOCKS5:
 		return v.validateSOCKS(ctx, candidate, ProtocolSOCKS5)
 	default:
-		return false, nil
+		return validationAttempt{reason: "unsupported_protocol"}, nil
 	}
 }
 
-func (v *Validator) validateHTTP(ctx context.Context, candidate Candidate) (bool, error) {
-	echoURL, err := url.Parse(v.cfg.IPEchoURL)
+func (v *Validator) validateHTTP(ctx context.Context, candidate Candidate) (validationAttempt, error) {
+	primaryURL, secondaryURL, err := v.validationEchoTargets()
 	if err != nil {
-		return false, fmt.Errorf("parse IP_ECHO_URL: %w", err)
+		return validationAttempt{}, err
 	}
 
+	directIP, err := v.getDirectIP(ctx)
+	if err != nil {
+		return validationAttempt{}, err
+	}
+
+	exitIP, reason := v.verifyHTTPProxyExit(ctx, candidate, primaryURL, secondaryURL, directIP)
+	if reason != "" {
+		return validationAttempt{reason: reason}, nil
+	}
+
+	countryCode, countryName := v.lookupCountry(ctx, exitIP)
+	attempt := validationAttempt{
+		proxy: Proxy{
+			Protocol:      ProtocolHTTP,
+			Host:          candidate.Host,
+			Port:          candidate.Port,
+			Sources:       candidate.Sources,
+			ExitIP:        exitIP,
+			CountryCode:   countryCode,
+			CountryName:   countryName,
+			Anonymity:     v.classifyHTTPAnonymity(ctx, candidate, directIP),
+			LastCheckedAt: time.Now().UTC().Format(time.RFC3339),
+		},
+	}
+	return attempt, nil
+}
+
+func (v *Validator) validateSOCKS(ctx context.Context, candidate Candidate, protocol Protocol) (validationAttempt, error) {
+	primaryURL, secondaryURL, err := v.validationEchoTargets()
+	if err != nil {
+		return validationAttempt{}, err
+	}
+	if primaryURL.Scheme != "http" || secondaryURL.Scheme != "http" {
+		return validationAttempt{}, fmt.Errorf("socks validation requires http echo URLs")
+	}
+
+	directIP, err := v.getDirectIP(ctx)
+	if err != nil {
+		return validationAttempt{}, err
+	}
+
+	exitIP, reason := v.verifySOCKSProxyExit(ctx, candidate, protocol, primaryURL, secondaryURL, directIP)
+	if reason != "" {
+		return validationAttempt{reason: reason}, nil
+	}
+
+	countryCode, countryName := v.lookupCountry(ctx, exitIP)
+	attempt := validationAttempt{
+		proxy: Proxy{
+			Protocol:      protocol,
+			Host:          candidate.Host,
+			Port:          candidate.Port,
+			Sources:       candidate.Sources,
+			ExitIP:        exitIP,
+			CountryCode:   countryCode,
+			CountryName:   countryName,
+			Anonymity:     AnonymityUnknown,
+			LastCheckedAt: time.Now().UTC().Format(time.RFC3339),
+		},
+	}
+	return attempt, nil
+}
+
+func (v *Validator) verifyHTTPProxyExit(ctx context.Context, candidate Candidate, primaryURL *url.URL, secondaryURL *url.URL, directIP string) (string, string) {
+	primaryIP, err := v.fetchEchoIPViaHTTPProxy(ctx, candidate, primaryURL)
+	if err != nil {
+		return "", "primary_probe_failed"
+	}
+
+	secondaryIP, err := v.fetchEchoIPViaHTTPProxy(ctx, candidate, secondaryURL)
+	if err != nil {
+		return "", "secondary_probe_failed"
+	}
+
+	if primaryIP != secondaryIP {
+		return "", "exit_ip_mismatch"
+	}
+	if primaryIP == directIP {
+		return "", "direct_ip_match"
+	}
+	return primaryIP, ""
+}
+
+func (v *Validator) verifySOCKSProxyExit(ctx context.Context, candidate Candidate, protocol Protocol, primaryURL *url.URL, secondaryURL *url.URL, directIP string) (string, string) {
+	primaryIP, err := v.fetchEchoIPViaSOCKS(ctx, candidate, protocol, primaryURL)
+	if err != nil {
+		return "", "primary_probe_failed"
+	}
+
+	secondaryIP, err := v.fetchEchoIPViaSOCKS(ctx, candidate, protocol, secondaryURL)
+	if err != nil {
+		return "", "secondary_probe_failed"
+	}
+
+	if primaryIP != secondaryIP {
+		return "", "exit_ip_mismatch"
+	}
+	if primaryIP == directIP {
+		return "", "direct_ip_match"
+	}
+	return primaryIP, ""
+}
+
+func (v *Validator) validationEchoTargets() (*url.URL, *url.URL, error) {
+	primaryURL, err := url.Parse(strings.TrimSpace(v.cfg.IPEchoURLPrimary))
+	if err != nil {
+		return nil, nil, fmt.Errorf("parse IP_ECHO_URL_PRIMARY: %w", err)
+	}
+	if primaryURL.Scheme == "" || primaryURL.Host == "" {
+		return nil, nil, fmt.Errorf("parse IP_ECHO_URL_PRIMARY: missing scheme or host")
+	}
+
+	secondaryURL, err := url.Parse(strings.TrimSpace(v.cfg.IPEchoURLSecondary))
+	if err != nil {
+		return nil, nil, fmt.Errorf("parse IP_ECHO_URL_SECONDARY: %w", err)
+	}
+	if secondaryURL.Scheme == "" || secondaryURL.Host == "" {
+		return nil, nil, fmt.Errorf("parse IP_ECHO_URL_SECONDARY: missing scheme or host")
+	}
+
+	return primaryURL, secondaryURL, nil
+}
+
+func (v *Validator) getDirectIP(ctx context.Context) (string, error) {
+	v.directIPOnce.Do(func() {
+		directURL, err := url.Parse(strings.TrimSpace(v.cfg.DirectIPEchoURL))
+		if err != nil {
+			v.directIPErr = fmt.Errorf("parse DIRECT_IP_ECHO_URL: %w", err)
+			return
+		}
+		if directURL.Scheme == "" || directURL.Host == "" {
+			v.directIPErr = fmt.Errorf("parse DIRECT_IP_ECHO_URL: missing scheme or host")
+			return
+		}
+
+		v.directIP, v.directIPErr = v.fetchEchoIPDirect(ctx, directURL)
+	})
+	return v.directIP, v.directIPErr
+}
+
+func (v *Validator) fetchEchoIPDirect(ctx context.Context, targetURL *url.URL) (string, error) {
+	client, transport := v.newHTTPClient(nil)
+	defer transport.CloseIdleConnections()
+	return v.fetchEchoIP(ctx, client, targetURL)
+}
+
+func (v *Validator) fetchEchoIPViaHTTPProxy(ctx context.Context, candidate Candidate, targetURL *url.URL) (string, error) {
 	proxyURL, err := url.Parse("http://" + candidate.Address())
 	if err != nil {
-		return false, nil
+		return "", err
 	}
 
-	transport := &http.Transport{
-		Proxy:                 http.ProxyURL(proxyURL),
-		DialContext:           (&net.Dialer{Timeout: v.cfg.ValidationTimeout}).DialContext,
-		TLSHandshakeTimeout:   v.cfg.ValidationTimeout,
-		ResponseHeaderTimeout: v.cfg.ValidationTimeout,
-		ForceAttemptHTTP2:     false,
-	}
+	client, transport := v.newHTTPClient(proxyURL)
 	defer transport.CloseIdleConnections()
+	return v.fetchEchoIP(ctx, client, targetURL)
+}
 
-	client := &http.Client{
-		Timeout:   v.cfg.ValidationTimeout,
-		Transport: transport,
-	}
-
+func (v *Validator) fetchEchoIP(ctx context.Context, client *http.Client, targetURL *url.URL) (string, error) {
 	requestCtx, cancel := context.WithTimeout(ctx, v.cfg.ValidationTimeout)
 	defer cancel()
 
-	req, err := http.NewRequestWithContext(requestCtx, http.MethodGet, echoURL.String(), nil)
+	req, err := http.NewRequestWithContext(requestCtx, http.MethodGet, targetURL.String(), nil)
 	if err != nil {
-		return false, err
+		return "", err
 	}
 	req.Header.Set("User-Agent", v.cfg.UserAgent)
 
 	v.counter.Inc()
 	resp, err := client.Do(req)
 	if err != nil {
-		return false, nil
+		return "", err
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return false, nil
+		return "", fmt.Errorf("unexpected status %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(io.LimitReader(resp.Body, 128))
 	if err != nil {
-		return false, nil
+		return "", err
 	}
-	return isValidIPEchoBody(body), nil
+	return parsePublicIPv4Body(body)
 }
 
-func (v *Validator) validateSOCKS(ctx context.Context, candidate Candidate, protocol Protocol) (bool, error) {
-	echoURL, err := url.Parse(v.cfg.IPEchoURL)
-	if err != nil {
-		return false, fmt.Errorf("parse IP_ECHO_URL: %w", err)
-	}
-	if echoURL.Scheme != "http" {
-		return false, fmt.Errorf("socks validation requires http IP_ECHO_URL, got %s", echoURL.Scheme)
-	}
-
+func (v *Validator) fetchEchoIPViaSOCKS(ctx context.Context, candidate Candidate, protocol Protocol, targetURL *url.URL) (string, error) {
 	requestCtx, cancel := context.WithTimeout(ctx, v.cfg.ValidationTimeout)
 	defer cancel()
 
-	conn, err := v.openSOCKSTunnel(requestCtx, candidate.Address(), echoURL.Hostname(), echoURL.Port(), protocol)
+	conn, err := v.openSOCKSTunnel(requestCtx, candidate.Address(), targetURL.Hostname(), targetURL.Port(), protocol)
 	if err != nil {
-		return false, nil
+		return "", err
 	}
 	defer conn.Close()
 
 	if err := conn.SetDeadline(time.Now().Add(v.cfg.ValidationTimeout)); err != nil {
-		return false, nil
+		return "", err
 	}
 
-	path := echoURL.RequestURI()
+	path := targetURL.RequestURI()
 	if path == "" {
 		path = "/"
 	}
-	if _, err := fmt.Fprintf(conn, "GET %s HTTP/1.1\r\nHost: %s\r\nUser-Agent: %s\r\nConnection: close\r\n\r\n", path, echoURL.Host, v.cfg.UserAgent); err != nil {
-		return false, nil
+	if _, err := fmt.Fprintf(conn, "GET %s HTTP/1.1\r\nHost: %s\r\nUser-Agent: %s\r\nConnection: close\r\n\r\n", path, targetURL.Host, v.cfg.UserAgent); err != nil {
+		return "", err
 	}
 	v.counter.Inc()
 
-	req, _ := http.NewRequest(http.MethodGet, echoURL.String(), nil)
+	req, _ := http.NewRequest(http.MethodGet, targetURL.String(), nil)
 	resp, err := http.ReadResponse(bufio.NewReader(conn), req)
 	if err != nil {
-		return false, nil
+		return "", err
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return false, nil
+		return "", fmt.Errorf("unexpected status %d", resp.StatusCode)
 	}
+
 	body, err := io.ReadAll(io.LimitReader(resp.Body, 128))
 	if err != nil {
-		return false, nil
+		return "", err
 	}
-	return isValidIPEchoBody(body), nil
+	return parsePublicIPv4Body(body)
 }
 
-func isValidIPEchoBody(body []byte) bool {
+func parsePublicIPv4Body(body []byte) (string, error) {
 	value := strings.TrimSpace(string(body))
 	if value == "" {
-		return false
+		return "", fmt.Errorf("empty body")
 	}
 
 	ip := net.ParseIP(value)
 	if ip == nil {
+		return "", fmt.Errorf("invalid ip body %q", value)
+	}
+
+	ipv4 := ip.To4()
+	if ipv4 == nil || !isPublicIPv4(ipv4) {
+		return "", fmt.Errorf("non-public ipv4 %q", value)
+	}
+	return ipv4.String(), nil
+}
+
+func (v *Validator) lookupCountry(ctx context.Context, ip string) (string, string) {
+	template := strings.TrimSpace(v.cfg.GEOIPURLTemplate)
+	if template == "" || strings.TrimSpace(ip) == "" {
+		return "", ""
+	}
+
+	escapedIP := url.PathEscape(ip)
+	target := template
+	switch {
+	case strings.Contains(target, "%s"):
+		target = fmt.Sprintf(target, escapedIP)
+	case strings.Contains(target, "{ip}"):
+		target = strings.ReplaceAll(target, "{ip}", escapedIP)
+	default:
+		target = strings.TrimRight(target, "/") + "/" + escapedIP
+	}
+
+	targetURL, err := url.Parse(target)
+	if err != nil || targetURL.Scheme == "" || targetURL.Host == "" {
+		return "", ""
+	}
+
+	client, transport := v.newHTTPClient(nil)
+	defer transport.CloseIdleConnections()
+
+	requestCtx, cancel := context.WithTimeout(ctx, v.cfg.ValidationTimeout)
+	defer cancel()
+
+	req, err := http.NewRequestWithContext(requestCtx, http.MethodGet, targetURL.String(), nil)
+	if err != nil {
+		return "", ""
+	}
+	req.Header.Set("User-Agent", v.cfg.UserAgent)
+
+	v.counter.Inc()
+	resp, err := client.Do(req)
+	if err != nil {
+		return "", ""
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return "", ""
+	}
+
+	var payload struct {
+		Status      string `json:"status"`
+		Country     string `json:"country"`
+		CountryCode string `json:"countryCode"`
+	}
+	if err := json.NewDecoder(io.LimitReader(resp.Body, 4096)).Decode(&payload); err != nil {
+		return "", ""
+	}
+	if payload.Status != "" && payload.Status != "success" {
+		return "", ""
+	}
+	return strings.ToUpper(strings.TrimSpace(payload.CountryCode)), strings.TrimSpace(payload.Country)
+}
+
+func (v *Validator) classifyHTTPAnonymity(ctx context.Context, candidate Candidate, directIP string) AnonymityLevel {
+	anonURL := strings.TrimSpace(v.cfg.AnonCheckURL)
+	if anonURL == "" {
+		return AnonymityUnknown
+	}
+
+	targetURL, err := url.Parse(anonURL)
+	if err != nil || targetURL.Scheme == "" || targetURL.Host == "" {
+		return AnonymityUnknown
+	}
+
+	inspection, err := v.fetchProxyInspectionViaHTTP(ctx, candidate, targetURL)
+	if err != nil {
+		return AnonymityUnknown
+	}
+
+	if leaksDirectIdentity(inspection, directIP) {
+		return AnonymityTransparent
+	}
+	if exposesProxyIdentity(inspection) {
+		return AnonymityAnonymous
+	}
+	return AnonymityElite
+}
+
+func (v *Validator) fetchProxyInspectionViaHTTP(ctx context.Context, candidate Candidate, targetURL *url.URL) (proxyInspection, error) {
+	proxyURL, err := url.Parse("http://" + candidate.Address())
+	if err != nil {
+		return proxyInspection{}, err
+	}
+
+	client, transport := v.newHTTPClient(proxyURL)
+	defer transport.CloseIdleConnections()
+
+	requestCtx, cancel := context.WithTimeout(ctx, v.cfg.ValidationTimeout)
+	defer cancel()
+
+	req, err := http.NewRequestWithContext(requestCtx, http.MethodGet, targetURL.String(), nil)
+	if err != nil {
+		return proxyInspection{}, err
+	}
+	req.Header.Set("User-Agent", v.cfg.UserAgent)
+
+	v.counter.Inc()
+	resp, err := client.Do(req)
+	if err != nil {
+		return proxyInspection{}, err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return proxyInspection{}, fmt.Errorf("unexpected status %d", resp.StatusCode)
+	}
+
+	var payload struct {
+		Origin  any            `json:"origin"`
+		Headers map[string]any `json:"headers"`
+	}
+	if err := json.NewDecoder(io.LimitReader(resp.Body, 16*1024)).Decode(&payload); err != nil {
+		return proxyInspection{}, err
+	}
+
+	headers := make(map[string]string, len(payload.Headers))
+	for key, value := range payload.Headers {
+		headers[strings.ToLower(strings.TrimSpace(key))] = strings.TrimSpace(fmt.Sprint(value))
+	}
+
+	return proxyInspection{
+		Origin:  strings.TrimSpace(fmt.Sprint(payload.Origin)),
+		Headers: headers,
+	}, nil
+}
+
+func leaksDirectIdentity(inspection proxyInspection, directIP string) bool {
+	directIP = strings.TrimSpace(directIP)
+	if directIP == "" {
 		return false
 	}
 
-	if ipv4 := ip.To4(); ipv4 != nil {
-		return isPublicIPv4(ipv4)
+	if containsIPToken(inspection.Origin, directIP) {
+		return true
+	}
+
+	for _, key := range []string{
+		"x-forwarded-for",
+		"x-real-ip",
+		"true-client-ip",
+		"client-ip",
+		"cf-connecting-ip",
+		"forwarded",
+	} {
+		if containsIPToken(inspection.Headers[key], directIP) {
+			return true
+		}
 	}
 	return false
+}
+
+func exposesProxyIdentity(inspection proxyInspection) bool {
+	for _, key := range []string{
+		"via",
+		"forwarded",
+		"x-forwarded-for",
+		"x-forwarded-host",
+		"x-forwarded-proto",
+		"x-real-ip",
+		"true-client-ip",
+		"client-ip",
+		"proxy-connection",
+	} {
+		if strings.TrimSpace(inspection.Headers[key]) != "" {
+			return true
+		}
+	}
+	return false
+}
+
+func containsIPToken(value string, target string) bool {
+	value = strings.TrimSpace(value)
+	target = strings.TrimSpace(target)
+	if value == "" || target == "" {
+		return false
+	}
+
+	for _, token := range strings.FieldsFunc(value, func(r rune) bool {
+		switch r {
+		case ',', ' ', ';', '"':
+			return true
+		default:
+			return false
+		}
+	}) {
+		token = strings.TrimPrefix(strings.TrimSpace(token), "for=")
+		token = strings.Trim(token, "[]")
+		if token == target {
+			return true
+		}
+	}
+	return false
+}
+
+func (v *Validator) newHTTPClient(proxyURL *url.URL) (*http.Client, *http.Transport) {
+	transport := &http.Transport{
+		DialContext:           (&net.Dialer{Timeout: v.cfg.ValidationTimeout}).DialContext,
+		TLSHandshakeTimeout:   v.cfg.ValidationTimeout,
+		ResponseHeaderTimeout: v.cfg.ValidationTimeout,
+		ForceAttemptHTTP2:     false,
+	}
+	if proxyURL != nil {
+		transport.Proxy = http.ProxyURL(proxyURL)
+	}
+
+	return &http.Client{
+		Timeout:   v.cfg.ValidationTimeout,
+		Transport: transport,
+	}, transport
 }
 
 func (v *Validator) openSOCKSTunnel(ctx context.Context, proxyAddr string, targetHost string, targetPort string, protocol Protocol) (net.Conn, error) {

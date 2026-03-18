@@ -30,10 +30,15 @@ func (c Candidate) Address() string {
 }
 
 type Proxy struct {
-	Protocol Protocol `json:"protocol"`
-	Host     string   `json:"host"`
-	Port     int      `json:"port"`
-	Sources  []string `json:"sources,omitempty"`
+	Protocol      Protocol       `json:"protocol"`
+	Host          string         `json:"host"`
+	Port          int            `json:"port"`
+	Sources       []string       `json:"sources,omitempty"`
+	ExitIP        string         `json:"exit_ip,omitempty"`
+	CountryCode   string         `json:"country_code,omitempty"`
+	CountryName   string         `json:"country_name,omitempty"`
+	Anonymity     AnonymityLevel `json:"anonymity,omitempty"`
+	LastCheckedAt string         `json:"last_checked_at,omitempty"`
 }
 
 func (p Proxy) Address() string {
@@ -42,6 +47,21 @@ func (p Proxy) Address() string {
 
 func (p Proxy) URI() string {
 	return fmt.Sprintf("%s://%s", p.Protocol, p.Address())
+}
+
+type AnonymityLevel string
+
+const (
+	AnonymityTransparent AnonymityLevel = "transparent"
+	AnonymityAnonymous   AnonymityLevel = "anonymous"
+	AnonymityElite       AnonymityLevel = "elite"
+	AnonymityUnknown     AnonymityLevel = "unknown"
+)
+
+type ProxyDataset struct {
+	GeneratedAt string  `json:"generated_at"`
+	Count       int     `json:"count"`
+	Proxies     []Proxy `json:"proxies"`
 }
 
 type SourceFile struct {
@@ -160,4 +180,47 @@ func sortProxies(items []Proxy) {
 		}
 		return items[i].Protocol < items[j].Protocol
 	})
+}
+
+func mergeProxy(existing Proxy, next Proxy) Proxy {
+	existing.Sources = mergeSources(existing.Sources, next.Sources)
+	if existing.ExitIP == "" {
+		existing.ExitIP = next.ExitIP
+	}
+	if existing.CountryCode == "" {
+		existing.CountryCode = next.CountryCode
+	}
+	if existing.CountryName == "" {
+		existing.CountryName = next.CountryName
+	}
+	if existing.Anonymity == "" || existing.Anonymity == AnonymityUnknown {
+		existing.Anonymity = next.Anonymity
+	}
+	if next.LastCheckedAt != "" {
+		existing.LastCheckedAt = next.LastCheckedAt
+	}
+	return existing
+}
+
+func mergeProxySlice(items []Proxy) []Proxy {
+	merged := make(map[string]Proxy, len(items))
+	for _, proxy := range items {
+		key := proxy.URI()
+		if existing, ok := merged[key]; ok {
+			merged[key] = mergeProxy(existing, proxy)
+			continue
+		}
+		proxy.Sources = mergeSources(nil, proxy.Sources)
+		if proxy.Anonymity == "" {
+			proxy.Anonymity = AnonymityUnknown
+		}
+		merged[key] = proxy
+	}
+
+	out := make([]Proxy, 0, len(merged))
+	for _, proxy := range merged {
+		out = append(out, proxy)
+	}
+	sortProxies(out)
+	return out
 }

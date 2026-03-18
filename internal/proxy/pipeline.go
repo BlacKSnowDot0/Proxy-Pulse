@@ -120,6 +120,10 @@ func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) e
 	if err != nil {
 		return fmt.Errorf("publish outputs: %w", err)
 	}
+	publishedProxies, err := LoadPublishedProxies(cfg.OutputDir)
+	if err != nil {
+		return fmt.Errorf("load published proxies: %w", err)
+	}
 
 	run := LastRun{
 		StartedAt:         manifest.StartedAt,
@@ -148,7 +152,7 @@ func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) e
 	if err := SaveStats(statsPath, stats); err != nil {
 		return fmt.Errorf("save stats: %w", err)
 	}
-	if err := SaveDashboard(dashboardPath(cfg.OutputDir), BuildDashboard(dashboard, stats)); err != nil {
+	if err := SaveDashboard(dashboardPath(cfg.OutputDir), BuildDashboard(dashboard, stats, publishedProxies)); err != nil {
 		return fmt.Errorf("save dashboard: %w", err)
 	}
 	if err := WriteReadme(cfg.OutputDir, stats); err != nil {
@@ -188,26 +192,11 @@ func shardForCandidate(candidate Candidate, shardTotal int) int {
 }
 
 func mergeProxyResults(results []ShardResult) []Proxy {
-	merged := make(map[string]Proxy)
+	collected := make([]Proxy, 0)
 	for _, result := range results {
-		for _, proxy := range result.Proxies {
-			key := proxy.URI()
-			if existing, ok := merged[key]; ok {
-				existing.Sources = mergeSources(existing.Sources, proxy.Sources)
-				merged[key] = existing
-				continue
-			}
-			proxy.Sources = mergeSources(nil, proxy.Sources)
-			merged[key] = proxy
-		}
+		collected = append(collected, result.Proxies...)
 	}
-
-	out := make([]Proxy, 0, len(merged))
-	for _, proxy := range merged {
-		out = append(out, proxy)
-	}
-	sortProxies(out)
-	return out
+	return mergeProxySlice(collected)
 }
 
 func sumShardChecked(results []ShardResult) int {

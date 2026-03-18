@@ -2,6 +2,7 @@ package proxy
 
 import (
 	"bytes"
+	"encoding/json"
 	"os"
 	"path/filepath"
 	"sort"
@@ -12,6 +13,7 @@ import (
 
 type publishView struct {
 	DashboardURL   string
+	DatasetURL     string
 	GeneratedAt    string
 	LastSuccessAt  string
 	Status         string
@@ -66,6 +68,14 @@ func PublishOutputs(cfg Config, proxies []Proxy) (map[string]int, error) {
 		}
 	}
 
+	if err := SaveJSON(publishedProxyDatasetPath(cfg.OutputDir), ProxyDataset{
+		GeneratedAt: time.Now().UTC().Format(time.RFC3339),
+		Count:       len(proxies),
+		Proxies:     mergeProxySlice(proxies),
+	}); err != nil {
+		return nil, err
+	}
+
 	return readOutputCounts(cfg.OutputDir)
 }
 
@@ -102,6 +112,7 @@ func readOutputCounts(outputDir string) (map[string]int, error) {
 func WriteReadme(outputDir string, stats StatsDB) error {
 	view := publishView{
 		DashboardURL:   "https://blacksnowdot0.github.io/Proxy-Pulse/",
+		DatasetURL:     "docs/data/proxies.json",
 		GeneratedAt:    stats.LastRun.FinishedAt,
 		LastSuccessAt:  noneIfEmpty(stats.LastSuccessAt),
 		Status:         noneIfEmpty(stats.LastRun.Status),
@@ -126,6 +137,35 @@ func WriteReadme(outputDir string, stats StatsDB) error {
 
 	path := filepath.Join(outputDir, "README.md")
 	return os.WriteFile(path, buf.Bytes(), 0o644)
+}
+
+func LoadPublishedProxyDataset(path string) (ProxyDataset, error) {
+	var dataset ProxyDataset
+
+	data, err := os.ReadFile(path)
+	if os.IsNotExist(err) {
+		return dataset, nil
+	}
+	if err != nil {
+		return ProxyDataset{}, err
+	}
+	if err := json.Unmarshal(data, &dataset); err != nil {
+		return ProxyDataset{}, err
+	}
+	dataset.Proxies = mergeProxySlice(dataset.Proxies)
+	return dataset, nil
+}
+
+func LoadPublishedProxies(outputDir string) ([]Proxy, error) {
+	dataset, err := LoadPublishedProxyDataset(publishedProxyDatasetPath(outputDir))
+	if err != nil {
+		return nil, err
+	}
+	return dataset.Proxies, nil
+}
+
+func publishedProxyDatasetPath(outputDir string) string {
+	return filepath.Join(outputDir, "docs", "data", "proxies.json")
 }
 
 func noneIfEmpty(value string) string {
@@ -167,17 +207,19 @@ const readmeTemplate = `![Proxy Pulse](assets/banner.svg)
 | [all.txt](all.txt) | Combined scheme-qualified list | {{.PublishedAll}} |
 | [stats.json](stats.json) | Machine-readable run database | 1 |
 | [docs/data/dashboard.json](docs/data/dashboard.json) | Machine-readable dashboard dataset | 1 |
+| [{{.DatasetURL}}]({{.DatasetURL}}) | Machine-readable validated proxy metadata | {{.PublishedAll}} |
 
 ## ⚙️ Workflow
 
 1. Search public GitHub repositories and gists using common proxy queries.
 2. Scan .txt files and proxy-named text files for candidate host:port pairs.
-3. Deduplicate candidates, split them across validation shards, and check every proxy through a public IP-echo endpoint.
+3. Deduplicate candidates, split them across validation shards, and verify every proxy through two public IP-echo endpoints before enriching the surviving exit IP with country and anonymity metadata.
 4. Merge shard results and regenerate the published lists, stats database, and this README.
 
 ## 📝 Notes
 
 - Only proxies that pass the latest validation run are published.
 - If a run finds zero valid proxies, the last known good published lists are preserved.
+- Per-proxy metadata is published in docs/data/proxies.json while the root .txt lists stay scheme-focused.
 - Public proxies are unstable; treat every entry as disposable infrastructure.
 `

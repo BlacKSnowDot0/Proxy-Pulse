@@ -22,7 +22,7 @@ func TestBuildDashboardAppendsFirstHistoryEntry(t *testing.T) {
 		},
 	}
 
-	dashboard := BuildDashboard(DashboardData{}, stats)
+	dashboard := BuildDashboard(DashboardData{}, stats, nil)
 
 	if len(dashboard.History) != 1 {
 		t.Fatalf("expected 1 history entry, got %d", len(dashboard.History))
@@ -47,7 +47,7 @@ func TestBuildDashboardReplacesDuplicateTimestampEntry(t *testing.T) {
 		},
 	}
 
-	dashboard := BuildDashboard(existing, stats)
+	dashboard := BuildDashboard(existing, stats, nil)
 
 	if len(dashboard.History) != 1 {
 		t.Fatalf("expected 1 history entry, got %d", len(dashboard.History))
@@ -77,7 +77,7 @@ func TestBuildDashboardTrimsHistoryToLimit(t *testing.T) {
 		},
 	}
 
-	dashboard := BuildDashboard(DashboardData{History: history}, stats)
+	dashboard := BuildDashboard(DashboardData{History: history}, stats, nil)
 
 	if len(dashboard.History) != dashboardHistoryLimit {
 		t.Fatalf("expected history length %d, got %d", dashboardHistoryLimit, len(dashboard.History))
@@ -106,7 +106,7 @@ func TestBuildDashboardPreservesChronologicalOrder(t *testing.T) {
 		},
 	}
 
-	dashboard := BuildDashboard(existing, stats)
+	dashboard := BuildDashboard(existing, stats, nil)
 
 	want := []string{
 		"2026-03-16T00:00:10Z",
@@ -135,7 +135,11 @@ func TestBuildDashboardSummary(t *testing.T) {
 		},
 	}
 
-	summary := buildDashboardSummary(stats)
+	summary := buildDashboardSummary(stats, []Proxy{
+		{CountryCode: "US", Anonymity: AnonymityElite},
+		{CountryCode: "", Anonymity: AnonymityUnknown},
+		{CountryCode: "DE", Anonymity: AnonymityAnonymous},
+	})
 
 	if summary.Status != "no_valid_proxies" {
 		t.Fatalf("expected status no_valid_proxies, got %s", summary.Status)
@@ -151,5 +155,11 @@ func TestBuildDashboardSummary(t *testing.T) {
 	}
 	if summary.CurrentSourceCounts["gist"] != 1 {
 		t.Fatalf("expected gist count 1, got %d", summary.CurrentSourceCounts["gist"])
+	}
+	if summary.CurrentCountryCounts["US"] != 1 || summary.CurrentCountryCounts["unknown"] != 1 {
+		t.Fatalf("unexpected country counts: %#v", summary.CurrentCountryCounts)
+	}
+	if summary.CurrentAnonymityCounts[string(AnonymityAnonymous)] != 1 {
+		t.Fatalf("unexpected anonymity counts: %#v", summary.CurrentAnonymityCounts)
 	}
 }

@@ -26,9 +26,16 @@ type Config struct {
 	UserAgent              string
 	OutputDir              string
 	IPEchoURL              string
+	IPEchoURLPrimary       string
+	IPEchoURLSecondary     string
+	DirectIPEchoURL        string
+	GEOIPURLTemplate       string
+	AnonCheckURL           string
 }
 
 func LoadConfigFromEnv() Config {
+	legacyIPEchoURL := getEnv("IP_ECHO_URL", "http://api.ipify.org")
+	primaryIPEchoURL := getEnv("IP_ECHO_URL_PRIMARY", legacyIPEchoURL)
 	return Config{
 		Queries:                parseQueries(getEnv("PROXY_QUERIES", "")),
 		MaxReposPerQuery:       getEnvInt("MAX_REPOS_PER_QUERY", 12),
@@ -47,7 +54,12 @@ func LoadConfigFromEnv() Config {
 		GistWebBase:            getEnv("GIST_WEB_BASE", "https://gist.github.com"),
 		UserAgent:              getEnv("USER_AGENT", "proxy-pulse/1.0"),
 		OutputDir:              getEnv("OUTPUT_DIR", "."),
-		IPEchoURL:              getEnv("IP_ECHO_URL", "http://api.ipify.org"),
+		IPEchoURL:              legacyIPEchoURL,
+		IPEchoURLPrimary:       primaryIPEchoURL,
+		IPEchoURLSecondary:     getEnv("IP_ECHO_URL_SECONDARY", "http://ifconfig.me/ip"),
+		DirectIPEchoURL:        getEnv("DIRECT_IP_ECHO_URL", primaryIPEchoURL),
+		GEOIPURLTemplate:       getEnv("GEOIP_URL_TEMPLATE", "http://ip-api.com/json/%s?fields=status,country,countryCode"),
+		AnonCheckURL:           getEnv("ANON_CHECK_URL", "http://httpbin.org/get"),
 	}
 }
 
