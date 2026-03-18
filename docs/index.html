@@ -12,26 +12,52 @@
       <header class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Proxy Pulse</p>
-          <h1>Live validation dashboard for published proxy runs.</h1>
+          <h1>Operational visibility for every published proxy run.</h1>
           <p class="hero-text">
-            Historical run health, validation throughput, and current published counts from the repo-generated dashboard dataset.
+            A static GitHub Pages control room for validation throughput, protocol mix, and release health, generated directly from the repo.
           </p>
           <div class="hero-meta">
             <span id="status-badge" class="status-badge">Loading</span>
             <span id="last-updated" class="last-updated">Fetching latest dataset...</span>
           </div>
         </div>
-        <nav class="hero-actions" aria-label="Primary links">
-          <a class="action-card" href="https://github.com/BlacKSnowDot0/Proxy-Pulse">Repository</a>
-          <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/http.txt">HTTP list</a>
-          <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/socks4.txt">SOCKS4 list</a>
-          <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/socks5.txt">SOCKS5 list</a>
-          <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/all.txt">Combined list</a>
-          <a class="action-card" href="data/dashboard.json">Dataset</a>
-        </nav>
+
+        <aside class="hero-side">
+          <div id="hero-highlights" class="hero-highlights" aria-live="polite"></div>
+          <nav class="hero-actions" aria-label="Primary links">
+            <a class="action-card" href="https://github.com/BlacKSnowDot0/Proxy-Pulse">Repository</a>
+            <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/http.txt">HTTP list</a>
+            <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/socks4.txt">SOCKS4 list</a>
+            <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/socks5.txt">SOCKS5 list</a>
+            <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/all.txt">Combined list</a>
+            <a class="action-card" href="data/dashboard.json">Dataset</a>
+          </nav>
+        </aside>
       </header>
 
       <main class="content">
+        <section class="insight-grid">
+          <article class="panel insight-card">
+            <div class="panel-head">
+              <div>
+                <p class="panel-kicker">Run health</p>
+                <h2>Latest execution posture</h2>
+              </div>
+            </div>
+            <div id="run-health" class="insight-body"></div>
+          </article>
+
+          <article class="panel insight-card">
+            <div class="panel-head">
+              <div>
+                <p class="panel-kicker">Source mix</p>
+                <h2>Current discovery balance</h2>
+              </div>
+            </div>
+            <div id="source-mix" class="insight-body"></div>
+          </article>
+        </section>
+
         <section class="panel">
           <div class="panel-head">
             <div>
@@ -50,29 +76,41 @@
             </div>
             <div id="range-controls" class="range-controls" role="tablist" aria-label="History range"></div>
           </div>
+
           <div class="chart-grid">
             <article class="chart-card">
               <div class="chart-head">
-                <h3>Validated proxies over time</h3>
-                <p>How many proxies made it into the published output each run.</p>
+                <div>
+                  <h3>Validated proxies over time</h3>
+                  <p>How many proxies made it into the published output each run.</p>
+                </div>
+                <div id="chart-validated-meta" class="chart-metrics"></div>
               </div>
               <div class="chart-wrap">
                 <div id="chart-validated" class="chart"></div>
               </div>
             </article>
+
             <article class="chart-card">
               <div class="chart-head">
-                <h3>Checked vs validated</h3>
-                <p>Validation volume against successful results.</p>
+                <div>
+                  <h3>Checked vs validated</h3>
+                  <p>Validation volume against successful results.</p>
+                </div>
+                <div id="chart-checked-meta" class="chart-metrics"></div>
               </div>
               <div class="chart-wrap">
                 <div id="chart-checked" class="chart"></div>
               </div>
             </article>
+
             <article class="chart-card">
               <div class="chart-head">
-                <h3>Protocol output counts</h3>
-                <p>Published HTTP, SOCKS4, and SOCKS5 counts per run.</p>
+                <div>
+                  <h3>Protocol output counts</h3>
+                  <p>Published HTTP, SOCKS4, and SOCKS5 counts per run.</p>
+                </div>
+                <div id="chart-protocols-meta" class="chart-metrics"></div>
               </div>
               <div class="chart-wrap">
                 <div id="chart-protocols" class="chart"></div>
