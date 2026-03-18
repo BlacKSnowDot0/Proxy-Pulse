@@ -10,6 +10,8 @@ import (
 )
 
 var proxyPattern = regexp.MustCompile(`(?i)\b((?:\d{1,3}\.){3}\d{1,3}|(?:[a-z0-9-]+\.)+[a-z]{2,}|localhost):([0-9]{2,5})\b`)
+var separatedProxyPattern = regexp.MustCompile(`(?im)(?:^|[\s\[{(,;])["']?((?:\d{1,3}\.){3}\d{1,3}|(?:[a-z0-9-]+\.)+[a-z]{2,}|localhost)["']?\s*[,;|\t ]+\s*["']?([0-9]{2,5})["']?(?:$|[\s\]})#,;])`)
+var jsonProxyPattern = regexp.MustCompile(`(?is)"(?:ip|host|server|address)"\s*:\s*"((?:\d{1,3}\.){3}\d{1,3}|(?:[a-z0-9-]+\.)+[a-z]{2,}|localhost)".{0,120}?"(?:port|proxy_port)"\s*:\s*"?([0-9]{2,5})"?|"(?:port|proxy_port)"\s*:\s*"?([0-9]{2,5})"?.{0,120}?"(?:ip|host|server|address)"\s*:\s*"((?:\d{1,3}\.){3}\d{1,3}|(?:[a-z0-9-]+\.)+[a-z]{2,}|localhost)"`)
 
 var commonProxyPorts = map[int]int{
 	80:   9,
@@ -67,27 +69,47 @@ func inferProtocols(path string, content string) []Protocol {
 }
 
 func ExtractCandidates(content string, path string, source string) []Candidate {
-	matches := proxyPattern.FindAllStringSubmatch(content, -1)
-	if len(matches) == 0 {
-		return nil
-	}
-
 	hints := inferProtocols(path, content)
-	out := make([]Candidate, 0, len(matches))
-	for _, match := range matches {
-		host := normalizeHost(match[1])
-		port, err := strconv.Atoi(match[2])
-		if err != nil || !validPort(port) || !validHost(host) {
-			continue
+	out := make([]Candidate, 0)
+	seen := make(map[string]struct{})
+
+	for _, match := range proxyPattern.FindAllStringSubmatch(content, -1) {
+		out = appendCandidate(out, seen, match[1], match[2], hints, source)
+	}
+	for _, match := range separatedProxyPattern.FindAllStringSubmatch(content, -1) {
+		out = appendCandidate(out, seen, match[1], match[2], hints, source)
+	}
+	for _, match := range jsonProxyPattern.FindAllStringSubmatch(content, -1) {
+		host := match[1]
+		port := match[2]
+		if host == "" {
+			host = match[4]
+			port = match[3]
 		}
-		out = append(out, Candidate{
-			Host:          host,
-			Port:          port,
-			HintProtocols: append([]Protocol(nil), hints...),
-			Sources:       []string{source},
-		})
+		out = appendCandidate(out, seen, host, port, hints, source)
 	}
 	return out
+}
+
+func appendCandidate(out []Candidate, seen map[string]struct{}, hostRaw string, portRaw string, hints []Protocol, source string) []Candidate {
+	host := normalizeHost(hostRaw)
+	port, err := strconv.Atoi(portRaw)
+	if err != nil || !validPort(port) || !validHost(host) {
+		return out
+	}
+
+	key := host + ":" + strconv.Itoa(port)
+	if _, ok := seen[key]; ok {
+		return out
+	}
+	seen[key] = struct{}{}
+
+	return append(out, Candidate{
+		Host:          host,
+		Port:          port,
+		HintProtocols: append([]Protocol(nil), hints...),
+		Sources:       []string{source},
+	})
 }
 
 func MergeCandidates(items []Candidate) ([]Candidate, int) {

@@ -20,7 +20,7 @@ jobs:
   discover:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,9 +34,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USER_AGENT: proxy-pulse-action
-          MAX_REPOS_PER_QUERY: 4
-          MAX_GISTS_PER_QUERY: 4
-          MAX_FILES_PER_SOURCE: 8
+          MAX_REPOS_PER_QUERY: 8
+          MAX_GISTS_PER_QUERY: 8
+          MAX_FILES_PER_SOURCE: 16
+          MAX_FILE_BYTES: 1048576
           VALIDATION_SHARDS: 16
         run: go run ./cmd/proxy-updater discover --manifest state/manifest.json --candidates state/candidates.json
 
@@ -52,7 +53,7 @@ jobs:
     needs: discover
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 18
+    timeout-minutes: 24
     strategy:
       fail-fast: false
       matrix:
@@ -77,9 +78,9 @@ jobs:
           USER_AGENT: proxy-pulse-action
           MAX_CANDIDATES: 0
           VALIDATION_TIMEOUT: 2s
-          VALIDATION_STAGE_TIMEOUT: 15m
+          VALIDATION_STAGE_TIMEOUT: 20m
           VALIDATION_LOG_INTERVAL: 5s
-          VALIDATION_CONCURRENCY: 64
+          VALIDATION_CONCURRENCY: 80
         run: go run ./cmd/proxy-updater validate-shard --candidates state/candidates.json --output state/shard-${{ matrix.shard }}.json --shard-index ${{ matrix.shard }} --shard-total 16
 
       - name: Upload shard result

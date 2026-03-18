@@ -27,6 +27,38 @@ bad.host:70000
 	}
 }
 
+func TestExtractCandidatesSupportsStructuredFormats(t *testing.T) {
+	content := `
+1.1.1.1,8080
+2.2.2.2;1080
+{"host":"3.3.3.3","port":"3128"}
+{"proxy_port":"4145","ip":"4.4.4.4"}
+http://user:pass@5.5.5.5:8080
+`
+
+	candidates := ExtractCandidates(content, "lists/proxy-list.json", "https://example.test/source")
+	if len(candidates) != 5 {
+		t.Fatalf("expected 5 candidates, got %d", len(candidates))
+	}
+
+	addresses := map[string]struct{}{}
+	for _, candidate := range candidates {
+		addresses[candidate.Address()] = struct{}{}
+	}
+
+	for _, address := range []string{
+		"1.1.1.1:8080",
+		"2.2.2.2:1080",
+		"3.3.3.3:3128",
+		"4.4.4.4:4145",
+		"5.5.5.5:8080",
+	} {
+		if _, ok := addresses[address]; !ok {
+			t.Fatalf("expected candidate %s to be extracted", address)
+		}
+	}
+}
+
 func TestShouldInspectPath(t *testing.T) {
 	tests := map[string]bool{
 		"proxy.txt":        true,
