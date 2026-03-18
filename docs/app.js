@@ -208,7 +208,7 @@ function renderRangeControls(totalRuns) {
     .map((value) => {
       const active = state.range === value ? " is-active" : "";
       const label = totalRuns < value ? `${value} max` : `${value} runs`;
-      return `<button class="range-button${active}" type="button" data-range="${value}">${label}</button>`;
+      return `<button class="range-button${active}" type="button" data-range="${value}" aria-pressed="${state.range === value}">${label}</button>`;
     })
     .join("");
 
@@ -460,8 +460,13 @@ function bindTooltip(target) {
 function showTooltip(event) {
   tooltip.hidden = false;
   tooltip.innerHTML = escapeHtml(event.currentTarget.dataset.tooltip).replaceAll("\n", "<br>");
-  tooltip.style.left = `${event.clientX + 14}px`;
-  tooltip.style.top = `${event.clientY + 14}px`;
+  const offset = 14;
+  const maxLeft = window.innerWidth - tooltip.offsetWidth - 12;
+  const maxTop = window.innerHeight - tooltip.offsetHeight - 12;
+  const nextLeft = Math.min(event.clientX + offset, Math.max(12, maxLeft));
+  const nextTop = Math.min(event.clientY + offset, Math.max(12, maxTop));
+  tooltip.style.left = `${nextLeft}px`;
+  tooltip.style.top = `${nextTop}px`;
 }
 
 function hideTooltip() {

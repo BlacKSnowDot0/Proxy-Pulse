@@ -207,6 +207,7 @@ table,
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .mini-card,
@@ -217,9 +218,13 @@ table,
   background: var(--panel-strong);
   border: 1px solid var(--line);
   border-radius: 20px;
+  height: 100%;
+  overflow: hidden;
 }
 
 .mini-card {
+  display: flex;
+  flex-direction: column;
   padding: 16px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent),
@@ -232,18 +237,25 @@ table,
 }
 
 .mini-note {
-  margin: 8px 0 0;
+  margin: auto 0 0;
+  padding-top: 10px;
   font-size: 0.92rem;
+  line-height: 1.45;
 }
 
 .hero-actions {
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .action-card {
+  display: flex;
+  align-items: flex-end;
+  min-height: 78px;
   padding: 15px 16px;
+  line-height: 1.4;
   transition: transform var(--ease), border-color var(--ease), background var(--ease), box-shadow var(--ease);
 }
 
@@ -276,15 +288,19 @@ table,
   display: grid;
   gap: 22px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .insight-card {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
 }
 
 .insight-body {
   display: grid;
   gap: 12px;
+  flex: 1;
 }
 
 .insight-stack {
@@ -294,8 +310,9 @@ table,
 
 .insight-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 12px 14px;
   border: 1px solid var(--line);
@@ -325,6 +342,7 @@ table,
 .chart-grid {
   display: grid;
   gap: 16px;
+  align-items: stretch;
 }
 
 .kpi-grid {
@@ -333,6 +351,8 @@ table,
 
 .kpi-card,
 .chart-card {
+  display: flex;
+  flex-direction: column;
   padding: 18px;
 }
 
@@ -348,7 +368,8 @@ table,
 }
 
 .kpi-meta {
-  margin: 10px 0 0;
+  margin: auto 0 0;
+  padding-top: 12px;
   font-size: 0.92rem;
   line-height: 1.45;
 }
@@ -424,6 +445,8 @@ table,
 
 .chart-wrap {
   position: relative;
+  flex: 1;
+  min-height: 0;
 }
 
 .chart {
@@ -449,6 +472,10 @@ table,
 
 .hover-band {
   fill: rgba(244, 232, 207, 0.04);
+}
+
+.data-point {
+  cursor: pointer;
 }
 
 .table-wrap {
@@ -608,6 +635,10 @@ body.is-loaded .action-card {
 
   .chart-metrics {
     justify-items: start;
+  }
+
+  .action-card {
+    min-height: 64px;
   }
 
   th,
