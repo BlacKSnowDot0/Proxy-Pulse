@@ -1,6 +1,10 @@
 package proxy
 
-import "testing"
+import (
+	"os"
+	"path/filepath"
+	"testing"
+)
 
 func TestSelectCandidatesForShardPartitionsAllCandidates(t *testing.T) {
 	candidates := []Candidate{
@@ -38,5 +42,58 @@ func TestMergeProxyResultsDeduplicates(t *testing.T) {
 	}
 	if len(merged[0].Sources) != 2 {
 		t.Fatalf("expected merged sources, got %v", merged[0].Sources)
+	}
+}
+
+func TestFinalizeRunWritesDashboardData(t *testing.T) {
+	dir := t.TempDir()
+	cfg := Config{OutputDir: dir}
+	manifest := RunManifest{
+		StartedAt:         "2026-03-18T00:00:00Z",
+		Status:            "success",
+		RequestsMade:      7,
+		SourcesScanned:    4,
+		FilesScanned:      5,
+		CandidatesFound:   9,
+		DuplicatesRemoved: 2,
+		SourceCounts:      map[string]int{"repository": 4},
+	}
+	shards := []ShardResult{
+		{
+			ShardIndex:   0,
+			Checked:      3,
+			Validated:    2,
+			RequestsMade: 5,
+			Proxies: []Proxy{
+				{Protocol: ProtocolHTTP, Host: "1.1.1.1", Port: 80},
+				{Protocol: ProtocolSOCKS5, Host: "2.2.2.2", Port: 1080},
+			},
+		},
+	}
+
+	if err := FinalizeRun(cfg, manifest, shards); err != nil {
+		t.Fatalf("finalize run: %v", err)
+	}
+
+	dashboard, err := LoadDashboard(filepath.Join(dir, "docs", "data", "dashboard.json"))
+	if err != nil {
+		t.Fatalf("load dashboard: %v", err)
+	}
+
+	if dashboard.Summary.Status != "success" {
+		t.Fatalf("expected success status, got %s", dashboard.Summary.Status)
+	}
+	if dashboard.Summary.CurrentOutputCounts["all"] != 2 {
+		t.Fatalf("expected current all count 2, got %d", dashboard.Summary.CurrentOutputCounts["all"])
+	}
+	if len(dashboard.History) != 1 {
+		t.Fatalf("expected 1 history entry, got %d", len(dashboard.History))
+	}
+	if dashboard.History[0].Validated != 2 {
+		t.Fatalf("expected validated count 2, got %d", dashboard.History[0].Validated)
+	}
+
+	if _, err := os.Stat(filepath.Join(dir, "docs", "data", "dashboard.json")); err != nil {
+		t.Fatalf("expected dashboard file to exist: %v", err)
 	}
 }

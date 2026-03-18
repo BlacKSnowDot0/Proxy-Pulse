@@ -110,6 +110,10 @@ func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) e
 	if err != nil {
 		return fmt.Errorf("load stats: %w", err)
 	}
+	dashboard, err := LoadDashboard(dashboardPath(cfg.OutputDir))
+	if err != nil {
+		return fmt.Errorf("load dashboard: %w", err)
+	}
 
 	mergedProxies := mergeProxyResults(shardResults)
 	outputCounts, err := PublishOutputs(cfg, mergedProxies)
@@ -143,6 +147,9 @@ func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) e
 	stats.ApplyRun(run)
 	if err := SaveStats(statsPath, stats); err != nil {
 		return fmt.Errorf("save stats: %w", err)
+	}
+	if err := SaveDashboard(dashboardPath(cfg.OutputDir), BuildDashboard(dashboard, stats)); err != nil {
+		return fmt.Errorf("save dashboard: %w", err)
 	}
 	if err := WriteReadme(cfg.OutputDir, stats); err != nil {
 		return fmt.Errorf("write readme: %w", err)

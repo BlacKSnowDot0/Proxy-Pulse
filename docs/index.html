@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proxy Pulse Dashboard</title>
+    <meta name="description" content="Live GitHub Pages dashboard for Proxy Pulse proxy discovery and validation runs.">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Proxy Pulse</p>
+          <h1>Live validation dashboard for published proxy runs.</h1>
+          <p class="hero-text">
+            Historical run health, validation throughput, and current published counts from the repo-generated dashboard dataset.
+          </p>
+          <div class="hero-meta">
+            <span id="status-badge" class="status-badge">Loading</span>
+            <span id="last-updated" class="last-updated">Fetching latest dataset...</span>
+          </div>
+        </div>
+        <nav class="hero-actions" aria-label="Primary links">
+          <a class="action-card" href="https://github.com/BlacKSnowDot0/Proxy-Pulse">Repository</a>
+          <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/http.txt">HTTP list</a>
+          <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/socks4.txt">SOCKS4 list</a>
+          <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/socks5.txt">SOCKS5 list</a>
+          <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/all.txt">Combined list</a>
+          <a class="action-card" href="data/dashboard.json">Dataset</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="panel-kicker">Snapshot</p>
+              <h2>Current totals</h2>
+            </div>
+          </div>
+          <div id="kpi-grid" class="kpi-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head panel-head-wide">
+            <div>
+              <p class="panel-kicker">History</p>
+              <h2>Run trends</h2>
+            </div>
+            <div id="range-controls" class="range-controls" role="tablist" aria-label="History range"></div>
+          </div>
+          <div class="chart-grid">
+            <article class="chart-card">
+              <div class="chart-head">
+                <h3>Validated proxies over time</h3>
+                <p>How many proxies made it into the published output each run.</p>
+              </div>
+              <div class="chart-wrap">
+                <div id="chart-validated" class="chart"></div>
+              </div>
+            </article>
+            <article class="chart-card">
+              <div class="chart-head">
+                <h3>Checked vs validated</h3>
+                <p>Validation volume against successful results.</p>
+              </div>
+              <div class="chart-wrap">
+                <div id="chart-checked" class="chart"></div>
+              </div>
+            </article>
+            <article class="chart-card">
+              <div class="chart-head">
+                <h3>Protocol output counts</h3>
+                <p>Published HTTP, SOCKS4, and SOCKS5 counts per run.</p>
+              </div>
+              <div class="chart-wrap">
+                <div id="chart-protocols" class="chart"></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="panel-kicker">Latest activity</p>
+              <h2>Recent runs</h2>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Finished</th>
+                  <th>Status</th>
+                  <th>Validated</th>
+                  <th>Checked</th>
+                  <th>Requests</th>
+                </tr>
+              </thead>
+              <tbody id="recent-runs"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="tooltip" class="tooltip" hidden></div>
+    <script src="app.js" defer></script>
+  </body>
+</html>

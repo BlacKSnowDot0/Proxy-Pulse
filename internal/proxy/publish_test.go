@@ -46,4 +46,7 @@ func TestPublishOutputsAndReadme(t *testing.T) {
 	if !strings.Contains(string(data), "Proxy Pulse") {
 		t.Fatalf("readme missing project title")
 	}
+	if !strings.Contains(string(data), "https://blacksnowdot0.github.io/Proxy-Pulse/") {
+		t.Fatalf("readme missing dashboard link")
+	}
 }

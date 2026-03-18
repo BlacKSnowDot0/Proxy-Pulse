@@ -2,6 +2,7 @@
 
 <h1 align="center">Proxy Pulse</h1>
 <p align="center">Automated discovery, validation, and publishing of public proxy lists from GitHub repositories and gists.</p>
+<p align="center"><strong><a href="https://blacksnowdot0.github.io/Proxy-Pulse/">Dashboard</a></strong></p>
 
 | Metric | Value |
 | --- | ---: |
@@ -22,6 +23,7 @@
 | [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | 1405 |
 | [all.txt](all.txt) | Combined scheme-qualified list | 7726 |
 | [stats.json](stats.json) | Machine-readable run database | 1 |
+| [docs/data/dashboard.json](docs/data/dashboard.json) | Machine-readable dashboard dataset | 1 |
 
 ## Workflow
 

@@ -11,6 +11,7 @@ import (
 )
 
 type publishView struct {
+	DashboardURL   string
 	GeneratedAt    string
 	LastSuccessAt  string
 	Status         string
@@ -100,6 +101,7 @@ func readOutputCounts(outputDir string) (map[string]int, error) {
 
 func WriteReadme(outputDir string, stats StatsDB) error {
 	view := publishView{
+		DashboardURL:   "https://blacksnowdot0.github.io/Proxy-Pulse/",
 		GeneratedAt:    stats.LastRun.FinishedAt,
 		LastSuccessAt:  noneIfEmpty(stats.LastSuccessAt),
 		Status:         noneIfEmpty(stats.LastRun.Status),
@@ -137,6 +139,7 @@ const readmeTemplate = `![Proxy Pulse](assets/banner.svg)
 
 <h1 align="center">Proxy Pulse</h1>
 <p align="center">Automated discovery, validation, and publishing of public proxy lists from GitHub repositories and gists.</p>
+<p align="center"><strong><a href="{{.DashboardURL}}">Dashboard</a></strong></p>
 
 | Metric | Value |
 | --- | ---: |
@@ -157,6 +160,7 @@ const readmeTemplate = `![Proxy Pulse](assets/banner.svg)
 | [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | {{.PublishedS5}} |
 | [all.txt](all.txt) | Combined scheme-qualified list | {{.PublishedAll}} |
 | [stats.json](stats.json) | Machine-readable run database | 1 |
+| [docs/data/dashboard.json](docs/data/dashboard.json) | Machine-readable dashboard dataset | 1 |
 
 ## Workflow
 
