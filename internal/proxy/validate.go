@@ -232,7 +232,7 @@ func (v *Validator) validateHTTP(ctx context.Context, candidate Candidate) (bool
 	if err != nil {
 		return false, nil
 	}
-	return strings.TrimSpace(string(body)) != "", nil
+	return isValidIPEchoBody(body), nil
 }
 
 func (v *Validator) validateSOCKS(ctx context.Context, candidate Candidate, protocol Protocol) (bool, error) {
@@ -280,7 +280,24 @@ func (v *Validator) validateSOCKS(ctx context.Context, candidate Candidate, prot
 	if err != nil {
 		return false, nil
 	}
-	return strings.TrimSpace(string(body)) != "", nil
+	return isValidIPEchoBody(body), nil
+}
+
+func isValidIPEchoBody(body []byte) bool {
+	value := strings.TrimSpace(string(body))
+	if value == "" {
+		return false
+	}
+
+	ip := net.ParseIP(value)
+	if ip == nil {
+		return false
+	}
+
+	if ipv4 := ip.To4(); ipv4 != nil {
+		return isPublicIPv4(ipv4)
+	}
+	return false
 }
 
 func (v *Validator) openSOCKSTunnel(ctx context.Context, proxyAddr string, targetHost string, targetPort string, protocol Protocol) (net.Conn, error) {
