@@ -1,58 +1,59 @@
 {
-  "generated_at": "2026-04-26T03:50:36Z",
+  "generated_at": "2026-04-26T07:55:39Z",
   "summary": {
     "status": "success",
-    "last_generated": "2026-04-26T03:50:36Z",
-    "last_success_at": "2026-04-26T03:50:36Z",
-    "runs_total": 169,
-    "requests_total": 23140041,
-    "proxies_checked_total": 23024106,
-    "validated_total": 316122,
+    "last_generated": "2026-04-26T07:55:39Z",
+    "last_success_at": "2026-04-26T07:55:39Z",
+    "runs_total": 170,
+    "requests_total": 23284108,
+    "proxies_checked_total": 23163631,
+    "validated_total": 316897,
     "current_output_counts": {
-      "all": 289,
-      "http": 42,
-      "socks4": 164,
-      "socks5": 83
+      "all": 775,
+      "http": 28,
+      "socks4": 163,
+      "socks5": 584
     },
     "current_source_counts": {
       "gist": 0,
-      "repository": 64
+      "repository": 70
     },
     "current_country_counts": {
-      "AR": 1,
-      "AU": 1,
-      "BD": 1,
-      "CN": 1,
-      "CZ": 2,
-      "DE": 9,
-      "DK": 1,
-      "EE": 1,
-      "ES": 1,
-      "FI": 4,
-      "FR": 6,
-      "GB": 5,
-      "HK": 4,
-      "ID": 1,
-      "IL": 3,
-      "IN": 4,
-      "JP": 3,
+      "AU": 2,
+      "AZ": 1,
+      "BR": 2,
+      "CA": 2,
+      "CL": 1,
+      "CZ": 1,
+      "DE": 79,
+      "FI": 7,
+      "FR": 48,
+      "GB": 31,
+      "HK": 6,
+      "ID": 7,
+      "IE": 2,
+      "IL": 80,
+      "IN": 32,
+      "JP": 2,
       "KG": 1,
+      "KH": 2,
       "KR": 2,
+      "KW": 15,
       "KZ": 2,
-      "MA": 1,
-      "NL": 20,
-      "NO": 1,
-      "RU": 10,
-      "SE": 2,
-      "SG": 12,
-      "TR": 1,
-      "US": 186,
-      "VN": 2,
-      "XK": 1
+      "NL": 17,
+      "PA": 1,
+      "RU": 16,
+      "SE": 3,
+      "SG": 20,
+      "TR": 9,
+      "UA": 1,
+      "US": 337,
+      "VN": 23,
+      "ZA": 23
     },
     "current_anonymity_counts": {
-      "elite": 31,
-      "unknown": 258
+      "elite": 20,
+      "unknown": 755
     }
   },
   "history": [
@@ -3596,6 +3597,28 @@
       "source_counts": {
         "gist": 0,
         "repository": 64
+      }
+    },
+    {
+      "finished_at": "2026-04-26T07:55:39Z",
+      "status": "success",
+      "requests_made": 144067,
+      "sources_scanned": 70,
+      "files_scanned": 387,
+      "candidates_found": 535281,
+      "proxies_checked": 139525,
+      "validated": 775,
+      "duplicates_removed": 395756,
+      "error_count": 0,
+      "output_counts": {
+        "all": 775,
+        "http": 28,
+        "socks4": 163,
+        "socks5": 584
+      },
+      "source_counts": {
+        "gist": 0,
+        "repository": 70
       }
     }
   ]
