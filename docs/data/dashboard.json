@@ -1,57 +1,57 @@
 {
-  "generated_at": "2026-04-28T19:58:16Z",
+  "generated_at": "2026-04-29T03:57:57Z",
   "summary": {
     "status": "success",
-    "last_generated": "2026-04-28T19:58:16Z",
-    "last_success_at": "2026-04-28T19:58:16Z",
-    "runs_total": 179,
-    "requests_total": 24435762,
-    "proxies_checked_total": 24306494,
-    "validated_total": 319586,
+    "last_generated": "2026-04-29T03:57:57Z",
+    "last_success_at": "2026-04-29T03:57:57Z",
+    "runs_total": 180,
+    "requests_total": 24537357,
+    "proxies_checked_total": 24404933,
+    "validated_total": 319844,
     "current_output_counts": {
-      "all": 280,
-      "http": 33,
-      "socks4": 162,
-      "socks5": 85
+      "all": 258,
+      "http": 49,
+      "socks4": 166,
+      "socks5": 43
     },
     "current_source_counts": {
       "gist": 0,
-      "repository": 69
+      "repository": 63
     },
     "current_country_counts": {
       "AE": 1,
+      "AT": 1,
       "AU": 1,
       "CA": 1,
       "CZ": 1,
-      "DE": 8,
-      "EE": 1,
+      "DE": 9,
       "FI": 3,
-      "FR": 9,
-      "GB": 3,
-      "HK": 3,
-      "ID": 1,
-      "IL": 1,
-      "IN": 9,
+      "FR": 3,
+      "GB": 5,
+      "HK": 5,
+      "ID": 2,
+      "IN": 4,
       "JP": 1,
+      "KG": 1,
       "KH": 1,
-      "KR": 1,
-      "KW": 1,
-      "KZ": 2,
+      "KR": 2,
+      "KZ": 1,
       "LV": 1,
-      "NL": 14,
-      "PT": 1,
-      "RU": 8,
-      "SG": 4,
-      "TH": 1,
+      "NL": 9,
+      "PE": 2,
+      "PH": 1,
+      "RU": 5,
+      "SE": 2,
+      "SG": 6,
       "TZ": 1,
-      "UA": 1,
-      "US": 197,
-      "VN": 3,
-      "ZA": 1
+      "US": 178,
+      "VN": 8,
+      "ZA": 1,
+      "ZW": 2
     },
     "current_anonymity_counts": {
-      "elite": 29,
-      "unknown": 251
+      "elite": 37,
+      "unknown": 221
     }
   },
   "history": [
@@ -3815,6 +3815,28 @@
       "source_counts": {
         "gist": 0,
         "repository": 69
+      }
+    },
+    {
+      "finished_at": "2026-04-29T03:57:57Z",
+      "status": "success",
+      "requests_made": 101595,
+      "sources_scanned": 63,
+      "files_scanned": 331,
+      "candidates_found": 306748,
+      "proxies_checked": 98439,
+      "validated": 258,
+      "duplicates_removed": 208309,
+      "error_count": 0,
+      "output_counts": {
+        "all": 258,
+        "http": 49,
+        "socks4": 166,
+        "socks5": 43
+      },
+      "source_counts": {
+        "gist": 0,
+        "repository": 63
       }
     }
   ]
