@@ -13,24 +13,24 @@
 | Metric | Value |
 | --- | ---: |
 | 🚦 Last run status | success |
-| 🕒 Last generated | 2026-06-28T14:13:33Z |
-| ✅ Last successful refresh | 2026-06-28T14:13:33Z |
-| 🔁 Total runs | 417 |
-| 🌐 Total outbound requests | 58186139 |
-| 🧪 Total proxies checked | 58096252 |
-| 📡 Total validated proxies | 488577 |
+| 🕒 Last generated | 2026-06-28T19:48:27Z |
+| ✅ Last successful refresh | 2026-06-28T19:48:27Z |
+| 🔁 Total runs | 418 |
+| 🌐 Total outbound requests | 58358058 |
+| 🧪 Total proxies checked | 58255196 |
+| 📡 Total validated proxies | 488915 |
 
 ## 📂 Published Lists
 
 | File | Description | Count |
 | --- | --- | ---: |
-| [http.txt](http.txt) | Validated HTTP proxies | 180 |
-| [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | 163 |
-| [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | 68 |
-| [all.txt](all.txt) | Combined scheme-qualified list | 411 |
+| [http.txt](http.txt) | Validated HTTP proxies | 102 |
+| [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | 167 |
+| [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | 69 |
+| [all.txt](all.txt) | Combined scheme-qualified list | 338 |
 | [stats.json](stats.json) | Machine-readable run database | 1 |
 | [docs/data/dashboard.json](docs/data/dashboard.json) | Machine-readable dashboard dataset | 1 |
-| [docs/data/proxies.json](docs/data/proxies.json) | Machine-readable validated proxy metadata | 411 |
+| [docs/data/proxies.json](docs/data/proxies.json) | Machine-readable validated proxy metadata | 338 |
 
 ## ⚙️ Workflow
 
