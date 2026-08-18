@@ -3,149 +3,162 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proxy Pulse Dashboard</title>
-    <meta name="description" content="Live GitHub Pages dashboard for Proxy Pulse proxy discovery and validation runs.">
+    <title>Proxy Pulse — Free Working Proxy Lists (HTTP · SOCKS4 · SOCKS5), Refreshed Every 6 Hours</title>
+    <meta name="description" content="Continuously validated free proxy lists: HTTP, HTTPS (CONNECT), SOCKS4 and SOCKS5 proxies with country, ASN, latency and uptime data. Re-checked and republished every 6 hours by GitHub Actions.">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0D1117">
+    <link rel="canonical" href="https://blacksnowdot0.github.io/Proxy-Pulse/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Proxy Pulse">
+    <meta property="og:title" content="Proxy Pulse — Free Working Proxy Lists, Refreshed Every 6 Hours">
+    <meta property="og:description" content="HTTP, HTTPS, SOCKS4 &amp; SOCKS5 proxies re-validated around the clock, with country, ASN, latency and uptime metadata.">
+    <meta property="og:url" content="https://blacksnowdot0.github.io/Proxy-Pulse/">
+    <meta property="og:image" content="https://blacksnowdot0.github.io/Proxy-Pulse/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Proxy Pulse — Free Working Proxy Lists">
+    <meta name="twitter:description" content="HTTP, HTTPS, SOCKS4 &amp; SOCKS5 proxies re-validated every 6 hours, with country, ASN, latency and uptime metadata.">
+    <meta name="twitter:image" content="https://blacksnowdot0.github.io/Proxy-Pulse/assets/og.png">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230D1117'/%3E%3Cpath d='M5 17h5l3-8 5 14 3-6h6' fill='none' stroke='%23D4B06A' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Proxy Pulse</p>
-          <h1>Operational visibility for every published proxy run.</h1>
-          <p class="hero-text">
-            A static GitHub Pages control room for validation throughput, protocol mix, and release health, generated directly from the repo.
-          </p>
-          <div class="hero-meta">
-            <span id="status-badge" class="status-badge">Loading</span>
-            <span id="last-updated" class="last-updated">Fetching latest dataset...</span>
-          </div>
+    <div class="page">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="Proxy Pulse home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="30" height="30"><path d="M5 17h5l3-8 5 14 3-6h6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-word">Proxy <b>Pulse</b></span>
+        </a>
+        <div class="topbar-status">
+          <span id="status-badge" class="pill" data-state="loading">Loading…</span>
+          <span id="last-updated" class="topbar-updated">fetching latest dataset…</span>
         </div>
-
-        <aside class="hero-side">
-          <div id="hero-highlights" class="hero-highlights" aria-live="polite"></div>
-          <nav class="hero-actions" aria-label="Primary links">
-            <a class="action-card" href="https://github.com/BlacKSnowDot0/Proxy-Pulse">Repository</a>
-            <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/http.txt">HTTP list</a>
-            <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/socks4.txt">SOCKS4 list</a>
-            <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/socks5.txt">SOCKS5 list</a>
-            <a class="action-card" href="https://raw.githubusercontent.com/BlacKSnowDot0/Proxy-Pulse/main/all.txt">Combined list</a>
-            <a class="action-card" href="data/dashboard.json">Dataset</a>
-            <a class="action-card" href="data/proxies.json">Proxy metadata</a>
-          </nav>
-        </aside>
+        <nav class="topbar-links" aria-label="Repository links">
+          <a class="chip-link" href="data/proxies.json">Dataset</a>
+          <a class="chip-link" href="https://github.com/BlacKSnowDot0/Proxy-Pulse" rel="noopener">GitHub</a>
+        </nav>
       </header>
 
-      <main class="content">
-        <section class="insight-grid">
-          <article class="panel insight-card">
-            <div class="panel-head">
-              <div>
-                <p class="panel-kicker">Run health</p>
-                <h2>Latest execution posture</h2>
-              </div>
-            </div>
-            <div id="run-health" class="insight-body"></div>
+      <main>
+        <section class="bento bento-top" aria-label="Live snapshot">
+          <article class="card card-live">
+            <p class="card-label">Live proxies</p>
+            <p id="live-count" class="big-number">—</p>
+            <p id="live-delta" class="card-note">awaiting data</p>
+            <div id="live-spark" class="spark" aria-hidden="true"></div>
           </article>
 
-          <article class="panel insight-card">
-            <div class="panel-head">
-              <div>
-                <p class="panel-kicker">Source mix</p>
-                <h2>Current discovery balance</h2>
-              </div>
-            </div>
-            <div id="source-mix" class="insight-body"></div>
+          <article class="card card-protocols">
+            <p class="card-label">Published by protocol</p>
+            <div id="protocol-bars" class="proto-rows"></div>
           </article>
 
-          <article class="panel insight-card">
-            <div class="panel-head">
-              <div>
-                <p class="panel-kicker">Proxy profile</p>
-                <h2>Published metadata mix</h2>
-              </div>
-            </div>
-            <div id="proxy-profile" class="insight-body"></div>
+          <article class="card card-status">
+            <p class="card-label">Pipeline status</p>
+            <p class="status-line"><span class="dot" id="status-dot" aria-hidden="true"></span><span id="status-text">checking…</span></p>
+            <p class="card-note">refreshed every 6 hours</p>
+            <p id="status-meta" class="mono-note">— runs · GitHub Actions</p>
           </article>
         </section>
 
-        <section class="panel">
-          <div class="panel-head">
+        <section class="card card-downloads" aria-label="Download proxy lists">
+          <div class="card-head">
+            <p class="card-label">Download lists</p>
+            <p class="card-note">plain text · one proxy per line · only latest validated entries</p>
+          </div>
+          <div id="download-row" class="download-row"></div>
+        </section>
+
+        <section class="card card-explorer" aria-label="Proxy explorer">
+          <div class="card-head card-head-wide">
             <div>
-              <p class="panel-kicker">Snapshot</p>
-              <h2>Current totals</h2>
+              <p class="card-label">Proxy explorer</p>
+              <p class="card-note">every proxy below passed dual IP-echo validation this run</p>
+            </div>
+            <button id="copy-filtered" class="btn" type="button" data-state="idle">Copy filtered list</button>
+          </div>
+
+          <div class="toolbar" role="search">
+            <div class="proto-filter" id="proto-filter" role="group" aria-label="Filter by protocol"></div>
+            <div class="toolbar-right">
+              <label class="sr-only" for="country-filter">Filter by country</label>
+              <select id="country-filter" class="select"></select>
+              <label class="sr-only" for="proxy-search">Search proxies</label>
+              <input id="proxy-search" class="input" type="search" placeholder="search host, country, ASN…" autocomplete="off">
             </div>
           </div>
-          <div id="kpi-grid" class="kpi-grid" aria-live="polite"></div>
+
+          <div class="table-wrap">
+            <table class="proxy-table" aria-describedby="proxy-table-note">
+              <thead>
+                <tr>
+                  <th data-sort="address" class="th-sort">Proxy</th>
+                  <th>Protocol</th>
+                  <th data-sort="country" class="th-sort">Country</th>
+                  <th>Network / ASN</th>
+                  <th data-sort="latency" class="th-sort th-num">Latency</th>
+                  <th data-sort="uptime" class="th-sort th-num">Uptime</th>
+                  <th>HTTPS</th>
+                  <th><span class="sr-only">Copy</span></th>
+                </tr>
+              </thead>
+              <tbody id="proxy-rows"></tbody>
+            </table>
+          </div>
+          <p id="proxy-table-note" class="card-note table-note">sorted by latency · click a row header to re-sort</p>
+          <div class="table-foot">
+            <span id="proxy-count" class="card-note">0 proxies</span>
+            <button id="show-all" class="btn btn-ghost" type="button" hidden>show all</button>
+          </div>
         </section>
 
-        <section class="panel">
-          <div class="panel-head panel-head-wide">
+        <section class="card card-history" aria-label="Run history">
+          <div class="card-head card-head-wide">
             <div>
-              <p class="panel-kicker">History</p>
-              <h2>Run trends</h2>
+              <p class="card-label">Run history</p>
+              <p class="card-note">every refresh for the retained window</p>
             </div>
-            <div id="range-controls" class="range-controls" role="tablist" aria-label="History range"></div>
+            <div id="range-controls" class="range-controls" role="group" aria-label="History range"></div>
           </div>
 
           <div class="chart-grid">
             <article class="chart-card">
               <div class="chart-head">
-                <div>
-                  <h3>Validated proxies over time</h3>
-                  <p>How many proxies made it into the published output each run.</p>
-                </div>
+                <h3>Validated per run</h3>
                 <div id="chart-validated-meta" class="chart-metrics"></div>
               </div>
-              <div class="chart-wrap">
-                <div id="chart-validated" class="chart"></div>
-              </div>
+              <div id="chart-validated" class="chart"></div>
             </article>
-
             <article class="chart-card">
               <div class="chart-head">
-                <div>
-                  <h3>Checked vs validated</h3>
-                  <p>Validation volume against successful results.</p>
-                </div>
+                <h3>Checked vs validated</h3>
                 <div id="chart-checked-meta" class="chart-metrics"></div>
               </div>
-              <div class="chart-wrap">
-                <div id="chart-checked" class="chart"></div>
-              </div>
+              <div id="chart-checked" class="chart"></div>
             </article>
-
             <article class="chart-card">
               <div class="chart-head">
-                <div>
-                  <h3>Protocol output counts</h3>
-                  <p>Published HTTP, SOCKS4, and SOCKS5 counts per run.</p>
-                </div>
+                <h3>Protocol output</h3>
                 <div id="chart-protocols-meta" class="chart-metrics"></div>
               </div>
-              <div class="chart-wrap">
-                <div id="chart-protocols" class="chart"></div>
-              </div>
+              <div id="chart-protocols" class="chart"></div>
             </article>
           </div>
-        </section>
 
-        <section class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="panel-kicker">Latest activity</p>
-              <h2>Recent runs</h2>
-            </div>
-          </div>
           <div class="table-wrap">
-            <table>
+            <table class="runs-table">
               <thead>
                 <tr>
                   <th>Finished</th>
                   <th>Status</th>
-                  <th>Validated</th>
-                  <th>Checked</th>
-                  <th>Requests</th>
+                  <th class="th-num">Validated</th>
+                  <th class="th-num">Checked</th>
+                  <th class="th-num">Requests</th>
                 </tr>
               </thead>
               <tbody id="recent-runs"></tbody>
@@ -153,6 +166,18 @@
           </div>
         </section>
       </main>
+
+      <footer class="footer">
+        <p>
+          <span class="brand-word">Proxy <b>Pulse</b></span> — lists are re-validated and republished every 6 hours by
+          <a href="https://github.com/BlacKSnowDot0/Proxy-Pulse/actions" rel="noopener">GitHub Actions</a>.
+        </p>
+        <p class="footer-meta">
+          Geo data: GeoLite2 (MaxMind, CC BY 4.0) via <a href="https://github.com/obeliskdev/geovault" rel="noopener">geovault</a> ·
+          machine-readable data: <a href="data/proxies.json">proxies.json</a> · <a href="data/dashboard.json">dashboard.json</a>
+        </p>
+        <p class="footer-meta">Public proxies are unstable and untrusted — treat every entry as disposable infrastructure and use at your own risk.</p>
+      </footer>
     </div>
 
     <div id="tooltip" class="tooltip" hidden></div>
