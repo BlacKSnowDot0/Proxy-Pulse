@@ -97,6 +97,9 @@ func appendCandidate(out []Candidate, seen map[string]struct{}, hostRaw string, 
 	if err != nil || !validPort(port) || !validHost(host) {
 		return out
 	}
+	if net.ParseIP(host) == nil && !hostnameAllowedProxyPort(port) {
+		return out
+	}
 
 	key := host + ":" + strconv.Itoa(port)
 	if _, ok := seen[key]; ok {
@@ -110,6 +113,17 @@ func appendCandidate(out []Candidate, seen map[string]struct{}, hostRaw string, 
 		HintProtocols: append([]Protocol(nil), hints...),
 		Sources:       []string{source},
 	})
+}
+
+func hostnameAllowedProxyPort(port int) bool {
+	if _, ok := commonProxyPorts[port]; ok {
+		return true
+	}
+	switch port {
+	case 9050, 1081, 8118, 5678, 23333:
+		return true
+	}
+	return false
 }
 
 func MergeCandidates(items []Candidate) ([]Candidate, int) {

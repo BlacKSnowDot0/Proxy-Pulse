@@ -21,17 +21,30 @@ type RunManifest struct {
 	DuplicatesRemoved int            `json:"duplicates_removed"`
 	ErrorCount        int            `json:"error_count"`
 	SourceCounts      map[string]int `json:"source_counts"`
+	Warnings          []string       `json:"warnings,omitempty"`
+	Salt              string         `json:"salt,omitempty"`
+	Sources           []SourceRecord `json:"sources,omitempty"`
+}
+
+type ShardOutcome struct {
+	Address   string `json:"address"`
+	OK        bool   `json:"ok"`
+	Protocol  string `json:"protocol,omitempty"`
+	LatencyMS int64  `json:"latency_ms,omitempty"`
+	Reason    string `json:"reason,omitempty"`
 }
 
 type ShardResult struct {
-	ShardIndex   int     `json:"shard_index"`
-	ShardTotal   int     `json:"shard_total"`
-	Assigned     int     `json:"assigned"`
-	Checked      int     `json:"checked"`
-	Validated    int     `json:"validated"`
-	ErrorCount   int     `json:"error_count"`
-	RequestsMade int64   `json:"requests_made"`
-	Proxies      []Proxy `json:"proxies"`
+	ShardIndex   int            `json:"shard_index"`
+	ShardTotal   int            `json:"shard_total"`
+	Assigned     int            `json:"assigned"`
+	Checked      int            `json:"checked"`
+	Validated    int            `json:"validated"`
+	ErrorCount   int            `json:"error_count"`
+	RequestsMade int64          `json:"requests_made"`
+	Degraded     bool           `json:"degraded,omitempty"`
+	Proxies      []Proxy        `json:"proxies"`
+	Outcomes     []ShardOutcome `json:"outcomes,omitempty"`
 }
 
 func SaveJSON(path string, value any) error {

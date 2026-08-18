@@ -46,6 +46,7 @@ func run(ctx context.Context, cfg proxy.Config, args []string) error {
 	case "validate-shard":
 		fs := flag.NewFlagSet("validate-shard", flag.ExitOnError)
 		candidatesPath := fs.String("candidates", filepath.Join("state", "candidates.json"), "path to read candidate list")
+		manifestPath := fs.String("manifest", filepath.Join("state", "manifest.json"), "path to read discovery manifest for shard salt")
 		outputPath := fs.String("output", filepath.Join("state", "shard-result.json"), "path to write shard result")
 		shardIndex := fs.Int("shard-index", 0, "zero-based shard index")
 		shardTotal := fs.Int("shard-total", 1, "total shard count")
@@ -55,7 +56,11 @@ func run(ctx context.Context, cfg proxy.Config, args []string) error {
 		if err != nil {
 			return err
 		}
-		result, err := proxy.ValidateShard(ctx, cfg, candidates, *shardIndex, *shardTotal)
+		manifest, err := proxy.LoadManifest(*manifestPath)
+		if err != nil {
+			return err
+		}
+		result, err := proxy.ValidateShard(ctx, cfg, candidates, *shardIndex, *shardTotal, manifest.Salt)
 		if err != nil {
 			return err
 		}
@@ -78,7 +83,7 @@ func run(ctx context.Context, cfg proxy.Config, args []string) error {
 		if err != nil {
 			return err
 		}
-		return proxy.FinalizeRun(cfg, manifest, results)
+		return proxy.FinalizeRun(ctx, cfg, manifest, results)
 	default:
 		return proxy.Run(ctx, cfg)
 	}

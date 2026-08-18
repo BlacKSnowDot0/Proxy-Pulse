@@ -63,7 +63,9 @@ func (c *GitHubClient) Discover(ctx context.Context) (DiscoveryResult, error) {
 		gistIDs, err := c.searchGists(ctx, query)
 		if err != nil {
 			result.ErrorCount++
+			result.GistFailures++
 		} else {
+			result.GistHits += len(gistIDs)
 			for _, gistID := range gistIDs {
 				gists[gistID] = struct{}{}
 			}
@@ -299,8 +301,10 @@ func (c *GitHubClient) getBytes(ctx context.Context, endpoint string) ([]byte, e
 		return nil, fmt.Errorf("request %s failed with %d: %s", endpoint, resp.StatusCode, strings.TrimSpace(string(body)))
 	}
 
-	return io.ReadAll(resp.Body)
+	return io.ReadAll(io.LimitReader(resp.Body, maxAPIResponseBytes))
 }
+
+const maxAPIResponseBytes = 16 << 20
 
 func buildRawRepoURL(rawBase string, fullName string, branch string, path string) string {
 	rawBase = strings.TrimRight(rawBase, "/")

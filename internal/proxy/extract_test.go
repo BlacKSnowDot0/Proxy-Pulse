@@ -96,3 +96,29 @@ func TestPreferredProtocolsByPort(t *testing.T) {
 		t.Fatalf("expected socks5-first ordering for 1080, got %v", got)
 	}
 }
+
+func TestExtractCandidatesGatesHostnamePorts(t *testing.T) {
+	content := "nodejs.example.com:20\nproxy.example.com:8080\nplain.example.com:65534\n"
+
+	candidates := ExtractCandidates(content, "lists/http.txt", "https://example.test/source")
+
+	addresses := map[string]struct{}{}
+	for _, candidate := range candidates {
+		addresses[candidate.Address()] = struct{}{}
+	}
+	if _, ok := addresses["proxy.example.com:8080"]; !ok {
+		t.Fatalf("expected hostname on common proxy port accepted, got %v", addresses)
+	}
+	for _, banned := range []string{"nodejs.example.com:20", "plain.example.com:65534"} {
+		if _, ok := addresses[banned]; ok {
+			t.Fatalf("expected hostname candidate %s rejected by port gate", banned)
+		}
+	}
+}
+
+func TestExtractCandidatesAllowsAnyPortOnIPLiterals(t *testing.T) {
+	candidates := ExtractCandidates("8.8.4.4:51820\n", "lists/http.txt", "https://example.test/source")
+	if len(candidates) != 1 || candidates[0].Address() != "8.8.4.4:51820" {
+		t.Fatalf("expected ip literal with arbitrary port accepted, got %v", candidates)
+	}
+}

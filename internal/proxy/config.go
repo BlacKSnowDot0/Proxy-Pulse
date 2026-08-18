@@ -1,6 +1,7 @@
 package proxy
 
 import (
+	"crypto/x509"
 	"os"
 	"strconv"
 	"strings"
@@ -13,10 +14,12 @@ type Config struct {
 	MaxGistsPerQuery       int
 	MaxFilesPerSource      int
 	MaxCandidates          int
+	MaxFreshCandidates     int
 	MaxFileBytes           int64
 	ValidationTimeout      time.Duration
 	ValidationStageTimeout time.Duration
 	ValidationLogInterval  time.Duration
+	EnrichmentTimeout      time.Duration
 	Concurrency            int
 	ShardCount             int
 	GitHubToken            string
@@ -29,9 +32,21 @@ type Config struct {
 	IPEchoURLPrimary       string
 	IPEchoURLSecondary     string
 	DirectIPEchoURL        string
-	GEOIPURLTemplate       string
+	HTTPSProbeURL          string
 	AnonCheckURL           string
+	AnonCheckURLSecondary  string
+	GeoIPCityURL           string
+	GeoIPASNURL            string
+	GeoVaultDataDir        string
+
+	GeoIPDisabled bool
+	httpsTLSRoots *x509.CertPool
 }
+
+const (
+	defaultGeoIPCityURL = "https://github.com/P3TERX/GeoLite.mmdb/releases/latest/download/GeoLite2-City.mmdb"
+	defaultGeoIPASNURL  = "https://github.com/P3TERX/GeoLite.mmdb/releases/latest/download/GeoLite2-ASN.mmdb"
+)
 
 func LoadConfigFromEnv() Config {
 	legacyIPEchoURL := getEnv("IP_ECHO_URL", "http://api.ipify.org")
@@ -42,10 +57,12 @@ func LoadConfigFromEnv() Config {
 		MaxGistsPerQuery:       getEnvInt("MAX_GISTS_PER_QUERY", 12),
 		MaxFilesPerSource:      getEnvInt("MAX_FILES_PER_SOURCE", 32),
 		MaxCandidates:          getEnvNonNegativeInt("MAX_CANDIDATES", 0),
+		MaxFreshCandidates:     getEnvNonNegativeInt("MAX_FRESH_CANDIDATES", 0),
 		MaxFileBytes:           int64(getEnvInt("MAX_FILE_BYTES", 1024*1024)),
 		ValidationTimeout:      getEnvDuration("VALIDATION_TIMEOUT", 8*time.Second),
 		ValidationStageTimeout: getEnvDuration("VALIDATION_STAGE_TIMEOUT", 3*time.Minute),
 		ValidationLogInterval:  getEnvDuration("VALIDATION_LOG_INTERVAL", 5*time.Second),
+		EnrichmentTimeout:      getEnvDuration("ENRICHMENT_TIMEOUT", 8*time.Second),
 		Concurrency:            getEnvInt("VALIDATION_CONCURRENCY", 32),
 		ShardCount:             getEnvInt("VALIDATION_SHARDS", 16),
 		GitHubToken:            strings.TrimSpace(os.Getenv("GITHUB_TOKEN")),
@@ -58,8 +75,13 @@ func LoadConfigFromEnv() Config {
 		IPEchoURLPrimary:       primaryIPEchoURL,
 		IPEchoURLSecondary:     getEnv("IP_ECHO_URL_SECONDARY", "http://ifconfig.me/ip"),
 		DirectIPEchoURL:        getEnv("DIRECT_IP_ECHO_URL", primaryIPEchoURL),
-		GEOIPURLTemplate:       getEnv("GEOIP_URL_TEMPLATE", "http://ip-api.com/json/%s?fields=status,country,countryCode"),
+		HTTPSProbeURL:          getEnv("HTTPS_PROBE_URL", "https://api.ipify.org"),
 		AnonCheckURL:           getEnv("ANON_CHECK_URL", "http://httpbin.org/get"),
+		AnonCheckURLSecondary:  getEnv("ANON_CHECK_URL_SECONDARY", ""),
+		GeoIPCityURL:           getEnv("GEOIP_CITY_URL", defaultGeoIPCityURL),
+		GeoIPASNURL:            getEnv("GEOIP_ASN_URL", defaultGeoIPASNURL),
+		GeoVaultDataDir:        strings.TrimSpace(os.Getenv("GEOVAULT_DATA_DIR")),
+		GeoIPDisabled:          getEnvBool("GEOIP_DISABLED", false),
 	}
 }
 
@@ -134,6 +156,21 @@ func getEnvNonNegativeInt(key string, fallback int) int {
 		return fallback
 	}
 	return parsed
+}
+
+func getEnvBool(key string, fallback bool) bool {
+	value := strings.TrimSpace(os.Getenv(key))
+	if value == "" {
+		return fallback
+	}
+	switch strings.ToLower(value) {
+	case "1", "true", "yes", "on":
+		return true
+	case "0", "false", "no", "off":
+		return false
+	default:
+		return fallback
+	}
 }
 
 func getEnvDuration(key string, fallback time.Duration) time.Duration {

@@ -23,6 +23,7 @@ type Candidate struct {
 	Port          int
 	HintProtocols []Protocol
 	Sources       []string
+	Survivor      bool `json:"survivor,omitempty"`
 }
 
 func (c Candidate) Address() string {
@@ -39,6 +40,14 @@ type Proxy struct {
 	CountryName   string         `json:"country_name,omitempty"`
 	Anonymity     AnonymityLevel `json:"anonymity,omitempty"`
 	LastCheckedAt string         `json:"last_checked_at,omitempty"`
+
+	ASN         uint32 `json:"asn,omitempty"`
+	Org         string `json:"org,omitempty"`
+	LatencyMS   int64  `json:"latency_ms,omitempty"`
+	HTTPSOK     bool   `json:"https_ok,omitempty"`
+	UptimePct   int    `json:"uptime_pct,omitempty"`
+	AvgLatency  int64  `json:"avg_latency_ms,omitempty"`
+	FirstSeenAt string `json:"first_seen_at,omitempty"`
 }
 
 func (p Proxy) Address() string {
@@ -76,6 +85,8 @@ type DiscoveryResult struct {
 	Files        []SourceFile
 	SourceCounts map[string]int
 	ErrorCount   int
+	GistHits     int
+	GistFailures int
 }
 
 type LastRun struct {
@@ -92,6 +103,7 @@ type LastRun struct {
 	ErrorCount        int            `json:"error_count"`
 	SourceCounts      map[string]int `json:"source_counts"`
 	OutputCounts      map[string]int `json:"output_counts"`
+	Warnings          []string       `json:"warnings,omitempty"`
 }
 
 type StatsDB struct {
@@ -195,6 +207,27 @@ func mergeProxy(existing Proxy, next Proxy) Proxy {
 	}
 	if existing.Anonymity == "" || existing.Anonymity == AnonymityUnknown {
 		existing.Anonymity = next.Anonymity
+	}
+	if existing.LatencyMS == 0 {
+		existing.LatencyMS = next.LatencyMS
+	}
+	if existing.ASN == 0 {
+		existing.ASN = next.ASN
+	}
+	if existing.Org == "" {
+		existing.Org = next.Org
+	}
+	if !existing.HTTPSOK {
+		existing.HTTPSOK = next.HTTPSOK
+	}
+	if existing.UptimePct == 0 {
+		existing.UptimePct = next.UptimePct
+	}
+	if existing.AvgLatency == 0 {
+		existing.AvgLatency = next.AvgLatency
+	}
+	if existing.FirstSeenAt == "" {
+		existing.FirstSeenAt = next.FirstSeenAt
 	}
 	if next.LastCheckedAt != "" {
 		existing.LastCheckedAt = next.LastCheckedAt

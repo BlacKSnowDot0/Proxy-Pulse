@@ -33,8 +33,8 @@ func TestValidateCandidateHTTPEnrichesMetadata(t *testing.T) {
 	if proxy.ExitIP != "8.8.8.8" {
 		t.Fatalf("expected exit ip 8.8.8.8, got %s", proxy.ExitIP)
 	}
-	if proxy.CountryCode != "US" || proxy.CountryName != "United States" {
-		t.Fatalf("expected US country metadata, got %s / %s", proxy.CountryCode, proxy.CountryName)
+	if proxy.LatencyMS < 0 {
+		t.Fatalf("expected non-negative latency, got %d", proxy.LatencyMS)
 	}
 	if proxy.Anonymity != AnonymityElite {
 		t.Fatalf("expected elite anonymity, got %s", proxy.Anonymity)
@@ -141,19 +141,6 @@ func newHTTPValidatorFixture(t *testing.T, behavior httpProxyBehavior, directIP 
 	}))
 	t.Cleanup(directServer.Close)
 
-	geoServer := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		if !strings.HasPrefix(r.URL.Path, "/geo/") {
-			http.NotFound(w, r)
-			return
-		}
-		_ = json.NewEncoder(w).Encode(map[string]any{
-			"status":      "success",
-			"country":     "United States",
-			"countryCode": "US",
-		})
-	}))
-	t.Cleanup(geoServer.Close)
-
 	proxyServer := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodGet {
 			t.Fatalf("expected GET request, got %s", r.Method)
@@ -180,13 +167,13 @@ func newHTTPValidatorFixture(t *testing.T, behavior httpProxyBehavior, directIP 
 
 	cfg := Config{
 		ValidationTimeout:  2 * time.Second,
+		EnrichmentTimeout:  2 * time.Second,
 		UserAgent:          "proxy-pulse-test",
 		Concurrency:        1,
 		IPEchoURL:          "http://example.test/primary",
 		IPEchoURLPrimary:   "http://example.test/primary",
 		IPEchoURLSecondary: "http://example.test/secondary",
 		DirectIPEchoURL:    directServer.URL,
-		GEOIPURLTemplate:   geoServer.URL + "/geo/%s",
 		AnonCheckURL:       "http://example.test/anon",
 	}
 

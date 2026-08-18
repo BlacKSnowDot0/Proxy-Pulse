@@ -1,4 +1,4 @@
-package proxy
+﻿package proxy
 
 import (
 	"bufio"
@@ -21,10 +21,20 @@ type Validator struct {
 	cfg     Config
 	counter *RequestCounter
 
-	directIPOnce sync.Once
-	directIP     string
-	directIPErr  error
+	directIPMu        sync.Mutex
+	directIP          string
+	directIPFetched   bool
+	directIPErr       error
+	directIPAttempts  int
+
+	degraded atomic.Bool
 }
+
+const (
+	directIPRetriesPerCall = 2
+	directIPMaxAttempts    = 3
+	directIPRetryDelay     = 500 * time.Millisecond
+)
 
 type validationAttempt struct {
 	proxy  Proxy
@@ -40,9 +50,9 @@ func NewValidator(cfg Config, counter *RequestCounter) *Validator {
 	return &Validator{cfg: cfg, counter: counter}
 }
 
-func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]Proxy, int, int) {
+func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]Proxy, int, int, []ShardOutcome) {
 	if len(candidates) == 0 {
-		return nil, 0, 0
+		return nil, 0, 0, nil
 	}
 
 	workers := v.cfg.Concurrency
@@ -55,6 +65,7 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 
 	jobs := make(chan Candidate)
 	results := make(chan Proxy, len(candidates))
+	outcomes := make(chan ShardOutcome, len(candidates))
 	var wg sync.WaitGroup
 	var startedCount atomic.Int64
 	var completedCount atomic.Int64
@@ -99,7 +110,9 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 			startedCount.Add(1)
 			proxy, ok, err := v.ValidateCandidate(ctx, candidate)
 			completedCount.Add(1)
+			outcome := ShardOutcome{Address: candidate.Address(), OK: ok}
 			if err != nil {
+				outcomes <- outcome
 				if ctx.Err() != nil {
 					return
 				}
@@ -107,11 +120,14 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 				continue
 			}
 			if ok {
+				outcome.Protocol = proxy.Protocol.String()
+				outcome.LatencyMS = proxy.LatencyMS
 				validatedCount.Add(1)
-				log.Printf("validated proxy: %s via %s exit=%s anonymity=%s country=%s",
-					proxy.URI(), proxy.Protocol, proxy.ExitIP, proxy.Anonymity, proxy.CountryCode)
+				log.Printf("validated proxy: %s via %s exit=%s anonymity=%s latency=%dms",
+					proxy.URI(), proxy.Protocol, proxy.ExitIP, proxy.Anonymity, proxy.LatencyMS)
 				results <- proxy
 			}
+			outcomes <- outcome
 		}
 	}
 
@@ -133,13 +149,18 @@ func (v *Validator) ValidateAll(ctx context.Context, candidates []Candidate) ([]
 
 	wg.Wait()
 	close(results)
+	close(outcomes)
 
 	collected := make([]Proxy, 0, len(results))
 	for proxy := range results {
 		collected = append(collected, proxy)
 	}
+	outcomeList := make([]ShardOutcome, 0, len(outcomes))
+	for outcome := range outcomes {
+		outcomeList = append(outcomeList, outcome)
+	}
 
-	return mergeProxySlice(collected), int(completedCount.Load()), int(errorCount.Load())
+	return mergeProxySlice(collected), int(completedCount.Load()), int(errorCount.Load()), outcomeList
 }
 
 func (v *Validator) ValidateCandidate(ctx context.Context, candidate Candidate) (Proxy, bool, error) {
@@ -183,15 +204,20 @@ func (v *Validator) validateHTTP(ctx context.Context, candidate Candidate) (vali
 
 	directIP, err := v.getDirectIP(ctx)
 	if err != nil {
-		return validationAttempt{}, err
+		if ctx.Err() != nil {
+			return validationAttempt{}, ctx.Err()
+		}
+		if !v.degraded.Swap(true) {
+			log.Printf("direct ip echo unavailable (%v); continuing in degraded mode without direct-exit comparison", err)
+		}
+		directIP = ""
 	}
 
-	exitIP, reason := v.verifyHTTPProxyExit(ctx, candidate, primaryURL, secondaryURL, directIP)
+	exitIP, reason, latencyMS := v.verifyHTTPProxyExit(ctx, candidate, primaryURL, secondaryURL, directIP)
 	if reason != "" {
 		return validationAttempt{reason: reason}, nil
 	}
 
-	countryCode, countryName := v.lookupCountry(ctx, exitIP)
 	attempt := validationAttempt{
 		proxy: Proxy{
 			Protocol:      ProtocolHTTP,
@@ -199,9 +225,8 @@ func (v *Validator) validateHTTP(ctx context.Context, candidate Candidate) (vali
 			Port:          candidate.Port,
 			Sources:       candidate.Sources,
 			ExitIP:        exitIP,
-			CountryCode:   countryCode,
-			CountryName:   countryName,
 			Anonymity:     v.classifyHTTPAnonymity(ctx, candidate, directIP),
+			LatencyMS:     latencyMS,
 			LastCheckedAt: time.Now().UTC().Format(time.RFC3339),
 		},
 	}
@@ -219,15 +244,20 @@ func (v *Validator) validateSOCKS(ctx context.Context, candidate Candidate, prot
 
 	directIP, err := v.getDirectIP(ctx)
 	if err != nil {
-		return validationAttempt{}, err
+		if ctx.Err() != nil {
+			return validationAttempt{}, ctx.Err()
+		}
+		if !v.degraded.Swap(true) {
+			log.Printf("direct ip echo unavailable (%v); continuing in degraded mode without direct-exit comparison", err)
+		}
+		directIP = ""
 	}
 
-	exitIP, reason := v.verifySOCKSProxyExit(ctx, candidate, protocol, primaryURL, secondaryURL, directIP)
+	exitIP, reason, latencyMS := v.verifySOCKSProxyExit(ctx, candidate, protocol, primaryURL, secondaryURL, directIP)
 	if reason != "" {
 		return validationAttempt{reason: reason}, nil
 	}
 
-	countryCode, countryName := v.lookupCountry(ctx, exitIP)
 	attempt := validationAttempt{
 		proxy: Proxy{
 			Protocol:      protocol,
@@ -235,53 +265,56 @@ func (v *Validator) validateSOCKS(ctx context.Context, candidate Candidate, prot
 			Port:          candidate.Port,
 			Sources:       candidate.Sources,
 			ExitIP:        exitIP,
-			CountryCode:   countryCode,
-			CountryName:   countryName,
 			Anonymity:     AnonymityUnknown,
+			LatencyMS:     latencyMS,
 			LastCheckedAt: time.Now().UTC().Format(time.RFC3339),
 		},
 	}
 	return attempt, nil
 }
 
-func (v *Validator) verifyHTTPProxyExit(ctx context.Context, candidate Candidate, primaryURL *url.URL, secondaryURL *url.URL, directIP string) (string, string) {
+func (v *Validator) verifyHTTPProxyExit(ctx context.Context, candidate Candidate, primaryURL *url.URL, secondaryURL *url.URL, directIP string) (string, string, int64) {
+	probeStart := time.Now()
 	primaryIP, err := v.fetchEchoIPViaHTTPProxy(ctx, candidate, primaryURL)
 	if err != nil {
-		return "", "primary_probe_failed"
+		return "", "primary_probe_failed", 0
 	}
+	latencyMS := time.Since(probeStart).Milliseconds()
 
 	secondaryIP, err := v.fetchEchoIPViaHTTPProxy(ctx, candidate, secondaryURL)
 	if err != nil {
-		return "", "secondary_probe_failed"
+		return "", "secondary_probe_failed", 0
 	}
 
 	if primaryIP != secondaryIP {
-		return "", "exit_ip_mismatch"
+		return "", "exit_ip_mismatch", 0
 	}
-	if primaryIP == directIP {
-		return "", "direct_ip_match"
+	if directIP != "" && primaryIP == directIP {
+		return "", "direct_ip_match", 0
 	}
-	return primaryIP, ""
+	return primaryIP, "", latencyMS
 }
 
-func (v *Validator) verifySOCKSProxyExit(ctx context.Context, candidate Candidate, protocol Protocol, primaryURL *url.URL, secondaryURL *url.URL, directIP string) (string, string) {
+func (v *Validator) verifySOCKSProxyExit(ctx context.Context, candidate Candidate, protocol Protocol, primaryURL *url.URL, secondaryURL *url.URL, directIP string) (string, string, int64) {
+	probeStart := time.Now()
 	primaryIP, err := v.fetchEchoIPViaSOCKS(ctx, candidate, protocol, primaryURL)
 	if err != nil {
-		return "", "primary_probe_failed"
+		return "", "primary_probe_failed", 0
 	}
+	latencyMS := time.Since(probeStart).Milliseconds()
 
 	secondaryIP, err := v.fetchEchoIPViaSOCKS(ctx, candidate, protocol, secondaryURL)
 	if err != nil {
-		return "", "secondary_probe_failed"
+		return "", "secondary_probe_failed", 0
 	}
 
 	if primaryIP != secondaryIP {
-		return "", "exit_ip_mismatch"
+		return "", "exit_ip_mismatch", 0
 	}
-	if primaryIP == directIP {
-		return "", "direct_ip_match"
+	if directIP != "" && primaryIP == directIP {
+		return "", "direct_ip_match", 0
 	}
-	return primaryIP, ""
+	return primaryIP, "", latencyMS
 }
 
 func (v *Validator) validationEchoTargets() (*url.URL, *url.URL, error) {
@@ -305,20 +338,54 @@ func (v *Validator) validationEchoTargets() (*url.URL, *url.URL, error) {
 }
 
 func (v *Validator) getDirectIP(ctx context.Context) (string, error) {
-	v.directIPOnce.Do(func() {
-		directURL, err := url.Parse(strings.TrimSpace(v.cfg.DirectIPEchoURL))
-		if err != nil {
-			v.directIPErr = fmt.Errorf("parse DIRECT_IP_ECHO_URL: %w", err)
-			return
-		}
-		if directURL.Scheme == "" || directURL.Host == "" {
-			v.directIPErr = fmt.Errorf("parse DIRECT_IP_ECHO_URL: missing scheme or host")
-			return
-		}
+	v.directIPMu.Lock()
+	defer v.directIPMu.Unlock()
+	if v.directIPFetched {
+		return v.directIP, v.directIPErr
+	}
+	if v.directIPAttempts >= directIPMaxAttempts {
+		return "", v.directIPErr
+	}
 
-		v.directIP, v.directIPErr = v.fetchEchoIPDirect(ctx, directURL)
-	})
-	return v.directIP, v.directIPErr
+	directURL, err := url.Parse(strings.TrimSpace(v.cfg.DirectIPEchoURL))
+	if err != nil {
+		v.directIPFetched = true
+		v.directIPErr = fmt.Errorf("parse DIRECT_IP_ECHO_URL: %w", err)
+		return "", v.directIPErr
+	}
+	if directURL.Scheme == "" || directURL.Host == "" {
+		v.directIPFetched = true
+		v.directIPErr = fmt.Errorf("parse DIRECT_IP_ECHO_URL: missing scheme or host")
+		return "", v.directIPErr
+	}
+
+	var lastErr error
+	for attempt := 0; attempt < directIPRetriesPerCall && v.directIPAttempts < directIPMaxAttempts; attempt++ {
+		v.directIPAttempts++
+		ip, err := v.fetchEchoIPDirect(ctx, directURL)
+		if err == nil {
+			v.directIP = ip
+			v.directIPFetched = true
+			return v.directIP, nil
+		}
+		lastErr = err
+		if attempt < directIPRetriesPerCall-1 {
+			select {
+			case <-ctx.Done():
+				v.directIPErr = lastErr
+				return "", lastErr
+			case <-time.After(directIPRetryDelay):
+			}
+		}
+	}
+	v.directIPErr = lastErr
+	return "", lastErr
+}
+
+// Degraded reports whether validation proceeded without a confirmed direct IP
+// (direct echo endpoint unreachable after retries).
+func (v *Validator) Degraded() bool {
+	return v.degraded.Load()
 }
 
 func (v *Validator) fetchEchoIPDirect(ctx context.Context, targetURL *url.URL) (string, error) {
@@ -370,6 +437,7 @@ func (v *Validator) fetchEchoIPViaSOCKS(ctx context.Context, candidate Candidate
 	requestCtx, cancel := context.WithTimeout(ctx, v.cfg.ValidationTimeout)
 	defer cancel()
 
+	v.counter.Inc()
 	conn, err := v.openSOCKSTunnel(requestCtx, candidate.Address(), targetURL.Hostname(), targetURL.Port(), protocol)
 	if err != nil {
 		return "", err
@@ -387,7 +455,6 @@ func (v *Validator) fetchEchoIPViaSOCKS(ctx context.Context, candidate Candidate
 	if _, err := fmt.Fprintf(conn, "GET %s HTTP/1.1\r\nHost: %s\r\nUser-Agent: %s\r\nConnection: close\r\n\r\n", path, targetURL.Host, v.cfg.UserAgent); err != nil {
 		return "", err
 	}
-	v.counter.Inc()
 
 	req, _ := http.NewRequest(http.MethodGet, targetURL.String(), nil)
 	resp, err := http.ReadResponse(bufio.NewReader(conn), req)
@@ -425,77 +492,8 @@ func parsePublicIPv4Body(body []byte) (string, error) {
 	return ipv4.String(), nil
 }
 
-func (v *Validator) lookupCountry(ctx context.Context, ip string) (string, string) {
-	template := strings.TrimSpace(v.cfg.GEOIPURLTemplate)
-	if template == "" || strings.TrimSpace(ip) == "" {
-		return "", ""
-	}
-
-	escapedIP := url.PathEscape(ip)
-	target := template
-	switch {
-	case strings.Contains(target, "%s"):
-		target = fmt.Sprintf(target, escapedIP)
-	case strings.Contains(target, "{ip}"):
-		target = strings.ReplaceAll(target, "{ip}", escapedIP)
-	default:
-		target = strings.TrimRight(target, "/") + "/" + escapedIP
-	}
-
-	targetURL, err := url.Parse(target)
-	if err != nil || targetURL.Scheme == "" || targetURL.Host == "" {
-		return "", ""
-	}
-
-	client, transport := v.newHTTPClient(nil)
-	defer transport.CloseIdleConnections()
-
-	requestCtx, cancel := context.WithTimeout(ctx, v.cfg.ValidationTimeout)
-	defer cancel()
-
-	req, err := http.NewRequestWithContext(requestCtx, http.MethodGet, targetURL.String(), nil)
-	if err != nil {
-		return "", ""
-	}
-	req.Header.Set("User-Agent", v.cfg.UserAgent)
-
-	v.counter.Inc()
-	resp, err := client.Do(req)
-	if err != nil {
-		return "", ""
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		return "", ""
-	}
-
-	var payload struct {
-		Status      string `json:"status"`
-		Country     string `json:"country"`
-		CountryCode string `json:"countryCode"`
-	}
-	if err := json.NewDecoder(io.LimitReader(resp.Body, 4096)).Decode(&payload); err != nil {
-		return "", ""
-	}
-	if payload.Status != "" && payload.Status != "success" {
-		return "", ""
-	}
-	return strings.ToUpper(strings.TrimSpace(payload.CountryCode)), strings.TrimSpace(payload.Country)
-}
-
 func (v *Validator) classifyHTTPAnonymity(ctx context.Context, candidate Candidate, directIP string) AnonymityLevel {
-	anonURL := strings.TrimSpace(v.cfg.AnonCheckURL)
-	if anonURL == "" {
-		return AnonymityUnknown
-	}
-
-	targetURL, err := url.Parse(anonURL)
-	if err != nil || targetURL.Scheme == "" || targetURL.Host == "" {
-		return AnonymityUnknown
-	}
-
-	inspection, err := v.fetchProxyInspectionViaHTTP(ctx, candidate, targetURL)
+	inspection, err := v.fetchProxyInspection(ctx, candidate)
 	if err != nil {
 		return AnonymityUnknown
 	}
@@ -509,6 +507,43 @@ func (v *Validator) classifyHTTPAnonymity(ctx context.Context, candidate Candida
 	return AnonymityElite
 }
 
+func (v *Validator) fetchProxyInspection(ctx context.Context, candidate Candidate) (proxyInspection, error) {
+	targets := make([]string, 0, 2)
+	if anonURL := strings.TrimSpace(v.cfg.AnonCheckURL); anonURL != "" {
+		targets = append(targets, anonURL)
+	}
+	if secondary := strings.TrimSpace(v.cfg.AnonCheckURLSecondary); secondary != "" {
+		targets = append(targets, secondary)
+	}
+	if len(targets) == 0 {
+		return proxyInspection{}, errNoAnonEndpoint
+	}
+
+	var lastErr error
+	for _, target := range targets {
+		targetURL, err := url.Parse(target)
+		if err != nil || targetURL.Scheme == "" || targetURL.Host == "" {
+			lastErr = fmt.Errorf("invalid anon check url %q", target)
+			continue
+		}
+		inspection, err := v.fetchProxyInspectionViaHTTP(ctx, candidate, targetURL)
+		if err == nil {
+			return inspection, nil
+		}
+		lastErr = err
+	}
+	return proxyInspection{}, lastErr
+}
+
+var errNoAnonEndpoint = fmt.Errorf("no anonymity check endpoint configured")
+
+func (v *Validator) enrichmentTimeout() time.Duration {
+	if v.cfg.EnrichmentTimeout > 0 {
+		return v.cfg.EnrichmentTimeout
+	}
+	return v.cfg.ValidationTimeout
+}
+
 func (v *Validator) fetchProxyInspectionViaHTTP(ctx context.Context, candidate Candidate, targetURL *url.URL) (proxyInspection, error) {
 	proxyURL, err := url.Parse("http://" + candidate.Address())
 	if err != nil {
@@ -518,7 +553,7 @@ func (v *Validator) fetchProxyInspectionViaHTTP(ctx context.Context, candidate C
 	client, transport := v.newHTTPClient(proxyURL)
 	defer transport.CloseIdleConnections()
 
-	requestCtx, cancel := context.WithTimeout(ctx, v.cfg.ValidationTimeout)
+	requestCtx, cancel := context.WithTimeout(ctx, v.enrichmentTimeout())
 	defer cancel()
 
 	req, err := http.NewRequestWithContext(requestCtx, http.MethodGet, targetURL.String(), nil)

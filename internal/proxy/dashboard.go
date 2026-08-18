@@ -142,6 +142,7 @@ func dashboardOutputCounts(values map[string]int) map[string]int {
 		"socks4": 0,
 		"socks5": 0,
 		"all":    0,
+		"https":  0,
 	}
 	for key, value := range values {
 		counts[key] = value

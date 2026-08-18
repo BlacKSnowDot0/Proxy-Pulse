@@ -24,6 +24,7 @@ type publishView struct {
 	PublishedHTTP  int
 	PublishedS4    int
 	PublishedS5    int
+	PublishedHTTPS int
 	PublishedAll   int
 }
 
@@ -41,12 +42,16 @@ func PublishOutputs(cfg Config, proxies []Proxy) (map[string]int, error) {
 		"socks4": {},
 		"socks5": {},
 		"all":    {},
+		"https":  {},
 	}
 
 	for _, proxy := range proxies {
 		switch proxy.Protocol {
 		case ProtocolHTTP:
 			lines["http"] = append(lines["http"], proxy.Address())
+			if proxy.HTTPSOK {
+				lines["https"] = append(lines["https"], proxy.Address())
+			}
 		case ProtocolSOCKS4:
 			lines["socks4"] = append(lines["socks4"], proxy.Address())
 		case ProtocolSOCKS5:
@@ -85,9 +90,10 @@ func readOutputCounts(outputDir string) (map[string]int, error) {
 		"socks4": 0,
 		"socks5": 0,
 		"all":    0,
+		"https":  0,
 	}
 
-	for _, name := range []string{"http", "socks4", "socks5", "all"} {
+	for _, name := range []string{"http", "socks4", "socks5", "all", "https"} {
 		path := filepath.Join(outputDir, name+".txt")
 		data, err := os.ReadFile(path)
 		if err != nil {
@@ -123,6 +129,7 @@ func WriteReadme(outputDir string, stats StatsDB) error {
 		PublishedHTTP:  stats.LastRun.OutputCounts["http"],
 		PublishedS4:    stats.LastRun.OutputCounts["socks4"],
 		PublishedS5:    stats.LastRun.OutputCounts["socks5"],
+		PublishedHTTPS: stats.LastRun.OutputCounts["https"],
 		PublishedAll:   stats.LastRun.OutputCounts["all"],
 	}
 	if view.GeneratedAt == "" {
@@ -202,12 +209,16 @@ const readmeTemplate = `![Proxy Pulse](assets/banner.svg)
 | File | Description | Count |
 | --- | --- | ---: |
 | [http.txt](http.txt) | Validated HTTP proxies | {{.PublishedHTTP}} |
+| [https.txt](https.txt) | HTTP proxies with CONNECT tunnel support | {{.PublishedHTTPS}} |
 | [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | {{.PublishedS4}} |
 | [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | {{.PublishedS5}} |
 | [all.txt](all.txt) | Combined scheme-qualified list | {{.PublishedAll}} |
 | [stats.json](stats.json) | Machine-readable run database | 1 |
 | [docs/data/dashboard.json](docs/data/dashboard.json) | Machine-readable dashboard dataset | 1 |
 | [{{.DatasetURL}}]({{.DatasetURL}}) | Machine-readable validated proxy metadata | {{.PublishedAll}} |
+| [sources.txt](sources.txt) | Discovered source file URLs | fresh each run |
+| [data/sources.json](data/sources.json) | Discovered source database | capped at 2000 |
+| [data/known-good.json](data/known-good.json) | Persistent proxy reliability state | rolling |
 
 ## ⚙️ Workflow
 

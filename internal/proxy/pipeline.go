@@ -31,6 +31,13 @@ func DiscoverCandidates(ctx context.Context, cfg Config) (RunManifest, []Candida
 		StartedAt:    startedAt.Format(time.RFC3339),
 		Status:       "success",
 		SourceCounts: discovery.SourceCounts,
+		Salt:         shardSalt(startedAt),
+	}
+
+	if discovery.GistFailures > 0 && discovery.GistHits == 0 {
+		manifest.Warnings = append(manifest.Warnings, "gist search failed on all queries")
+	} else if discovery.GistHits == 0 && cfg.MaxGistsPerQuery > 0 {
+		manifest.Warnings = append(manifest.Warnings, "gist search returned no results")
 	}
 
 	var candidates []Candidate
@@ -46,24 +53,85 @@ func DiscoverCandidates(ctx context.Context, cfg Config) (RunManifest, []Candida
 		extracted := ExtractCandidates(content, file.Path, file.SourceURL)
 		manifest.CandidatesFound += len(extracted)
 		candidates = append(candidates, extracted...)
+		manifest.Sources = appendSourceRecord(manifest.Sources, SourceRecord{
+			Type:            file.SourceType,
+			ID:              file.SourceID,
+			URL:             file.SourceURL,
+			Path:            file.Path,
+			DownloadURL:     file.DownloadURL,
+			CandidatesFound: len(extracted),
+		})
 	}
 	log.Printf("extraction complete: filesScanned=%d rawCandidates=%d", manifest.FilesScanned, len(candidates))
 
 	merged, duplicatesRemoved := MergeCandidates(candidates)
 	manifest.DuplicatesRemoved = duplicatesRemoved
-	manifest.CandidateCount = len(merged)
 	manifest.RequestsMade = counter.Load()
 	manifest.DiscoveryFinished = time.Now().UTC().Format(time.RFC3339)
+
+	merged = applyFreshBudget(merged, cfg.MaxFreshCandidates)
+
+	kg, err := LoadKnownGood(knownGoodPath(cfg))
+	if err != nil {
+		log.Printf("known-good database unavailable (%v); continuing without survivors", err)
+	} else {
+		var injected int
+		merged, injected = kg.InjectSurvivors(merged, startedAt)
+		if injected > 0 {
+			log.Printf("injected known-good survivors: %d", injected)
+		}
+	}
+	manifest.CandidateCount = len(merged)
 
 	if manifest.ErrorCount > 0 {
 		manifest.Status = "success_with_errors"
 	}
 
-	log.Printf("candidate set prepared: dedupedCandidates=%d duplicatesRemoved=%d", len(merged), duplicatesRemoved)
+	log.Printf("candidate set prepared: dedupedCandidates=%d duplicatesRemoved=%d survivors=%d", len(merged), duplicatesRemoved, countSurvivors(merged))
 	return manifest, merged, nil
 }
 
-func ValidateShard(ctx context.Context, cfg Config, candidates []Candidate, shardIndex int, shardTotal int) (ShardResult, error) {
+func shardSalt(startedAt time.Time) string {
+	return startedAt.UTC().Format("2006-01-02")
+}
+
+func appendSourceRecord(records []SourceRecord, record SourceRecord) []SourceRecord {
+	for i := range records {
+		if records[i].DownloadURL == record.DownloadURL {
+			records[i].CandidatesFound += record.CandidatesFound
+			return records
+		}
+	}
+	return append(records, record)
+}
+
+func applyFreshBudget(candidates []Candidate, maxFresh int) []Candidate {
+	if maxFresh <= 0 || len(candidates) <= maxFresh {
+		return candidates
+	}
+	survivors := make([]Candidate, 0)
+	fresh := make([]Candidate, 0, maxFresh)
+	for _, candidate := range candidates {
+		if candidate.Survivor {
+			survivors = append(survivors, candidate)
+		} else if len(fresh) < maxFresh {
+			fresh = append(fresh, candidate)
+		}
+	}
+	return append(survivors, fresh...)
+}
+
+func countSurvivors(candidates []Candidate) int {
+	count := 0
+	for _, candidate := range candidates {
+		if candidate.Survivor {
+			count++
+		}
+	}
+	return count
+}
+
+func ValidateShard(ctx context.Context, cfg Config, candidates []Candidate, shardIndex int, shardTotal int, salt string) (ShardResult, error) {
 	if shardTotal < 1 {
 		return ShardResult{}, fmt.Errorf("shard total must be positive")
 	}
@@ -71,8 +139,8 @@ func ValidateShard(ctx context.Context, cfg Config, candidates []Candidate, shar
 		return ShardResult{}, fmt.Errorf("shard index %d out of range for total %d", shardIndex, shardTotal)
 	}
 
-	shardCandidates := SelectCandidatesForShard(candidates, shardIndex, shardTotal)
-	log.Printf("shard %d/%d assigned candidates=%d", shardIndex+1, shardTotal, len(shardCandidates))
+	shardCandidates := SelectCandidatesForShard(candidates, shardIndex, shardTotal, salt)
+	log.Printf("shard %d/%d assigned candidates=%d salt=%q", shardIndex+1, shardTotal, len(shardCandidates), salt)
 
 	counter := &RequestCounter{}
 	validator := NewValidator(cfg, counter)
@@ -83,14 +151,14 @@ func ValidateShard(ctx context.Context, cfg Config, candidates []Candidate, shar
 		defer cancel()
 	}
 
-	validated, checked, validationErrors := validator.ValidateAll(validationCtx, shardCandidates)
+	validated, checked, validationErrors, outcomes := validator.ValidateAll(validationCtx, shardCandidates)
 	status := "success"
 	if validationCtx.Err() == context.DeadlineExceeded {
 		status = "timeout"
 		log.Printf("shard %d/%d validation stage reached timeout after %s; returning partial results", shardIndex+1, shardTotal, cfg.ValidationStageTimeout)
 	}
-	log.Printf("shard %d/%d complete: assigned=%d checked=%d validated=%d errors=%d status=%s",
-		shardIndex+1, shardTotal, len(shardCandidates), checked, len(validated), validationErrors, status)
+	log.Printf("shard %d/%d complete: assigned=%d checked=%d validated=%d errors=%d status=%s degraded=%t",
+		shardIndex+1, shardTotal, len(shardCandidates), checked, len(validated), validationErrors, status, validator.Degraded())
 
 	return ShardResult{
 		ShardIndex:   shardIndex,
@@ -100,11 +168,24 @@ func ValidateShard(ctx context.Context, cfg Config, candidates []Candidate, shar
 		Validated:    len(validated),
 		ErrorCount:   validationErrors,
 		RequestsMade: counter.Load(),
+		Degraded:     validator.Degraded(),
 		Proxies:      validated,
+		Outcomes:     outcomes,
 	}, nil
 }
 
-func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) error {
+func FinalizeRun(ctx context.Context, cfg Config, manifest RunManifest, shardResults []ShardResult) error {
+	finishedAt := time.Now().UTC()
+	runWarnings := append([]string(nil), manifest.Warnings...)
+	for _, result := range shardResults {
+		if result.Degraded {
+			runWarnings = append(runWarnings, fmt.Sprintf("shard %d validated without direct-exit comparison", result.ShardIndex))
+		}
+	}
+	for _, warning := range runWarnings {
+		log.Printf("warning: %s", warning)
+	}
+
 	statsPath := filepath.Join(cfg.OutputDir, "stats.json")
 	stats, err := LoadStats(statsPath)
 	if err != nil {
@@ -116,7 +197,21 @@ func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) e
 	}
 
 	mergedProxies := mergeProxyResults(shardResults)
-	outputCounts, err := PublishOutputs(cfg, mergedProxies)
+
+	kgPath := knownGoodPath(cfg)
+	kg, err := LoadKnownGood(kgPath)
+	if err != nil {
+		log.Printf("known-good database unavailable: %v", err)
+		runWarnings = append(runWarnings, "known-good load failed")
+		kg = KnownGoodDB{Version: knownGoodVersion, Entries: map[string]KnownGoodEntry{}}
+	}
+
+	enrichCtx, enrichCancel := context.WithTimeout(ctx, 30*time.Minute)
+	enrichedProxies, enrichWarnings := EnrichProxies(enrichCtx, cfg, mergedProxies, kg)
+	enrichCancel()
+	runWarnings = append(runWarnings, enrichWarnings...)
+
+	outputCounts, err := PublishOutputs(cfg, enrichedProxies)
 	if err != nil {
 		return fmt.Errorf("publish outputs: %w", err)
 	}
@@ -125,9 +220,18 @@ func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) e
 		return fmt.Errorf("load published proxies: %w", err)
 	}
 
+	if err := updateKnownGoodForRun(kgPath, kg, shardResults, enrichedProxies, finishedAt); err != nil {
+		log.Printf("known-good update failed: %v", err)
+		runWarnings = append(runWarnings, "known-good update failed")
+	}
+	if err := publishSources(cfg, manifest, finishedAt); err != nil {
+		log.Printf("publish sources: %v", err)
+		runWarnings = append(runWarnings, "publish sources failed")
+	}
+
 	run := LastRun{
 		StartedAt:         manifest.StartedAt,
-		FinishedAt:        time.Now().UTC().Format(time.RFC3339),
+		FinishedAt:        finishedAt.Format(time.RFC3339),
 		Status:            manifest.Status,
 		RequestsMade:      manifest.RequestsMade + sumShardRequests(shardResults),
 		SourcesScanned:    manifest.SourcesScanned,
@@ -139,6 +243,7 @@ func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) e
 		ErrorCount:        manifest.ErrorCount + sumShardErrors(shardResults),
 		SourceCounts:      manifest.SourceCounts,
 		OutputCounts:      outputCounts,
+		Warnings:          runWarnings,
 	}
 
 	switch {
@@ -162,11 +267,12 @@ func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) e
 		return fmt.Errorf("ensure banner: %w", err)
 	}
 
-	log.Printf("finalize complete: shards=%d checked=%d validated=%d requests=%d http=%d socks4=%d socks5=%d all=%d",
+	log.Printf("finalize complete: shards=%d checked=%d validated=%d requests=%d knownGood=%d http=%d socks4=%d socks5=%d all=%d",
 		len(shardResults),
 		run.ProxiesChecked,
 		run.Validated,
 		run.RequestsMade,
+		len(kg.Entries),
 		run.OutputCounts["http"],
 		run.OutputCounts["socks4"],
 		run.OutputCounts["socks5"],
@@ -175,19 +281,37 @@ func FinalizeRun(cfg Config, manifest RunManifest, shardResults []ShardResult) e
 	return nil
 }
 
-func SelectCandidatesForShard(candidates []Candidate, shardIndex int, shardTotal int) []Candidate {
+func updateKnownGoodForRun(path string, kg KnownGoodDB, shardResults []ShardResult, validated []Proxy, finishedAt time.Time) error {
+	outcomes := make([]ShardOutcome, 0)
+	for _, result := range shardResults {
+		outcomes = append(outcomes, result.Outcomes...)
+	}
+
+	kg.UpdateForRun(outcomes, validated, finishedAt)
+	pruned := kg.Prune(finishedAt)
+	if pruned > 0 {
+		log.Printf("known-good pruned %d entries", pruned)
+	}
+	return SaveKnownGood(path, kg)
+}
+
+func SelectCandidatesForShard(candidates []Candidate, shardIndex int, shardTotal int, salt string) []Candidate {
 	out := make([]Candidate, 0, len(candidates)/max(1, shardTotal)+1)
 	for _, candidate := range candidates {
-		if shardForCandidate(candidate, shardTotal) == shardIndex {
+		if shardForCandidate(candidate, shardTotal, salt) == shardIndex {
 			out = append(out, candidate)
 		}
 	}
 	return out
 }
 
-func shardForCandidate(candidate Candidate, shardTotal int) int {
+func shardForCandidate(candidate Candidate, shardTotal int, salt string) int {
 	hasher := fnv.New32a()
 	_, _ = hasher.Write([]byte(candidate.Address()))
+	if salt != "" {
+		_, _ = hasher.Write([]byte("|"))
+		_, _ = hasher.Write([]byte(salt))
+	}
 	return int(hasher.Sum32() % uint32(shardTotal))
 }
 

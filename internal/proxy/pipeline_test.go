@@ -1,6 +1,7 @@
 package proxy
 
 import (
+	"context"
 	"os"
 	"path/filepath"
 	"testing"
@@ -16,7 +17,7 @@ func TestSelectCandidatesForShardPartitionsAllCandidates(t *testing.T) {
 
 	seen := make(map[string]struct{})
 	for shard := 0; shard < 3; shard++ {
-		for _, candidate := range SelectCandidatesForShard(candidates, shard, 3) {
+		for _, candidate := range SelectCandidatesForShard(candidates, shard, 3, "2026-08-18") {
 			key := candidate.Address()
 			if _, ok := seen[key]; ok {
 				t.Fatalf("candidate %s assigned to multiple shards", key)
@@ -27,6 +28,38 @@ func TestSelectCandidatesForShardPartitionsAllCandidates(t *testing.T) {
 
 	if len(seen) != len(candidates) {
 		t.Fatalf("expected all candidates assigned, got %d of %d", len(seen), len(candidates))
+	}
+}
+
+func TestShardSaltRedistributesCandidates(t *testing.T) {
+	candidates := []Candidate{
+		{Host: "1.1.1.1", Port: 80},
+		{Host: "2.2.2.2", Port: 80},
+		{Host: "3.3.3.3", Port: 80},
+		{Host: "4.4.4.4", Port: 80},
+		{Host: "5.5.5.5", Port: 80},
+		{Host: "6.6.6.6", Port: 80},
+	}
+
+	first := make(map[string]int)
+	for _, candidate := range candidates {
+		first[candidate.Address()] = shardForCandidate(candidate, 16, "2026-08-18")
+	}
+
+	moved := 0
+	for _, candidate := range candidates {
+		if shardForCandidate(candidate, 16, "2026-08-19") != first[candidate.Address()] {
+			moved++
+		}
+	}
+	if moved == 0 {
+		t.Fatalf("expected salt change to redistribute candidates")
+	}
+
+	for _, candidate := range candidates {
+		if shardForCandidate(candidate, 16, "2026-08-18") != first[candidate.Address()] {
+			t.Fatalf("expected stable assignment for same salt")
+		}
 	}
 }
 
@@ -47,7 +80,7 @@ func TestMergeProxyResultsDeduplicates(t *testing.T) {
 
 func TestFinalizeRunWritesDashboardData(t *testing.T) {
 	dir := t.TempDir()
-	cfg := Config{OutputDir: dir}
+	cfg := Config{OutputDir: dir, GeoIPDisabled: true, HTTPSProbeURL: "", UserAgent: "proxy-pulse-test", EnrichmentTimeout: 0, ValidationTimeout: 0}
 	manifest := RunManifest{
 		StartedAt:         "2026-03-18T00:00:00Z",
 		Status:            "success",
@@ -64,6 +97,11 @@ func TestFinalizeRunWritesDashboardData(t *testing.T) {
 			Checked:      3,
 			Validated:    2,
 			RequestsMade: 5,
+			Outcomes: []ShardOutcome{
+				{Address: "1.1.1.1:80", OK: true, Protocol: "http"},
+				{Address: "2.2.2.2:1080", OK: true, Protocol: "socks5"},
+				{Address: "3.3.3.3:8080", OK: false},
+			},
 			Proxies: []Proxy{
 				{Protocol: ProtocolHTTP, Host: "1.1.1.1", Port: 80},
 				{Protocol: ProtocolSOCKS5, Host: "2.2.2.2", Port: 1080},
@@ -71,7 +109,7 @@ func TestFinalizeRunWritesDashboardData(t *testing.T) {
 		},
 	}
 
-	if err := FinalizeRun(cfg, manifest, shards); err != nil {
+	if err := FinalizeRun(context.Background(), cfg, manifest, shards); err != nil {
 		t.Fatalf("finalize run: %v", err)
 	}
 
@@ -101,5 +139,24 @@ func TestFinalizeRunWritesDashboardData(t *testing.T) {
 	}
 	if _, err := os.Stat(filepath.Join(dir, "docs", "data", "proxies.json")); err != nil {
 		t.Fatalf("expected proxies dataset to exist: %v", err)
+	}
+
+	kg, err := LoadKnownGood(filepath.Join(dir, "data", "known-good.json"))
+	if err != nil {
+		t.Fatalf("load known-good: %v", err)
+	}
+	if len(kg.Entries) != 2 {
+		t.Fatalf("expected 2 known-good entries, got %d", len(kg.Entries))
+	}
+	entry := kg.Entries["http://1.1.1.1:80"]
+	if entry.Results != "1" || entry.LastPass == "" {
+		t.Fatalf("expected new known-good entry with success streak, got %+v", entry)
+	}
+
+	if _, err := os.Stat(filepath.Join(dir, "data", "sources.json")); err != nil {
+		t.Fatalf("expected sources database to exist: %v", err)
+	}
+	if _, err := os.Stat(filepath.Join(dir, "sources.txt")); err != nil {
+		t.Fatalf("expected sources list to exist: %v", err)
 	}
 }
