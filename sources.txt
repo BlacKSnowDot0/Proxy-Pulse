@@ -189,6 +189,7 @@ https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/count
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/ar/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/ar/http/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/ar/https/data.txt
+https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/ar/socks4/data.txt
 https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/http.txt
 https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/socks4.txt
 https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/socks5.txt
@@ -351,6 +352,10 @@ https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/ba/socks4.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/bd/http.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/bd/socks4.txt
+https://raw.githubusercontent.com/ebrasha/abdal-proxy-hub/main/http-proxy-list-by-EbraSha.txt
+https://raw.githubusercontent.com/ebrasha/abdal-proxy-hub/main/https-proxy-list-by-EbraSha.txt
+https://raw.githubusercontent.com/ebrasha/abdal-proxy-hub/main/socks4-proxy-list-by-EbraSha.txt
+https://raw.githubusercontent.com/ebrasha/abdal-proxy-hub/main/socks5-proxy-list-by-EbraSha.txt
 https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/V2Ray-Config-By-EbraSha.txt
 https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/mixed-protocol-chunks/EbraSha-Mixed-Config-001.txt
 https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/mixed-protocol-chunks/EbraSha-Mixed-Config-002.txt
@@ -419,6 +424,7 @@ https://raw.githubusercontent.com/estr0gen/mullvad-socks5-txt/main/countries/ca_
 https://raw.githubusercontent.com/eyepra/taCoV-edoCgneMgneM/master/LICENSES/go-plist-BSD-2-Clause.txt
 https://raw.githubusercontent.com/eyepra/taCoV-edoCgneMgneM/master/LICENSES/quectel-qmi-go-MIT.txt
 https://raw.githubusercontent.com/flyeyas/proxy-forge/main/requirements.txt
+https://raw.githubusercontent.com/gc1dk/Chatgpt-Proxy/main/LICENSE.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-http-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-http-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-http-proxy-list/main/socks5.txt
@@ -437,6 +443,12 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/free-proxy-feed/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-proxy-pool-2026/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-proxy-pool-2026/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-proxy-pool-2026/main/socks5.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/http-proxy-feed/main/http.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/http-proxy-feed/main/socks4.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/http-proxy-feed/main/socks5.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-st-bulk-list/main/http.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-st-bulk-list/main/socks4.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-st-bulk-list/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-st-free-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-st-free-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-st-free-list/main/socks5.txt
@@ -637,6 +649,7 @@ https://raw.githubusercontent.com/mzyui/proxy-list/main/output/by-country/cn-soc
 https://raw.githubusercontent.com/mzyui/proxy-list/main/output/by-country/co-http.txt
 https://raw.githubusercontent.com/mzyui/proxy-list/main/output/by-country/co-socks4.txt
 https://raw.githubusercontent.com/mzyui/proxy-list/main/output/by-country/de-http.txt
+https://raw.githubusercontent.com/neuronaline/pagefetch/master/requirements.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_direct.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_gfwlist.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_proxy.txt
@@ -718,6 +731,15 @@ https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elit
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/https/https.csv
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/https/https.json
 https://raw.githubusercontent.com/rix4uni/fresh-proxy-list/main/requirements.txt
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS.txt
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4.txt
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5.txt
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY.txt
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_BASE64.txt
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt
 https://raw.githubusercontent.com/rtwo2/FastNodes/main/ProxyCollector/bogons.txt
 https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/continents/Africa.txt
 https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/continents/Africa_part2.txt
@@ -782,6 +804,7 @@ https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/socks
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/proxies.txt
 https://raw.githubusercontent.com/themiralay/Proxy-List-World/master/data.txt
 https://raw.githubusercontent.com/tricrck/working-public-proxies/main/requirements.txt
+https://raw.githubusercontent.com/txltedxgod/web-scraping-cluster/main/requirements.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/http.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/https.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/proxylist.csv
