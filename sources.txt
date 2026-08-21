@@ -455,6 +455,7 @@ https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/https-proxies
 https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/socks4-proxies.txt
 https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/socks5-proxies.txt
 https://raw.githubusercontent.com/darkvibez456/mtproto-proxy-auto/main/proxies.txt
+https://raw.githubusercontent.com/darkvibez456/proxyvault/main/requirements.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/ae/http.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/ae/socks4.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/ae/socks5.txt
@@ -717,6 +718,7 @@ https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/by-country/BF.
 https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/by-country/BG.txt
 https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/by-country/BI.txt
 https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/by-country/BJ.txt
+https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/by-country/BO.txt
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/mix.txt
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/shadowsocks
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/shadowsocks.txt
@@ -739,6 +741,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CH/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CI/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CN/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CO/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CZ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DK/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DO/proxies.txt
@@ -1115,6 +1118,7 @@ https://raw.githubusercontent.com/styles01/StackChan-OpenClaw-Hermes/main/archiv
 https://raw.githubusercontent.com/styles01/StackChan-OpenClaw-Hermes/main/archive/architecture-a/rosie-node/main/CMakeLists.txt
 https://raw.githubusercontent.com/styles01/StackChan-OpenClaw-Hermes/main/research/http-endpoint-session-behavior.md
 https://raw.githubusercontent.com/styles01/StackChan-OpenClaw-Hermes/main/test-harness/STACKCHAN_HANDSHAKE.txt
+https://raw.githubusercontent.com/sujit-codezen/GoogleMapScrapper/main/requirements.txt
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/http_proxies.csv
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/http_proxies.json
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/http_proxies.txt
@@ -1165,6 +1169,8 @@ https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Coun
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AO/https.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/http.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/https.txt
+https://raw.githubusercontent.com/watchttvv/free-proxy-list/main/proxy.txt
+https://raw.githubusercontent.com/watchttvv/free-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/woahwhattheheck/kite-mouth-help/main/COMMANDS/HOW.txt
 https://raw.githubusercontent.com/woahwhattheheck/kite-mouth-help/main/COMMANDS/RECEIPTS/driveprobe1.txt
 https://raw.githubusercontent.com/woahwhattheheck/kite-mouth-help/main/COMMANDS/RECEIPTS/inbox.txt
