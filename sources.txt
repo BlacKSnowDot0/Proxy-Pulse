@@ -90,6 +90,7 @@ https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bri
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/webtunnel_ipv6_tested.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/all_configs.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-08-21.txt
+https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-08-22.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batches/sni_v2ray/batch_001.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batches/sni_v2ray/batch_002.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batches/sni_v2ray/batch_003.txt
@@ -646,6 +647,9 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/checked-socks-proxies/main/socks5
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-endpoint-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-endpoint-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-endpoint-list/main/socks5.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/free-global-proxies/main/http.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/free-global-proxies/main/socks4.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/free-global-proxies/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-http-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-http-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-http-proxy-list/main/socks5.txt
@@ -1109,6 +1113,8 @@ https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/continents/Asia_part1
 https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/continents/Asia_part16.txt
 https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/continents/Asia_part17.txt
 https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/continents/Asia_part18.txt
+https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/continents/Asia_part19.txt
+https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/continents/Asia_part2.txt
 https://raw.githubusercontent.com/sakha1370/OpenRay/main/BrokenSource.txt
 https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/country/AE.txt
 https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/country/AL.txt
@@ -1177,6 +1183,13 @@ https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/socks
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/socks5_proxies.json
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/socks5_proxies.txt
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/proxies.txt
+https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/fastest.txt
+https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/hysteria2.txt
+https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/podpiska.txt
+https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/ss.txt
+https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/trojan.txt
+https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/vless.txt
+https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/vmess.txt
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/requirements.txt
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/src/masenergy/prompts/baseline_solver.txt
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/src/masenergy/prompts/critic.txt
