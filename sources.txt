@@ -135,6 +135,7 @@ https://raw.githubusercontent.com/Flirexa/flirexa/main/requirements-runtime-boot
 https://raw.githubusercontent.com/Flirexa/flirexa/main/requirements.txt
 https://raw.githubusercontent.com/HankNovic/ProxyClean/main/SOCKS5.txt
 https://raw.githubusercontent.com/HankNovic/ProxyClean/main/SOCKS5_RAW.txt
+https://raw.githubusercontent.com/HeylonNHP/openai-to-anthropic-proxy/master/proxy.json-guide.md
 https://raw.githubusercontent.com/Ian-Lusule/Proxies/main/proxies/all_proxies.txt
 https://raw.githubusercontent.com/Ian-Lusule/Proxies/main/proxies/http.txt
 https://raw.githubusercontent.com/Ian-Lusule/Proxies/main/proxies/socks4.txt
@@ -225,6 +226,13 @@ https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DE.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DK.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DO.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/EC.txt
+https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/hy2.txt
+https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/mtproto.txt
+https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/shadowsocks.txt
+https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/trojan.txt
+https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/tuic.txt
+https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/vless.txt
+https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/wireguard.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/all/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/badges/http.json
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/badges/https.json
@@ -838,6 +846,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IN/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IQ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/JP/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KH/proxies.txt
+https://raw.githubusercontent.com/its-soloz/proxychk-bot/main/requirements.txt
 https://raw.githubusercontent.com/iwh3n/tg-proxy/main/proxys/All_Proxys.txt
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/27/18-00/proxies.txt
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/28/00-00/proxies.txt
@@ -1241,6 +1250,9 @@ https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/proxylist.json
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/proxylist.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/socks4.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/socks5.txt
+https://raw.githubusercontent.com/vantioai/vantio-open-core/main/docs/specs/WRAP_NODE_HTTP2_2026-08-15.md
+https://raw.githubusercontent.com/vantioai/vantio-open-core/main/docs/specs/WRAP_UNDICI_AIOHTTP_2026-08-14.md
+https://raw.githubusercontent.com/vantioai/vantio-open-core/main/extensions/vantio-optics/LICENSE.txt
 https://raw.githubusercontent.com/vinhjaxt/cloudwait/main/docs/superpowers/plans/2026-05-11-rust-http-reverse-proxy.md
 https://raw.githubusercontent.com/vinhjaxt/cloudwait/main/docs/superpowers/specs/2026-05-11-rust-http-reverse-proxy-design.md
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AE/http.txt
