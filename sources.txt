@@ -134,6 +134,8 @@ https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/subscriptio
 https://raw.githubusercontent.com/Flirexa/flirexa/main/requirements-dev.txt
 https://raw.githubusercontent.com/Flirexa/flirexa/main/requirements-runtime-bootstrap.txt
 https://raw.githubusercontent.com/Flirexa/flirexa/main/requirements.txt
+https://raw.githubusercontent.com/Gegaremant/TG-Proxy/master/SNI_list.txt
+https://raw.githubusercontent.com/Gegaremant/TG-Proxy/master/packaging/version_info.txt
 https://raw.githubusercontent.com/HankNovic/ProxyClean/main/SOCKS5.txt
 https://raw.githubusercontent.com/HankNovic/ProxyClean/main/SOCKS5_RAW.txt
 https://raw.githubusercontent.com/HeylonNHP/openai-to-anthropic-proxy/master/proxy.json-guide.md
@@ -166,6 +168,22 @@ https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/trust-page/tru
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/trust-page/trust/hostdata-azure.txt
 https://raw.githubusercontent.com/MSSATANASS/x402-validator-tools/main/requirements.txt
 https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/docs/examples/proxy_advise_before_meeting.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/docs/examples/proxy_contest.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/docs/features/en/proxy-voting.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/docs/features/proxy-voting.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/open_proxy_mcp/data/asset_managers/policies/open_proxy_v1.json
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/open_proxy_mcp/data/guideline/open-proxy-guideline.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/architecture/proxy-voting-decision-tree.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/architecture/proxy_advise_word_report_design.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/architecture/proxy_advise_word_report_spec.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/archive/analysis/proxy_contest-tool-검증-예시.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/archive/audits/260503_2330_audit_proxy_contest_baseline.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/archive/audits/260504_0028_audit_proxy_advise_rename_regression.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/archive/audits/260504_2200_audit_proxy_advise_framework_iter1-8.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/archive/entities/OpenProxy-MCP.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/decisions/260507_2330_decision_httpx-connection-pool.md
+https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/decisions/open-proxy-guideline.md
 https://raw.githubusercontent.com/MengMengCode/VoCat/master/LICENSES/go-plist-BSD-2-Clause.txt
 https://raw.githubusercontent.com/MengMengCode/VoCat/master/LICENSES/quectel-qmi-go-MIT.txt
 https://raw.githubusercontent.com/MixCoatl-44/Proxy-Scanner/main/socks5_sources_status.json
@@ -247,6 +265,7 @@ https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/count
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/af/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/af/http/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/af/https/data.txt
+https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/af/socks5/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/al/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/al/http/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/al/https/data.txt
@@ -585,6 +604,7 @@ https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/mixed-prot
 https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/mixed-protocol-chunks/EbraSha-Mixed-Config-013.txt
 https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/mixed-protocol-chunks/EbraSha-Mixed-Config-014.txt
 https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/mixed-protocol-chunks/EbraSha-Mixed-Config-015.txt
+https://raw.githubusercontent.com/efebilici/reddit-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/ejimenezperformance/elbow-injury-risk-validation/main/outputs/statistical_tests.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/AE/http_AE_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/AE/phttp_AE_checked.txt
