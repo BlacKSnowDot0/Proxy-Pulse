@@ -93,6 +93,7 @@ https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bri
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/all_configs.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-08-21.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-08-22.txt
+https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-08-24.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batches/sni_v2ray/batch_001.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batches/sni_v2ray/batch_002.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batches/sni_v2ray/batch_003.txt
@@ -1314,6 +1315,13 @@ https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/ss.txt
 https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/trojan.txt
 https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/vless.txt
 https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/public/vmess.txt
+https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-00635-t0.7-round1-2026-08-24T122645.397267+0000.txt
+https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-00635-t1.0-round0-2026-08-24T121835.019775+0000.txt
+https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-01123-t0.2-round0-2026-08-24T121456.007130+0000.txt
+https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-01123-t0.7-round0-2026-08-24T121712.103001+0000.txt
+https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-01194-t1.0-round0-2026-08-24T121948.844750+0000.txt
+https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-01252-t0.2-round0-2026-08-24T121524.642613+0000.txt
+https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-01252-t0.7-round0-2026-08-24T121741.511832+0000.txt
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/requirements.txt
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/src/masenergy/prompts/baseline_solver.txt
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/src/masenergy/prompts/critic.txt
