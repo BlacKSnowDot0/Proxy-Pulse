@@ -330,6 +330,8 @@ https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Azer
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bahamas.txt
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bahrain.txt
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bangladesh.txt
+https://raw.githubusercontent.com/Supernova-Labs-Org/impulse/master/docs-requirements.txt
+https://raw.githubusercontent.com/Supernova-Labs-Org/impulse/master/docs/protocols/http3.md
 https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/requirements.txt
 https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/verified/proxy_all_tme_verified.txt
 https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/verified/proxy_all_verified.json
@@ -569,6 +571,15 @@ https://raw.githubusercontent.com/cmahmud/proxies/main/archive/2026-08-18/134847
 https://raw.githubusercontent.com/cmahmud/proxies/main/archive/2026-08-18/144907-alive.txt
 https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/http-proxies.txt
 https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/https-proxies.txt
+https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/checked/all/all-proxies.txt
+https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/checked/anonymity/elite/elite-proxies.txt
+https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/checked/latency/fast/fast-proxies.txt
+https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/checked/protocols/http/http-proxies.txt
+https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/checked/protocols/https/https-proxies.txt
+https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/unchecked/http-proxies.txt
+https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/unchecked/https-proxies.txt
+https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/unchecked/socks4-proxies.txt
+https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/unchecked/socks5-proxies.txt
 https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/socks4-proxies.txt
 https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/socks5-proxies.txt
 https://raw.githubusercontent.com/darkvibez456/mtproto-proxy-auto/main/proxies.txt
@@ -856,6 +867,8 @@ https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/shadowsoc
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/trojan.txt
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vless.txt
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vmess.txt
+https://raw.githubusercontent.com/icyw123/opencode-proxy-plugin/main/docs/superpowers/plans/2026-08-24-opencode-proxy-plugin.md
+https://raw.githubusercontent.com/icyw123/opencode-proxy-plugin/main/docs/superpowers/specs/2026-08-24-opencode-provider-proxy-plugin-design.md
 https://raw.githubusercontent.com/ip2location/ip2proxy-laravel/master/license.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/all-proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AE/proxies.txt
