@@ -1,3 +1,4 @@
+https://raw.githubusercontent.com/0xazanul/cronos-airdrop-poc/main/b_qr.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/output.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/proxies.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/sources.txt
@@ -147,6 +148,7 @@ https://raw.githubusercontent.com/IoTAiTech/MC-GPT/main/docs/llms.txt
 https://raw.githubusercontent.com/IoTAiTech/MC-GPT/main/docs/robots.txt
 https://raw.githubusercontent.com/IoTAiTech/MC-GPT/main/llms.txt
 https://raw.githubusercontent.com/IoTAiTech/MC-GPT/main/robots.txt
+https://raw.githubusercontent.com/JoseLVillaronga/tech-vllm/main/requirements.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/COPYRIGHT.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/LICENSE.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/LittleProxy_Request_Handling_Architecture.md
@@ -903,6 +905,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/HK/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/HR/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/ID/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IE/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IL/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IN/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IQ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/JP/proxies.txt
@@ -1409,6 +1412,16 @@ https://raw.githubusercontent.com/xyzs996/free-proxy-health-list/main/proxies/co
 https://raw.githubusercontent.com/xyzs996/free-proxy-health-list/main/proxies/countries/ao/data.txt
 https://raw.githubusercontent.com/xyzs996/free-proxy-health-list/main/proxies/countries/ar/data.txt
 https://raw.githubusercontent.com/xyzs996/free-proxy-health-list/main/proxies/countries/at/data.txt
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/baseline-browser-mapping/LICENSE.txt
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/jsesc/LICENSE-MIT.txt
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/typescript/LICENSE.txt
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/typescript/ThirdPartyNoticeText.txt
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/undici/docs/docs/api/EnvHttpProxyAgent.md
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/undici/docs/docs/api/ProxyAgent.md
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/undici/docs/docs/api/Socks5ProxyAgent.md
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/undici/docs/docs/best-practices/proxy.md
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/whatwg-encoding/LICENSE.txt
+https://raw.githubusercontent.com/yashh127/acdyon-scraper-pipeline/main/node_modules/whatwg-mimetype/LICENSE.txt
 https://raw.githubusercontent.com/yesdevnull/trenchcoat/main/cmd/trenchcoat/help.txt
 https://raw.githubusercontent.com/yoohaemin/opencodex/main/devlog/_chase/20_cli-proxy-api.md
 https://raw.githubusercontent.com/yoohaemin/opencodex/main/devlog/_fin/140_remaining-provider-ports/11_phase1_vertex-http-hardening.md
