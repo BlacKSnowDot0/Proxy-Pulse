@@ -228,12 +228,15 @@ https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AL.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AM.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AO.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AR.txt
+https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AT.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AU.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BA.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BD.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BG.txt
+https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BO.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BR.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BW.txt
+https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BY.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CA.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CH.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CL.txt
@@ -441,6 +444,7 @@ https://raw.githubusercontent.com/afr0700/ProxyList/main/rawProxyList.txt
 https://raw.githubusercontent.com/afrcloud-net/ProxyList-Scaner/main/ProxyList.txt
 https://raw.githubusercontent.com/afrcloud-net/ProxyList-Scaner/main/kvProxyList.json
 https://raw.githubusercontent.com/afrcloud-net/ProxyList-Scaner/main/rawProxyList.txt
+https://raw.githubusercontent.com/ahang39/router/main/all.txt
 https://raw.githubusercontent.com/akbarali123A/proxy_scraper/main/https_proxies.txt
 https://raw.githubusercontent.com/akbarali123A/proxy_scraper/main/requirements.txt
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/requirements.txt
@@ -866,8 +870,10 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CA/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CG/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CH/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CI/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CL/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CN/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CO/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CY/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CZ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DK/proxies.txt
@@ -924,6 +930,7 @@ https://raw.githubusercontent.com/krokmazagaga/http-proxy-list/main/http.txt
 https://raw.githubusercontent.com/krokmazagaga/http-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/DCO.txt
 https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/etc/license.txt
+https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/kroxylicious-api/etc/asf-license.txt
 https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/kroxylicious-app/src/main/resources/banner.txt
 https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/kroxylicious-app/src/main/resources/license.txt
 https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/kroxylicious-filter-archetype/src/test/resources/projects/test/goal.txt
@@ -1334,6 +1341,12 @@ https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Coun
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AO/https.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/http.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/https.txt
+https://raw.githubusercontent.com/vpnhood/VpnHood/develop/docs/ProxyServerManager-Update.md
+https://raw.githubusercontent.com/vpnhood/VpnHood/develop/samples/samples.txt
+https://raw.githubusercontent.com/vpnhood/VpnHood/develop/src/Apps/Client.Android.Google/Resources/AboutResources.txt
+https://raw.githubusercontent.com/vpnhood/VpnHood/develop/src/Apps/Client.Android.Web/Resources/AboutResources.txt
+https://raw.githubusercontent.com/vpnhood/VpnHood/develop/src/Apps/Connect.Android.Google/Resources/AboutResources.txt
+https://raw.githubusercontent.com/vpnhood/VpnHood/develop/src/Apps/Connect.Android.Web/Resources/AboutResources.txt
 https://raw.githubusercontent.com/wangjinglin0905-gif/mitoxyperilysis-crc-evidence-chain/main/analysis/figure_sessions/main_figure_sessionInfo.txt
 https://raw.githubusercontent.com/wangjinglin0905-gif/mitoxyperilysis-crc-evidence-chain/main/analysis/figure_sessions/supplementary_figure_sessionInfo.txt
 https://raw.githubusercontent.com/wangjinglin0905-gif/mitoxyperilysis-crc-evidence-chain/main/analysis/p0_results/calibration_limma_voom_sessionInfo.txt
