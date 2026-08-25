@@ -299,6 +299,8 @@ https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DE.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DK.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DO.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/EC.txt
+https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/ES.txt
+https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/FR.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/hy2.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/mtproto.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/shadowsocks.txt
@@ -1295,6 +1297,7 @@ https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elit
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/http/http.txt
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/https/https.csv
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/https/https.json
+https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/https/https.txt
 https://raw.githubusercontent.com/rix4uni/fresh-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS.txt
 https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt
@@ -1443,6 +1446,13 @@ https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Con
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/src/masenergy/prompts/worker.txt
 https://raw.githubusercontent.com/tdurieux/anonymous_github/main/public/robots.txt
 https://raw.githubusercontent.com/themiralay/Proxy-List-World/master/data.txt
+https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/proxies.txt
+https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/requirements.txt
+https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/working_proxies.txt
+https://raw.githubusercontent.com/tox-dev/peryx/main/crates/peryx/tests/corpus/availability-seeds.txt
+https://raw.githubusercontent.com/tox-dev/peryx/main/site/.codespell-ignore-words.txt
+https://raw.githubusercontent.com/tox-dev/peryx/main/site/content/core/operations/serve-https.md
+https://raw.githubusercontent.com/tox-dev/peryx/main/site/templates/robots.txt
 https://raw.githubusercontent.com/tricrck/working-public-proxies/main/requirements.txt
 https://raw.githubusercontent.com/txltedxgod/web-scraping-cluster/main/requirements.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/http.txt
