@@ -346,6 +346,8 @@ https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/socks4.txt
 https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/socks5.txt
 https://raw.githubusercontent.com/Pxys-io/DailyProxyList/master/working_proxies.txt
 https://raw.githubusercontent.com/Pxys-io/proxylistdaily/main/working_proxies.txt
+https://raw.githubusercontent.com/Rain-kl/OpenFlare/main/docs/en/guide/proxy-config.md
+https://raw.githubusercontent.com/Rain-kl/OpenFlare/main/docs/guide/proxy-config.md
 https://raw.githubusercontent.com/RioMMO/ProxyFree/main/ALL_PROXY.txt
 https://raw.githubusercontent.com/RioMMO/ProxyFree/main/HTTP.txt
 https://raw.githubusercontent.com/RioMMO/ProxyFree/main/SOCKS4.txt
@@ -366,6 +368,7 @@ https://raw.githubusercontent.com/RockxyApp/Rockxy/main/Rockxy/Resources/Legal/T
 https://raw.githubusercontent.com/RockxyApp/Rockxy/main/Rockxy/Resources/Legal/ThirdPartyLicenses/SwiftNIOSSL-NOTICE.txt
 https://raw.githubusercontent.com/RockxyApp/Rockxy/main/Rockxy/Resources/Legal/ThirdPartyLicenses/llhttp-MIT.txt
 https://raw.githubusercontent.com/RockxyApp/Rockxy/main/Rockxy/Resources/SwaggerUI/swagger-ui-bundle.js.LICENSE.txt
+https://raw.githubusercontent.com/Ronneltech/website-security-scanner/main/requirements.txt
 https://raw.githubusercontent.com/ScrapingBee/ScrapingBee/main/cli/requirements.txt
 https://raw.githubusercontent.com/ScrapingBee/ScrapingBee/main/python/requirements.txt
 https://raw.githubusercontent.com/SoliSpirit/mtproto/master/all_proxies.txt
@@ -626,6 +629,7 @@ https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/requirements-de
 https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/requirements.txt
 https://raw.githubusercontent.com/axa-group/native-proxy-agent/main/LICENSE.TXT
 https://raw.githubusercontent.com/berkay-digital/Proxy-Scraper/main/proxies.txt
+https://raw.githubusercontent.com/bout2bus/thepiratebay-proxy-list/main/robots.txt
 https://raw.githubusercontent.com/bytepine/NexusLink/master/Resources/ProxyConfig.json
 https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/main/Z.txt
 https://raw.githubusercontent.com/claude89757/free_https_proxies/main/https_proxies.txt
@@ -958,6 +962,7 @@ https://raw.githubusercontent.com/icyw123/opencode-proxy-plugin/main/docs/superp
 https://raw.githubusercontent.com/ip2location/ip2proxy-laravel/master/license.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/all-proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AE/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AF/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AM/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AR/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AU/proxies.txt
@@ -1485,6 +1490,7 @@ https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Coun
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AO/https.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/http.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/https.txt
+https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/socks4.txt
 https://raw.githubusercontent.com/vpnhood/VpnHood/develop/docs/ProxyServerManager-Update.md
 https://raw.githubusercontent.com/vpnhood/VpnHood/develop/samples/samples.txt
 https://raw.githubusercontent.com/vpnhood/VpnHood/develop/src/Apps/Client.Android.Google/Resources/AboutResources.txt
