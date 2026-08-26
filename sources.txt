@@ -7,6 +7,9 @@ https://raw.githubusercontent.com/644646497/proxy-scraper/main/proxies.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/sources.txt
 https://raw.githubusercontent.com/8Protons/POWBlock/main/docs/TECHNICAL_README.txt
 https://raw.githubusercontent.com/8Protons/POWBlock/main/docs/dev_history.txt
+https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/http.txt
+https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/socks4.txt
+https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/socks5.txt
 https://raw.githubusercontent.com/AlexPhBit/OEIAT-Watchlist-Internet---Filter/main/filter.txt
 https://raw.githubusercontent.com/Argh94/telegram-proxy-scraper/main/Files/requirements.txt
 https://raw.githubusercontent.com/Argh94/telegram-proxy-scraper/main/proxy.txt
@@ -390,6 +393,9 @@ https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bahr
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bangladesh.txt
 https://raw.githubusercontent.com/Supernova-Labs-Org/impulse/master/docs-requirements.txt
 https://raw.githubusercontent.com/Supernova-Labs-Org/impulse/master/docs/protocols/http3.md
+https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt
+https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt
+https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt
 https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/requirements.txt
 https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/verified/proxy_all_tme_verified.txt
 https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/verified/proxy_all_verified.json
@@ -558,6 +564,10 @@ https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/collections/en
 https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/collections/envoy-proxy-endpoint-discovery-api.postman_collection.json
 https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/collections/envoy-proxy-general-api.opencollection.json
 https://raw.githubusercontent.com/api-evangelist/envoy/main/blogs/2020-09-30-envoy-proxy-on-windows-containers.md
+https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-authentication-with-envoy-proxy-based-api-gateways-solo-io.md
+https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-hands-on-with-the-kubernetes-gateway-api-and-envoy-proxy-a.md
+https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-scaling-api-management-with-gloo-gateway-and-envoy-proxy.md
+https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-why-pick-envoy-proxy-and-solo-io-over-kong-gateway-for.md
 https://raw.githubusercontent.com/api-evangelist/gravitee/main/blogs/2026-07-15-routing-claude-code-through-gravitee-llm-proxy.md
 https://raw.githubusercontent.com/api-evangelist/gravitee/main/llms/gravitee-llms.txt
 https://raw.githubusercontent.com/api-evangelist/http-toolkit/main/blogs/2020-11-05-intercepting-https-on-android.md
