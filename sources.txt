@@ -1321,6 +1321,7 @@ https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/26.txt
 https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/4.txt
 https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/5.txt
 https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/6.txt
+https://raw.githubusercontent.com/nmaguiar/socksd/main/tinyproxy.conf
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_direct.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_gfwlist.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_proxy.txt
