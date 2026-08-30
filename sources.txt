@@ -162,6 +162,9 @@ https://raw.githubusercontent.com/Elegying/SSRVPN/main/SSRVPN_Windows/windows/ru
 https://raw.githubusercontent.com/Elegying/SSRVPN/main/docs/GEOIP_SOURCE.txt
 https://raw.githubusercontent.com/Elegying/SSRVPN/main/third_party/licenses/GPL-3.0.txt
 https://raw.githubusercontent.com/Elegying/SSRVPN/main/third_party/licenses/SSRVPN-MIT.txt
+https://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/https.txt
+https://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/socks4.txt
+https://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/socks5.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/app/requirements.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/proxy/http.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/proxy/https.txt
@@ -196,6 +199,12 @@ https://raw.githubusercontent.com/IoTAiTech/MC-GPT/main/docs/robots.txt
 https://raw.githubusercontent.com/IoTAiTech/MC-GPT/main/llms.txt
 https://raw.githubusercontent.com/IoTAiTech/MC-GPT/main/robots.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/CMakeLists.txt
+https://raw.githubusercontent.com/Jackarain/proxy/master/apps/CMakeLists.txt
+https://raw.githubusercontent.com/Jackarain/proxy/master/apps/android/CMakeLists.txt
+https://raw.githubusercontent.com/Jackarain/proxy/master/apps/android/libproxy/CMakeLists.txt
+https://raw.githubusercontent.com/Jackarain/proxy/master/apps/httpc/CMakeLists.txt
+https://raw.githubusercontent.com/Jackarain/proxy/master/apps/launcher/CMakeLists.txt
+https://raw.githubusercontent.com/Jackarain/proxy/master/apps/proxy_server/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/doc/pam.example/proxy-service
 https://raw.githubusercontent.com/Jackarain/proxy/master/doc/rfc/proxy-protocol.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/doc/rfc/rfc1928.txt
@@ -760,6 +769,8 @@ https://raw.githubusercontent.com/bablsoft/accessflow/main/charts/accessflow/tem
 https://raw.githubusercontent.com/bablsoft/accessflow/main/website/.well-known/security.txt
 https://raw.githubusercontent.com/bablsoft/accessflow/main/website/llms.txt
 https://raw.githubusercontent.com/bablsoft/accessflow/main/website/robots.txt
+https://raw.githubusercontent.com/baykit1337-design/NEUROSTRAZG/claude/practical-hopper-i6hsy1/proxies.example.txt
+https://raw.githubusercontent.com/baykit1337-design/NEUROSTRAZG/claude/practical-hopper-i6hsy1/requirements.txt
 https://raw.githubusercontent.com/berkay-digital/Proxy-Scraper/main/proxies.txt
 https://raw.githubusercontent.com/bout2bus/thepiratebay-proxy-list/main/robots.txt
 https://raw.githubusercontent.com/bytepine/NexusLink/master/Resources/ProxyConfig.json
@@ -931,6 +942,7 @@ https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/DE/phttp_DE_checked.txt
 https://raw.githubusercontent.com/erfianugrah/llm-compose/main/bench/quants.txt
 https://raw.githubusercontent.com/erfianugrah/llm-compose/main/docs/specs/2026-08-19-model-proxy-v2.md
+https://raw.githubusercontent.com/erimammr/Captcha-Solver-Bot-2026-Free/main/requirements.txt
 https://raw.githubusercontent.com/estr0gen/mullvad-socks5-txt/main/countries/al.txt
 https://raw.githubusercontent.com/estr0gen/mullvad-socks5-txt/main/countries/al_no_prefix.txt
 https://raw.githubusercontent.com/estr0gen/mullvad-socks5-txt/main/countries/ar.txt
