@@ -296,6 +296,7 @@ https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-m
 https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-mosdns/root/etc/mosdns/rule/ddnslist.txt
 https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-mosdns/root/etc/mosdns/rule/greylist.txt
 https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-mosdns/root/etc/mosdns/rule/hosts.txt
+https://raw.githubusercontent.com/MisterLuka/opencannbot-proxy-center-windows/main/requirements.txt
 https://raw.githubusercontent.com/MixCoatl-44/Proxy-Scanner/main/socks5_sources_status.json
 https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/main/all_servers.txt
 https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/main/config/requirements.txt
@@ -1392,6 +1393,8 @@ https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/800_agen
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/docs-site/public/robots.txt
 https://raw.githubusercontent.com/lijiaweiphilip-web/spy-public-market-model-validation/main/PUBLISH_ALLOWLIST.txt
 https://raw.githubusercontent.com/lijiaweiphilip-web/spy-public-market-model-validation/main/requirements/reference-py312.txt
+https://raw.githubusercontent.com/linksocks/linksocks/main/docs/guide/http-api.md
+https://raw.githubusercontent.com/linksocks/linksocks/main/docs/zh/guide/http-api.md
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/all.txt
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/by_country/AE.txt
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/by_country/AR.txt
@@ -1537,6 +1540,9 @@ https://raw.githubusercontent.com/officialputuid/KangProxy/main/xResults/RAW.txt
 https://raw.githubusercontent.com/officialputuid/KangProxy/main/xResults/old-data/Proxies.txt
 https://raw.githubusercontent.com/officialputuid/KangProxy/main/xResults/old-data/RAW.txt
 https://raw.githubusercontent.com/ollies0x/open-proxy-checker/main/docs/issues/002-improve-proxy-source-configuration.md
+https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm-http-traffic-ch.json
+https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm-proxy.json
+https://raw.githubusercontent.com/onixus/bsdm-proxy/main/scripts/httparchive-top1k-profile.json
 https://raw.githubusercontent.com/oscer07/shadowgate/main/requirements.txt
 https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/Country-ALIVE.txt
 https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/Proxy_data20k.txt
@@ -1571,6 +1577,7 @@ https://raw.githubusercontent.com/plabayo/rama/main/rama-dns/specifications/rfc3
 https://raw.githubusercontent.com/plabayo/rama/main/rama-fastcgi/specifications/fastcgi_spec.txt
 https://raw.githubusercontent.com/plabayo/rama/main/rama-fastcgi/specifications/rfc3875.txt
 https://raw.githubusercontent.com/plabayo/rama/main/rama-fp/browserstack/requirements.txt
+https://raw.githubusercontent.com/pqjooqwnd/openai-nim-proxy/main/LICENSE.txt
 https://raw.githubusercontent.com/protocolnexus7-Lord/agent-proxy-api/main/requirements.txt
 https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/all/data.txt
 https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/countries/AE/data.txt
@@ -1926,6 +1933,7 @@ https://raw.githubusercontent.com/wq-h/proxylist/main/no_proxy.list
 https://raw.githubusercontent.com/wq-h/proxylist/main/proxy.list
 https://raw.githubusercontent.com/wuuduf/emby-reverse-proxy-installer/main/checksums.txt
 https://raw.githubusercontent.com/wuuduf/emby-reverse-proxy-installer/main/emby-proxy
+https://raw.githubusercontent.com/xiaocaiji61/proxy-list-git/main/proxies.txt
 https://raw.githubusercontent.com/xiaocongyu66/proxypool/main/output/high_quality.txt
 https://raw.githubusercontent.com/xiaocongyu66/proxypool/main/output/nodes.txt
 https://raw.githubusercontent.com/xiaocongyu66/proxypool/main/output/v2ray.txt
