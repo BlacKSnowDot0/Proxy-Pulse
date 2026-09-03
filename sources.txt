@@ -49,8 +49,6 @@ https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-c
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-CO.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-CZ.txt
 https://raw.githubusercontent.com/Bes-js/public-proxy-list/main/proxies.txt
-https://raw.githubusercontent.com/BreakingTechFr/Proxy_Free/main/proxies/http.txt
-https://raw.githubusercontent.com/BreakingTechFr/Proxy_Free/main/proxies/socks5.txt
 https://raw.githubusercontent.com/CelestialBrain/worldpool/main/data/scan-exclude.txt
 https://raw.githubusercontent.com/CelestialBrain/worldpool/main/data/scan-targets.txt
 https://raw.githubusercontent.com/CelestialBrain/worldpool/main/proxies/all.txt
@@ -250,6 +248,10 @@ https://raw.githubusercontent.com/KMIntelligentSystems/http_proxy/main/pipelines
 https://raw.githubusercontent.com/KMIntelligentSystems/http_proxy/main/pipelines/m3-sarima@1.0.0/requirements.txt
 https://raw.githubusercontent.com/KMIntelligentSystems/http_proxy/main/pipelines/m3-stl@1.0.0/requirements.txt
 https://raw.githubusercontent.com/KMIntelligentSystems/http_proxy/main/pipelines/productivity@1.0.0/requirements.txt
+https://raw.githubusercontent.com/Ka0s-Klaus/klaus-proxy-local/main/RESUMEN_EJECUTIVO_FINAL.txt
+https://raw.githubusercontent.com/Ka0s-Klaus/klaus-proxy-local/main/docs/anthropic-audit-proxy.md
+https://raw.githubusercontent.com/Ka0s-Klaus/klaus-proxy-local/main/requirements-dev.txt
+https://raw.githubusercontent.com/Ka0s-Klaus/klaus-proxy-local/main/requirements.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/COPYRIGHT.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/LICENSE.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/LittleProxy_Request_Handling_Architecture.md
@@ -412,6 +414,7 @@ https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/tu
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/vless.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/wireguard.txt
 https://raw.githubusercontent.com/Narendarcodes/opencode-api-proxy/main/requirements.txt
+https://raw.githubusercontent.com/Nighty3098/ProxySniffer/main/requirements.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/all/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/badges/http.json
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/badges/https.json
@@ -1618,7 +1621,6 @@ https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm
 https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm-proxy.json
 https://raw.githubusercontent.com/onixus/bsdm-proxy/main/scripts/httparchive-top1k-profile.json
 https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/Country-ALIVE.txt
-https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/Proxy_data20k.txt
 https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/Proxy_data21k.txt
 https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/alive.txt
 https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/proxy-26agustus.txt
@@ -1668,9 +1670,6 @@ https://raw.githubusercontent.com/proxio-io/proxy-list/main/http.txt
 https://raw.githubusercontent.com/proxio-io/proxy-list/main/https.txt
 https://raw.githubusercontent.com/proxio-io/proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/proxio-io/proxy-list/main/socks5.txt
-https://raw.githubusercontent.com/proxlane/proxlane/main/apps/web/public/llms-full.txt
-https://raw.githubusercontent.com/proxlane/proxlane/main/apps/web/public/llms.txt
-https://raw.githubusercontent.com/proxlane/proxlane/main/apps/web/public/robots.txt
 https://raw.githubusercontent.com/proxmint/free-proxy-list/main/proxies/all.txt
 https://raw.githubusercontent.com/proxmint/free-proxy-list/main/proxies/elite.txt
 https://raw.githubusercontent.com/proxmint/free-proxy-list/main/proxies/http.txt
@@ -1815,6 +1814,7 @@ https://raw.githubusercontent.com/shulganovo/Proxylists/main/proxies.txt
 https://raw.githubusercontent.com/socks5-proxy/socks5-proxy.github.io/main/robots.txt
 https://raw.githubusercontent.com/soyelmismo/openproxy/master/crates/openproxy-server/web/src/static/fonts/Ubuntu-LICENCE.txt
 https://raw.githubusercontent.com/sparkfabrik/http-proxy/main/bin/spark-http-proxy
+https://raw.githubusercontent.com/staccDOTsol/openzoo/main/.claude-ide/.file-list-cache.txt
 https://raw.githubusercontent.com/staccDOTsol/openzoo/main/.claude-ide/paths.txt
 https://raw.githubusercontent.com/staccDOTsol/openzoo/main/.claude-ide/repo-index.txt
 https://raw.githubusercontent.com/staccDOTsol/openzoo/main/grokbot-posted/2094912394719891461.txt
@@ -1827,7 +1827,6 @@ https://raw.githubusercontent.com/stormsia/proxy-list/main/web/public/llms.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/web/public/robots.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/working_proxies.txt
 https://raw.githubusercontent.com/strongshuai/proxy-checker/main/requirements.txt
-https://raw.githubusercontent.com/sujit-codezen/GoogleMapScrapper/main/requirements.txt
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/http_proxies.csv
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/http_proxies.json
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/http_proxies.txt
@@ -1889,6 +1888,7 @@ https://raw.githubusercontent.com/tox-dev/peryx/main/crates/peryx/tests/corpus/a
 https://raw.githubusercontent.com/tox-dev/peryx/main/site/.codespell-ignore-words.txt
 https://raw.githubusercontent.com/tox-dev/peryx/main/site/content/core/operations/serve-https.md
 https://raw.githubusercontent.com/tox-dev/peryx/main/site/templates/robots.txt
+https://raw.githubusercontent.com/trickstercache/trickster/main/docs/http3.md
 https://raw.githubusercontent.com/trickstercache/trickster/main/testdata/ignore_words.txt
 https://raw.githubusercontent.com/trickstercache/trickster/main/testdata/license_header_template.txt
 https://raw.githubusercontent.com/tricrck/working-public-proxies/main/requirements.txt
