@@ -5,6 +5,7 @@ https://raw.githubusercontent.com/3inker/v2ray-subscription/main/subs/all_ru.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/output.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/proxies.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/sources.txt
+https://raw.githubusercontent.com/6Kmfi6HP/opencode2api/main/docs/research-proxy-projects.md
 https://raw.githubusercontent.com/8Protons/POWBlock/main/docs/TECHNICAL_README.txt
 https://raw.githubusercontent.com/8Protons/POWBlock/main/docs/dev_history.txt
 https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/http.txt
@@ -49,9 +50,7 @@ https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-c
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-CZ.txt
 https://raw.githubusercontent.com/Bes-js/public-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/BreakingTechFr/Proxy_Free/main/proxies/http.txt
-https://raw.githubusercontent.com/BreakingTechFr/Proxy_Free/main/proxies/socks4.txt
 https://raw.githubusercontent.com/BreakingTechFr/Proxy_Free/main/proxies/socks5.txt
-https://raw.githubusercontent.com/BreakingTechFr/Proxy_Free/main/requirements.txt
 https://raw.githubusercontent.com/CelestialBrain/worldpool/main/data/scan-exclude.txt
 https://raw.githubusercontent.com/CelestialBrain/worldpool/main/data/scan-targets.txt
 https://raw.githubusercontent.com/CelestialBrain/worldpool/main/proxies/all.txt
@@ -1136,6 +1135,9 @@ https://raw.githubusercontent.com/freeVpnMan/top-free-vpn-proxy-list/main/llms.t
 https://raw.githubusercontent.com/gnxD3RfTT2WE/anonymous-proxy-list-free/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/anonymous-proxy-list-free/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/anonymous-proxy-list-free/main/socks5.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/bot-proxy-list/main/http.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/bot-proxy-list/main/socks4.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/bot-proxy-list/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-http-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-http-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-http-proxy-list/main/socks5.txt
@@ -1571,7 +1573,10 @@ https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CL.t
 https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CN.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/NDT-ProxyList-raw.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/NDT-ProxyList.txt
+https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/http.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/requirements.txt
+https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/socks4.txt
+https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/socks5.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/sources/sources.txt
 https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/11.txt
 https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/13.txt
@@ -1608,14 +1613,6 @@ https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/h2y_bak/factory/manual_direct.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/h2y_bak/factory/manual_gfwlist.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/h2y_bak/factory/manual_proxy.txt
-https://raw.githubusercontent.com/officialputuid/KangProxy/main/http/http.txt
-https://raw.githubusercontent.com/officialputuid/KangProxy/main/https/https.txt
-https://raw.githubusercontent.com/officialputuid/KangProxy/main/socks4/socks4.txt
-https://raw.githubusercontent.com/officialputuid/KangProxy/main/socks5/socks5.txt
-https://raw.githubusercontent.com/officialputuid/KangProxy/main/xResults/Proxies.txt
-https://raw.githubusercontent.com/officialputuid/KangProxy/main/xResults/RAW.txt
-https://raw.githubusercontent.com/officialputuid/KangProxy/main/xResults/old-data/Proxies.txt
-https://raw.githubusercontent.com/officialputuid/KangProxy/main/xResults/old-data/RAW.txt
 https://raw.githubusercontent.com/ollies0x/open-proxy-checker/main/docs/issues/002-improve-proxy-source-configuration.md
 https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm-http-traffic-ch.json
 https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm-proxy.json
@@ -1818,6 +1815,9 @@ https://raw.githubusercontent.com/shulganovo/Proxylists/main/proxies.txt
 https://raw.githubusercontent.com/socks5-proxy/socks5-proxy.github.io/main/robots.txt
 https://raw.githubusercontent.com/soyelmismo/openproxy/master/crates/openproxy-server/web/src/static/fonts/Ubuntu-LICENCE.txt
 https://raw.githubusercontent.com/sparkfabrik/http-proxy/main/bin/spark-http-proxy
+https://raw.githubusercontent.com/staccDOTsol/openzoo/main/.claude-ide/paths.txt
+https://raw.githubusercontent.com/staccDOTsol/openzoo/main/.claude-ide/repo-index.txt
+https://raw.githubusercontent.com/staccDOTsol/openzoo/main/grokbot-posted/2094912394719891461.txt
 https://raw.githubusercontent.com/stoatworks-labs/pmse-to-wwb/main/backend/requirements-dev.txt
 https://raw.githubusercontent.com/stoatworks-labs/pmse-to-wwb/main/backend/requirements.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/http.txt
