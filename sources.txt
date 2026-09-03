@@ -102,6 +102,10 @@ https://raw.githubusercontent.com/ChronoAIProject/NyxID/main/docs/site/shared/co
 https://raw.githubusercontent.com/ChronoAIProject/NyxID/main/docs/site/shared/concepts/the-proxy.md
 https://raw.githubusercontent.com/ChronoAIProject/NyxID/main/frontend/public/robots.txt
 https://raw.githubusercontent.com/ChronoAIProject/NyxID/main/skills/nyxid/references/proxy.md
+https://raw.githubusercontent.com/Chumbayoumba/goida-win/main/5ac758ea9dd240acbfa4d18e67fd497d.txt
+https://raw.githubusercontent.com/Chumbayoumba/goida-win/main/data/proxy.json
+https://raw.githubusercontent.com/Chumbayoumba/goida-win/main/llms.txt
+https://raw.githubusercontent.com/Chumbayoumba/goida-win/main/robots.txt
 https://raw.githubusercontent.com/Ciara-12/PROXY-free/main/http.txt
 https://raw.githubusercontent.com/Ciara-12/PROXY-free/main/https.txt
 https://raw.githubusercontent.com/Ciara-12/PROXY-free/main/socks4.txt
@@ -266,6 +270,7 @@ https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/trust-page/tru
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/trust-page/trust/accepted-image-references-gcp.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/trust-page/trust/accepted-pcr0s-aws.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/trust-page/trust/hostdata-azure.txt
+https://raw.githubusercontent.com/M1noa/proxypool/main/internal/geoip/countries.txt
 https://raw.githubusercontent.com/M1noa/proxypool/main/output/all.txt
 https://raw.githubusercontent.com/M1noa/proxypool/main/output/http.txt
 https://raw.githubusercontent.com/M1noa/proxypool/main/output/https.txt
@@ -522,6 +527,7 @@ https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Azer
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bahamas.txt
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bahrain.txt
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bangladesh.txt
+https://raw.githubusercontent.com/Sreenivas-Sadhu-Prabhakara/apigeex-training/main/requirements.txt
 https://raw.githubusercontent.com/Supernova-Labs-Org/impulse/master/docs-requirements.txt
 https://raw.githubusercontent.com/Supernova-Labs-Org/impulse/master/docs/protocols/http3.md
 https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt
@@ -1127,16 +1133,6 @@ https://raw.githubusercontent.com/feder-cr/invisible_playwright/main/docs/socks5
 https://raw.githubusercontent.com/feder-cr/invisible_playwright/main/docs/sticky-vs-rotating-proxy-sessions.md
 https://raw.githubusercontent.com/flyeyas/proxy-forge/main/requirements.txt
 https://raw.githubusercontent.com/freeVpnMan/top-free-vpn-proxy-list/main/llms.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/auto.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/http.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/https.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/socks4.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/socks4a.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/socks5.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/ss.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/ssr.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/trojan.txt
-https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/vless.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/anonymous-proxy-list-free/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/anonymous-proxy-list-free/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/anonymous-proxy-list-free/main/socks5.txt
@@ -1328,6 +1324,7 @@ https://raw.githubusercontent.com/icyw123/opencode-proxy-plugin/main/docs/superp
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/all-proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AF/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AL/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AR/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AT/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AU/proxies.txt
@@ -1353,6 +1350,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DE/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DK/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EC/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EE/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EG/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/ES/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/FI/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/FR/proxies.txt
@@ -1592,6 +1590,8 @@ https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/4.txt
 https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/5.txt
 https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/6.txt
 https://raw.githubusercontent.com/nmaguiar/socksd/main/tinyproxy.conf
+https://raw.githubusercontent.com/nostalume/FreeNodes/main/nodes/merged.txt
+https://raw.githubusercontent.com/nostalume/FreeNodes/main/nodes/v2ray.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_direct.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_gfwlist.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_proxy.txt
