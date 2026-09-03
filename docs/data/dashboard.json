@@ -1,91 +1,74 @@
 {
-  "generated_at": "2026-09-03T16:20:37Z",
+  "generated_at": "2026-09-03T20:57:57Z",
   "summary": {
     "status": "success",
-    "last_generated": "2026-09-03T16:20:37Z",
-    "last_success_at": "2026-09-03T16:20:37Z",
-    "runs_total": 678,
-    "requests_total": 102143848,
-    "proxies_checked_total": 94475631,
-    "validated_total": 635711,
+    "last_generated": "2026-09-03T20:57:57Z",
+    "last_success_at": "2026-09-03T20:57:57Z",
+    "runs_total": 679,
+    "requests_total": 102260058,
+    "proxies_checked_total": 94535917,
+    "validated_total": 636162,
     "current_output_counts": {
-      "all": 309,
-      "http": 89,
-      "https": 29,
-      "socks4": 171,
-      "socks5": 49
+      "all": 451,
+      "http": 167,
+      "https": 37,
+      "socks4": 192,
+      "socks5": 92
     },
     "current_source_counts": {
       "gist": 0,
-      "repository": 66
+      "repository": 74
     },
     "current_country_counts": {
       "AE": 1,
+      "AU": 30,
       "BG": 1,
-      "CA": 7,
+      "CA": 16,
       "CH": 1,
       "CL": 1,
       "CN": 1,
-      "DE": 12,
+      "DE": 13,
       "EC": 1,
       "EE": 1,
-      "FR": 6,
-      "GB": 5,
-      "GR": 1,
-      "HK": 6,
-      "ID": 5,
-      "IN": 5,
-      "JP": 5,
-      "KG": 2,
-      "KR": 4,
-      "KZ": 1,
-      "MK": 1,
-      "MY": 2,
+      "ES": 1,
+      "FR": 11,
+      "GB": 4,
+      "GH": 1,
+      "HK": 14,
+      "ID": 11,
+      "IL": 1,
+      "IN": 17,
+      "IT": 1,
+      "JP": 24,
+      "KH": 1,
+      "KR": 30,
+      "KZ": 4,
+      "MX": 20,
+      "MY": 9,
       "NG": 1,
-      "NL": 9,
+      "NL": 7,
+      "PT": 1,
       "RU": 10,
-      "RW": 3,
-      "SC": 2,
-      "SG": 2,
+      "RW": 1,
+      "SC": 3,
+      "SE": 2,
+      "SG": 8,
       "SK": 1,
-      "SN": 1,
       "TH": 3,
-      "TW": 2,
-      "US": 196,
+      "US": 188,
       "UZ": 1,
       "VN": 4,
       "XK": 1,
-      "ZW": 4
+      "ZA": 3,
+      "ZW": 2
     },
     "current_anonymity_counts": {
-      "anonymous": 1,
-      "elite": 70,
-      "unknown": 238
+      "anonymous": 2,
+      "elite": 81,
+      "unknown": 368
     }
   },
   "history": [
-    {
-      "finished_at": "2026-07-19T03:43:40Z",
-      "status": "success",
-      "requests_made": 161446,
-      "sources_scanned": 62,
-      "files_scanned": 365,
-      "candidates_found": 440691,
-      "proxies_checked": 137174,
-      "validated": 542,
-      "duplicates_removed": 303517,
-      "error_count": 0,
-      "output_counts": {
-        "all": 542,
-        "http": 112,
-        "socks4": 185,
-        "socks5": 245
-      },
-      "source_counts": {
-        "gist": 0,
-        "repository": 62
-      }
-    },
     {
       "finished_at": "2026-07-19T08:35:54Z",
       "status": "success",
@@ -4083,6 +4066,29 @@
       "source_counts": {
         "gist": 0,
         "repository": 66
+      }
+    },
+    {
+      "finished_at": "2026-09-03T20:57:57Z",
+      "status": "success",
+      "requests_made": 116210,
+      "sources_scanned": 74,
+      "files_scanned": 487,
+      "candidates_found": 395830,
+      "proxies_checked": 60286,
+      "validated": 451,
+      "duplicates_removed": 235786,
+      "error_count": 0,
+      "output_counts": {
+        "all": 451,
+        "http": 167,
+        "https": 37,
+        "socks4": 192,
+        "socks5": 92
+      },
+      "source_counts": {
+        "gist": 0,
+        "repository": 74
       }
     }
   ]
