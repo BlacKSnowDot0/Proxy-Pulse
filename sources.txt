@@ -692,8 +692,6 @@ https://raw.githubusercontent.com/api-evangelist/gravitee/main/blogs/2026-07-15-
 https://raw.githubusercontent.com/api-evangelist/gravitee/main/llms/gravitee-llms.txt
 https://raw.githubusercontent.com/api-evangelist/http-toolkit/main/blogs/2020-11-05-intercepting-https-on-android.md
 https://raw.githubusercontent.com/api-evangelist/http-toolkit/main/blogs/2021-03-04-httpwtf.md
-https://raw.githubusercontent.com/api-evangelist/http-toolkit/main/blogs/2021-03-17-how-to-intercept-debug-all-java-https.md
-https://raw.githubusercontent.com/api-evangelist/http-toolkit/main/blogs/2021-03-24-intercept-and-edit-http-traffic-from-almost-any-android-app.md
 https://raw.githubusercontent.com/api-evangelist/infoway-real-time-market-data-api/main/llms/infoway-real-time-market-data-api-llms.txt
 https://raw.githubusercontent.com/api-evangelist/mosn/main/blogs/2020-03-07-blog-mosn-http.md
 https://raw.githubusercontent.com/api-evangelist/nginx/main/blogs/2026-08-18-nginx-1-31-4-proxy-protocol-v2-stricter-validation-and-more.md
@@ -1329,6 +1327,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/BE/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/BG/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/BI/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/BR/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/BS/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/BZ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CA/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CH/proxies.txt
@@ -1350,6 +1349,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/FI/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/FR/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/GB/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/GH/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/GR/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/GY/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/HK/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/HN/proxies.txt
