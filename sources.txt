@@ -250,11 +250,6 @@ https://raw.githubusercontent.com/Jackarain/proxy/master/doc/rfc/socks4a.protoco
 https://raw.githubusercontent.com/Jackarain/proxy/master/example/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/example/dns_server_test/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/example/http_proxy_client/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/example/nested_proxy/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/example/socks_client/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/proxy/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/server/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/server/android/CMakeLists.txt
 https://raw.githubusercontent.com/JaysonFrost/TradeTools/main/desktop/docs/plans/2026-08-06-current-video-proxy-wizard.md
 https://raw.githubusercontent.com/JaysonFrost/TradeTools/main/desktop/docs/superpowers/plans/2026-07-10-disable-background-proxy.md
 https://raw.githubusercontent.com/JaysonFrost/TradeTools/main/desktop/docs/superpowers/plans/2026-07-10-vpn-bypass-and-proxy-flow.md
@@ -300,6 +295,9 @@ https://raw.githubusercontent.com/M1noa/proxypool/main/output/https.txt
 https://raw.githubusercontent.com/M1noa/proxypool/main/output/socks4.txt
 https://raw.githubusercontent.com/M1noa/proxypool/main/output/socks5.txt
 https://raw.githubusercontent.com/M1noa/proxypool/main/requirements.txt
+https://raw.githubusercontent.com/M450ud/PrList/main/dsl.txt
+https://raw.githubusercontent.com/M450ud/PrList/main/prx.txt
+https://raw.githubusercontent.com/M450ud/PrList/main/urltest.txt
 https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual-root/assets/js/165.0e971bf4.js.LICENSE.txt
 https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual-root/assets/js/2279.83aa07bd.js.LICENSE.txt
 https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual-root/assets/js/489.31598d44.js.LICENSE.txt
@@ -341,12 +339,6 @@ https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/wiki/tools/proxy_
 https://raw.githubusercontent.com/Medium1992/mihomo-proxy-ros/main/custom_list/META.txt
 https://raw.githubusercontent.com/Medium1992/mihomo-proxy-ros/main/www/cgi-bin/http-fetch
 https://raw.githubusercontent.com/Medium1992/mihomo-proxy-ros/main/www/cgi-bin/validate-proxy
-https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-adguardhome/root/usr/share/AdGuardHome/links.txt
-https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-homeproxy/root/etc/capabilities/homeproxy.json
-https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-homeproxy/root/etc/config/homeproxy
-https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-homeproxy/root/etc/homeproxy/resources/china_ip4.txt
-https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-homeproxy/root/etc/homeproxy/resources/china_ip6.txt
-https://raw.githubusercontent.com/MinimaxFlora/openwrt_package/master/luci-app-homeproxy/root/etc/homeproxy/resources/gfw_list.txt
 https://raw.githubusercontent.com/MisterLuka/opencannbot-proxy-center-windows/main/requirements.txt
 https://raw.githubusercontent.com/MixCoatl-44/Proxy-Scanner/main/socks5_sources_status.json
 https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/main/all_servers.txt
@@ -596,6 +588,7 @@ https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/http.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/https.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/socks4.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/socks5.txt
+https://raw.githubusercontent.com/TygarWright/opencode-zen-janitor-proxy-v9/main/requirements.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/BadIPs.com_KEY/master/requirements.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/KADhosts_azet12/master/requirements.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Phishing.Database/master/requirements.txt
@@ -835,6 +828,7 @@ https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AE/HTTP.tx
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AE/http.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AE/https.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AE/socks4.txt
+https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AE/socks5.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AF/HTTPS.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AF/http.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AL/http.txt
@@ -947,6 +941,7 @@ https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/ag/http.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/al/http.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/al/socks4.txt
+https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/al/socks5.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/am/http.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/am/socks4.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/ao/http.txt
@@ -1528,6 +1523,8 @@ https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/m
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/by_country/CI.txt
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/by_country/CL.txt
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/by_country/CN.txt
+https://raw.githubusercontent.com/lyu0805/OpenBrowser/main/Browserapp/LICENSE.chrome-power.txt
+https://raw.githubusercontent.com/lyu0805/OpenBrowser/main/Browserapp/assets/fonts/OFL-ark-pixel.txt
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/http.json
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/metadata/http-metadata.json
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/metadata/socks4-metadata.json
@@ -1562,6 +1559,7 @@ https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corp
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/scrape_socks4.txt
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/scrape_socks5.txt
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/tls_http.txt
+https://raw.githubusercontent.com/morawskidotmy/youtube-proxies/main/youtube-proxies.txt
 https://raw.githubusercontent.com/morpheusadam/v2rayV/automode/V2rayNG/app/src/main/assets/automode_proxies.txt
 https://raw.githubusercontent.com/morpheusadam/v2rayV/automode/V2rayNG/app/src/main/assets/automode_subs.txt
 https://raw.githubusercontent.com/morpheusadam/v2rayV/automode/V2rayNG/app/src/main/assets/proxy_package_name
@@ -1883,6 +1881,8 @@ https://raw.githubusercontent.com/theavel/free-vless-proxy/main/all.txt
 https://raw.githubusercontent.com/themiralay/Proxy-List-World/master/data.txt
 https://raw.githubusercontent.com/thisnick/cloak-biz-scraper/main/requirements-dev.txt
 https://raw.githubusercontent.com/thisnick/cloak-biz-scraper/main/requirements.txt
+https://raw.githubusercontent.com/timofey-maykov/openwrt-hybrid-failover/main/examples/glob-uci-commands.txt
+https://raw.githubusercontent.com/timofey-maykov/openwrt-hybrid-failover/main/examples/testdata/proxy-urltest.conf
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/proxies.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/requirements.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/working_proxies.txt
