@@ -1033,7 +1033,6 @@ https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CO/http_CO_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CO/phttp_CO_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/DE/http_DE_checked.txt
-https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/DE/phttp_DE_checked.txt
 https://raw.githubusercontent.com/ephpm/ephpm/main/.github/release-readme.txt
 https://raw.githubusercontent.com/ephpm/ephpm/main/site/content/architecture/database/db-proxy.md
 https://raw.githubusercontent.com/ephpm/ephpm/main/site/content/architecture/http.md
@@ -1422,6 +1421,7 @@ https://raw.githubusercontent.com/komutan234/Proxy-List-Free/main/requirements.t
 https://raw.githubusercontent.com/krokmazagaga/http-proxy-list/main/http.txt
 https://raw.githubusercontent.com/krokmazagaga/http-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/DCO.txt
+https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/changelog/v0.24.0/release-date.txt
 https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/etc/license.txt
 https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/kroxylicious-api/etc/asf-license.txt
 https://raw.githubusercontent.com/kroxylicious/kroxylicious/main/kroxylicious-app/src/main/resources/banner.txt
