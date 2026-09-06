@@ -10,6 +10,7 @@ https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/socks5.txt
 https://raw.githubusercontent.com/AbdelftahZowail/opencode-webui/master/docs/reverse-proxy.md
 https://raw.githubusercontent.com/Altimis/Scweet/master/LICENSE.txt
 https://raw.githubusercontent.com/Altimis/Scweet/master/requirements.txt
+https://raw.githubusercontent.com/Anon1mus-v/freeVPNfinder/main/valid_keys.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/http_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/https_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/socks4_proxies.txt
@@ -428,6 +429,10 @@ https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/tu
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/vless.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/wireguard.txt
 https://raw.githubusercontent.com/Narendarcodes/opencode-api-proxy/main/requirements.txt
+https://raw.githubusercontent.com/NetroIndonesia/proxy-live/main/http.txt
+https://raw.githubusercontent.com/NetroIndonesia/proxy-live/main/proxy.txt
+https://raw.githubusercontent.com/NetroIndonesia/proxy-live/main/socks4.txt
+https://raw.githubusercontent.com/NetroIndonesia/proxy-live/main/socks5.txt
 https://raw.githubusercontent.com/Nighty3098/ProxySniffer/main/requirements.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/all/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/badges/http.json
@@ -583,7 +588,6 @@ https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/BD.txt
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/CA.txt
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/CH.txt
-https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/all.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/http.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/https.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/socks4.txt
@@ -845,6 +849,7 @@ https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AT/https.t
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AT/socks4.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AU/http.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AU/https.txt
+https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AU/socks5.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/BA/socks4.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/BD/HTTP.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/BD/HTTPS.txt
@@ -1223,8 +1228,6 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/free-proxy-feed/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-proxy-pool-2026/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-proxy-pool-2026/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/free-proxy-pool-2026/main/socks5.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/free-socks5-proxy-list/main/http.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/free-socks5-proxy-list/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/fresh-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/fresh-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/fresh-proxy-list/main/socks5.txt
@@ -1449,6 +1452,7 @@ https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/3
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/31/00-00/proxies.txt
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/31/06-00/proxies.txt
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/31/12-00/proxies.txt
+https://raw.githubusercontent.com/just-not-google/full-free-proxy/main/requirements.txt
 https://raw.githubusercontent.com/justdataplease/justproxy/main/dist/SHA256SUMS.txt
 https://raw.githubusercontent.com/klondike0x/mtp4tg-proxies/main/all_proxies.txt
 https://raw.githubusercontent.com/klondike0x/mtp4tg-proxies/main/requirements.txt
@@ -1727,10 +1731,6 @@ https://raw.githubusercontent.com/pwnx0/proxy/main/proxies/source/socks5.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/proxy.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/requirements.txt
 https://raw.githubusercontent.com/qhs200312/Freedom/master/V2rayNG/app/src/main/assets/natural_earth_LICENSE.txt
-https://raw.githubusercontent.com/qhs200312/Freedom/master/V2rayNG/app/src/main/assets/proxy_package_name
-https://raw.githubusercontent.com/qhs200312/Freedom/master/fastlane/metadata/android/en-US/full_description.txt
-https://raw.githubusercontent.com/qhs200312/Freedom/master/fastlane/metadata/android/en-US/short_description.txt
-https://raw.githubusercontent.com/qhs200312/Freedom/master/fastlane/metadata/android/en-US/title.txt
 https://raw.githubusercontent.com/qingwo1991-debug/OpenList-Encrypt/main/android/utils/src/main/cpp/CMakeLists.txt
 https://raw.githubusercontent.com/qingwo1991-debug/OpenList-Encrypt/main/openlist_upstream_version.txt
 https://raw.githubusercontent.com/qr243vbi/nekobox/main/CMakeLists.txt
