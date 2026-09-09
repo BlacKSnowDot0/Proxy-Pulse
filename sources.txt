@@ -1,3 +1,7 @@
+https://raw.githubusercontent.com/2scraper/amazon-scraper/main/requirements-playwright.txt
+https://raw.githubusercontent.com/2scraper/amazon-scraper/main/requirements-puppeteer.txt
+https://raw.githubusercontent.com/2scraper/amazon-scraper/main/requirements-selenium.txt
+https://raw.githubusercontent.com/2scraper/amazon-scraper/main/requirements.txt
 https://raw.githubusercontent.com/2scraper/farfetch-scraper/main/requirements-playwright.txt
 https://raw.githubusercontent.com/2scraper/farfetch-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/farfetch-scraper/main/requirements-selenium.txt
@@ -180,8 +184,6 @@ https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/count
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/countries/al.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/countries/am.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/alive_bl.txt
-https://raw.githubusercontent.com/Diversan313/apex-parser/main/alive_bs.txt
-https://raw.githubusercontent.com/Diversan313/apex-parser/main/alive_full.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/arch/lists/cidrwhitelist.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/arch/lists/whitelist.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/requirements.txt
@@ -654,6 +656,8 @@ https://raw.githubusercontent.com/Vann-Dev/proxy-list/main/proxies/https-tested/
 https://raw.githubusercontent.com/Vann-Dev/proxy-list/main/proxies/https-tested/tiktok.txt
 https://raw.githubusercontent.com/Winfrasoft/iis-real-client-ip/main/proxy/apache-httpd.conf
 https://raw.githubusercontent.com/XOR-op/BoltConn/main/docs/proxy.md
+https://raw.githubusercontent.com/Xanonymous-GitHub/openai-oauth-proxy/main/docs/superpowers/plans/2026-07-11-codex-oauth-proxy.md
+https://raw.githubusercontent.com/Xanonymous-GitHub/openai-oauth-proxy/main/docs/superpowers/specs/2026-07-11-codex-oauth-proxy-design.md
 https://raw.githubusercontent.com/XiaoHaiMsh/OpenWrt-HomeProxy/main/luci-app-homeproxy/root/etc/capabilities/homeproxy.json
 https://raw.githubusercontent.com/XiaoHaiMsh/OpenWrt-HomeProxy/main/luci-app-homeproxy/root/etc/config/homeproxy
 https://raw.githubusercontent.com/XiaoHaiMsh/OpenWrt-HomeProxy/main/luci-app-homeproxy/root/etc/homeproxy/dashboard/licenses/NotoColorEmoji-OFL.txt
@@ -775,16 +779,6 @@ https://raw.githubusercontent.com/api-evangelist/thordata/main/collections/thord
 https://raw.githubusercontent.com/api-evangelist/thordata/main/collections/thordata-proxy-extract-api.postman_collection.json
 https://raw.githubusercontent.com/api-evangelist/thordata/main/llms/thordata-llms.txt
 https://raw.githubusercontent.com/api-evangelist/thordata/main/skills/thordata-manage-proxy-users.md
-https://raw.githubusercontent.com/api-evangelist/tinyproxy/main/examples/tinyproxy-config-example.json
-https://raw.githubusercontent.com/api-evangelist/tinyproxy/main/json-schema/tinyproxy-config-schema.json
-https://raw.githubusercontent.com/api-evangelist/tinyproxy/main/json-structure/tinyproxy-config-structure.json
-https://raw.githubusercontent.com/api-evangelist/traefik/main/blogs/2025-05-06-traefik-proxy-3-4-chaource-is-ready-to-serve.md
-https://raw.githubusercontent.com/api-evangelist/traefik/main/blogs/2025-07-24-traefik-proxy-3-5-chabichou-a-delicate-masterpiece.md
-https://raw.githubusercontent.com/api-evangelist/traefik/main/blogs/2025-11-10-traefik-proxy-3-6-ramequin-where-every-layer-counts.md
-https://raw.githubusercontent.com/api-evangelist/traefik/main/blogs/2026-05-06-traefik-proxy-3-7-ingress-nginx-without-ingress-nginx.md
-https://raw.githubusercontent.com/api-evangelist/traefik/main/collections/traefik-http-api.opencollection.json
-https://raw.githubusercontent.com/api-evangelist/traefik/main/collections/traefik-http-api.postman_collection.json
-https://raw.githubusercontent.com/api-evangelist/traefik/main/collections/traefik-proxy.opencollection.json
 https://raw.githubusercontent.com/apify/crawlee-python/master/src/crawlee/project_template/{{cookiecutter.project_name}}/requirements.txt
 https://raw.githubusercontent.com/apify/crawlee-python/master/website/static/robots.txt
 https://raw.githubusercontent.com/apify/crawlee/master/docs/guides/docker_browser_js.txt
@@ -1316,6 +1310,9 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/socks4-proxies-free/main/socks5.t
 https://raw.githubusercontent.com/gnxD3RfTT2WE/socks5-proxies-free/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/socks5-proxies-free/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/socks5-proxies-free/main/socks5.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/txt-proxy-list/main/http.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/txt-proxy-list/main/socks4.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/txt-proxy-list/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/updated-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/updated-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/updated-proxy-list/main/socks5.txt
@@ -1530,6 +1527,7 @@ https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/260819_u
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/260902_nonbug_adoption_backlog/080_wp8_windows_proxy_auto.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/260903_voice_sideband_regression/020_wp3_proxy_affinity_probe.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/260904_dashboard_minimal/assets/codex-set_interactive.txt
+https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/260905_now_split_train/813_http_fixture_isolation.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/800_agent-fabric/spikes/spike-a/codex-version.txt
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/800_agent-fabric/spikes/spike-b/claude-pid.txt
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/800_agent-fabric/spikes/spike-c-kernel/crash_output.txt
@@ -1652,6 +1650,8 @@ https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/h2y_bak/factory/manual_gfwlist.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/h2y_bak/factory/manual_proxy.txt
 https://raw.githubusercontent.com/ollies0x/open-proxy-checker/main/docs/issues/002-improve-proxy-source-configuration.md
+https://raw.githubusercontent.com/omkarcloud/website-email-contact-scraper/master/frontend/public/robots.txt
+https://raw.githubusercontent.com/omkarcloud/website-email-contact-scraper/master/requirements.txt
 https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm-http-traffic-ch.json
 https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm-proxy.json
 https://raw.githubusercontent.com/onixus/bsdm-proxy/main/scripts/httparchive-top1k-profile.json
