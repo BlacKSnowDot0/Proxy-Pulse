@@ -120,6 +120,8 @@ https://raw.githubusercontent.com/Bwillou1/LienLibre/main/llms.txt
 https://raw.githubusercontent.com/Bwillou1/LienLibre/main/robots.txt
 https://raw.githubusercontent.com/CMMUU/routedeck/main/third-party/Mihomo-LICENSE.txt
 https://raw.githubusercontent.com/CMMUU/routedeck/main/website/public/robots.txt
+https://raw.githubusercontent.com/CMMUU/serylane/main/third-party/Mihomo-LICENSE.txt
+https://raw.githubusercontent.com/CMMUU/serylane/main/website/public/robots.txt
 https://raw.githubusercontent.com/CarlosG90/proplync-mx/main/.claude/skills/ui-styling/LICENSE.txt
 https://raw.githubusercontent.com/CarlosG90/proplync-mx/main/.claude/skills/ui-styling/scripts/requirements.txt
 https://raw.githubusercontent.com/CarlosG90/proplync-mx/main/.claude/skills/ui-styling/scripts/tests/requirements.txt
@@ -905,6 +907,7 @@ https://raw.githubusercontent.com/billymitchell/address-validation-server/main/l
 https://raw.githubusercontent.com/billymitchell/address-validation-server/main/licenses/Unicode-3.0.txt
 https://raw.githubusercontent.com/bout2bus/thepiratebay-proxy-list/main/robots.txt
 https://raw.githubusercontent.com/brkicsivan-wq/ipwhois-blacklist-feed/main/feed.txt
+https://raw.githubusercontent.com/casualjim/hodor/main/.agents/skills/rust-skills/checks/baseline.txt
 https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/main/Z.txt
 https://raw.githubusercontent.com/choury/sproxy/master/CMakeLists.txt
 https://raw.githubusercontent.com/choury/sproxy/master/docs/rproxy.md
@@ -972,6 +975,7 @@ https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/au/http.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/au/socks4.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/au/socks5.txt
+https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/aw/http.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/az/http.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/az/socks4.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/az/socks5.txt
@@ -1254,9 +1258,6 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/http-proxy-list-2026/main/socks5.
 https://raw.githubusercontent.com/gnxD3RfTT2WE/http-socks-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/http-socks-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/http-socks-proxy-list/main/socks5.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/http-socks4-socks5-proxies/main/http.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/http-socks4-socks5-proxies/main/socks4.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/http-socks4-socks5-proxies/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/live-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/live-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/live-proxy-list/main/socks5.txt
@@ -1568,6 +1569,9 @@ https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/socks4.j
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/socks5.json
 https://raw.githubusercontent.com/minuk-dev/opentelemetry-querier/main/acceptor/prometheusacceptor/testdata/awesome_prometheus_alerts_queries.txt
 https://raw.githubusercontent.com/mohdtalal3/facebook_post_comment_scraper/main/requirements.txt
+https://raw.githubusercontent.com/momoi-labs/self-host/main/docs/adr/0006-lan-ports-http-dns-grpc.md
+https://raw.githubusercontent.com/momoi-labs/self-host/main/docs/adr/0007-operator-api-http-json.md
+https://raw.githubusercontent.com/momoi-labs/self-host/main/docs/adr/0019-embedded-http-proxy.md
 https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/all.txt
 https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt
 https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt
@@ -1650,9 +1654,6 @@ https://raw.githubusercontent.com/officialputuid/KangProxy/main/xResults/old-dat
 https://raw.githubusercontent.com/officialputuid/KangProxy/main/xResults/old-data/RAW.txt
 https://raw.githubusercontent.com/omkarcloud/website-email-contact-scraper/master/frontend/public/robots.txt
 https://raw.githubusercontent.com/omkarcloud/website-email-contact-scraper/master/requirements.txt
-https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm-http-traffic-ch.json
-https://raw.githubusercontent.com/onixus/bsdm-proxy/main/grafana/dashboards/bsdm-proxy.json
-https://raw.githubusercontent.com/onixus/bsdm-proxy/main/scripts/httparchive-top1k-profile.json
 https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/Country-ALIVE.txt
 https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/alive.txt
 https://raw.githubusercontent.com/papapapapdelesia/Emilia/main/Data/proxy-26agustus.txt
@@ -1699,7 +1700,6 @@ https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/a
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpich/meek_fronts.txt
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpich/obfs4_bridges.txt
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/rkn/rkn_blacklist_test.txt
-https://raw.githubusercontent.com/pqjooqwnd/openai-nim-proxy/main/LICENSE.txt
 https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/all/data.txt
 https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/countries/AE/data.txt
 https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/countries/AL/data.txt
