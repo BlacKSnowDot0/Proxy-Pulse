@@ -277,6 +277,7 @@ https://raw.githubusercontent.com/HichamElarchi/ProxyOpen/main/venv/lib/python3.
 https://raw.githubusercontent.com/HichamElarchi/ProxyOpen/main/venv/lib/python3.9/site-packages/h11-0.16.0.dist-info/top_level.txt
 https://raw.githubusercontent.com/HichamElarchi/ProxyOpen/main/venv/lib/python3.9/site-packages/h2-4.3.0.dist-info/top_level.txt
 https://raw.githubusercontent.com/HichamElarchi/ProxyOpen/main/venv/lib/python3.9/site-packages/hpack-4.1.0.dist-info/top_level.txt
+https://raw.githubusercontent.com/HubertasVin/openrouter-proxy/main/requirements.txt
 https://raw.githubusercontent.com/Ian-Lusule/Proxies/main/proxies/all_proxies.txt
 https://raw.githubusercontent.com/Ian-Lusule/Proxies/main/proxies/http.txt
 https://raw.githubusercontent.com/Ian-Lusule/Proxies/main/proxies/socks4.txt
@@ -951,10 +952,6 @@ https://raw.githubusercontent.com/cmahmud/proxies/main/archive/2026-08-18/124821
 https://raw.githubusercontent.com/cmahmud/proxies/main/archive/2026-08-18/134847-alive.txt
 https://raw.githubusercontent.com/cmahmud/proxies/main/archive/2026-08-18/134847-gold.txt
 https://raw.githubusercontent.com/cmahmud/proxies/main/archive/2026-08-18/144907-alive.txt
-https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/unchecked/http-proxies.txt
-https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/unchecked/https-proxies.txt
-https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/unchecked/socks4-proxies.txt
-https://raw.githubusercontent.com/cyberh4ck3r/free-proxy-list/main/proxies/unchecked/socks5-proxies.txt
 https://raw.githubusercontent.com/darkvibez456/mtproto-proxy-auto/main/proxies.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/ad/socks5.txt
 https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country/ae/http.txt
@@ -1435,6 +1432,7 @@ https://raw.githubusercontent.com/itsanwar/proxy-scraper-ak/main/sproxies/ALL.tx
 https://raw.githubusercontent.com/itsanwar/proxy-scraper/main/http.txt
 https://raw.githubusercontent.com/itsanwar/proxy-scraper/main/proxies.txt
 https://raw.githubusercontent.com/itsanwar/proxy-scraper/main/socks5.txt
+https://raw.githubusercontent.com/itteco/iframely/dev/lib/plugins/validators/readme.txt
 https://raw.githubusercontent.com/iwh3n/tg-proxy/main/proxys/All_Proxys.txt
 https://raw.githubusercontent.com/izaart95-jpg/GLM-Free-API/main/.assets/resources/F_bytecode.txt
 https://raw.githubusercontent.com/izaart95-jpg/GLM-Free-API/main/.assets/resources/L_bytecode.txt
@@ -1459,6 +1457,8 @@ https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/3
 https://raw.githubusercontent.com/just-not-google/full-free-proxy/main/requirements.txt
 https://raw.githubusercontent.com/justdataplease/justproxy/main/dist/SHA256SUMS.txt
 https://raw.githubusercontent.com/kevinxuk/tabbit_openai_proxy/master/requirements.txt
+https://raw.githubusercontent.com/khoazocute/conduit-llm-gateway/main/ai-service/requirements.txt
+https://raw.githubusercontent.com/khoazocute/conduit-llm-gateway/main/experiments/scripts/requirements.txt
 https://raw.githubusercontent.com/klondike0x/mtp4tg-proxies/main/all_proxies.txt
 https://raw.githubusercontent.com/klondike0x/mtp4tg-proxies/main/requirements.txt
 https://raw.githubusercontent.com/komutan234/Proxy-List-Free/main/proxies/http.txt
