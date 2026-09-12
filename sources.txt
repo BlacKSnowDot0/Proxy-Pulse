@@ -149,16 +149,6 @@ https://raw.githubusercontent.com/CelestialBrain/worldpool/main/proxies/by-count
 https://raw.githubusercontent.com/CelestialBrain/worldpool/main/proxies/by-country/KR.txt
 https://raw.githubusercontent.com/CelestialBrain/worldpool/main/proxies/by-country/PH.txt
 https://raw.githubusercontent.com/Chain305/chainsaw-core/main/cli/seeds/npm_popular.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/cli/seeds/pypi_popular.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/cli/testdata/pr_scan/pip/requirements_base.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/cli/testdata/pr_scan/pip/requirements_head.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/depgraph/testdata/gradle_diamond.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/depgraph/testdata/gradle_multiconfig.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/depgraph/testdata/gradle_multilevel.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/depgraph/testdata/gradle_resolved.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/depgraph/testdata/gradle_simple.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/iocscan/feeds/reputation_hosts.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/typosquat/seeds/cargo_top.txt
 https://raw.githubusercontent.com/Cheagjihvg/simple-proxylist/main/http.txt
 https://raw.githubusercontent.com/Cheagjihvg/simple-proxylist/main/socks4.txt
 https://raw.githubusercontent.com/Cheagjihvg/simple-proxylist/main/socks5.txt
@@ -1534,6 +1524,7 @@ https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_fin/260729_go
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_fin/260801_zero_leak_state_stores/060_proxy_benchmark.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_fin/260815_roadmap_closeout/000_source_capture_raw.txt
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_fin/260903_voice_sideband_regression/020_wp3_proxy_affinity_probe.md
+https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_fin/260912_devin_cli_account_login/007_reference_proxy_corroboration.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/260819_unclaimed_bug_selection/030_2107_service_proxy_env.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/260819_unclaimed_bug_selection/130_ci_proxy_env_leak.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_plan/260902_nonbug_adoption_backlog/080_wp8_windows_proxy_auto.md
@@ -1858,6 +1849,7 @@ https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/vless.txt
 https://raw.githubusercontent.com/svinakraft-maker/FlareFeed/main/vmess.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/AE.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/AM.txt
+https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/AT.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/AU.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/BG.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/BR.txt
@@ -1894,6 +1886,13 @@ https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Con
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/src/masenergy/prompts/worker.txt
 https://raw.githubusercontent.com/tdurieux/anonymous_github/main/public/robots.txt
 https://raw.githubusercontent.com/themiralay/Proxy-List-World/master/data.txt
+https://raw.githubusercontent.com/ther12k/lugas/main/docs/okf/issues/m3/M3-007-add-typed-explicit-http-methods-and-path-restrictions.md
+https://raw.githubusercontent.com/ther12k/lugas/main/docs/okf/issues/m3/M3-011-parse-http-responses-into-discriminated-client-results.md
+https://raw.githubusercontent.com/ther12k/lugas/main/docs/okf/references/bun-http-routing.md
+https://raw.githubusercontent.com/ther12k/lugas/main/docs/releases/beta/final-tarball-fixture-check.txt
+https://raw.githubusercontent.com/ther12k/lugas/main/llms-full.txt
+https://raw.githubusercontent.com/ther12k/lugas/main/llms.txt
+https://raw.githubusercontent.com/ther12k/lugas/main/tests/production/fixtures/note.txt
 https://raw.githubusercontent.com/thisnick/cloak-biz-scraper/main/requirements-dev.txt
 https://raw.githubusercontent.com/thisnick/cloak-biz-scraper/main/requirements.txt
 https://raw.githubusercontent.com/timofey-maykov/openwrt-hybrid-failover/main/examples/glob-uci-commands.txt
@@ -1960,6 +1959,7 @@ https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Coun
 https://raw.githubusercontent.com/watchttvv/free-proxy-list/main/proxy.txt
 https://raw.githubusercontent.com/watchttvv/free-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/windtf/wireproxy/master/rc.d/wireproxy
+https://raw.githubusercontent.com/wp-pakulski/btc-etf-flow-validation/main/requirements.txt
 https://raw.githubusercontent.com/xiaocaiji61/proxy-list-git/main/proxies.txt
 https://raw.githubusercontent.com/xiaocongyu66/proxypool/main/output/high_quality.txt
 https://raw.githubusercontent.com/xiaocongyu66/proxypool/main/output/nodes.txt
