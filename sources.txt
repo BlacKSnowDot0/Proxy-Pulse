@@ -228,6 +228,8 @@ https://raw.githubusercontent.com/Diversan313/apex-parser/main/subs/main/alive_b
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/subs/main/alive_bs.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/subs/main/alive_full.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/white_ip.txt
+https://raw.githubusercontent.com/Drunk-Dream/NovelSpeaker/main/THIRD-PARTY-NOTICES.txt
+https://raw.githubusercontent.com/Drunk-Dream/NovelSpeaker/main/docs/specs/HTTP_TTS.md
 https://raw.githubusercontent.com/Elegying/SSRVPN/main/SSRVPN_Android/assets/libgojni-source.txt
 https://raw.githubusercontent.com/Elegying/SSRVPN/main/SSRVPN_MacOS/DMG_README.txt
 https://raw.githubusercontent.com/Elegying/SSRVPN/main/SSRVPN_MacOS/assets/AtlasCore-source.txt
@@ -594,8 +596,6 @@ https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/KADhosts_azet12/maste
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Phishing.Database/master/requirements.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/master/output/domains.list/logs/percentage/percentage.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/master/requirements.txt
-https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/YousList/master/output/domains.list/logs/percentage/percentage.txt
-https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/YousList/master/output/domains.list/logs/percentage/registrar.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/smed79_blacklist_nsfw/master/requirements.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/www.blocklist.de/master/requirements.txt
 https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no1.txt
