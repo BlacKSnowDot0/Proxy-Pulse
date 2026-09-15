@@ -1,39 +1,36 @@
 {
-  "runs_total": 723,
-  "requests_total": 107392426,
-  "sources_scanned_total": 47539,
-  "files_scanned_total": 266245,
-  "candidates_found_total": 342009073,
-  "proxies_checked_total": 97183279,
-  "validated_total": 649803,
-  "duplicates_removed_total": 234364496,
-  "errors_total": 55892,
-  "last_success_at": "2026-09-15T16:50:53Z",
+  "runs_total": 724,
+  "requests_total": 107504213,
+  "sources_scanned_total": 47606,
+  "files_scanned_total": 266694,
+  "candidates_found_total": 342467611,
+  "proxies_checked_total": 97243342,
+  "validated_total": 650106,
+  "duplicates_removed_total": 234664607,
+  "errors_total": 55895,
+  "last_success_at": "2026-09-15T21:13:22Z",
   "last_run": {
-    "started_at": "2026-09-15T16:46:45Z",
-    "finished_at": "2026-09-15T16:50:53Z",
-    "status": "success",
-    "requests_made": 117890,
-    "sources_scanned": 65,
-    "files_scanned": 425,
-    "candidates_found": 359984,
-    "proxies_checked": 60038,
-    "validated": 352,
-    "duplicates_removed": 204838,
-    "error_count": 0,
+    "started_at": "2026-09-15T21:09:40Z",
+    "finished_at": "2026-09-15T21:13:22Z",
+    "status": "success_with_errors",
+    "requests_made": 111787,
+    "sources_scanned": 67,
+    "files_scanned": 449,
+    "candidates_found": 458538,
+    "proxies_checked": 60063,
+    "validated": 303,
+    "duplicates_removed": 300111,
+    "error_count": 3,
     "source_counts": {
       "gist": 0,
-      "repository": 65
+      "repository": 67
     },
     "output_counts": {
-      "all": 352,
-      "http": 63,
-      "https": 24,
-      "socks4": 120,
-      "socks5": 169
-    },
-    "warnings": [
-      "gist search failed on all queries"
-    ]
+      "all": 303,
+      "http": 58,
+      "https": 23,
+      "socks4": 175,
+      "socks5": 70
+    }
   }
 }
