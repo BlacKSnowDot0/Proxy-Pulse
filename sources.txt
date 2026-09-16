@@ -343,6 +343,7 @@ https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/enclave-go/thi
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/enclave-go/third_party/tinfoil-verifier/attestation/collateral/tcb_info_90c06f000000_chain.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/gcp-enclave-migs.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/stage-d-heartbeat-regions.txt
+https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/stage-d-terminate-regions.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/testdata/drain-list-mixed.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/testdata/drain-rrdatas-v1.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/testdata/drain-rrdatas-v2.txt
@@ -360,16 +361,7 @@ https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual-root/assets/j
 https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual-root/assets/js/489.31598d44.js.LICENSE.txt
 https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual-root/assets/js/540.8dfd604f.js.LICENSE.txt
 https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual-root/assets/js/main.db9adf79.js.LICENSE.txt
-https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual/assets/js/165.0e971bf4.js.LICENSE.txt
-https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual/assets/js/2279.83aa07bd.js.LICENSE.txt
-https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual/assets/js/489.31598d44.js.LICENSE.txt
-https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual/assets/js/540.8dfd604f.js.LICENSE.txt
-https://raw.githubusercontent.com/MAIF/otoroshi/master/docs/manual/assets/js/main.87431269.js.LICENSE.txt
-https://raw.githubusercontent.com/MAIF/otoroshi/master/kubernetes/helm/otoroshi/templates/NOTES.txt
 https://raw.githubusercontent.com/MAIF/otoroshi/master/manual/next/docs/entities/http-listeners.md
-https://raw.githubusercontent.com/MAIF/otoroshi/master/manual/next/docs/snippets/datastores/http.conf
-https://raw.githubusercontent.com/MAIF/otoroshi/master/manual/next/docs/snippets/haproxy-http.conf
-https://raw.githubusercontent.com/MAIF/otoroshi/master/manual/next/docs/snippets/haproxy-tcp.conf
 https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt
 https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/docs/features/en/proxy-voting.md
 https://raw.githubusercontent.com/MarcoYou/open-proxy-mcp/main/docs/features/proxy-voting.md
@@ -1374,6 +1366,8 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IT/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/JP/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KH/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KR/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KZ/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/NL/proxies.txt
 https://raw.githubusercontent.com/its-soloz/proxychk-bot/main/requirements.txt
 https://raw.githubusercontent.com/itsanwar/proxy-scraper-ak/main/links.txt
 https://raw.githubusercontent.com/itsanwar/proxy-scraper-ak/main/sproxies/ALL.txt
@@ -1456,6 +1450,10 @@ https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/BJ.t
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-6df660d28962.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-a5b7eb892b17.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies.txt
+https://raw.githubusercontent.com/lexybarton/hermes-docs-files/main/llms.local.txt
+https://raw.githubusercontent.com/lexybarton/hermes-docs-files/main/llms.txt
+https://raw.githubusercontent.com/lexybarton/hermes-docs-files/main/user-guide/egress/iron-proxy.md
+https://raw.githubusercontent.com/lexybarton/hermes-docs-files/main/user-guide/features/subscription-proxy.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_chase/20_cli-proxy-api.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_fin/140_remaining-provider-ports/11_phase1_vertex-http-hardening.md
 https://raw.githubusercontent.com/lidge-jun/opencodex/main/devlog/_fin/143_kiro-gateway-parity/80_phase_http_retry_backoff.md
@@ -1993,6 +1991,8 @@ https://raw.githubusercontent.com/yiguihai11/SmartProxy/main/docs/socks5.md
 https://raw.githubusercontent.com/yiguihai11/SmartProxy/main/requirements.txt
 https://raw.githubusercontent.com/zaiyin/metaclsh-scraper/main/akun_wildcard_aktif.txt
 https://raw.githubusercontent.com/zhanglunet/open-free-router/main/site/robots.txt
+https://raw.githubusercontent.com/zl875136491/grouproxy/main/GROUPROXY_REVIEW.md
+https://raw.githubusercontent.com/zl875136491/grouproxy/main/scripts/fixtures/phase2-invalid.txt
 https://raw.githubusercontent.com/zloi-user/hideip.me/main/connect.txt
 https://raw.githubusercontent.com/zloi-user/hideip.me/main/http.txt
 https://raw.githubusercontent.com/zloi-user/hideip.me/main/https.txt
