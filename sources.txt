@@ -60,6 +60,10 @@ https://raw.githubusercontent.com/2scraper/vrbo-scraper/main/requirements-playwr
 https://raw.githubusercontent.com/2scraper/vrbo-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/vrbo-scraper/main/requirements-selenium.txt
 https://raw.githubusercontent.com/2scraper/vrbo-scraper/main/requirements.txt
+https://raw.githubusercontent.com/2scraper/wellfound-scraper/main/requirements-playwright.txt
+https://raw.githubusercontent.com/2scraper/wellfound-scraper/main/requirements-puppeteer.txt
+https://raw.githubusercontent.com/2scraper/wellfound-scraper/main/requirements-selenium.txt
+https://raw.githubusercontent.com/2scraper/wellfound-scraper/main/requirements.txt
 https://raw.githubusercontent.com/2scraper/woolworths-scraper/main/requirements-playwright.txt
 https://raw.githubusercontent.com/2scraper/woolworths-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/woolworths-scraper/main/requirements-selenium.txt
@@ -1629,11 +1633,7 @@ https://raw.githubusercontent.com/plabayo/rama/main/docs/thirdparty/fork/license
 https://raw.githubusercontent.com/plabayo/rama/main/docs/thirdparty/fork/licenses/tower-http
 https://raw.githubusercontent.com/plabayo/rama/main/fuzz/corpus-seeds/icap_codec/encapsulated-http-trailer
 https://raw.githubusercontent.com/plabayo/rama/main/rama-dns/specifications/rfc1034.txt
-https://raw.githubusercontent.com/plabayo/rama/main/rama-dns/specifications/rfc1035.txt
-https://raw.githubusercontent.com/plabayo/rama/main/rama-dns/specifications/rfc3596.txt
 https://raw.githubusercontent.com/plabayo/rama/main/rama-dns/specifications/rfc9460.txt
-https://raw.githubusercontent.com/plabayo/rama/main/rama-dns/specifications/rfc9848.txt
-https://raw.githubusercontent.com/plabayo/rama/main/rama-dns/specifications/rfc9849.txt
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/app/src/androidTest/assets/golden/proxy_running_first_poll.json
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/app/src/main/assets/lua/LICENSE.zapret2.txt
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/appium/requirements.txt
@@ -1866,6 +1866,7 @@ https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/AU.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/BG.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/BR.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CA.txt
+https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CH.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CL.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CY.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CZ.txt
@@ -1881,6 +1882,7 @@ https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/HK.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/ID.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/IN.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/IT.txt
+https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/JP.txt
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-00635-t0.7-round1-2026-08-24T122645.397267+0000.txt
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-00635-t1.0-round0-2026-08-24T121835.019775+0000.txt
 https://raw.githubusercontent.com/tanishdangi123xyz-ctrl/Proxy-Validation-in-Conversational-MAS/main/data/debug/truncated/gsm_hard-gsm_hard-01123-t0.2-round0-2026-08-24T121456.007130+0000.txt
@@ -1944,8 +1946,6 @@ https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/socks5.txt
 https://raw.githubusercontent.com/vitas/evidra/main/tests/core-packages.txt
 https://raw.githubusercontent.com/vitas/evidra/main/tests/core-workflows.txt
 https://raw.githubusercontent.com/vitas/evidra/main/ui/public/robots.txt
-https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AE/http.txt
-https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/https.txt
 https://raw.githubusercontent.com/warp-tech/warpgate/main/oasdiff-severity.txt
 https://raw.githubusercontent.com/warp-tech/warpgate/main/vendor/sspi/proptest-regressions/auth_identity.txt
 https://raw.githubusercontent.com/warp-tech/warpgate/main/warpgate-web/src/fonts/OFL.txt
