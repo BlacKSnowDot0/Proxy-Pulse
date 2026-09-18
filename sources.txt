@@ -48,6 +48,10 @@ https://raw.githubusercontent.com/2scraper/medium-scraper/main/requirements-play
 https://raw.githubusercontent.com/2scraper/medium-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/medium-scraper/main/requirements-selenium.txt
 https://raw.githubusercontent.com/2scraper/medium-scraper/main/requirements.txt
+https://raw.githubusercontent.com/2scraper/montblanc-scraper/main/requirements-playwright.txt
+https://raw.githubusercontent.com/2scraper/montblanc-scraper/main/requirements-puppeteer.txt
+https://raw.githubusercontent.com/2scraper/montblanc-scraper/main/requirements-selenium.txt
+https://raw.githubusercontent.com/2scraper/montblanc-scraper/main/requirements.txt
 https://raw.githubusercontent.com/2scraper/quora-scraper/main/requirements-playwright.txt
 https://raw.githubusercontent.com/2scraper/quora-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/quora-scraper/main/requirements-selenium.txt
@@ -782,8 +786,6 @@ https://raw.githubusercontent.com/apify/crawlee/master/test/shared/data/unicode_
 https://raw.githubusercontent.com/apify/crawlee/master/website/static/robots.txt
 https://raw.githubusercontent.com/apify/crawlee/master/website/versioned_docs/version-3.10/guides/docker_browser_js.txt
 https://raw.githubusercontent.com/arvindg4u/wgtunnel/main/blocklist.txt
-https://raw.githubusercontent.com/asgharkapk/Sub-Config-Extractor/main/input_subs/clash.txt
-https://raw.githubusercontent.com/asgharkapk/Sub-Config-Extractor/main/input_subs/clashr.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AE/http.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AE/https.txt
 https://raw.githubusercontent.com/asifshaikhtsn/shaikh/master/country/AE/socks5.txt
@@ -1206,9 +1208,6 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/http-proxy-list-2026/main/socks5.
 https://raw.githubusercontent.com/gnxD3RfTT2WE/live-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/live-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/live-proxy-list/main/socks5.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/live-socks5-proxies/main/http.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/live-socks5-proxies/main/socks4.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/live-socks5-proxies/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/mass-http-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/mass-http-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/mass-http-proxy-list/main/socks5.txt
@@ -1440,7 +1439,10 @@ https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/BG.t
 https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/BJ.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-3b80d397f3ec.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-6df660d28962.txt
+https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-b2e6eb06f68f.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies.txt
+https://raw.githubusercontent.com/letsdigtal/SafeProfiles/main/automation/requirements.txt
+https://raw.githubusercontent.com/letsdigtal/SafeProfiles/main/requirements.txt
 https://raw.githubusercontent.com/lexybarton/hermes-docs-files/main/llms.local.txt
 https://raw.githubusercontent.com/lexybarton/hermes-docs-files/main/llms.txt
 https://raw.githubusercontent.com/lexybarton/hermes-docs-files/main/user-guide/egress/iron-proxy.md
@@ -1482,6 +1484,9 @@ https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countr
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/http.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/http.json
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/http.txt
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/socks5.csv
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/socks5.json
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/socks5.txt
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/all.txt
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/http.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/http.json
@@ -1492,6 +1497,7 @@ https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countr
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/al/all.txt
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/al/http.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/al/socks4.csv
+https://raw.githubusercontent.com/lua-benchmark/OpenClash/main/luci-app-openclash/root/etc/openclash/custom/openclash_custom_proxy_server_dns_policy.list
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/all.txt
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/by_country/AE.txt
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/by_country/AF.txt
@@ -1632,7 +1638,6 @@ https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt
 https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/requirements.txt
 https://raw.githubusercontent.com/piraproxy/tpb-proxy-list-2026/main/LAST_UPDATED.txt
 https://raw.githubusercontent.com/piraproxy/tpb-proxy-list-2026/main/images/1.txt
-https://raw.githubusercontent.com/plabayo/rama/main/rama-dns/specifications/rfc9460.txt
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/app/src/androidTest/assets/golden/proxy_running_first_poll.json
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/app/src/main/assets/lua/LICENSE.zapret2.txt
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/appium/requirements.txt
@@ -1643,12 +1648,6 @@ https://raw.githubusercontent.com/po4yka/RIPDPI/main/contract-fixtures/proxy_sta
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpi/domains.txt
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpi/ech_targets.txt
 https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpi/whitelist_sni.txt
-https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpich/byoh_synthetic_domains.txt
-https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpich/cidr_regular_urls.txt
-https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpich/cidr_whitelisted_urls.txt
-https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpich/meek_fronts.txt
-https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/dpich/obfs4_bridges.txt
-https://raw.githubusercontent.com/po4yka/RIPDPI/main/core/diagnostics/src/main/assets/rkn/rkn_blacklist_test.txt
 https://raw.githubusercontent.com/ppap54088/ProxMO-RL/main/Notice.txt
 https://raw.githubusercontent.com/ppap54088/ProxMO-RL/main/agent_system/environments/env_package/webshop/webshop/baseline_models/requirements.txt
 https://raw.githubusercontent.com/ppap54088/ProxMO-RL/main/agent_system/environments/env_package/webshop/webshop/requirements.txt
@@ -1797,6 +1796,7 @@ https://raw.githubusercontent.com/sheying2013/OpenBrowser/main/Browserapp/assets
 https://raw.githubusercontent.com/shubhamshendre/Free-Proxies/main/http.txt
 https://raw.githubusercontent.com/shubhamshendre/Free-Proxies/main/socks4.txt
 https://raw.githubusercontent.com/shubhamshendre/Free-Proxies/main/socks5.txt
+https://raw.githubusercontent.com/shulganovo/Proxylists/main/proxies.txt
 https://raw.githubusercontent.com/socks5ip/proxy-ip-pricing/main/proxy-ip-pricing-cn-2026.csv
 https://raw.githubusercontent.com/socks5ip/proxy-ip-pricing/main/proxy-ip-pricing-cn-2026.json
 https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/en/faq-top20-buying-proxy.md
