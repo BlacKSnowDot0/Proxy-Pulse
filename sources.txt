@@ -687,6 +687,7 @@ https://raw.githubusercontent.com/Xsenus/ProxyHarbor/main/src/proxyharbor-web/pu
 https://raw.githubusercontent.com/abusaeeidx/TazaProxy-Troxy/main/last_report.txt
 https://raw.githubusercontent.com/abusaeeidx/TazaProxy-Troxy/main/status.txt
 https://raw.githubusercontent.com/abusaeeidx/TazaProxy-Troxy/main/working_proxies.txt
+https://raw.githubusercontent.com/adamgecc/redgifs-scraper/main/requirements.txt
 https://raw.githubusercontent.com/adesh777/axios/master/distribution/credits.txt
 https://raw.githubusercontent.com/adesh777/axios/master/distribution/license.txt
 https://raw.githubusercontent.com/adesh777/axios/master/distribution/readme.txt
@@ -1045,16 +1046,6 @@ https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/apps/mcp/src/pwnpro
 https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/apps/mcp/src/pwnproxy_mcp.egg-info/entry_points.txt
 https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/apps/mcp/src/pwnproxy_mcp.egg-info/requires.txt
 https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/apps/mcp/src/pwnproxy_mcp.egg-info/top_level.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/pwnproxy/ai/reports/prompts/facts.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/pwnproxy/ai/reports/prompts/narrative_executive.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/pwnproxy/ai/reports/prompts/narrative_remediation.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/pwnproxy/ai/reports/prompts/narrative_technical.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/pwnproxy/ai/reports/prompts/summary.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/pwnproxy/ai/triage/prompts/judge_v1.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/pwnproxy/services/crawler/wordlists/large.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/pwnproxy/services/crawler/wordlists/medium.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/pwnproxy/services/crawler/wordlists/small.txt
-https://raw.githubusercontent.com/ericmtzmtz/pwnproxy/master/test_output.txt
 https://raw.githubusercontent.com/erimammr/Captcha-Solver-Bot-2026-Free/main/requirements.txt
 https://raw.githubusercontent.com/eslco/base/main/config/singbox/homeproxy/homeproxy
 https://raw.githubusercontent.com/eslco/base/main/rule/Clash/Talkatone/ttproxy.list
@@ -1472,6 +1463,9 @@ https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countr
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/http.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/http.json
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/http.txt
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/socks4.csv
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/socks4.json
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/socks4.txt
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/socks5.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/socks5.json
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/ae/socks5.txt
@@ -1621,6 +1615,8 @@ https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/abpwhite.txt
 https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt
 https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt
 https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/requirements.txt
+https://raw.githubusercontent.com/perfect-panel/frontend/main/apps/admin/public/robots.txt
+https://raw.githubusercontent.com/perfect-panel/frontend/main/apps/user/public/robots.txt
 https://raw.githubusercontent.com/piraproxy/tpb-proxy-list-2026/main/LAST_UPDATED.txt
 https://raw.githubusercontent.com/piraproxy/tpb-proxy-list-2026/main/images/1.txt
 https://raw.githubusercontent.com/ppap54088/ProxMO-RL/main/Notice.txt
@@ -1915,6 +1911,10 @@ https://raw.githubusercontent.com/trickstercache/trickster/main/docs/http3.md
 https://raw.githubusercontent.com/trickstercache/trickster/main/testdata/ignore_words.txt
 https://raw.githubusercontent.com/trickstercache/trickster/main/testdata/license_header_template.txt
 https://raw.githubusercontent.com/tricrck/working-public-proxies/main/requirements.txt
+https://raw.githubusercontent.com/ubercreative-alt/ubercreative-alt-https-rightchoiceservices.uk-robots.txt/main/.emergent/system_deps.txt
+https://raw.githubusercontent.com/ubercreative-alt/ubercreative-alt-https-rightchoiceservices.uk-robots.txt/main/backend/requirements.txt
+https://raw.githubusercontent.com/ubercreative-alt/ubercreative-alt-https-rightchoiceservices.uk-robots.txt/main/frontend/public/llms.txt
+https://raw.githubusercontent.com/ubercreative-alt/ubercreative-alt-https-rightchoiceservices.uk-robots.txt/main/frontend/public/robots.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/http.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/https.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/proxylist.csv
