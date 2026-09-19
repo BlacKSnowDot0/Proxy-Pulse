@@ -338,7 +338,6 @@ https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/subscriptio
 https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/subscriptions/subscription-102.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/subscriptions/subscription-103.txt
 https://raw.githubusercontent.com/Fortitude-Group/OmnisRouter/main/docs/superpowers/specs/2026-09-09-omnisrouter-tray-proxy-design.md
-https://raw.githubusercontent.com/Fortitude-Group/OmnisRouter/main/models/bge-small-en-v1.5/vocab.txt
 https://raw.githubusercontent.com/Gegaremant/TG-Proxy/master/packaging/version_info.txt
 https://raw.githubusercontent.com/HKUDS/PrivacyFlow/main/docs/vendor/lucide-LICENSE.txt
 https://raw.githubusercontent.com/HKUDS/PrivacyFlow/main/tests/fixtures/detector_shell_benign.txt
@@ -1574,6 +1573,7 @@ https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CA.t
 https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CH.txt
 https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CL.txt
 https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CN.txt
+https://raw.githubusercontent.com/neuronaline/pagefetch/master/requirements.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/http.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/requirements.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/socks4.txt
