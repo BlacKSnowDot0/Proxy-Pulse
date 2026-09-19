@@ -13,25 +13,25 @@
 | Metric | Value |
 | --- | ---: |
 | 🚦 Last run status | success |
-| 🕒 Last generated | 2026-09-19T10:49:34Z |
-| ✅ Last successful refresh | 2026-09-19T10:49:34Z |
-| 🔁 Total runs | 738 |
-| 🌐 Total outbound requests | 109172247 |
-| 🧪 Total proxies checked | 98085146 |
-| 📡 Total validated proxies | 655252 |
+| 🕒 Last generated | 2026-09-19T15:51:27Z |
+| ✅ Last successful refresh | 2026-09-19T15:51:27Z |
+| 🔁 Total runs | 739 |
+| 🌐 Total outbound requests | 109295036 |
+| 🧪 Total proxies checked | 98145240 |
+| 📡 Total validated proxies | 655631 |
 
 ## 📂 Published Lists
 
 | File | Description | Count |
 | --- | --- | ---: |
-| [http.txt](http.txt) | Validated HTTP proxies | 123 |
-| [https.txt](https.txt) | HTTP proxies with CONNECT tunnel support | 50 |
-| [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | 177 |
-| [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | 76 |
-| [all.txt](all.txt) | Combined scheme-qualified list | 376 |
+| [http.txt](http.txt) | Validated HTTP proxies | 110 |
+| [https.txt](https.txt) | HTTP proxies with CONNECT tunnel support | 35 |
+| [socks4.txt](socks4.txt) | Validated SOCKS4 proxies | 188 |
+| [socks5.txt](socks5.txt) | Validated SOCKS5 proxies | 81 |
+| [all.txt](all.txt) | Combined scheme-qualified list | 379 |
 | [stats.json](stats.json) | Machine-readable run database | 1 |
 | [docs/data/dashboard.json](docs/data/dashboard.json) | Machine-readable dashboard dataset | 1 |
-| [docs/data/proxies.json](docs/data/proxies.json) | Machine-readable validated proxy metadata | 376 |
+| [docs/data/proxies.json](docs/data/proxies.json) | Machine-readable validated proxy metadata | 379 |
 | [sources.txt](sources.txt) | Discovered source file URLs | fresh each run |
 | [data/sources.json](data/sources.json) | Discovered source database | capped at 2000 |
 | [data/known-good.json](data/known-good.json) | Persistent proxy reliability state | rolling |
