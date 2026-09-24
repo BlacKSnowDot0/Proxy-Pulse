@@ -113,7 +113,7 @@ https://raw.githubusercontent.com/Access-At/proxy-list/main/socks.json
 https://raw.githubusercontent.com/Access-At/proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/Access-At/proxy-list/main/socks5.txt
 https://raw.githubusercontent.com/AlexPhBit/OEIAT-Watchlist-Internet---Filter/main/filter.txt
-https://raw.githubusercontent.com/Altimis/Scweet/master/LICENSE.txt
+https://raw.githubusercontent.com/Alv-P/LLM-Firewall/main/requirements.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/http_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/https_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/socks4_proxies.txt
@@ -121,12 +121,7 @@ https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_file
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/requirements.txt
 https://raw.githubusercontent.com/Argh94/Proxy-List/main/All_Config.txt
 https://raw.githubusercontent.com/Argh94/Proxy-List/main/HTTP.txt
-https://raw.githubusercontent.com/Argh94/Proxy-List/main/Hysteria2.txt
-https://raw.githubusercontent.com/Argh94/Proxy-List/main/SOCKS4.txt
-https://raw.githubusercontent.com/Argh94/Proxy-List/main/SOCKS5.txt
 https://raw.githubusercontent.com/Argh94/Proxy-List/main/ShadowSocks.txt
-https://raw.githubusercontent.com/Argh94/Proxy-List/main/Trojan.txt
-https://raw.githubusercontent.com/Argh94/Proxy-List/main/WireGuard.txt
 https://raw.githubusercontent.com/Argh94/telegram-proxy-scraper/main/Files/requirements.txt
 https://raw.githubusercontent.com/Argh94/telegram-proxy-scraper/main/proxy.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/docs/robots.txt
@@ -232,6 +227,7 @@ https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batch
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batches/v2ray/batch_010.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batches/v2ray/batch_011.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/batches/v2ray/batch_012.txt
+https://raw.githubusercontent.com/Deskgram-2/telegram-proxy-manager-deskgram/main/proxies.example.txt
 https://raw.githubusercontent.com/Ding-Ding-Projects/opencodex/main/devlog/_chase/20_cli-proxy-api.md
 https://raw.githubusercontent.com/Ding-Ding-Projects/opencodex/main/devlog/_fin/140_remaining-provider-ports/11_phase1_vertex-http-hardening.md
 https://raw.githubusercontent.com/Ding-Ding-Projects/opencodex/main/devlog/_fin/143_kiro-gateway-parity/80_phase_http_retry_backoff.md
@@ -1280,6 +1276,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/all-proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AL/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AR/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AT/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AU/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AZ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/BA/proxies.txt
@@ -1302,6 +1299,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CY/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CZ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DK/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DO/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EC/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EG/proxies.txt
@@ -1883,6 +1881,8 @@ https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/40e
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/robots.txt
 https://raw.githubusercontent.com/themiralay/Proxy-List-World/master/data.txt
+https://raw.githubusercontent.com/thisnick/cloak-biz-scraper/main/requirements-dev.txt
+https://raw.githubusercontent.com/thisnick/cloak-biz-scraper/main/requirements.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/proxies.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/requirements.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/working_proxies.txt
