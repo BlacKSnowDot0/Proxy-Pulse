@@ -119,9 +119,6 @@ https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_file
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/socks4_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/socks5_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/requirements.txt
-https://raw.githubusercontent.com/Argh94/Proxy-List/main/All_Config.txt
-https://raw.githubusercontent.com/Argh94/Proxy-List/main/HTTP.txt
-https://raw.githubusercontent.com/Argh94/Proxy-List/main/ShadowSocks.txt
 https://raw.githubusercontent.com/Argh94/telegram-proxy-scraper/main/Files/requirements.txt
 https://raw.githubusercontent.com/Argh94/telegram-proxy-scraper/main/proxy.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/docs/robots.txt
@@ -246,7 +243,6 @@ https://raw.githubusercontent.com/Diversan313/apex-parser/main/subs/main/alive_b
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/subs/main/alive_bs.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/subs/main/alive_full.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/white_ip.txt
-https://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/https.txt
 https://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/socks4.txt
 https://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/socks5.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/app/requirements.txt
@@ -472,6 +468,7 @@ https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/count
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/at/socks4/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/au/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/au/http/data.txt
+https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/au/https/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/au/socks4/data.txt
 https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/proxies/countries/ba/data.txt
 https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/http.txt
@@ -1417,6 +1414,7 @@ https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/BE.t
 https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/BF.txt
 https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/BG.txt
 https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/BJ.txt
+https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-2ecd178267bd.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-3b80d397f3ec.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-451d360d47df.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-6df660d28962.txt
@@ -1581,6 +1579,7 @@ https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corp
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/scrape_socks4.txt
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/scrape_socks5.txt
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/tls_http.txt
+https://raw.githubusercontent.com/morawskidotmy/youtube-proxies/main/youtube-proxies.txt
 https://raw.githubusercontent.com/movsb/gun/main/pkg/rules/_banned.default.txt
 https://raw.githubusercontent.com/movsb/gun/main/pkg/rules/_blocked.default.txt
 https://raw.githubusercontent.com/movsb/gun/main/pkg/rules/_ignored.default.txt
@@ -1718,6 +1717,7 @@ https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elit
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/http/http.txt
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/https/https.csv
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/https/https.json
+https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/elite/https/https.txt
 https://raw.githubusercontent.com/rix4uni/fresh-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS.txt
 https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt
