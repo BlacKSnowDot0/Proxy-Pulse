@@ -14,6 +14,10 @@ https://raw.githubusercontent.com/2scraper/foodpanda-scraper/main/requirements-p
 https://raw.githubusercontent.com/2scraper/foodpanda-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/foodpanda-scraper/main/requirements-selenium.txt
 https://raw.githubusercontent.com/2scraper/foodpanda-scraper/main/requirements.txt
+https://raw.githubusercontent.com/2scraper/kohls-scraper/main/requirements-playwright.txt
+https://raw.githubusercontent.com/2scraper/kohls-scraper/main/requirements-puppeteer.txt
+https://raw.githubusercontent.com/2scraper/kohls-scraper/main/requirements-selenium.txt
+https://raw.githubusercontent.com/2scraper/kohls-scraper/main/requirements.txt
 https://raw.githubusercontent.com/2scraper/makemytrip-scraper/main/requirements-playwright.txt
 https://raw.githubusercontent.com/2scraper/makemytrip-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/makemytrip-scraper/main/requirements-selenium.txt
@@ -179,6 +183,7 @@ https://raw.githubusercontent.com/AutoArchive/webNR/main/public/sources/english-
 https://raw.githubusercontent.com/BSG-Walter/proxy-fresh/main/countries.txt
 https://raw.githubusercontent.com/BSG-Walter/proxy-fresh/main/proxies-valid.txt
 https://raw.githubusercontent.com/Bes-js/public-proxy-list/main/proxies.txt
+https://raw.githubusercontent.com/Blu-Tiger/lucida-hifi-proxy/main/requirements.txt
 https://raw.githubusercontent.com/Bwillou1/LienLibre/main/.well-known/security.txt
 https://raw.githubusercontent.com/Bwillou1/LienLibre/main/ai.txt
 https://raw.githubusercontent.com/Bwillou1/LienLibre/main/e0f7a63459c748c08169992d9d1469e3.txt
@@ -438,6 +443,7 @@ https://raw.githubusercontent.com/NaraDuyy/selenium-creation/main/proxystatic.ex
 https://raw.githubusercontent.com/NaraDuyy/selenium-creation/main/requirements.txt
 https://raw.githubusercontent.com/NekoEpisode/StarlightProxy/master/src/main/resources/data/packets/readme.txt
 https://raw.githubusercontent.com/Nighty3098/ProxySniffer/main/requirements.txt
+https://raw.githubusercontent.com/Nomadcxx/opencode-cursor/main/tests/fixtures/cursor-pricing-models.txt
 https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/cert-5696.txt
 https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/cert-5A23.txt
 https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/cert-7C47.txt
@@ -661,6 +667,9 @@ https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/r
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BG.txt
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BJ.txt
 https://raw.githubusercontent.com/aognio/webknife/wip/.agents/skills/webknife-premiere/references/http-pipeline.md
+https://raw.githubusercontent.com/api-evangelist/anew/main/llms/anew-llms.txt
+https://raw.githubusercontent.com/api-evangelist/anew/main/openapi/_original/anew-openapi.json.archived.txt
+https://raw.githubusercontent.com/api-evangelist/anew/main/well-known/anew-http-message-signatures-directory.json
 https://raw.githubusercontent.com/api-evangelist/apify/main/blogs/2026-05-04-the-13-best-proxy-providers-for-web-scraping-in-2026.md
 https://raw.githubusercontent.com/api-evangelist/apify/main/blogs/2026-07-15-the-12-best-proxy-providers-for-web-scraping-in-2026.md
 https://raw.githubusercontent.com/api-evangelist/apify/main/llms/apify-llms.txt
@@ -1321,19 +1330,6 @@ https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/3
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/31/06-00/proxies.txt
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/31/12-00/proxies.txt
 https://raw.githubusercontent.com/just-not-google/full-free-proxy/main/requirements.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/licenses/PolyForm-Noncommercial-1.0.0.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/src/Titanium.Web.Proxy.Abstractions/PublicAPI.Shipped.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/src/Titanium.Web.Proxy.Abstractions/PublicAPI.Unshipped.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/src/Titanium.Web.Proxy.Configuration/PublicAPI.Shipped.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/src/Titanium.Web.Proxy.Configuration/PublicAPI.Unshipped.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/src/Titanium.Web.Proxy/PublicAPI.Shipped.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/src/Titanium.Web.Proxy/PublicAPI.Unshipped.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/tools/RpsLoadProbe/requirements-charts.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/tools/packaging/THIRD-PARTY-HTTP3.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/tools/packaging/THIRD-PARTY-INSPECTOR.txt
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/tools/packaging/http3-native.lock.json
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/website/docs/http3.md
-https://raw.githubusercontent.com/justcoding121/titanium-web-proxy/develop/wiki/HTTP-3.md
 https://raw.githubusercontent.com/kadireren7/dpi-for-everyone/main/scripts/dpi-proxy-ctl
 https://raw.githubusercontent.com/khaleel-git/K9-Web-Protection/master/lists/categories/abortion/domains.txt
 https://raw.githubusercontent.com/khaleel-git/K9-Web-Protection/master/lists/categories/adult-mature/domains.txt
@@ -1676,6 +1672,13 @@ https://raw.githubusercontent.com/pwnx0/proxy/main/proxies/source/socks5.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/proxy.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/requirements.txt
 https://raw.githubusercontent.com/qjin0078-cmyk/Freedom/main/requirements.txt
+https://raw.githubusercontent.com/qr243vbi/nekobox/main/CMakeLists.txt
+https://raw.githubusercontent.com/qr243vbi/nekobox/main/changelogs/5.11.28.1.txt
+https://raw.githubusercontent.com/qr243vbi/nekobox/main/changelogs/5.11.28.2.txt
+https://raw.githubusercontent.com/qr243vbi/nekobox/main/changelogs/5.11.28.3.txt
+https://raw.githubusercontent.com/qr243vbi/nekobox/main/core/CMakeLists.txt
+https://raw.githubusercontent.com/qr243vbi/nekobox/main/res/languages.txt
+https://raw.githubusercontent.com/qr243vbi/nekobox/main/src/3rdparty/QHotkey/CMakeLists.txt
 https://raw.githubusercontent.com/quangdang46/openproxy/main/src/core/config/data/codex_default_instructions.txt
 https://raw.githubusercontent.com/rekt0ro/Proxy-Harvester/main/subscriptions/light-base64.txt
 https://raw.githubusercontent.com/rekt0ro/Proxy-Harvester/main/subscriptions/light.txt
@@ -1835,7 +1838,6 @@ https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/AT.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/AU.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/BE.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/BG.txt
-https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/BR.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CA.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CH.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CL.txt
@@ -1908,8 +1910,6 @@ https://raw.githubusercontent.com/veydanproject/veydanbrowser/main/src-tauri/cra
 https://raw.githubusercontent.com/veydanproject/veydanbrowser/main/src-tauri/crates/veydan-sync/target/debug/.fingerprint/http-body-util-5d952a57e08cc1ef/lib-http_body_util
 https://raw.githubusercontent.com/veydanproject/veydanbrowser/main/src-tauri/crates/veydan-sync/target/debug/.fingerprint/http-body-util-5d952a57e08cc1ef/lib-http_body_util.json
 https://raw.githubusercontent.com/veydanproject/veydanbrowser/main/src-tauri/crates/veydan-sync/target/debug/.fingerprint/http-body-util-66d1dd82bc62875e/dep-lib-http_body_util
-https://raw.githubusercontent.com/vitas/evidra/main/tests/core-packages.txt
-https://raw.githubusercontent.com/vitas/evidra/main/tests/core-workflows.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AE/http.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AE/https.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AE/socks4.txt
