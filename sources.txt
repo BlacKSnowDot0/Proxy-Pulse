@@ -13,7 +13,6 @@ https://raw.githubusercontent.com/2scraper/flippa-scraper/main/requirements.txt
 https://raw.githubusercontent.com/2scraper/foodpanda-scraper/main/requirements-playwright.txt
 https://raw.githubusercontent.com/2scraper/foodpanda-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/foodpanda-scraper/main/requirements-selenium.txt
-https://raw.githubusercontent.com/2scraper/foodpanda-scraper/main/requirements.txt
 https://raw.githubusercontent.com/2scraper/kohls-scraper/main/requirements-playwright.txt
 https://raw.githubusercontent.com/2scraper/kohls-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/kohls-scraper/main/requirements-selenium.txt
@@ -34,10 +33,6 @@ https://raw.githubusercontent.com/2scraper/opensea-scraper/main/requirements-pla
 https://raw.githubusercontent.com/2scraper/opensea-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/opensea-scraper/main/requirements-selenium.txt
 https://raw.githubusercontent.com/2scraper/opensea-scraper/main/requirements.txt
-https://raw.githubusercontent.com/2scraper/quora-scraper/main/requirements-playwright.txt
-https://raw.githubusercontent.com/2scraper/quora-scraper/main/requirements-puppeteer.txt
-https://raw.githubusercontent.com/2scraper/quora-scraper/main/requirements-selenium.txt
-https://raw.githubusercontent.com/2scraper/quora-scraper/main/requirements.txt
 https://raw.githubusercontent.com/2scraper/screener-scraper/main/requirements-playwright.txt
 https://raw.githubusercontent.com/2scraper/screener-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/screener-scraper/main/requirements-selenium.txt
@@ -74,10 +69,6 @@ https://raw.githubusercontent.com/398001/ProxysList/main/all_working.txt
 https://raw.githubusercontent.com/398001/ProxysList/main/http_working.txt
 https://raw.githubusercontent.com/398001/ProxysList/main/socks4_working.txt
 https://raw.githubusercontent.com/398001/ProxysList/main/socks5_working.txt
-https://raw.githubusercontent.com/3proxy/3proxy/master/CMakeLists.txt
-https://raw.githubusercontent.com/3proxy/3proxy/master/cfg/0.scenario.txt
-https://raw.githubusercontent.com/3proxy/3proxy/master/doc/ru/example1.txt
-https://raw.githubusercontent.com/3proxy/3proxy/master/doc/ru/iodbc.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/output.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/proxies.txt
 https://raw.githubusercontent.com/644646497/proxy-scraper/main/sources.txt
@@ -524,6 +515,11 @@ https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Azer
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bahamas.txt
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bahrain.txt
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bangladesh.txt
+https://raw.githubusercontent.com/SoraDev-ID/proxy-scraper/main/http.txt
+https://raw.githubusercontent.com/SoraDev-ID/proxy-scraper/main/last_updated.txt
+https://raw.githubusercontent.com/SoraDev-ID/proxy-scraper/main/requirements.txt
+https://raw.githubusercontent.com/SoraDev-ID/proxy-scraper/main/socks4.txt
+https://raw.githubusercontent.com/SoraDev-ID/proxy-scraper/main/socks5.txt
 https://raw.githubusercontent.com/Sreenivas-Sadhu-Prabhakara/apigeex-training/main/requirements.txt
 https://raw.githubusercontent.com/StratedgeWorkflowSystems/StratEdge-public-discovery/main/llms.txt
 https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt
@@ -1001,6 +997,9 @@ https://raw.githubusercontent.com/facebook/proxygen/main/build/deps/github_hashe
 https://raw.githubusercontent.com/facebook/proxygen/main/build/deps/github_hashes/facebook/mvfst-rev.txt
 https://raw.githubusercontent.com/facebook/proxygen/main/build/deps/github_hashes/facebook/wangle-rev.txt
 https://raw.githubusercontent.com/facebook/proxygen/main/build/deps/github_hashes/facebookincubator/fizz-rev.txt
+https://raw.githubusercontent.com/facebook/proxygen/main/build/fbcode_builder/lint_test_fixtures/below_floor/CMakeLists.txt
+https://raw.githubusercontent.com/facebook/proxygen/main/build/fbcode_builder/lint_test_fixtures/missing_minimum/CMakeLists.txt
+https://raw.githubusercontent.com/facebook/proxygen/main/build/fbcode_builder/lint_test_fixtures/ok_at_floor/CMakeLists.txt
 https://raw.githubusercontent.com/facebook/proxygen/main/build/fbcode_builder/manifests/nghttp2
 https://raw.githubusercontent.com/facebook/proxygen/main/build/fbcode_builder/manifests/proxygen
 https://raw.githubusercontent.com/facebook/proxygen/main/cmake/TARGETS.txt
@@ -1259,6 +1258,7 @@ https://raw.githubusercontent.com/inducer/openai-proxy/main/openai-proxy
 https://raw.githubusercontent.com/inference-gateway/inference-gateway/main/tests/benchmarks/baseline.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/all-proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AE/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AF/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AL/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AR/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AT/proxies.txt
