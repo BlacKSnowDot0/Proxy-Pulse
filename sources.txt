@@ -322,6 +322,7 @@ https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/testdata
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/testdata/drain-rrdatas-v1.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/testdata/drain-rrdatas-v2.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/tools/testdata/stage-d-stream-not-sse.txt
+https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/trust-page/accepted-hostdata-azure.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/trust-page/accepted-image-digests-gcp.txt
 https://raw.githubusercontent.com/M1noa/proxypool/main/internal/geoip/countries.txt
 https://raw.githubusercontent.com/MJoDev/open-shield/main/test/coverage-floors.txt
@@ -639,9 +640,6 @@ https://raw.githubusercontent.com/alganet/lint-http/main/docs/violations/http3_g
 https://raw.githubusercontent.com/alganet/lint-http/main/docs/violations/http3_max_push_id_forbidden.md
 https://raw.githubusercontent.com/alganet/lint-http/main/docs/violations/http3_max_push_id_invalid.md
 https://raw.githubusercontent.com/alganet/lint-http/main/docs/violations/http3_settings_duplicated.md
-https://raw.githubusercontent.com/alganet/lint-http/main/docs/violations/http3_settings_identifier_duplicated.md
-https://raw.githubusercontent.com/alganet/lint-http/main/docs/violations/http3_settings_identifier_forbidden.md
-https://raw.githubusercontent.com/alganet/lint-http/main/docs/violations/http_date_empty.md
 https://raw.githubusercontent.com/alkavan/microserve/master/CMakeLists.txt
 https://raw.githubusercontent.com/alkavan/microserve/master/doc/multicast_http3_protocol.md
 https://raw.githubusercontent.com/alkavan/microserve/master/test/CMakeLists.txt
@@ -661,7 +659,6 @@ https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/r
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BE.txt
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BG.txt
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BJ.txt
-https://raw.githubusercontent.com/aognio/webknife/wip/.agents/skills/webknife-premiere/references/http-pipeline.md
 https://raw.githubusercontent.com/api-evangelist/anew/main/llms/anew-llms.txt
 https://raw.githubusercontent.com/api-evangelist/anew/main/openapi/_original/anew-openapi.json.archived.txt
 https://raw.githubusercontent.com/api-evangelist/anew/main/well-known/anew-http-message-signatures-directory.json
@@ -897,6 +894,8 @@ https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BO/phttp_BO_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BR/http_BR_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BR/phttp_BR_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BY/http_BY_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BY/phttp_BY_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CA/http_CA_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CA/phttp_CA_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CH/http_CH_checked.txt
@@ -1180,6 +1179,7 @@ https://raw.githubusercontent.com/hahwul/gori/main/src/gori/fuzz/payloads/traver
 https://raw.githubusercontent.com/hahwul/gori/main/src/gori/fuzz/payloads/xss.txt
 https://raw.githubusercontent.com/hahwul/gori/main/src/gori/miner/wordlists/params.txt
 https://raw.githubusercontent.com/hector561/linux-client/main/requirements.txt
+https://raw.githubusercontent.com/heiher/hev-socks5-tunnel/main/third-part/wintun/LICENSE.txt
 https://raw.githubusercontent.com/heretic-tech/apostate/main/docs/subsystems/network-proxy.md
 https://raw.githubusercontent.com/heymaikol/network-doctor/main/site/robots.txt
 https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt
