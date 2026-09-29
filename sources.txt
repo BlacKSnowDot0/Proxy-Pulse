@@ -220,6 +220,7 @@ https://raw.githubusercontent.com/Diversan313/apex-parser/main/subs/other/countr
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/subs/other/countries/AL/alive_AL.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/subs/other/countries/AM/alive_AM.txt
 https://raw.githubusercontent.com/Diversan313/apex-parser/main/white_ip.txt
+https://raw.githubusercontent.com/DylanSmith025/ProxyList/main/Proxy.list
 https://raw.githubusercontent.com/FANATFANATA/DanyAPI/prod/requirements-dev.txt
 https://raw.githubusercontent.com/FANATFANATA/DanyAPI/prod/requirements.txt
 https://raw.githubusercontent.com/FANATFANATA/DanyBOT/prod/requirements-dev.txt
@@ -251,8 +252,6 @@ https://raw.githubusercontent.com/Goodnessmbakara/agentrouter-opencode-proxy/mai
 https://raw.githubusercontent.com/Goodnessmbakara/agentrouter-opencode-proxy/main/task/evaluation/self_check_blind_b.txt
 https://raw.githubusercontent.com/Goodnessmbakara/agentrouter-opencode-proxy/main/task/evaluation/self_check_blind_c.txt
 https://raw.githubusercontent.com/Goodnessmbakara/agentrouter-opencode-proxy/main/task/evaluation/self_check_prompt.txt
-https://raw.githubusercontent.com/HKUDS/PrivacyFlow/main/docs/vendor/lucide-LICENSE.txt
-https://raw.githubusercontent.com/HKUDS/PrivacyFlow/main/tests/fixtures/detector_shell_sensitive.txt
 https://raw.githubusercontent.com/HankNovic/ProxyClean/main/SOCKS5.txt
 https://raw.githubusercontent.com/HankNovic/ProxyClean/main/SOCKS5_RAW.txt
 https://raw.githubusercontent.com/Ian-Lusule/Proxies/main/proxies/all_proxies.txt
@@ -663,7 +662,6 @@ https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-hand
 https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-scaling-api-management-with-gloo-gateway-and-envoy-proxy.md
 https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-why-pick-envoy-proxy-and-solo-io-over-kong-gateway-for.md
 https://raw.githubusercontent.com/api-evangelist/gloo/main/llms/gloo-llms.txt
-https://raw.githubusercontent.com/api-evangelist/onecli/main/llms/onecli-llms.txt
 https://raw.githubusercontent.com/apify/crawlee-python/master/src/crawlee/project_template/{{cookiecutter.project_name}}/requirements.txt
 https://raw.githubusercontent.com/apify/crawlee-python/master/website/static/robots.txt
 https://raw.githubusercontent.com/apify/crawlee/master/docs/guides/docker_browser_js.txt
@@ -996,9 +994,6 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/bot-proxy-list/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-http-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-http-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-http-proxy-list/main/socks5.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-proxy-list/main/http.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-proxy-list/main/socks4.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/bulk-proxy-list/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/checked-http-proxies/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/checked-http-proxies/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/checked-http-proxies/main/socks5.txt
@@ -1477,6 +1472,7 @@ https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/proxies/countries
 https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/proxies/countries/http/AT.txt
 https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/proxies/countries/http/AU.txt
 https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/proxies/countries/http/AZ.txt
+https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/proxies/countries/http/BA.txt
 https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/proxies/countries/http/BD.txt
 https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/proxies/countries/http/BE.txt
 https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/proxies/countries/http/BG.txt
@@ -1520,9 +1516,6 @@ https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corp
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/scrape_socks5.txt
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/tls_http.txt
 https://raw.githubusercontent.com/morawskidotmy/youtube-proxies/main/youtube-proxies.txt
-https://raw.githubusercontent.com/movsb/gun/main/pkg/rules/_banned.default.txt
-https://raw.githubusercontent.com/movsb/gun/main/pkg/rules/_blocked.default.txt
-https://raw.githubusercontent.com/movsb/gun/main/pkg/rules/_ignored.default.txt
 https://raw.githubusercontent.com/mpyw/sql-http-proxy/main/sql-http-proxy.schema.json
 https://raw.githubusercontent.com/mukeshk3272/Smart-Routing-Butler-for-OpenClaws/main/router/requirements-dev.txt
 https://raw.githubusercontent.com/mukeshk3272/Smart-Routing-Butler-for-OpenClaws/main/router/requirements.txt
@@ -1657,7 +1650,6 @@ https://raw.githubusercontent.com/pwnx0/proxy/main/proxies/source/socks4.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/proxies/source/socks5.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/proxy.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/requirements.txt
-https://raw.githubusercontent.com/qjin0078-cmyk/Freedom/main/requirements.txt
 https://raw.githubusercontent.com/qr243vbi/nekobox/main/CMakeLists.txt
 https://raw.githubusercontent.com/qr243vbi/nekobox/main/changelogs/5.11.28.1.txt
 https://raw.githubusercontent.com/qr243vbi/nekobox/main/changelogs/5.11.28.2.txt
@@ -1750,6 +1742,18 @@ https://raw.githubusercontent.com/shubhamshendre/Free-Proxies/main/http.txt
 https://raw.githubusercontent.com/shubhamshendre/Free-Proxies/main/socks4.txt
 https://raw.githubusercontent.com/shubhamshendre/Free-Proxies/main/socks5.txt
 https://raw.githubusercontent.com/shulganovo/Proxylists/main/proxies.txt
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/en/faq-top20-buying-proxy.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/en/free-proxy-risks.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/en/how-to-choose-proxy-ip.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/en/how-to-test-proxy-quality.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/en/proxy-pricing-china-2026.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/en/socks5-vs-http-vs-l2tp.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/faq/socks5-lianjie-paicha.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides/nekobox-http-chuzhan-bianjie-2026.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides/socks5-http-qubie-2026.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides/socks5-l2tp-shice-duibi.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides/youxiangyun-rukou-http-xianjing-2026.md
+https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/tools/proxy-check.md
 https://raw.githubusercontent.com/soyelmismo/openproxy/master/contrib/laya-server/requirements.txt
 https://raw.githubusercontent.com/soyelmismo/openproxy/master/crates/openproxy-server/web/src/static/fonts/Ubuntu-LICENCE.txt
 https://raw.githubusercontent.com/sozu-proxy/sozu/main/command/assets/add_https_front.json
@@ -1868,10 +1872,6 @@ https://raw.githubusercontent.com/tricrck/working-public-proxies/main/requiremen
 https://raw.githubusercontent.com/tsautier/RoXX/master/requirements.txt
 https://raw.githubusercontent.com/tsautier/RoXX/master/version.txt
 https://raw.githubusercontent.com/tun2proxy/tun2proxy/master/tests/requirements.txt
-https://raw.githubusercontent.com/ubercreative-alt/ubercreative-alt-https-rightchoiceservices.uk-robots.txt/main/.emergent/system_deps.txt
-https://raw.githubusercontent.com/ubercreative-alt/ubercreative-alt-https-rightchoiceservices.uk-robots.txt/main/backend/requirements.txt
-https://raw.githubusercontent.com/ubercreative-alt/ubercreative-alt-https-rightchoiceservices.uk-robots.txt/main/frontend/public/llms.txt
-https://raw.githubusercontent.com/ubercreative-alt/ubercreative-alt-https-rightchoiceservices.uk-robots.txt/main/frontend/public/robots.txt
 https://raw.githubusercontent.com/uraniumchonk/hermes-open-webui-adapter/main/requirements.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/http.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/https.txt
