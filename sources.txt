@@ -84,6 +84,8 @@ https://raw.githubusercontent.com/6yyn/free-proxy-list/main/http_proxy_list.txt
 https://raw.githubusercontent.com/6yyn/free-proxy-list/main/httpproxies.txt
 https://raw.githubusercontent.com/8Protons/POWBlock/main/docs/TECHNICAL_README.txt
 https://raw.githubusercontent.com/8Protons/POWBlock/main/docs/dev_history.txt
+https://raw.githubusercontent.com/91sexboy/One-click-socks5-proxy-setup/xray-only/docs/adr/0001-xray-only-mixed-proxy.md
+https://raw.githubusercontent.com/91sexboy/One-click-socks5-proxy-setup/xray-only/tests/fixtures/denied-destinations.txt
 https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/http.txt
 https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/socks4.txt
 https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/socks5.txt
@@ -299,6 +301,8 @@ https://raw.githubusercontent.com/Jackarain/proxy/master/example/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/example/dns_server_test/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/example/http_proxy_client/CMakeLists.txt
 https://raw.githubusercontent.com/Jha0rahul/Business-OpenAPI/main/requirements.txt
+https://raw.githubusercontent.com/KarazhovAndrii/gpt-oss-opencode/main/eval/fixtures/status-loop/status.txt
+https://raw.githubusercontent.com/KarazhovAndrii/gpt-oss-opencode/main/gpt-oss-proxy.config.example.json
 https://raw.githubusercontent.com/KiaroSama/Proxy-Tester/main/requirements-dev.txt
 https://raw.githubusercontent.com/KiaroSama/Proxy-Tester/main/requirements.txt
 https://raw.githubusercontent.com/LamSpace/OpenProxy/master/docs/guide/08-static-method-proxy.md
@@ -923,6 +927,11 @@ https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/socks
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/socks4/global/socks4_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/socks5/global/psocks5_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/socks5/global/socks5_checked.txt
+https://raw.githubusercontent.com/elliotwutingfeng/Ukrainian-EMA-blocklist/main/ips.txt
+https://raw.githubusercontent.com/elliotwutingfeng/Ukrainian-EMA-blocklist/main/urls-ABP.txt
+https://raw.githubusercontent.com/elliotwutingfeng/Ukrainian-EMA-blocklist/main/urls-UBO.txt
+https://raw.githubusercontent.com/elliotwutingfeng/Ukrainian-EMA-blocklist/main/urls-pihole.txt
+https://raw.githubusercontent.com/elliotwutingfeng/Ukrainian-EMA-blocklist/main/urls.txt
 https://raw.githubusercontent.com/erimammr/Captcha-Solver-Bot-2026-Free/main/requirements.txt
 https://raw.githubusercontent.com/eslco/base/main/config/singbox/homeproxy/homeproxy
 https://raw.githubusercontent.com/eslco/base/main/rule/Clash/Talkatone/ttproxy.list
@@ -1122,18 +1131,6 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/working-proxy-list/main/socks4.tx
 https://raw.githubusercontent.com/gnxD3RfTT2WE/working-proxy-list/main/socks5.txt
 https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/requirements.txt
 https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/capacity.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/closeout_ratio.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/gain.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/hwt_recovery.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/offcliff.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/pfree_profile.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/phase2_analysis.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/phase3_analysis.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/phase4_analysis.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/phase5_holdout.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/phase5_search.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/phase6_holdout.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/q4.txt
 https://raw.githubusercontent.com/gos108/proxy/main/requirements.txt
 https://raw.githubusercontent.com/hahwul/gori/main/docs/content/guide/proxy.ko.md
 https://raw.githubusercontent.com/hahwul/gori/main/docs/content/guide/proxy.md
@@ -1357,6 +1354,7 @@ https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/BJ.t
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-2ecd178267bd.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-451d360d47df.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-eeb61ef790ee.txt
+https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies-f2a5fab67a7c.txt
 https://raw.githubusercontent.com/leshchenko1979/tgproxy/main/docs/proxies.txt
 https://raw.githubusercontent.com/letsdigtal/SafeProfiles/main/automation/requirements.txt
 https://raw.githubusercontent.com/letsdigtal/SafeProfiles/main/requirements.txt
@@ -1443,6 +1441,8 @@ https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/m
 https://raw.githubusercontent.com/luqman-v1/9router-go/main/docs/superpowers/plans/2026-08-14-proxy-pool-and-antigravity-parity.md
 https://raw.githubusercontent.com/luqman-v1/9router-go/main/docs/superpowers/specs/2026-07-19-mitm-proxy-design.md
 https://raw.githubusercontent.com/luqman-v1/9router-go/main/docs/superpowers/specs/2026-08-14-proxy-pool-and-antigravity-parity-design.md
+https://raw.githubusercontent.com/maelys-dev/maelys-egress/main/tests/vectors/channel/requests.txt
+https://raw.githubusercontent.com/maelys-dev/maelys-egress/main/tests/vectors/channel/responses.txt
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/http.json
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/metadata/http-metadata.json
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/metadata/socks4-metadata.json
