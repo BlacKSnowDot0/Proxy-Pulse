@@ -305,6 +305,12 @@ https://raw.githubusercontent.com/KarazhovAndrii/gpt-oss-opencode/main/eval/fixt
 https://raw.githubusercontent.com/KarazhovAndrii/gpt-oss-opencode/main/gpt-oss-proxy.config.example.json
 https://raw.githubusercontent.com/KiaroSama/Proxy-Tester/main/requirements-dev.txt
 https://raw.githubusercontent.com/KiaroSama/Proxy-Tester/main/requirements.txt
+https://raw.githubusercontent.com/KrishnaVarun02/mini-http-server-go/main/evidence/demo-live-macos.txt
+https://raw.githubusercontent.com/KrishnaVarun02/mini-http-server-go/main/evidence/demo-local-macos.txt
+https://raw.githubusercontent.com/KrishnaVarun02/mini-http-server-go/main/evidence/fuzz-macos.txt
+https://raw.githubusercontent.com/KrishnaVarun02/mini-http-server-go/main/evidence/live-httpbin-macos.txt
+https://raw.githubusercontent.com/KrishnaVarun02/mini-http-server-go/main/evidence/tests-macos.txt
+https://raw.githubusercontent.com/KrishnaVarun02/mini-http-server-go/main/evidence/video-macos.txt
 https://raw.githubusercontent.com/LamSpace/OpenProxy/master/docs/guide/08-static-method-proxy.md
 https://raw.githubusercontent.com/LamSpace/OpenProxy/master/docs/guide/08-static-method-proxy_cn.md
 https://raw.githubusercontent.com/LamSpace/OpenProxy/master/docs/guide/09-multi-interface-proxy.md
@@ -665,10 +671,6 @@ https://raw.githubusercontent.com/api-evangelist/apify/main/blogs/2026-05-04-the
 https://raw.githubusercontent.com/api-evangelist/apify/main/blogs/2026-07-15-the-12-best-proxy-providers-for-web-scraping-in-2026.md
 https://raw.githubusercontent.com/api-evangelist/apify/main/llms/apify-llms.txt
 https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-authentication-with-envoy-proxy-based-api-gateways-solo-io.md
-https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-hands-on-with-the-kubernetes-gateway-api-and-envoy-proxy-a.md
-https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-scaling-api-management-with-gloo-gateway-and-envoy-proxy.md
-https://raw.githubusercontent.com/api-evangelist/gloo/main/blogs/2026-07-22-why-pick-envoy-proxy-and-solo-io-over-kong-gateway-for.md
-https://raw.githubusercontent.com/api-evangelist/gloo/main/llms/gloo-llms.txt
 https://raw.githubusercontent.com/apify/crawlee-python/master/src/crawlee/project_template/{{cookiecutter.project_name}}/requirements.txt
 https://raw.githubusercontent.com/apify/crawlee-python/master/website/static/robots.txt
 https://raw.githubusercontent.com/apify/crawlee/master/docs/guides/docker_browser_js.txt
@@ -765,9 +767,6 @@ https://raw.githubusercontent.com/benz-ai-x/magic-stack/main/requirements-suanpa
 https://raw.githubusercontent.com/berkay-digital/Proxy-Scraper/main/proxies.txt
 https://raw.githubusercontent.com/billymitchell/address-validation-server/main/licenses/Carmen-MIT.txt
 https://raw.githubusercontent.com/billymitchell/address-validation-server/main/licenses/Unicode-3.0.txt
-https://raw.githubusercontent.com/blynn-debug/cpk/main/keywords.txt
-https://raw.githubusercontent.com/blynn-debug/cpk/main/requirements.txt
-https://raw.githubusercontent.com/blynn-debug/cpk/main/web/requirements.txt
 https://raw.githubusercontent.com/bout2bus/thepiratebay-proxy-list/main/robots.txt
 https://raw.githubusercontent.com/bubakitainu-code/OpenData/main/requirements.txt
 https://raw.githubusercontent.com/capimichi/stremio-http-proxy/master/docs/plans/2026-09-12-mediaflow-http-streams.md
@@ -901,6 +900,8 @@ https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BO/phttp_BO_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BR/http_BR_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BR/phttp_BR_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BW/http_BW_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BW/phttp_BW_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BY/http_BY_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/BY/phttp_BY_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CA/http_CA_checked.txt
@@ -1129,9 +1130,8 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/web-scraping-proxies/main/socks5.
 https://raw.githubusercontent.com/gnxD3RfTT2WE/working-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/working-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/working-proxy-list/main/socks5.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/requirements.txt
-https://raw.githubusercontent.com/godtier812/analog-zc-proxies/main/results/capacity.txt
 https://raw.githubusercontent.com/gos108/proxy/main/requirements.txt
+https://raw.githubusercontent.com/grpc-ecosystem/grpc-gateway/main/docs/docs/mapping/httpbody_messages.md
 https://raw.githubusercontent.com/hahwul/gori/main/docs/content/guide/proxy.ko.md
 https://raw.githubusercontent.com/hahwul/gori/main/docs/content/guide/proxy.md
 https://raw.githubusercontent.com/hahwul/gori/main/docs/static/fonts/OFL.txt
