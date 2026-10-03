@@ -296,18 +296,6 @@ https://raw.githubusercontent.com/Jackarain/proxy/master/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/apps/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/apps/android/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/apps/android/libproxy/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/apps/launcher/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/apps/proxy_server/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/doc/pam.example/proxy-service
-https://raw.githubusercontent.com/Jackarain/proxy/master/doc/rfc/proxy-protocol.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/doc/rfc/rfc1928.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/doc/rfc/rfc1929.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/doc/rfc/rfc9298.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/doc/rfc/socks4.protocol.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/doc/rfc/socks4a.protocol.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/example/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/example/dns_server_test/CMakeLists.txt
-https://raw.githubusercontent.com/Jackarain/proxy/master/example/http_proxy_client/CMakeLists.txt
 https://raw.githubusercontent.com/JellyfishContemplate/JellyfishContemplate.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/JellyfishContemplate/JellyfishContemplate.github.io/main/robots.txt
 https://raw.githubusercontent.com/Jha0rahul/Business-OpenAPI/main/requirements.txt
@@ -340,9 +328,12 @@ https://raw.githubusercontent.com/LamSpace/OpenProxy/master/docs/superpowers/spe
 https://raw.githubusercontent.com/LamSpace/OpenProxy/master/docs/superpowers/specs/2026-08-02-openproxy-unified-proxy-design.md
 https://raw.githubusercontent.com/LamSpace/OpenProxy/master/docs/superpowers/specs/2026-08-14-multi-interface-proxy-design.md
 https://raw.githubusercontent.com/LifeAITools/opencode-claude-toolkit/main/research/ka-ghost-verify-2026-08-18.txt
+https://raw.githubusercontent.com/LimitDentist/LimitDentist.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
+https://raw.githubusercontent.com/LimitDentist/LimitDentist.github.io/main/robots.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/COPYRIGHT.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/LICENSE.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/LittleProxy_Request_Handling_Architecture.md
+https://raw.githubusercontent.com/Loft-902-Co-LLC/open-ferry-ai-proxy/main/licenses/CLIProxyAPI-LICENSE
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/enclave-go/.cache/go-build/trim.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/enclave-go/internal/trustedrouter/testdata/stage_c/origin_main/origin_main_commit.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/enclave-go/internal/trustedrouter/testdata/stage_c/receipt_bearing_authorize_boot_auth.txt
@@ -424,7 +415,6 @@ https://raw.githubusercontent.com/NOVA-X-PANEL/NOVA-X-PANEL/main/windows_files/r
 https://raw.githubusercontent.com/NaraDuyy/selenium-creation/main/proxykey.example.txt
 https://raw.githubusercontent.com/NaraDuyy/selenium-creation/main/proxystatic.example.txt
 https://raw.githubusercontent.com/NaraDuyy/selenium-creation/main/requirements.txt
-https://raw.githubusercontent.com/NekoEpisode/StarlightProxy/master/src/main/resources/data/packets/readme.txt
 https://raw.githubusercontent.com/Nomadcxx/opencode-cursor/main/tests/fixtures/cursor-pricing-models.txt
 https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/cert-5696.txt
 https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/cert-5A23.txt
@@ -904,6 +894,8 @@ https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CA/phttp_CA_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CH/http_CH_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CH/phttp_CH_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CL/http_CL_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CL/phttp_CL_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CN/http_CN_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CN/phttp_CN_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CO/http_CO_checked.txt
@@ -1393,6 +1385,8 @@ https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countr
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/http.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/http.json
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/http.txt
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/socks4.csv
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/socks4.json
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/socks5.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/socks5.json
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/al/all.txt
@@ -1654,6 +1648,10 @@ https://raw.githubusercontent.com/qr243vbi/nekobox/main/src/3rdparty/QHotkey/CMa
 https://raw.githubusercontent.com/quangdang46/openproxy/main/src/core/config/data/codex_default_instructions.txt
 https://raw.githubusercontent.com/rekt0ro/Proxy-Harvester/main/subscriptions/light-base64.txt
 https://raw.githubusercontent.com/rekt0ro/Proxy-Harvester/main/subscriptions/light.txt
+https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/all-base64.txt
+https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/all.txt
+https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/light-base64.txt
+https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/light.txt
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/all.txt
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/anonymous/http/http.csv
 https://raw.githubusercontent.com/relayglass/free-proxy-list/main/anonymity/anonymous/http/http.json
@@ -1755,6 +1753,8 @@ https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides
 https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides/socks5-l2tp-shice-duibi.md
 https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides/youxiangyun-rukou-http-xianjing-2026.md
 https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/tools/proxy-check.md
+https://raw.githubusercontent.com/sortcyclecultivate/sortcyclecultivate.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
+https://raw.githubusercontent.com/sortcyclecultivate/sortcyclecultivate.github.io/main/robots.txt
 https://raw.githubusercontent.com/soyelmismo/openproxy/master/contrib/laya-server/requirements.txt
 https://raw.githubusercontent.com/soyelmismo/openproxy/master/crates/openproxy-server/web/src/static/fonts/Ubuntu-LICENCE.txt
 https://raw.githubusercontent.com/sozu-proxy/sozu/main/command/assets/add_https_front.json
