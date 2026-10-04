@@ -183,11 +183,6 @@ https://raw.githubusercontent.com/BrenoFariasdaSilva/Proxy-List-Generator/main/P
 https://raw.githubusercontent.com/BrenoFariasdaSilva/Proxy-List-Generator/main/requirements.txt
 https://raw.githubusercontent.com/Centaurflichannel/Centaurflichannel.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/Centaurflichannel/Centaurflichannel.github.io/main/robots.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/cli/seeds/npm_popular.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/cli/seeds/pypi_popular.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/cli/testdata/pr_scan/pip/requirements_base.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/cli/testdata/pr_scan/pip/requirements_head.txt
-https://raw.githubusercontent.com/Chain305/chainsaw-core/main/depgraph/testdata/gradle_diamond.txt
 https://raw.githubusercontent.com/CharlesPikachu/freeproxy/master/docs/requirements.txt
 https://raw.githubusercontent.com/CharlesPikachu/freeproxy/master/mcp/requirements.txt
 https://raw.githubusercontent.com/CharlesPikachu/freeproxy/master/requirements.txt
@@ -684,6 +679,8 @@ https://raw.githubusercontent.com/api-evangelist/anew/main/well-known/anew-http-
 https://raw.githubusercontent.com/api-evangelist/apify/main/blogs/2026-05-04-the-13-best-proxy-providers-for-web-scraping-in-2026.md
 https://raw.githubusercontent.com/api-evangelist/apify/main/blogs/2026-07-15-the-12-best-proxy-providers-for-web-scraping-in-2026.md
 https://raw.githubusercontent.com/api-evangelist/apify/main/llms/apify-llms.txt
+https://raw.githubusercontent.com/api-evangelist/scraper-api/main/llms/scraper-api-llms.txt
+https://raw.githubusercontent.com/api-evangelist/statable-stats-api/main/llms/statable-stats-api-llms.txt
 https://raw.githubusercontent.com/apify/crawlee/master/docs/guides/docker_browser_js.txt
 https://raw.githubusercontent.com/apify/crawlee/master/docs/guides/docker_browser_ts.txt
 https://raw.githubusercontent.com/apify/crawlee/master/docs/guides/docker_node_js.txt
@@ -925,6 +922,8 @@ https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CH/phttp_CH_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CL/http_CL_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CL/phttp_CL_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CM/http_CM_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CM/phttp_CM_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CN/http_CN_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CN/phttp_CN_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CO/http_CO_checked.txt
@@ -1271,7 +1270,6 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/GB/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/GD/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/GE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/GH/proxies.txt
-https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/GR/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/HK/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/HR/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/ID/proxies.txt
@@ -1844,6 +1842,8 @@ https://raw.githubusercontent.com/tgmtproxy/mtproxy/main/robots.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/robots.txt
+https://raw.githubusercontent.com/tgproxypink/telegram-proxy-list/main/mtproto.txt
+https://raw.githubusercontent.com/tgproxypink/telegram-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/the2dl/conduit/main/categories.txt
 https://raw.githubusercontent.com/the2dl/conduit/main/conduit-ui/static/robots.txt
 https://raw.githubusercontent.com/themiralay/Proxy-List-World/master/data.txt
