@@ -135,6 +135,12 @@ https://raw.githubusercontent.com/Basidiomycetespanamaniancapital403/workerd/mai
 https://raw.githubusercontent.com/Basidiomycetespanamaniancapital403/workerd/main/src/workerd/io/maximum-compatibility-date.txt
 https://raw.githubusercontent.com/Basidiomycetespanamaniancapital403/workerd/main/src/workerd/io/release-version.txt
 https://raw.githubusercontent.com/Bes-js/public-proxy-list/main/proxies.txt
+https://raw.githubusercontent.com/BlankTrail/google-serp-parser/main/internal/google/testdata/linkgen_de1.txt
+https://raw.githubusercontent.com/BlankTrail/google-serp-parser/main/internal/google/testdata/linkgen_en0.txt
+https://raw.githubusercontent.com/BlankTrail/google-serp-parser/main/internal/google/testdata/linkgen_en1.txt
+https://raw.githubusercontent.com/BlankTrail/google-serp-parser/main/internal/google/testdata/linkgen_es0.txt
+https://raw.githubusercontent.com/BlankTrail/google-serp-parser/main/internal/google/testdata/linkgen_ru1.txt
+https://raw.githubusercontent.com/BlankTrail/google-serp-parser/main/internal/semantic/testdata/phrases.txt
 https://raw.githubusercontent.com/BrenoFariasdaSilva/Proxy-List-Generator/main/.assets/Icons/Icons%20URLs.txt
 https://raw.githubusercontent.com/BrenoFariasdaSilva/Proxy-List-Generator/main/Proxies_List/free_proxy_list_proxies.txt
 https://raw.githubusercontent.com/BrenoFariasdaSilva/Proxy-List-Generator/main/Proxies_List/socks_proxy_proxies.txt
@@ -1522,6 +1528,11 @@ https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countr
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/al/socks4.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/al/socks4.json
 https://raw.githubusercontent.com/local1907/AiCloudProxy/main/web/robots.txt
+https://raw.githubusercontent.com/ltattrah/mode4-proxy-validation/main/legA/seed_ledger.txt
+https://raw.githubusercontent.com/ltattrah/mode4-proxy-validation/main/legA/seed_ledger_300b.txt
+https://raw.githubusercontent.com/ltattrah/mode4-proxy-validation/main/requirements.txt
+https://raw.githubusercontent.com/ltattrah/mode4-proxy-validation/main/results/e6_density_output.txt
+https://raw.githubusercontent.com/ltattrah/mode4-proxy-validation/main/results/e6_full_output.txt
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/all.txt
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/by_country/AE.txt
 https://raw.githubusercontent.com/lucasjustinudin/Free-HighQuality-Proxy-Socks/main/output/by_country/AF.txt
@@ -1577,10 +1588,6 @@ https://raw.githubusercontent.com/maximilianfeix/proxy-scraper/main/.github/requ
 https://raw.githubusercontent.com/maximilianfeix/proxy-scraper/main/.github/requirements/test.txt
 https://raw.githubusercontent.com/maximilianfeix/proxy-scraper/main/bot/requirements.txt
 https://raw.githubusercontent.com/maximilianfeix/proxy-scraper/main/requirements.txt
-https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/Raw_Sources/raw_http.txt
-https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/Raw_Sources/raw_http_tls.txt
-https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/Raw_Sources/raw_socks4.txt
-https://raw.githubusercontent.com/mehdi-hexing/HTTP-PROXY/main/Raw_Sources/raw_socks5.txt
 https://raw.githubusercontent.com/mkrdnk/via/master/docs/proxy-behavior.md
 https://raw.githubusercontent.com/mmpx12/proxy-list/master/README.txt
 https://raw.githubusercontent.com/mmpx12/proxy-list/master/http.txt
@@ -1621,6 +1628,7 @@ https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corp
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/scrape_socks4.txt
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/scrape_socks5.txt
 https://raw.githubusercontent.com/monosans/proxy-scraper-checker/main/bench/corpus/tls_http.txt
+https://raw.githubusercontent.com/morawskidotmy/youtube-proxies/main/youtube-proxies.txt
 https://raw.githubusercontent.com/mpyw/sql-http-proxy/main/sql-http-proxy.schema.json
 https://raw.githubusercontent.com/mukeshk3272/Smart-Routing-Butler-for-OpenClaws/main/router/requirements-dev.txt
 https://raw.githubusercontent.com/mukeshk3272/Smart-Routing-Butler-for-OpenClaws/main/router/requirements.txt
@@ -1640,6 +1648,7 @@ https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CA.t
 https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CH.txt
 https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CL.txt
 https://raw.githubusercontent.com/netafrcloud/ProxyList/main/active_proxies/CN.txt
+https://raw.githubusercontent.com/neuronaline/pagefetch/master/requirements.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/http.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/requirements.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/socks4.txt
@@ -1806,10 +1815,6 @@ https://raw.githubusercontent.com/seanpor/JA4proxy/main/deploy/integrations/sent
 https://raw.githubusercontent.com/seanpor/JA4proxy/main/deploy/integrations/sentinel/workbook/JA4proxy_Workbook.json
 https://raw.githubusercontent.com/seanpor/JA4proxy/main/deploy/integrations/splunk-ta/ja4proxy-ta/lookups/ja4proxy_actions.csv
 https://raw.githubusercontent.com/seanpor/JA4proxy/main/deploy/integrations/splunk_soar/ja4proxy/ja4proxy.json
-https://raw.githubusercontent.com/seanpor/JA4proxy/main/deploy/monitoring/grafana/dashboards/ja4proxy-infrastructure.json
-https://raw.githubusercontent.com/seanpor/JA4proxy/main/deploy/monitoring/grafana/dashboards/ja4proxy-overview.json
-https://raw.githubusercontent.com/seanpor/JA4proxy/main/docs/developer/go_proxy_guide.md
-https://raw.githubusercontent.com/seanpor/JA4proxy/main/docs/fragments/phase-820-haproxy-native-promex.md
 https://raw.githubusercontent.com/sengshinlee/chromium-like4sing-tun2socks5/main/caddy/var/www/html/robots.txt
 https://raw.githubusercontent.com/shenaba/2s-ui/main/core/testdata/clean/http-clients.json
 https://raw.githubusercontent.com/shenaba/2s-ui/main/core/testdata/clean/rule-set-http-client.json
@@ -1911,11 +1916,6 @@ https://raw.githubusercontent.com/tinshade/django-docker-nginx-template/main/req
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/proxies.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/requirements.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/working_proxies.txt
-https://raw.githubusercontent.com/tosdan/mockxy/main/docs/en/PROXY.md
-https://raw.githubusercontent.com/tosdan/mockxy/main/docs/it/PROXY.md
-https://raw.githubusercontent.com/tosdan/mockxy/main/mockxy-ui/proxy.conf.json
-https://raw.githubusercontent.com/tosdan/mockxy/main/mockxy-ui/proxy.docker.conf.json
-https://raw.githubusercontent.com/tosdan/mockxy/main/mockxy-ui/proxy.e2e.conf.json
 https://raw.githubusercontent.com/trickstercache/trickster/main/docs/http3.md
 https://raw.githubusercontent.com/trickstercache/trickster/main/testdata/ignore_words.txt
 https://raw.githubusercontent.com/trickstercache/trickster/main/testdata/license_header_template.txt
