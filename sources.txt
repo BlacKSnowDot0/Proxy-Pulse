@@ -33,6 +33,9 @@ https://raw.githubusercontent.com/6yyn/free-proxy-list/main/http.txt
 https://raw.githubusercontent.com/6yyn/free-proxy-list/main/http_proxies.txt
 https://raw.githubusercontent.com/6yyn/free-proxy-list/main/http_proxy_list.txt
 https://raw.githubusercontent.com/6yyn/free-proxy-list/main/httpproxies.txt
+https://raw.githubusercontent.com/6yyn/free-proxy-list/main/https.txt
+https://raw.githubusercontent.com/6yyn/free-proxy-list/main/instagram_proxies.txt
+https://raw.githubusercontent.com/6yyn/free-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/8Protons/POWBlock/main/docs/TECHNICAL_README.txt
 https://raw.githubusercontent.com/8Protons/POWBlock/main/docs/dev_history.txt
 https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/http.txt
@@ -1003,7 +1006,6 @@ https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/main/ssr_w
 https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/main/top1000_active.txt
 https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/main/tuic.txt
 https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/main/tuic_working.txt
-https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/main/vless.txt
 https://raw.githubusercontent.com/facebook/proxygen/main/CMakeLists.txt
 https://raw.githubusercontent.com/facebook/proxygen/main/build/deps/github_hashes/facebook/folly-rev.txt
 https://raw.githubusercontent.com/facebook/proxygen/main/build/deps/github_hashes/facebook/mvfst-rev.txt
@@ -1125,8 +1127,6 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/scraping-socks-proxies/main/socks
 https://raw.githubusercontent.com/gnxD3RfTT2WE/socks-proxy-list-free/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/socks-proxy-list-free/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/socks-proxy-list-free/main/socks5.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/socks5-proxies-free/main/http.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/socks5-proxies-free/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/txt-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/txt-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/txt-proxy-list/main/socks5.txt
@@ -1282,9 +1282,6 @@ https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/trojan.tx
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vless.txt
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vmess.txt
 https://raw.githubusercontent.com/identity-md-launches/launch-604-build-imd-requester-cookbook/main/dist/llms-full.txt
-https://raw.githubusercontent.com/identity-md-launches/launch-604-build-imd-requester-cookbook/main/dist/llms.txt
-https://raw.githubusercontent.com/identity-md-launches/launch-604-build-imd-requester-cookbook/main/web/public/llms-full.txt
-https://raw.githubusercontent.com/identity-md-launches/launch-604-build-imd-requester-cookbook/main/web/public/llms.txt
 https://raw.githubusercontent.com/imbazyx/OpenFlux/main/PASTE-IN-NEW-CHAT.txt
 https://raw.githubusercontent.com/inference-gateway/inference-gateway/main/tests/benchmarks/baseline.txt
 https://raw.githubusercontent.com/inject3r/tunnel/master/CMakeLists.txt
@@ -1524,6 +1521,7 @@ https://raw.githubusercontent.com/mahdyaralipor/v2all/main/real_sub.txt
 https://raw.githubusercontent.com/mahdyaralipor/v2all/main/real_working.txt
 https://raw.githubusercontent.com/mannfredcom/daily-proxy-ips/main/bl-open-proxy-exits-ipv4.csv
 https://raw.githubusercontent.com/mannfredcom/daily-proxy-ips/main/bl-open-proxy-exits-ipv6.csv
+https://raw.githubusercontent.com/mattico-inc/PadProxy/main/firmware/CMakeLists.txt
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/http.json
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/metadata/http-metadata.json
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/metadata/socks4-metadata.json
@@ -1627,6 +1625,7 @@ https://raw.githubusercontent.com/noviqtechnologies/Vexa-Agent-Control/main/cont
 https://raw.githubusercontent.com/noviqtechnologies/Vexa-Agent-Control/main/docs/guides/custom-agent-http.md
 https://raw.githubusercontent.com/noviqtechnologies/Vexa-Agent-Control/main/docs/guides/mcp_proxy_isolation.md
 https://raw.githubusercontent.com/noviqtechnologies/Vexa-Agent-Control/main/docs/security/direct-proxy-bypass-model.md
+https://raw.githubusercontent.com/ntd25022006q/FreeFilm/main/public/robots.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_direct.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_gfwlist.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/factory/manual/manual_proxy.txt
@@ -1909,6 +1908,7 @@ https://raw.githubusercontent.com/theavel/free-vless-proxy/main/all.txt
 https://raw.githubusercontent.com/themiralay/Proxy-List-World/master/data.txt
 https://raw.githubusercontent.com/tinshade/django-docker-nginx-template/main/commands.txt
 https://raw.githubusercontent.com/tinshade/django-docker-nginx-template/main/requirements.txt
+https://raw.githubusercontent.com/tkodcumpeg4/zorven/main/server/marketing/robots.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/proxies.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/requirements.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/working_proxies.txt
