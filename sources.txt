@@ -419,6 +419,7 @@ https://raw.githubusercontent.com/MonadBoxLab/MonadBox/Monad/modules/feature/onb
 https://raw.githubusercontent.com/MonadBoxLab/MonadBox/Monad/modules/feature/onboarding/src/main/res/raw/privacy_policy_zh.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/all.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/.txt
+https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AE.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AL.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AM.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AR.txt
@@ -433,6 +434,7 @@ https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CN.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CO.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CZ.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DE.txt
+https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DO.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/hy2.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/mtproto.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/shadowsocks.txt
@@ -581,6 +583,7 @@ https://raw.githubusercontent.com/Tianxiaodudou/Mihomo-fpk/main/src/rules/privat
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/YousList/master/output/domains.list/logs/percentage/percentage.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/YousList/master/output/domains.list/logs/percentage/registrar.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/YousList/master/requirements.txt
+https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/anudeepND_blacklist_ad_server/master/requirements.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/lightswitch05_hosts_ads-and-tracking-extended/master/requirements.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/malc0de.com/master/output/domains.list/logs/percentage/percentage.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/malc0de.com/master/requirements.txt
@@ -1802,10 +1805,8 @@ https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides
 https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides/socks5-l2tp-shice-duibi.md
 https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/guides/youxiangyun-rukou-http-xianjing-2026.md
 https://raw.githubusercontent.com/socks5ip/socks5ip-content/main/articles/tools/proxy-check.md
-https://raw.githubusercontent.com/sozu-proxy/sozu/main/command/assets/add_https_front.json
-https://raw.githubusercontent.com/sozu-proxy/sozu/main/fuzz/corpus/fuzz_tcp_clienthello/proxy_v2_prefixed_hello
-https://raw.githubusercontent.com/sozu-proxy/sozu/main/lib/assets/bigger.txt
-https://raw.githubusercontent.com/sozu-proxy/sozu/main/lib/assets/http-requests.txt
+https://raw.githubusercontent.com/soyelmismo/openproxy/master/contrib/laya-server/requirements.txt
+https://raw.githubusercontent.com/soyelmismo/openproxy/master/crates/openproxy-server/web/src/static/fonts/Ubuntu-LICENCE.txt
 https://raw.githubusercontent.com/starArsonist/proxy-validator/main/examples/proxies.example.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/http.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/socks4.txt
@@ -1878,7 +1879,6 @@ https://raw.githubusercontent.com/tgmtproxy/mtproxy/main/robots.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/robots.txt
-https://raw.githubusercontent.com/tgproxypink/telegram-proxy-list/main/mtproto.txt
 https://raw.githubusercontent.com/thalesemanoelsilvabr-cloud/Aura-Chat-Proxy-ACP-/main/requirements.txt
 https://raw.githubusercontent.com/theavel/free-vless-proxy/main/1.txt
 https://raw.githubusercontent.com/theavel/free-vless-proxy/main/2.txt
