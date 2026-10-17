@@ -147,6 +147,9 @@ https://raw.githubusercontent.com/BrenoFariasdaSilva/Proxy-List-Generator/main/P
 https://raw.githubusercontent.com/BrenoFariasdaSilva/Proxy-List-Generator/main/requirements.txt
 https://raw.githubusercontent.com/CB-X2-Jun/proxy-lists/main/proxy.txt
 https://raw.githubusercontent.com/CaddyProxyManager/caddy-proxy-manager/main/apps/site/public/robots.txt
+https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/http.json
+https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/socks4.json
+https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/socks5.json
 https://raw.githubusercontent.com/Cheagjihvg/simple-proxylist/main/http.txt
 https://raw.githubusercontent.com/Cheagjihvg/simple-proxylist/main/socks4.txt
 https://raw.githubusercontent.com/Cheagjihvg/simple-proxylist/main/socks5.txt
@@ -229,6 +232,9 @@ https://raw.githubusercontent.com/ExoticSecurityWeb/scraper-proxy/main/proxies/a
 https://raw.githubusercontent.com/ExoticSecurityWeb/scraper-proxy/main/proxies/http.txt
 https://raw.githubusercontent.com/ExoticSecurityWeb/scraper-proxy/main/proxies/socks4.txt
 https://raw.githubusercontent.com/ExoticSecurityWeb/scraper-proxy/main/proxies/socks5.txt
+https://raw.githubusercontent.com/FORESTmg/proxy-auto-updater/main/packaging/core_version.txt
+https://raw.githubusercontent.com/FORESTmg/proxy-auto-updater/main/packaging/requirements-build.txt
+https://raw.githubusercontent.com/FORESTmg/proxy-auto-updater/main/packaging/version_info.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/app/requirements.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/proxy/http.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/proxy/https.txt
@@ -518,6 +524,7 @@ https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Azer
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bahamas.txt
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bahrain.txt
 https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bangladesh.txt
+https://raw.githubusercontent.com/Sreenivas-Sadhu-Prabhakara/apigeex-training/main/requirements.txt
 https://raw.githubusercontent.com/StuccoHealerPulse/StuccoHealerPulse.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/StuccoHealerPulse/StuccoHealerPulse.github.io/main/robots.txt
 https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt
@@ -862,7 +869,6 @@ https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/by-country
 https://raw.githubusercontent.com/diaoyunxi/OpenAI-Proxy-via-Browser/master/client/requirements.txt
 https://raw.githubusercontent.com/diaoyunxi/OpenAI-Proxy-via-Browser/master/requirements.txt
 https://raw.githubusercontent.com/diaoyunxi/OpenAI-Proxy-via-Browser/master/server/requirements.txt
-https://raw.githubusercontent.com/dinoz0rg/proxy-list/main/checked_proxies/http.json
 https://raw.githubusercontent.com/dpangestuw/Free-Proxy/main/All_proxies.txt
 https://raw.githubusercontent.com/dpangestuw/Free-Proxy/main/http_proxies.txt
 https://raw.githubusercontent.com/dpangestuw/Free-Proxy/main/socks4_proxies.txt
@@ -1058,6 +1064,9 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/rotating-proxy-list/main/socks5.t
 https://raw.githubusercontent.com/gnxD3RfTT2WE/txt-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/txt-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/txt-proxy-list/main/socks5.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/verified-proxy-list/main/http.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/verified-proxy-list/main/socks4.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/verified-proxy-list/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/web-scraping-proxies/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/web-scraping-proxies/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/web-scraping-proxies/main/socks5.txt
@@ -1231,6 +1240,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CO/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CY/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CZ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DE/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DK/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DO/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EC/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EE/proxies.txt
@@ -1487,15 +1497,6 @@ https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/.buildk
 https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/.buildkite/scripts/test/fixtures/soak-637/perf-soak-samples.csv.txt
 https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/.buildkite/scripts/test/fixtures/soak-local/metrics-load.txt
 https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/.buildkite/scripts/test/fixtures/soak-local/metrics-start.txt
-https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/.buildkite/scripts/test/fixtures/soak-local/samples.csv.txt
-https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/.buildkite/scripts/test/fixtures/soak-local/server-clean.txt
-https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/.buildkite/scripts/test/fixtures/soak-local/server-oom.txt
-https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/docs/code/decisions/binary-proxying-nowait-sendrequest-override.md
-https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/docs/code/decisions/http11-tunnel-loopback-wait-unbounded.md
-https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/docs/code/decisions/http2-write-stall-reset-pick-limits.md
-https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/docs/code/decisions/http3-header-limit-closes-connection.md
-https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/docs/code/http3.md
-https://raw.githubusercontent.com/mock-server/mockserver-monorepo/master/examples/docker-compose/chaos-proxy/config/chaos-proxy.json
 https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/all.txt
 https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt
 https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt
@@ -1592,8 +1593,6 @@ https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/requirements.txt
 https://raw.githubusercontent.com/pennacle-security/summit/main/examples/request.txt
 https://raw.githubusercontent.com/pennacle-security/summit/main/requirements.txt
 https://raw.githubusercontent.com/pieperlouis4-hue/my.edu.sharif.edu-sniper/main/docs/reference/http-api.md
-https://raw.githubusercontent.com/pinstalkerretreat/pinstalkerretreat.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
-https://raw.githubusercontent.com/pinstalkerretreat/pinstalkerretreat.github.io/main/robots.txt
 https://raw.githubusercontent.com/piraproxy/tpb-proxy-list-2026/main/LAST_UPDATED.txt
 https://raw.githubusercontent.com/piraproxy/tpb-proxy-list-2026/main/images/1.txt
 https://raw.githubusercontent.com/plabayo/rama/main/docs/book/src/http/http_clients.md
@@ -1694,6 +1693,7 @@ https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_BASE64.txt
 https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/AE.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/AF.txt
+https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/AR.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/AT.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/AU.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/BD.txt
