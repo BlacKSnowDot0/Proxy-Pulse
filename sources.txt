@@ -117,6 +117,7 @@ https://raw.githubusercontent.com/BSG-Walter/proxy-fresh/main/proxies-valid.txt
 https://raw.githubusercontent.com/Bes-js/public-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/BinarySurgeonFlange/BinarySurgeonFlange.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/BinarySurgeonFlange/BinarySurgeonFlange.github.io/main/robots.txt
+https://raw.githubusercontent.com/BizhQwe/openflux-zen-server/main/scripts/targets.txt
 https://raw.githubusercontent.com/BizhQwe/openflux-zen-server/main/src/OpenFlux.Zen.Server.Installer/payload/README.txt
 https://raw.githubusercontent.com/BlankTrail/google-serp-parser/main/internal/google/testdata/linkgen_de1.txt
 https://raw.githubusercontent.com/BlankTrail/google-serp-parser/main/internal/google/testdata/linkgen_en0.txt
@@ -159,6 +160,8 @@ https://raw.githubusercontent.com/Ciara-12/PROXY-free/main/https.txt
 https://raw.githubusercontent.com/Ciara-12/PROXY-free/main/socks4.txt
 https://raw.githubusercontent.com/Ciara-12/PROXY-free/main/socks5.txt
 https://raw.githubusercontent.com/Danielcardinal550/FreeModels-Proxy/main/requirements.txt
+https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/dnstt.txt
+https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/meek_lite.txt
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/obfs4.txt
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/obfs4_72h.txt
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/obfs4_ipv6.txt
@@ -280,7 +283,6 @@ https://raw.githubusercontent.com/Jackarain/proxy/master/example/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/example/dns_server_test/CMakeLists.txt
 https://raw.githubusercontent.com/Jackarain/proxy/master/example/http_proxy_client/CMakeLists.txt
 https://raw.githubusercontent.com/Janina21/Crypto-Checker/main/requirements.txt
-https://raw.githubusercontent.com/Jha0rahul/Business-OpenAPI/main/requirements.txt
 https://raw.githubusercontent.com/JonDotsoy/donly-proxy/develop/docs/concepts/proxy_pass.md
 https://raw.githubusercontent.com/JonDotsoy/donly-proxy/develop/docs/tunnel/proxy-pass.md
 https://raw.githubusercontent.com/JoseLVillaronga/tech-vllm/main/requirements.txt
@@ -977,7 +979,6 @@ https://raw.githubusercontent.com/false200/tooltrim/main/bench/results/metrics-s
 https://raw.githubusercontent.com/ferhatacer90/mtproxy-list/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/ferhatacer90/mtproxy-list/main/proxies.txt
 https://raw.githubusercontent.com/ferhatacer90/mtproxy-list/main/robots.txt
-https://raw.githubusercontent.com/fisallllll280-code/VAIXLNS/main/requirements-arcx-mcp.txt
 https://raw.githubusercontent.com/free18/v2ray/main/Client.txt
 https://raw.githubusercontent.com/free18/v2ray/main/v.txt
 https://raw.githubusercontent.com/freeb5d/kite-android/main/app/FLUTTER_VERSION.txt
@@ -1662,7 +1663,6 @@ https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/light-bas
 https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/light.txt
 https://raw.githubusercontent.com/risadams/Janus/main/internal/update/release-keys.txt
 https://raw.githubusercontent.com/rix4uni/fresh-proxy-list/main/requirements.txt
-https://raw.githubusercontent.com/rocketraman/open-green-button-homeassistant/master/requirements_test.txt
 https://raw.githubusercontent.com/rohan1416242-sys/proxy-pool/main/indian_elite.txt
 https://raw.githubusercontent.com/rohan1416242-sys/proxy-pool/main/indian_fast.txt
 https://raw.githubusercontent.com/rohan1416242-sys/proxy-pool/main/indian_ff_ok.txt
