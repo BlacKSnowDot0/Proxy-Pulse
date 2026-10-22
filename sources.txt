@@ -48,11 +48,6 @@ https://raw.githubusercontent.com/2scraper/weibo-scraper/main/requirements-playw
 https://raw.githubusercontent.com/2scraper/weibo-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/weibo-scraper/main/requirements-selenium.txt
 https://raw.githubusercontent.com/2scraper/weibo-scraper/main/requirements.txt
-https://raw.githubusercontent.com/2scraper/woolworths-scraper/main/requirements-playwright.txt
-https://raw.githubusercontent.com/2scraper/woolworths-scraper/main/requirements-puppeteer.txt
-https://raw.githubusercontent.com/2scraper/woolworths-scraper/main/requirements-selenium.txt
-https://raw.githubusercontent.com/2scraper/woolworths-scraper/main/requirements.txt
-https://raw.githubusercontent.com/2scraper/zimmo-scraper/main/requirements-playwright.txt
 https://raw.githubusercontent.com/398001/ProxysList/main/all_working.txt
 https://raw.githubusercontent.com/398001/ProxysList/main/http_working.txt
 https://raw.githubusercontent.com/398001/ProxysList/main/socks4_working.txt
@@ -97,7 +92,6 @@ https://raw.githubusercontent.com/AlfonsoVertu/www-home-assistant-addons/main/vi
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/http_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/https_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/socks4_proxies.txt
-https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/socks5_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/requirements.txt
 https://raw.githubusercontent.com/Argh94/Proxy-List/main/All_Config.txt
 https://raw.githubusercontent.com/Argh94/Proxy-List/main/HTTP.txt
@@ -141,6 +135,7 @@ https://raw.githubusercontent.com/BinarySurgeonFlange/BinarySurgeonFlange.github
 https://raw.githubusercontent.com/BinarySurgeonFlange/BinarySurgeonFlange.github.io/main/robots.txt
 https://raw.githubusercontent.com/BizhQwe/openflux-zen-server/main/scripts/targets.txt
 https://raw.githubusercontent.com/BizhQwe/openflux-zen-server/main/src/OpenFlux.Zen.Server.Installer/payload/README.txt
+https://raw.githubusercontent.com/CaddyProxyManager/caddy-proxy-manager/main/apps/site/public/robots.txt
 https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/http.json
 https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/socks4.json
 https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/socks5.json
@@ -420,6 +415,7 @@ https://raw.githubusercontent.com/PaWill68/openwrt-opera-proxy-rr/main/luci-app-
 https://raw.githubusercontent.com/PaWill68/openwrt-opera-proxy-rr/main/luci-app-opera-proxy-rr/root/usr/libexec/opera-proxy-rr-apply
 https://raw.githubusercontent.com/PaWill68/openwrt-opera-proxy-rr/main/luci-app-opera-proxy-rr/root/usr/share/luci/menu.d/luci-app-opera-proxy-rr.json
 https://raw.githubusercontent.com/PaWill68/openwrt-opera-proxy-rr/main/luci-app-opera-proxy-rr/root/usr/share/rpcd/acl.d/luci-app-opera-proxy-rr.json
+https://raw.githubusercontent.com/PetShopBros/lowdown-proxy/main/public/llms.txt
 https://raw.githubusercontent.com/Phasekrafortress/Phasekrafortress.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/Phasekrafortress/Phasekrafortress.github.io/main/robots.txt
 https://raw.githubusercontent.com/ProblemTheCode/SylphNet-public/main/sub/sub.txt
@@ -467,7 +463,12 @@ https://raw.githubusercontent.com/PsoyNe/mtproto/main/all_proxies.txt
 https://raw.githubusercontent.com/PsoyNe/mtproto/main/working.txt
 https://raw.githubusercontent.com/Pxys-io/DailyProxyList/master/working_proxies.txt
 https://raw.githubusercontent.com/Pxys-io/proxylistdaily/main/working_proxies.txt
+https://raw.githubusercontent.com/PylotLight/Surffish/main/docs/licenses/Apache-2.0-jsQR.txt
 https://raw.githubusercontent.com/PylotLight/Surffish/main/docs/licenses/GPL-3.0-Bramble-icon.txt
+https://raw.githubusercontent.com/PylotLight/Surffish/main/docs/licenses/OFL-1.1-Allura.txt
+https://raw.githubusercontent.com/PylotLight/Surffish/main/docs/licenses/OFL-1.1-Great-Vibes.txt
+https://raw.githubusercontent.com/PylotLight/Surffish/main/src/renderer/public/licenses/MapleMono-OFL.txt
+https://raw.githubusercontent.com/PylotLight/Surffish/main/src/renderer/src/assets/fonts/maple-mono/OFL.txt
 https://raw.githubusercontent.com/Qitu/proxyList/main/Proxy.list
 https://raw.githubusercontent.com/ReviveCoding/quant-model-validation-framework/main/outputs/liquidity_horizon_es_proxy.csv
 https://raw.githubusercontent.com/ReviveCoding/quant-model-validation-framework/main/outputs/pnl_attribution_proxy_detail.csv
@@ -1153,8 +1154,6 @@ https://raw.githubusercontent.com/hcavarsan/kftray/main/examples/pod-tcp-with-ht
 https://raw.githubusercontent.com/hcavarsan/kftray/main/examples/proxy-tcp.json
 https://raw.githubusercontent.com/hcavarsan/kftray/main/examples/proxy-udp.json
 https://raw.githubusercontent.com/henryj-dev/barycenter/main/SURFACE.txt
-https://raw.githubusercontent.com/henryj-dev/barycenter/main/tests/fixtures/nginx-V.nginx-alpine.txt
-https://raw.githubusercontent.com/henryj-dev/barycenter/main/tests/fixtures/nginx-V.openresty-alpine.txt
 https://raw.githubusercontent.com/hesam-init/docker-ovpn-socks/main/configs/FoxyProxy.json
 https://raw.githubusercontent.com/hmmhmmhm/daiso-mcp/main/docs/mitmproxy-guide.md
 https://raw.githubusercontent.com/hmmhmmhm/daiso-mcp/main/docs/oliveyoung-http-relay.md
@@ -1199,6 +1198,8 @@ https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/shadowsoc
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/trojan.txt
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vless.txt
 https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vmess.txt
+https://raw.githubusercontent.com/ihunna/4based-mass-dm/main/requirements.txt
+https://raw.githubusercontent.com/ihunna/4based-mass-dm/main/universals/captions.txt
 https://raw.githubusercontent.com/inference-gateway/inference-gateway/main/tests/benchmarks/baseline.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/all-proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AE/proxies.txt
@@ -1284,6 +1285,8 @@ https://raw.githubusercontent.com/jytt8u/Marvia/main/fastlane/metadata/android/e
 https://raw.githubusercontent.com/jytt8u/Marvia/main/fastlane/metadata/android/en-US/changelogs/10018.txt
 https://raw.githubusercontent.com/kenzopanel/Free-Indonesia-Proxy/main/proxy.json
 https://raw.githubusercontent.com/kenzopanel/Free-Indonesia-Proxy/main/requirements.txt
+https://raw.githubusercontent.com/keygovernortouch/keygovernortouch.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
+https://raw.githubusercontent.com/keygovernortouch/keygovernortouch.github.io/main/robots.txt
 https://raw.githubusercontent.com/kiron1/proxydetox/main/LICENSE.txt
 https://raw.githubusercontent.com/kiron1/proxydetox/main/doc/transparent_proxy.md
 https://raw.githubusercontent.com/kiron1/proxydetox/main/pkg/macos/40-proxydetox
@@ -1788,7 +1791,6 @@ https://raw.githubusercontent.com/shacklekiwiarm/shacklekiwiarm.github.io/main/4
 https://raw.githubusercontent.com/shacklekiwiarm/shacklekiwiarm.github.io/main/robots.txt
 https://raw.githubusercontent.com/shulganovo/Proxylists/main/proxies.txt
 https://raw.githubusercontent.com/skyline-projext/skylinevpn-proxylist/main/proxy.list
-https://raw.githubusercontent.com/slauger/openshift-update-proxy/master/chart/templates/NOTES.txt
 https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt
 https://raw.githubusercontent.com/socks5ip/proxy-ip-pricing/main/proxy-ip-pricing-cn-2026.csv
 https://raw.githubusercontent.com/socks5ip/proxy-ip-pricing/main/proxy-ip-pricing-cn-2026.json
@@ -1962,8 +1964,6 @@ https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/tests/fixtures
 https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/tests/fixtures/page-baseline/contact.allow.txt
 https://raw.githubusercontent.com/wq-h/proxylist/main/no_proxy.list
 https://raw.githubusercontent.com/wq-h/proxylist/main/proxy.list
-https://raw.githubusercontent.com/wuuduf/emby-proxy/main/checksums.txt
-https://raw.githubusercontent.com/wuuduf/emby-proxy/main/emby-proxy
 https://raw.githubusercontent.com/xiaocongyu66/proxypool/main/output/high_quality.txt
 https://raw.githubusercontent.com/xiaocongyu66/proxypool/main/output/nodes.txt
 https://raw.githubusercontent.com/xiaocongyu66/proxypool/main/output/v2ray.txt
