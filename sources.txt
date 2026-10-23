@@ -110,6 +110,7 @@ https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0004.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0005.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0006.txt
+https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0007.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-AE.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-AL.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-AT.txt
@@ -371,7 +372,6 @@ https://raw.githubusercontent.com/Mohammedcha/ProxRipper/main/full_proxies/https
 https://raw.githubusercontent.com/Mohammedcha/ProxRipper/main/requirements.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/all.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/.txt
-https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AE.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AL.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AR.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/AT.txt
@@ -381,15 +381,11 @@ https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BG.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BR.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BW.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/BY.txt
-https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CA.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CD.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CH.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CL.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CN.txt
 https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CO.txt
-https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/CZ.txt
-https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DE.txt
-https://raw.githubusercontent.com/MrMarble/proxy-list/main/country/DO.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/hy2.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/mtproto.txt
 https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/shadowsocks.txt
@@ -622,6 +618,7 @@ https://raw.githubusercontent.com/a3app/loft/main/clients/macOS/pack/README.txt
 https://raw.githubusercontent.com/abusaeeidx/TazaProxy-Troxy/main/last_report.txt
 https://raw.githubusercontent.com/abusaeeidx/TazaProxy-Troxy/main/status.txt
 https://raw.githubusercontent.com/abusaeeidx/TazaProxy-Troxy/main/working_proxies.txt
+https://raw.githubusercontent.com/adamtty/unpinned/main/tests/requirements-fuzz.txt
 https://raw.githubusercontent.com/ading2210/libcurl.js/main/client/exported_funcs.txt
 https://raw.githubusercontent.com/aegoroff/hydec/master/LICENSE.txt
 https://raw.githubusercontent.com/afr0700/ProxyList/main/ProxyList.txt
@@ -659,6 +656,9 @@ https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/r
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BE.txt
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BG.txt
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BJ.txt
+https://raw.githubusercontent.com/api-evangelist/anew/main/llms/anew-llms.txt
+https://raw.githubusercontent.com/api-evangelist/anew/main/openapi/_original/anew-openapi.json.archived.txt
+https://raw.githubusercontent.com/api-evangelist/anew/main/well-known/anew-http-message-signatures-directory.json
 https://raw.githubusercontent.com/api-evangelist/apify/main/blogs/2026-05-04-the-13-best-proxy-providers-for-web-scraping-in-2026.md
 https://raw.githubusercontent.com/api-evangelist/apify/main/blogs/2026-07-15-the-12-best-proxy-providers-for-web-scraping-in-2026.md
 https://raw.githubusercontent.com/api-evangelist/apify/main/llms/apify-llms.txt
@@ -1155,13 +1155,6 @@ https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/assets/data/l
 https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/assets/data/locale/ja.txt
 https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/assets/data/locale/nl.txt
 https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/assets/data/locale/pl.txt
-https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/assets/data/locale/pt.txt
-https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/assets/data/locale/ru.txt
-https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/assets/data/locale/tr.txt
-https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/assets/data/locale/zh.txt
-https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/assets/data/wordlist-base.txt
-https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/tests/fixtures/fixes/expected/acme-cname.golden.txt
-https://raw.githubusercontent.com/halilibrahimd27/domainscope/main/tests/fixtures/fixes/expected/acme-txt-delegated.golden.txt
 https://raw.githubusercontent.com/hashcott/ghostline/main/assets/goodbyedpi/LICENSE-goodbyedpi.txt
 https://raw.githubusercontent.com/hashcott/ghostline/main/assets/goodbyedpi/LICENSE-windivert.txt
 https://raw.githubusercontent.com/hashcott/ghostline/main/assets/zapret2/LICENSE-cygwin.txt
@@ -1188,7 +1181,6 @@ https://raw.githubusercontent.com/hmmhmmhm/daiso-mcp/main/docs/oliveyoung-http-r
 https://raw.githubusercontent.com/hmmhmmhm/daiso-mcp/main/docs/superpowers/plans/2026-10-06-oliveyoung-http.md
 https://raw.githubusercontent.com/hmmhmmhm/daiso-mcp/main/docs/superpowers/specs/2026-10-06-oliveyoung-http-design.md
 https://raw.githubusercontent.com/hookzof/socks5_list/master/tg/socks.json
-https://raw.githubusercontent.com/hoophq/hoop/main/deploy/docker-compose/ssh-stack/client/outbox/notes.txt
 https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/all.txt
 https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/anonymous.txt
 https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/by-country/AE.txt
@@ -1506,7 +1498,9 @@ https://raw.githubusercontent.com/mouse9527/qwen-realtime-proxy/main/docs/adr/00
 https://raw.githubusercontent.com/mouse9527/qwen-realtime-proxy/main/requirements-dev.txt
 https://raw.githubusercontent.com/mouse9527/qwen-realtime-proxy/main/requirements.txt
 https://raw.githubusercontent.com/mpyw/sql-http-proxy/main/sql-http-proxy.schema.json
-https://raw.githubusercontent.com/mynamescrax/aetheris/main/public/assets/fonts/outfit-LICENSE.txt
+https://raw.githubusercontent.com/nafnlj/blocklists-for-.htaccess-and-robots.txt/main/blocks-for-robots.txt
+https://raw.githubusercontent.com/nafnlj/blocklists-for-.htaccess-and-robots.txt/main/htaccess.txt
+https://raw.githubusercontent.com/nafnlj/blocklists-for-.htaccess-and-robots.txt/main/modifications-to-8g-firewall.txt
 https://raw.githubusercontent.com/nam348tnh3gp/SocksHttpGate/main/ODoH/THIRD-PARTY-NOTICE.txt
 https://raw.githubusercontent.com/nam348tnh3gp/SocksHttpGate/main/requirements.txt
 https://raw.githubusercontent.com/neosab3r/discord-proxy-tray/master/licenses/GPL-2.0.txt
@@ -1563,6 +1557,11 @@ https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/h2y_bak/factory/manual_direct.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/h2y_bak/factory/manual_gfwlist.txt
 https://raw.githubusercontent.com/nthack/Shadowrocket-ADBlock-Rules-Easy/master/h2y_bak/factory/manual_proxy.txt
+https://raw.githubusercontent.com/oliverweinrich/certlivo/main/licenses/third-party/GPL-2.0.txt
+https://raw.githubusercontent.com/oliverweinrich/certlivo/main/licenses/third-party/GPL-3.0.txt
+https://raw.githubusercontent.com/oliverweinrich/certlivo/main/licenses/third-party/LGPL-2.1.txt
+https://raw.githubusercontent.com/oliverweinrich/certlivo/main/licenses/third-party/LGPL-3.0.txt
+https://raw.githubusercontent.com/oliverweinrich/certlivo/main/licenses/third-party/node-LICENSE.txt
 https://raw.githubusercontent.com/omerk84/PROXY_SCRAPPER84/master/proxies/scraped-proxies.txt
 https://raw.githubusercontent.com/omerk84/PROXY_SCRAPPER84/master/proxies/working-proxies-all.txt
 https://raw.githubusercontent.com/omerk84/PROXY_SCRAPPER84/master/proxies/working-proxies-http.txt
@@ -1736,6 +1735,7 @@ https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/CL.t
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/CM.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/CN.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/CO.txt
+https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/CR.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/CZ.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/DE.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/DK.txt
