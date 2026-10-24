@@ -265,6 +265,7 @@ https://raw.githubusercontent.com/KilimcininKorOglu/r3v3rs3/main/docs/static/fon
 https://raw.githubusercontent.com/KilimcininKorOglu/r3v3rs3/main/docs/static/llms-full.txt
 https://raw.githubusercontent.com/KilimcininKorOglu/r3v3rs3/main/docs/static/llms.txt
 https://raw.githubusercontent.com/KilimcininKorOglu/r3v3rs3/main/r3v3rs3-webui/robots.txt
+https://raw.githubusercontent.com/LifeAITools/opencode-claude-toolkit/main/research/ka-ghost-verify-2026-08-18.txt
 https://raw.githubusercontent.com/LirikKun/warpd-openwrt/main/packaging/licenses/mihomo-GPL-3.0.txt
 https://raw.githubusercontent.com/LirikKun/warpd-openwrt/main/packaging/licenses/warpscout-MIT.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/COPYRIGHT.txt
@@ -386,6 +387,7 @@ https://raw.githubusercontent.com/P0sseid0n/MultiLinkBalancer/main/lib/tun2socks
 https://raw.githubusercontent.com/P0sseid0n/MultiLinkBalancer/main/lib/tun2socks/LICENSE-wintun.txt
 https://raw.githubusercontent.com/P0sseid0n/MultiLinkBalancer/main/lib/tun2socks/README.txt
 https://raw.githubusercontent.com/P0sseid0n/MultiLinkBalancer/main/lib/webview2/LICENSE.txt
+https://raw.githubusercontent.com/Panharoth06/raiwall/main/examples/feeds/emerging_threats.txt
 https://raw.githubusercontent.com/PatrolGatorTreat/PatrolGatorTreat.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/PatrolGatorTreat/PatrolGatorTreat.github.io/main/robots.txt
 https://raw.githubusercontent.com/PetShopBros/lowdown-proxy/main/public/llms.txt
@@ -744,13 +746,6 @@ https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evi
 https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-final-oxiroute-a/config/nginx-proxy.conf
 https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-final-oxiroute-b/config/nginx-proxy.conf
 https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-final-retained-a/config/nginx-proxy.conf
-https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-final-retained-b/config/nginx-proxy.conf
-https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-lto-baseline-a/config/nginx-proxy.conf
-https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-lto-baseline-b/config/nginx-proxy.conf
-https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-lto-fat-a/config/nginx-proxy.conf
-https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-lto-fat-b/config/nginx-proxy.conf
-https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-pool-jemalloc-a/config/nginx-proxy.conf
-https://raw.githubusercontent.com/brauliobo/oxiroute/main/benchmarks/reports/evidence/2026-07-24-performance-cause-v1/runs/publish-pool-jemalloc-b/config/nginx-proxy.conf
 https://raw.githubusercontent.com/broadinstitute/openidc-terra-proxy/main/LICENSE.txt
 https://raw.githubusercontent.com/broadinstitute/openidc-terra-proxy/main/run-httpd
 https://raw.githubusercontent.com/brooklynkid707-cmd/secure-ai-gateway/main/requirements.txt
@@ -1618,6 +1613,9 @@ https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/ForSites/1
 https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/ForSites/1xbet.com/socks5.txt
 https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/ForSites/avito.ru/ALL.txt
 https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/ForSites/avito.ru/http.txt
+https://raw.githubusercontent.com/proxyherd/proxyherd/main/packages/frontend/app/proxy.conf.json
+https://raw.githubusercontent.com/proxyherd/proxyherd/main/packages/website/intro/proxyherd.md
+https://raw.githubusercontent.com/proxyherd/proxyherd/main/packages/website/public/robots.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/proxies/http.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/proxies/https.txt
 https://raw.githubusercontent.com/pwnx0/proxy/main/proxies/mixed.txt
@@ -1634,6 +1632,8 @@ https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/all-base6
 https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/all.txt
 https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/light-base64.txt
 https://raw.githubusercontent.com/rekt0ro/ProxyRift/main/subscriptions/light.txt
+https://raw.githubusercontent.com/resucdueff/proxylist/main/ai/exclude.txt
+https://raw.githubusercontent.com/resucdueff/proxylist/main/ai/extra.txt
 https://raw.githubusercontent.com/risadams/Janus/main/internal/update/release-keys.txt
 https://raw.githubusercontent.com/rix4uni/fresh-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/rokso/hardhat-upgrades-validator/main/test/fixtures/rocketh/fresh/Counter_Proxy.json
@@ -1823,6 +1823,7 @@ https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CY.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/CZ.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/DE.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/DK.txt
+https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/EE.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/ES.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/FI.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/FR.txt
@@ -1842,7 +1843,6 @@ https://raw.githubusercontent.com/tgmtproxy/mtproxy/main/robots.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/robots.txt
-https://raw.githubusercontent.com/tgproxypink/telegram-proxy-list/main/mtproto.txt
 https://raw.githubusercontent.com/thao-glitch/rotating-proxy/main/proxy_state.json
 https://raw.githubusercontent.com/thao-glitch/rotating-proxy/main/proxyctl
 https://raw.githubusercontent.com/themiralay/Proxy-List-World/master/data.txt
