@@ -1,3 +1,4 @@
+https://raw.githubusercontent.com/0x7a657573/zroxy/main/CMakeLists.txt
 https://raw.githubusercontent.com/2scraper/autotrader-scraper/main/requirements-playwright.txt
 https://raw.githubusercontent.com/2scraper/autotrader-scraper/main/requirements-puppeteer.txt
 https://raw.githubusercontent.com/2scraper/autotrader-scraper/main/requirements-selenium.txt
@@ -230,7 +231,6 @@ https://raw.githubusercontent.com/HSCN809/real-estate-scraper/main/requirements.
 https://raw.githubusercontent.com/HaakFab/ProxyListHelper/master/requirements-web.txt
 https://raw.githubusercontent.com/HaakFab/ProxyListHelper/master/requirements-worker.txt
 https://raw.githubusercontent.com/HaakFab/ProxyListHelper/master/requirements.txt
-https://raw.githubusercontent.com/Halil-KAPLAN/ProxyScout/main/extension/fonts/LICENSE.txt
 https://raw.githubusercontent.com/Hanivan/nestjs-xpath-parser/main/docs/features/retry-proxy.md
 https://raw.githubusercontent.com/HankNovic/ProxyClean/main/SOCKS5.txt
 https://raw.githubusercontent.com/HankNovic/ProxyClean/main/SOCKS5_RAW.txt
@@ -275,8 +275,6 @@ https://raw.githubusercontent.com/KilimcininKorOglu/r3v3rs3/main/r3v3rs3-webui/r
 https://raw.githubusercontent.com/LeechVanquish/LeechVanquish.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/LeechVanquish/LeechVanquish.github.io/main/robots.txt
 https://raw.githubusercontent.com/LifeAITools/opencode-claude-toolkit/main/research/ka-ghost-verify-2026-08-18.txt
-https://raw.githubusercontent.com/LirikKun/warpd-openwrt/main/packaging/licenses/mihomo-GPL-3.0.txt
-https://raw.githubusercontent.com/LirikKun/warpd-openwrt/main/packaging/licenses/warpscout-MIT.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/COPYRIGHT.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/LICENSE.txt
 https://raw.githubusercontent.com/LittleProxy/LittleProxy/main/LittleProxy_Request_Handling_Architecture.md
@@ -296,7 +294,6 @@ https://raw.githubusercontent.com/Loft-902-Co-LLC/open-ferry-ai-proxy/main/crate
 https://raw.githubusercontent.com/Loft-902-Co-LLC/open-ferry-ai-proxy/main/crates/open-ferry-tui/testdata/screens/a13-auth-confirm.txt
 https://raw.githubusercontent.com/Loft-902-Co-LLC/open-ferry-ai-proxy/main/crates/open-ferry-tui/testdata/screens/a14-auth-edit.txt
 https://raw.githubusercontent.com/Loft-902-Co-LLC/open-ferry-ai-proxy/main/crates/open-ferry-tui/testdata/screens/a15-auth-second.txt
-https://raw.githubusercontent.com/Loft-902-Co-LLC/open-ferry-ai-proxy/main/crates/open-ferry-tui/testdata/screens/a16-auth-second-expanded.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/enclave-go/cmd/enclave/testdata/shadow_main/chat.completions_default_absent.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/enclave-go/cmd/enclave/testdata/shadow_main/chat.completions_default_batch.txt
 https://raw.githubusercontent.com/Lore-Hex/quill-cloud-proxy/main/enclave-go/cmd/enclave/testdata/shadow_main/chat.completions_default_default.txt
@@ -493,6 +490,8 @@ https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/Countries/http/Bang
 https://raw.githubusercontent.com/Sreenivas-Sadhu-Prabhakara/apigeex-training/main/requirements.txt
 https://raw.githubusercontent.com/SurfaceMacawTruss40/SurfaceMacawTruss40.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/SurfaceMacawTruss40/SurfaceMacawTruss40.github.io/main/robots.txt
+https://raw.githubusercontent.com/SurgeNoteRecord/SurgeNoteRecord.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
+https://raw.githubusercontent.com/SurgeNoteRecord/SurgeNoteRecord.github.io/main/robots.txt
 https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt
 https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt
 https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt
@@ -505,13 +504,8 @@ https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/docs/dat
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/docs/data/links/stable.txt
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/docs/data/socks4.json
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/docs/data/socks5.json
-https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/docs/data/v2ray/all.txt
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/all.txt
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/anonymous.txt
-https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/AE.txt
-https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/AR.txt
-https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/BD.txt
-https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/CA.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/http.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/https.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/socks4.txt
@@ -666,6 +660,8 @@ https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/r
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BE.txt
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BG.txt
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BJ.txt
+https://raw.githubusercontent.com/apexsupplierdash/apexsupplierdash.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
+https://raw.githubusercontent.com/apexsupplierdash/apexsupplierdash.github.io/main/robots.txt
 https://raw.githubusercontent.com/api-evangelist/anew/main/llms/anew-llms.txt
 https://raw.githubusercontent.com/api-evangelist/anew/main/openapi/_original/anew-openapi.json.archived.txt
 https://raw.githubusercontent.com/api-evangelist/anew/main/well-known/anew-http-message-signatures-directory.json
@@ -889,6 +885,8 @@ https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CM/phttp_CM_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CN/http_CN_checked.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CN/phttp_CN_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CO/http_CO_checked.txt
+https://raw.githubusercontent.com/elliottophellia/proxylist/master/results/http/country/CO/phttp_CO_checked.txt
 https://raw.githubusercontent.com/emissary-ingress/emissary/main/build-aux/copyright-boilerplate.go.txt
 https://raw.githubusercontent.com/emissary-ingress/emissary/main/charts/emissary-crds/templates/NOTES.txt
 https://raw.githubusercontent.com/emissary-ingress/emissary/main/charts/emissary-ingress/templates/NOTES.txt
@@ -944,19 +942,6 @@ https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/main/ssr_w
 https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/main/top1000_active.txt
 https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/main/tuic.txt
 https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/main/tuic_working.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/linux/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/linux/flutter/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/linux/runner/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/plugins/proxy/windows/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/plugins/tray/linux/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/plugins/tray/windows/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/plugins/wifi_ssid/linux/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/plugins/wifi_ssid/windows/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/plugins/window/linux/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/plugins/window/windows/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/windows/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/windows/flutter/CMakeLists.txt
-https://raw.githubusercontent.com/farfarfun/funclash/master/windows/runner/CMakeLists.txt
 https://raw.githubusercontent.com/ferhatacer90/mtproxy-list/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/ferhatacer90/mtproxy-list/main/proxies.txt
 https://raw.githubusercontent.com/ferhatacer90/mtproxy-list/main/robots.txt
@@ -1168,6 +1153,14 @@ https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vmess.txt
 https://raw.githubusercontent.com/ihunna/4based-mass-dm/main/requirements.txt
 https://raw.githubusercontent.com/ihunna/4based-mass-dm/main/universals/captions.txt
 https://raw.githubusercontent.com/imbegr888/async-proxy-validator/main/requirements.txt
+https://raw.githubusercontent.com/intell009/proxy_list/main/0-ToxVenum.txt
+https://raw.githubusercontent.com/intell009/proxy_list/main/0-СКРИПТ-СЁРЧ.txt
+https://raw.githubusercontent.com/intell009/proxy_list/main/TUIC.txt
+https://raw.githubusercontent.com/intell009/proxy_list/main/Wireguard.txt
+https://raw.githubusercontent.com/intell009/proxy_list/main/grabber_ss.txt
+https://raw.githubusercontent.com/intell009/proxy_list/main/hy2.txt
+https://raw.githubusercontent.com/intell009/proxy_list/main/ss.txt
+https://raw.githubusercontent.com/intell009/proxy_list/main/vless-mix.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/all-proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/AM/proxies.txt
@@ -1440,6 +1433,7 @@ https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/cz.txt
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/de.txt
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/dk.txt
+https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/do.txt
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/ec.txt
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/ee.txt
 https://raw.githubusercontent.com/maximilianfeix/proxy-scraper/main/.github/requirements/bot.txt
@@ -1547,6 +1541,7 @@ https://raw.githubusercontent.com/oliverweinrich/certlivo/main/licenses/third-pa
 https://raw.githubusercontent.com/oliverweinrich/certlivo/main/licenses/third-party/LGPL-2.1.txt
 https://raw.githubusercontent.com/oliverweinrich/certlivo/main/licenses/third-party/LGPL-3.0.txt
 https://raw.githubusercontent.com/oliverweinrich/certlivo/main/licenses/third-party/node-LICENSE.txt
+https://raw.githubusercontent.com/omkarcloud/mercado-libre-scraper/master/requirements.txt
 https://raw.githubusercontent.com/oznurakaro04/telegram-proxy-live/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/oznurakaro04/telegram-proxy-live/main/proxies.txt
 https://raw.githubusercontent.com/oznurakaro04/telegram-proxy-live/main/robots.txt
@@ -1754,6 +1749,8 @@ https://raw.githubusercontent.com/sheraliyz/free-vpn-configs-bot/main/requiremen
 https://raw.githubusercontent.com/sheraliyz/free-vpn-configs-bot/main/sources.txt
 https://raw.githubusercontent.com/shulganovo/Proxylists/main/proxies.txt
 https://raw.githubusercontent.com/skyline-projext/skylinevpn-proxylist/main/proxy.list
+https://raw.githubusercontent.com/slatewindstitch/slatewindstitch.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
+https://raw.githubusercontent.com/slatewindstitch/slatewindstitch.github.io/main/robots.txt
 https://raw.githubusercontent.com/smartworldarafath/Nexagram/main/TMessagesProj/jni/CMakeLists.txt
 https://raw.githubusercontent.com/smartworldarafath/Nexagram/main/TMessagesProj/jni/integrity/CMakeLists.txt
 https://raw.githubusercontent.com/smartworldarafath/Nexagram/main/TMessagesProj/jni/tde2e/CMakeLists.txt
@@ -1921,9 +1918,12 @@ https://raw.githubusercontent.com/wangwanjie/gately/main/website/public/robots.t
 https://raw.githubusercontent.com/watchttvv/free-proxy-list/main/proxy.txt
 https://raw.githubusercontent.com/watchttvv/free-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/wernerj/bookbind-cli/main/spec/fixtures/sample.txt
+https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/config/link-hosts-no-3xx.txt
+https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/config/pages-to-monitor.txt
 https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/packages/woocommerce-apibase/readme.txt
 https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/scripts/integrator-demo-video/README.txt
 https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/src/shop/order-state.diagram.txt
+https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/static/.well-known/security.txt
 https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/static/ai.txt
 https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/static/integrator/llms.txt
 https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/static/llms.txt
