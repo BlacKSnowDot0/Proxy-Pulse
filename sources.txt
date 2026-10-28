@@ -50,8 +50,6 @@ https://raw.githubusercontent.com/6yyn/free-proxy-list/main/http.txt
 https://raw.githubusercontent.com/6yyn/free-proxy-list/main/https.txt
 https://raw.githubusercontent.com/6yyn/free-proxy-list/main/instagram_proxies.txt
 https://raw.githubusercontent.com/6yyn/free-proxy-list/main/proxies.txt
-https://raw.githubusercontent.com/A-Masoumiyan/PersianSocks/main/app/src/main/assets/bootstrap-http.txt
-https://raw.githubusercontent.com/A-Masoumiyan/PersianSocks/main/app/src/main/assets/bootstrap-socks5.txt
 https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/http.txt
 https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/socks4.txt
 https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/socks5.txt
@@ -86,8 +84,10 @@ https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0006.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0007.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-AE.txt
+https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-AL.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-AT.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-AU.txt
+https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-BY.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-CA.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-CH.txt
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/v2ray-base64-DE.txt
@@ -175,6 +175,8 @@ https://raw.githubusercontent.com/DiscordControl/DiscordControl.github.io/main/r
 https://raw.githubusercontent.com/Docker-Hunterpedia/ReverseDock/main/docs/decisions/0006-http3-separate-track.md
 https://raw.githubusercontent.com/Docker-Hunterpedia/ReverseDock/main/docs/decisions/0012-own-listeners-pingora-http-engine.md
 https://raw.githubusercontent.com/Docker-Hunterpedia/ReverseDock/main/docs/decisions/0014-http-semantics-v0-1.md
+https://raw.githubusercontent.com/Docker-Hunterpedia/ReverseDock/main/docs/decisions/0020-automatic-https.md
+https://raw.githubusercontent.com/Docker-Hunterpedia/ReverseDock/main/docs/research/v0.3-automatic-https.md
 https://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/https.txt
 https://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/socks4.txt
 https://raw.githubusercontent.com/ExyonQ/ExyonQ/main/benchmarks/scenarios/payloads/health.txt
@@ -193,6 +195,8 @@ https://raw.githubusercontent.com/ExyonQ/ExyonQ/main/docs/governance/v044-p4-pro
 https://raw.githubusercontent.com/ExyonQ/ExyonQ/main/docs/governance/v044-p4-proxy-execution-tax-decomposition.md
 https://raw.githubusercontent.com/ExyonQ/ExyonQ/main/docs/governance/v044-p4-proxy-path-causal-profiling.md
 https://raw.githubusercontent.com/ExyonQ/ExyonQ/main/docs/governance/v044-p4-proxy-wire-body-pipeline-slim.md
+https://raw.githubusercontent.com/FacetBackerPlain/FacetBackerPlain.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
+https://raw.githubusercontent.com/FacetBackerPlain/FacetBackerPlain.github.io/main/robots.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/app/requirements.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/proxy/http.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/proxy/https.txt
@@ -1074,6 +1078,9 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-feed/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-for-scraping/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-for-scraping/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-for-scraping/main/socks5.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-github/main/http.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-github/main/socks4.txt
+https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-github/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-http/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-http/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-http/main/socks5.txt
@@ -1174,6 +1181,7 @@ https://raw.githubusercontent.com/ilxp/admask-openwrt/main/admask/files/etc/adma
 https://raw.githubusercontent.com/ilxp/admask-openwrt/main/admask/files/usr/lib/resources/web_accessible_resources/README.txt
 https://raw.githubusercontent.com/ilxp/admask-openwrt/main/admask/files/usr/lib/resources/web_accessible_resources/noop.txt
 https://raw.githubusercontent.com/imbegr888/async-proxy-validator/main/requirements.txt
+https://raw.githubusercontent.com/ingyukoh/demand-forecast-validation-lab/main/requirements.txt
 https://raw.githubusercontent.com/intell009/proxy_list/main/0-ToxVenum.txt
 https://raw.githubusercontent.com/intell009/proxy_list/main/0-СКРИПТ-СЁРЧ.txt
 https://raw.githubusercontent.com/intell009/proxy_list/main/TUIC.txt
@@ -1222,6 +1230,7 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IE/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IL/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IN/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IQ/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/IT/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/JP/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KG/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KH/proxies.txt
@@ -1282,8 +1291,6 @@ https://raw.githubusercontent.com/kintokki99/proxylist/main/proxy.txt
 https://raw.githubusercontent.com/kintokki99/proxylist/main/proxy_rotator.txt
 https://raw.githubusercontent.com/kiron1/proxydetox/main/LICENSE.txt
 https://raw.githubusercontent.com/kiron1/proxydetox/main/doc/transparent_proxy.md
-https://raw.githubusercontent.com/kiron1/proxydetox/main/pkg/macos/40-proxydetox
-https://raw.githubusercontent.com/kiron1/proxydetox/main/pkg/macos/proxydetoxctl
 https://raw.githubusercontent.com/koldakov/koldakov-proxium/main/src/content/docs/0.1.0/installation/admin-https.md
 https://raw.githubusercontent.com/koldakov/koldakov-proxium/main/src/content/docs/0.1.1/installation/admin-https.md
 https://raw.githubusercontent.com/koldakov/koldakov-proxium/main/src/content/docs/installation/admin-https.md
@@ -1834,6 +1841,8 @@ https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/IE.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/IL.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/IN.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/IR.txt
+https://raw.githubusercontent.com/tankwindhallway89/tankwindhallway89.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
+https://raw.githubusercontent.com/tankwindhallway89/tankwindhallway89.github.io/main/robots.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/tgmtproxy/telegram-mtproto-proxy-list/main/robots.txt
@@ -1850,9 +1859,6 @@ https://raw.githubusercontent.com/tks98/snoopy/main/docs/plan-rustls-http3.md
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/proxies.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/requirements.txt
 https://raw.githubusercontent.com/tltboss163/socks5-proxy-checker/master/working_proxies.txt
-https://raw.githubusercontent.com/tragent-io/acurl/main/site/llms.txt
-https://raw.githubusercontent.com/tragent-io/acurl/main/site/robots.txt
-https://raw.githubusercontent.com/tragent-io/acurl/main/testdata/fixtures/robots-complex.txt
 https://raw.githubusercontent.com/tricrck/working-public-proxies/main/requirements.txt
 https://raw.githubusercontent.com/urfoundation/meso-miner/main/.github/verbose_log_allowlist.txt
 https://raw.githubusercontent.com/urfoundation/meso-miner/main/blocker/allowlist.txt
@@ -1875,12 +1881,6 @@ https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/socks4.txt
 https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/socks5.txt
 https://raw.githubusercontent.com/vanquisherladyjump/vanquisherladyjump.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/vanquisherladyjump/vanquisherladyjump.github.io/main/robots.txt
-https://raw.githubusercontent.com/varaprasadreddy9676/integration-control-plane-oss/main/frontend/src/features/landing/docs/inbound-proxy.md
-https://raw.githubusercontent.com/varaprasadreddy9676/integration-control-plane-oss/main/tools/video/capture/compose-ps.txt
-https://raw.githubusercontent.com/varaprasadreddy9676/integration-control-plane-oss/main/tools/video/capture/compose-up.txt
-https://raw.githubusercontent.com/varaprasadreddy9676/integration-control-plane-oss/main/tools/video/capture/create-user.txt
-https://raw.githubusercontent.com/varaprasadreddy9676/integration-control-plane-oss/main/tools/video/capture/health.txt
-https://raw.githubusercontent.com/varaprasadreddy9676/integration-control-plane-oss/main/tools/video/capture/init-env.txt
 https://raw.githubusercontent.com/vcarus/volto/main/tests/interop/aioquic/requirements.txt
 https://raw.githubusercontent.com/vergoboy/vegord/main/build/signing-requirements.txt
 https://raw.githubusercontent.com/vergoboy/vegord/main/gfw_resist_HTTPS_proxy/Android/matsuri_http_config.json
