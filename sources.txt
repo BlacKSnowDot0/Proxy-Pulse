@@ -2,6 +2,7 @@ https://raw.githubusercontent.com/0x7a657573/zroxy/main/CMakeLists.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/all/tg.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/classic/tg.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/classic/tme.txt
+https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/AT.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/CA.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/CH.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/CZ.txt
@@ -13,8 +14,10 @@ https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/G
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/IL.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/IN.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/IR.txt
+https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/KR.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/LT.txt
 https://raw.githubusercontent.com/0xRadikal/Free-Telegram-Proxy/main/countries/LU.txt
+https://raw.githubusercontent.com/0xyz-exe/ai-privacy-gateway/main/backend/requirements.txt
 https://raw.githubusercontent.com/1sakshm/pennywise/main/requirements-serve.txt
 https://raw.githubusercontent.com/1sakshm/pennywise/main/requirements.txt
 https://raw.githubusercontent.com/2scraper/autotrader-scraper/main/requirements-playwright.txt
@@ -1114,12 +1117,6 @@ https://raw.githubusercontent.com/hahwul/gori/main/src/gori/fuzz/payloads/sqli.t
 https://raw.githubusercontent.com/hahwul/gori/main/src/gori/fuzz/payloads/traversal.txt
 https://raw.githubusercontent.com/hahwul/gori/main/src/gori/fuzz/payloads/xss.txt
 https://raw.githubusercontent.com/hahwul/gori/main/src/gori/miner/wordlists/params.txt
-https://raw.githubusercontent.com/hashcott/ghostline/main/assets/goodbyedpi/LICENSE-goodbyedpi.txt
-https://raw.githubusercontent.com/hashcott/ghostline/main/assets/goodbyedpi/LICENSE-windivert.txt
-https://raw.githubusercontent.com/hashcott/ghostline/main/assets/zapret2/LICENSE-cygwin.txt
-https://raw.githubusercontent.com/hashcott/ghostline/main/assets/zapret2/LICENSE-windivert.txt
-https://raw.githubusercontent.com/hashcott/ghostline/main/assets/zapret2/LICENSE-zapret2.txt
-https://raw.githubusercontent.com/hashcott/ghostline/main/build/windows/portable/!%20DOC%20TRUOC%20KHI%20DUNG%20-%20READ%20FIRST.txt
 https://raw.githubusercontent.com/hatam-abolghasemi/openresty-prometheus-exporter/main/docs/https-interception.md
 https://raw.githubusercontent.com/hatam-abolghasemi/openresty-prometheus-exporter/main/docs/mode-3-outbound-https-interception.md
 https://raw.githubusercontent.com/hatam-abolghasemi/openresty-prometheus-exporter/main/vendor/nginx-lua-prometheus/integration/www/index.txt
@@ -1208,8 +1205,10 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CL/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CM/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CN/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CO/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CY/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/CZ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DE/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/DO/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EC/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/EE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/ES/proxies.txt
@@ -1372,6 +1371,9 @@ https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countr
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/http.txt
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/socks4.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/socks4.json
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/socks4.txt
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/socks5.csv
+https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/af/socks5.json
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/al/all.txt
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/al/http.csv
 https://raw.githubusercontent.com/litportnet/free-proxy-list/main/proxies/countries/al/http.json
@@ -1414,8 +1416,6 @@ https://raw.githubusercontent.com/luqman-v1/9router-go/main/web/src/assets/fonts
 https://raw.githubusercontent.com/mahdyaralipor/v2all/main/real_sub.txt
 https://raw.githubusercontent.com/mahdyaralipor/v2all/main/real_working.txt
 https://raw.githubusercontent.com/mahyartdb/cf-scanner/main/tests/fixtures/vless-worker.txt
-https://raw.githubusercontent.com/mahyartdb/cf-scanner/main/tests/fixtures/warp-uri.txt
-https://raw.githubusercontent.com/mahyartdb/cf-scanner/main/tests/fixtures/warp-wgconf.txt
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/http.json
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/metadata/http-metadata.json
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/metadata/socks4-metadata.json
@@ -1685,7 +1685,6 @@ https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/BG.t
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/BI.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/BR.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/BT.txt
-https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/BZ.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/CA.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/CD.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/CH.txt
@@ -1890,6 +1889,7 @@ https://raw.githubusercontent.com/vergoboy/vegord/main/gfw_resist_HTTPS_proxy/An
 https://raw.githubusercontent.com/vergoboy/vegord/main/gfw_resist_HTTPS_proxy/asset/temp.txt
 https://raw.githubusercontent.com/vergoboy/vegord/main/scripts/header.txt
 https://raw.githubusercontent.com/vergoboy/vegord/main/tun2proxy/tests/requirements.txt
+https://raw.githubusercontent.com/viess26/proxy-list-us/main/ProxyIPs
 https://raw.githubusercontent.com/vighneshvijayjadhav-eng/NetRoute_X/main/analysis/requirements.txt
 https://raw.githubusercontent.com/vispar-tech/openrot/main/openrot/core/data/title_system.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AE/http.txt
