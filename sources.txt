@@ -123,6 +123,7 @@ https://raw.githubusercontent.com/Bes-js/public-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/BranchCuckoo/Hamachi-Pro-Desktop-2026/main/auto_commit_timestamp.txt
 https://raw.githubusercontent.com/BurrowTrailHub/BurrowTrailHub.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/BurrowTrailHub/BurrowTrailHub.github.io/main/robots.txt
+https://raw.githubusercontent.com/CNT-Cafe/Public-Configs/main/test-configs.txt
 https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/http.json
 https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/socks4.json
 https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/socks5.json
@@ -464,6 +465,13 @@ https://raw.githubusercontent.com/NinjaBeeFactory/NinjaBeeFactory.github.io/main
 https://raw.githubusercontent.com/NinjaBeeFactory/NinjaBeeFactory.github.io/main/robots.txt
 https://raw.githubusercontent.com/NucleusStarfishOrbit/NucleusStarfishOrbit.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/NucleusStarfishOrbit/NucleusStarfishOrbit.github.io/main/robots.txt
+https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/cert-5696.txt
+https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/cert-5A23.txt
+https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/cert-7C47.txt
+https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/mdconsensus1.txt
+https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/mdconsensus2.txt
+https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/microdescs.txt
+https://raw.githubusercontent.com/PHPCraftdream/tor-socks5/main/vendor/tor-dirmgr/testdata/routerdesc1.txt
 https://raw.githubusercontent.com/Panharoth06/raiwall/main/examples/feeds/emerging_threats.txt
 https://raw.githubusercontent.com/PatrolGatorTreat/PatrolGatorTreat.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/PatrolGatorTreat/PatrolGatorTreat.github.io/main/robots.txt
@@ -512,8 +520,6 @@ https://raw.githubusercontent.com/PsoyNe/mtproto/main/all_proxies.txt
 https://raw.githubusercontent.com/PsoyNe/mtproto/main/working.txt
 https://raw.githubusercontent.com/Pxys-io/DailyProxyList/master/working_proxies.txt
 https://raw.githubusercontent.com/Pxys-io/proxylistdaily/main/working_proxies.txt
-https://raw.githubusercontent.com/QuakePrinceTie/QuakePrinceTie.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
-https://raw.githubusercontent.com/QuakePrinceTie/QuakePrinceTie.github.io/main/robots.txt
 https://raw.githubusercontent.com/RJ-s-Org/Mockingbird/main/deploy/helm/mockingbird/templates/NOTES.txt
 https://raw.githubusercontent.com/RJ-s-Org/Mockingbird/main/docs/proxy.md
 https://raw.githubusercontent.com/RJ-s-Org/Mockingbird/main/docs/superpowers/plans/2026-10-22-ws4-routing-proxy.md
@@ -589,6 +595,8 @@ https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/http.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/https.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/socks4.txt
 https://raw.githubusercontent.com/Tianndev/free-proxy/main/proxy/socks5.txt
+https://raw.githubusercontent.com/Tiny-Bubble-Company/shadow/main/ml/requirements-hf.txt
+https://raw.githubusercontent.com/Tiny-Bubble-Company/shadow/main/ml/requirements.txt
 https://raw.githubusercontent.com/TroopPrefect/TroopPrefect.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/TroopPrefect/TroopPrefect.github.io/main/robots.txt
 https://raw.githubusercontent.com/TsarSprocket/ReportMid/master/documentation/abmod_perks.txt
@@ -651,6 +659,7 @@ https://raw.githubusercontent.com/Vicecheengage/Vicecheengage.github.io/main/40e
 https://raw.githubusercontent.com/Vicecheengage/Vicecheengage.github.io/main/robots.txt
 https://raw.githubusercontent.com/WafflingNinja/RoValid/main/docs/robots.txt
 https://raw.githubusercontent.com/WafflingNinja/RoValid/main/requirements.txt
+https://raw.githubusercontent.com/WhaleAqueduct/Vpn-disconnect-Desktop-2026/main/auto_commit_timestamp_29.txt
 https://raw.githubusercontent.com/Wikid82/Charon/main/backend/dns_service_final.txt
 https://raw.githubusercontent.com/Wikid82/Charon/main/backend/final_lint.txt
 https://raw.githubusercontent.com/Wikid82/Charon/main/backend/full_lint_output.txt
@@ -765,13 +774,6 @@ https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/r
 https://raw.githubusercontent.com/anutmagang/Free-HighQuality-Proxy-Socks/main/results/countries/BJ.txt
 https://raw.githubusercontent.com/apexsupplierdash/apexsupplierdash.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
 https://raw.githubusercontent.com/apexsupplierdash/apexsupplierdash.github.io/main/robots.txt
-https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/blogs/2020-09-30-envoy-proxy-on-windows-containers.md
-https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/collections/envoy-proxy-admin-api.opencollection.json
-https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/collections/envoy-proxy-admin-api.postman_collection.json
-https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/collections/envoy-proxy-certificates-api.opencollection.json
-https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/collections/envoy-proxy-certificates-api.postman_collection.json
-https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/collections/envoy-proxy-cluster-discovery-api.opencollection.json
-https://raw.githubusercontent.com/api-evangelist/envoy-proxy/main/collections/envoy-proxy-cluster-discovery-api.postman_collection.json
 https://raw.githubusercontent.com/api-evangelist/statable-stats-api/main/llms/statable-stats-api-llms.txt
 https://raw.githubusercontent.com/api-evangelist/trickybird/main/llms/trickybird-llms.txt
 https://raw.githubusercontent.com/api-evangelist/trickybird/main/well-known/trickybird-security.txt
@@ -1271,6 +1273,7 @@ https://raw.githubusercontent.com/jasonxu114514/opencode2api/main/internal/gatew
 https://raw.githubusercontent.com/jeffzc24-cmyk/clash-chain-proxy_skill/main/requirements.txt
 https://raw.githubusercontent.com/jeffzc24-cmyk/clash-chain-proxy_skill/main/tests/test_data/static_ip.txt
 https://raw.githubusercontent.com/joachimgrobbelaar/market-intelligence-scraper-service/main/requirements.txt
+https://raw.githubusercontent.com/jowaltoai-afk/ryk-bus/main/robots.txt
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/27/18-00/proxies.txt
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/28/00-00/proxies.txt
 https://raw.githubusercontent.com/joy-deploy/free-proxy-list/main/data/2025-03/28/06-00/proxies.txt
@@ -1719,9 +1722,6 @@ https://raw.githubusercontent.com/roxy-proxy/roxy-proxy/main/crates/roxy-proxy/t
 https://raw.githubusercontent.com/roxy-proxy/roxy-proxy/main/crates/roxy-proxy/tests/fixtures/sigv4/post-header-value-case/header-signed-request.txt
 https://raw.githubusercontent.com/roxy-proxy/roxy-proxy/main/crates/roxy-proxy/tests/fixtures/sigv4/post-header-value-case/request.txt
 https://raw.githubusercontent.com/roxy-proxy/roxy-proxy/main/crates/roxy-proxy/tests/fixtures/sigv4/post-vanilla/header-signed-request.txt
-https://raw.githubusercontent.com/roxy-proxy/roxy-proxy/main/crates/roxy-proxy/tests/fixtures/sigv4/post-vanilla/request.txt
-https://raw.githubusercontent.com/roxy-proxy/roxy-proxy/main/docs/pages/reference/http.md
-https://raw.githubusercontent.com/roxy-proxy/roxy-proxy/main/examples/human-approval/requirements-test.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/AE.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/AF.txt
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/AT.txt
