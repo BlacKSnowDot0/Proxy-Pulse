@@ -64,6 +64,9 @@ https://raw.githubusercontent.com/Altimis/Scweet/master/LICENSE.txt
 https://raw.githubusercontent.com/Altimis/Scweet/master/docs-requirements.txt
 https://raw.githubusercontent.com/Altimis/Scweet/master/requirements-dev.txt
 https://raw.githubusercontent.com/Altimis/Scweet/master/requirements.txt
+https://raw.githubusercontent.com/Amirh-Darvishi/smart-web-scraper/main/examples/proxies.example.txt
+https://raw.githubusercontent.com/AnobleSCM/mcp-zero-trust-proxy/main/landing-page/llms.txt
+https://raw.githubusercontent.com/AnobleSCM/mcp-zero-trust-proxy/main/landing-page/robots.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/http_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/socks4_proxies.txt
 https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/socks5_proxies.txt
@@ -184,7 +187,6 @@ https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bri
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/webtunnel.txt
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/webtunnel_72h.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/all_configs.txt
-https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-11-09.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-11-10.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-11-11.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-11-12.txt
@@ -271,6 +273,7 @@ https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/cou
 https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/countries/BF.txt
 https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/countries/BG.txt
 https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/countries/BI.txt
+https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/countries/BJ.txt
 https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/countries/BO.txt
 https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/countries/BR.txt
 https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/http.txt
@@ -309,6 +312,8 @@ https://raw.githubusercontent.com/Heliopsy/scrim/main/bench/redact-bench/results
 https://raw.githubusercontent.com/Heliopsy/scrim/main/bench/redact-bench/results/rust-criterion.txt
 https://raw.githubusercontent.com/Heliopsy/scrim/main/dataplane/crates/scrim-redact/proptest-regressions/guard_tests.txt
 https://raw.githubusercontent.com/Heliopsy/scrim/main/dataplane/crates/scrim-redact/proptest-regressions/redactor.txt
+https://raw.githubusercontent.com/Heliopsy/scrim/main/deploy/examples/ansible/requirements-lint.txt
+https://raw.githubusercontent.com/Heliopsy/scrim/main/deploy/helm/scrim/templates/NOTES.txt
 https://raw.githubusercontent.com/Heliopsy/scrim/main/internal/agenttools/eff_large_wordlist.txt
 https://raw.githubusercontent.com/Heliopsy/scrim/main/internal/status/testdata/doctor-config-weakened.txt
 https://raw.githubusercontent.com/Heliopsy/scrim/main/internal/status/testdata/doctor-degraded.txt
@@ -504,7 +509,6 @@ https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/socks5.txt
 https://raw.githubusercontent.com/ProxyVerity/proxylistchecker-org/master/robots.txt
 https://raw.githubusercontent.com/PsoyNe/mtproto/main/all_proxies.txt
 https://raw.githubusercontent.com/PsoyNe/mtproto/main/working.txt
-https://raw.githubusercontent.com/Pxys-io/DailyProxyList/master/working_proxies.txt
 https://raw.githubusercontent.com/Pxys-io/proxylistdaily/main/working_proxies.txt
 https://raw.githubusercontent.com/Rain-kl/OpenFlare/main/docs/en/guide/proxy-config.md
 https://raw.githubusercontent.com/Rain-kl/OpenFlare/main/docs/guide/proxy-config.md
@@ -601,6 +605,7 @@ https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/CH.txt
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/CI.txt
 https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/CL.txt
+https://raw.githubusercontent.com/Thordata/awesome-free-proxy-list/main/proxies/by-country/CM.txt
 https://raw.githubusercontent.com/TruFoox/HoneyWasp/master/ToAdd.txt
 https://raw.githubusercontent.com/TruFoox/HoneyWasp/master/proxies.txt
 https://raw.githubusercontent.com/TunnelHelpNotice/TunnelHelpNotice.github.io/main/40ee1ffb580fb8b9fefc2e16ea2811d6.txt
@@ -691,6 +696,13 @@ https://raw.githubusercontent.com/ahpio/ahpd/main/.project/plans/host/20261104-1
 https://raw.githubusercontent.com/ahpio/ahpd/main/.project/plans/host/65-p1-the-gate-and-the-proxy/task-04-provider-key-refusal-is-proxys-own-error.md
 https://raw.githubusercontent.com/akbarali123A/proxy_scraper/main/https_proxies.txt
 https://raw.githubusercontent.com/akbarali123A/proxy_scraper/main/requirements.txt
+https://raw.githubusercontent.com/akevdev/akev/main/crates/akev-api/src/revoked.txt
+https://raw.githubusercontent.com/akevdev/akev/main/fuzz/seeds/http1_request/absolute.txt
+https://raw.githubusercontent.com/akevdev/akev/main/fuzz/seeds/http1_request/chunked.txt
+https://raw.githubusercontent.com/akevdev/akev/main/fuzz/seeds/http1_request/connect.txt
+https://raw.githubusercontent.com/akevdev/akev/main/fuzz/seeds/http1_response/ok.txt
+https://raw.githubusercontent.com/akevdev/akev/main/fuzz/seeds/http1_response/upgrade.txt
+https://raw.githubusercontent.com/akevdev/akev/main/fuzz/seeds/proxy_protocol/v1.txt
 https://raw.githubusercontent.com/aklivity/zilla/develop/.mvn/rrf/groupId-github.txt
 https://raw.githubusercontent.com/aklivity/zilla/develop/cloud/helm-chart/src/main/helm/zilla/templates/NOTES.txt
 https://raw.githubusercontent.com/aklivity/zilla/develop/incubator/command-dump/src/test/resources/io/aklivity/zilla/runtime/command/dump/internal/AmqpLinkNetworkIT_shouldExchangeAttachAsReceiver.txt
@@ -1038,6 +1050,7 @@ https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/tg.txt
 https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/trojan.txt
 https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/vless.txt
 https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/sources/vmess.txt
+https://raw.githubusercontent.com/ghxst-dev63/arcticos/main/Apps/petezah.txt
 https://raw.githubusercontent.com/gitychzh/proxy_opencode/main/proxy_opencode/upstreams/zen/assets/zen_prompt_default.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/anonymous-proxy-list-free/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/anonymous-proxy-list-free/main/socks4.txt
@@ -1399,6 +1412,7 @@ https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/metadata
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/socks4.json
 https://raw.githubusercontent.com/mauricegift/free-proxies/master/files/socks5.json
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/all.txt
+https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/ad.txt
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/ae.txt
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/af.txt
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/al.txt
@@ -1431,7 +1445,6 @@ https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/de.txt
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/dk.txt
 https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/ee.txt
-https://raw.githubusercontent.com/maximilianfeix/free-proxy-list/main/countries/es.txt
 https://raw.githubusercontent.com/maximilianfeix/proxy-scraper/main/.github/requirements/bot.txt
 https://raw.githubusercontent.com/maximilianfeix/proxy-scraper/main/.github/requirements/hf.txt
 https://raw.githubusercontent.com/maximilianfeix/proxy-scraper/main/.github/requirements/lint.txt
@@ -1513,6 +1526,7 @@ https://raw.githubusercontent.com/netchx/netch/main/Storage/mode/Game/CyberDuck.
 https://raw.githubusercontent.com/netchx/netch/main/Storage/mode/Game/DLsite%20PlayDRM.txt
 https://raw.githubusercontent.com/netchx/netch/main/Storage/mode/Game/EVE%20Online.txt
 https://raw.githubusercontent.com/netchx/netch/main/Storage/mode/Game/Escape%20From%20Tarkov.txt
+https://raw.githubusercontent.com/neuronaline/pagefetch/master/requirements.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/http.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/requirements.txt
 https://raw.githubusercontent.com/nguyenduytan/NDT-Proxy-Scraper/main/socks4.txt
@@ -1662,13 +1676,6 @@ https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/JP.t
 https://raw.githubusercontent.com/runoneall/free-socks5-proxy-api/main/data/KH.txt
 https://raw.githubusercontent.com/ryazhapov/tg-proxy-list/main/proxy.txt
 https://raw.githubusercontent.com/sachnun/opendum/main/apps/web/public/robots.txt
-https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/country/AE.txt
-https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/country/AR.txt
-https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/country/AT.txt
-https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/country/AU.txt
-https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/country/BD.txt
-https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/country/BG.txt
-https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/country/BR.txt
 https://raw.githubusercontent.com/scrapfly/go-scrapfly/main/docs/go-reference.txt
 https://raw.githubusercontent.com/scrapfly/python-scrapfly/master/examples/demos/llm-txt-generator/requirements.txt
 https://raw.githubusercontent.com/scrapfly/python-scrapfly/master/examples/scrapy/demo/requirements.txt
@@ -1757,6 +1764,7 @@ https://raw.githubusercontent.com/solproxy/sol-free-proxy-list/main/countries/CO
 https://raw.githubusercontent.com/stormsia/proxy-list/main/http.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/socks5.txt
+https://raw.githubusercontent.com/stormsia/proxy-list/main/web/public/llms-full.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/web/public/llms.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/web/public/robots.txt
 https://raw.githubusercontent.com/stormsia/proxy-list/main/working_proxies.txt
@@ -1770,13 +1778,6 @@ https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/socks
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/socks5_proxies.json
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/generated/socks5_proxies.txt
 https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/proxies.txt
-https://raw.githubusercontent.com/superdesigndev/treg/main/.agents/skills/ugc-talking-head-video/assets/example_phrases.txt
-https://raw.githubusercontent.com/superdesigndev/treg/main/.agents/skills/ugc-talking-head-video/assets/example_prompt.txt
-https://raw.githubusercontent.com/superdesigndev/treg/main/docs/context/architecture/local-proxy.md
-https://raw.githubusercontent.com/superdesigndev/treg/main/docs/context/architecture/proxy-model.md
-https://raw.githubusercontent.com/superdesigndev/treg/main/scripts/catalog_text_reflect.txt
-https://raw.githubusercontent.com/superdesigndev/treg/main/src/treg/web/llms.txt
-https://raw.githubusercontent.com/superdesigndev/treg/main/src/treg/web/robots.txt
 https://raw.githubusercontent.com/suryadev-sm/free-mtproto-proxy-list/main/proxies.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/AE.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/AT.txt
@@ -1794,7 +1795,6 @@ https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/FR.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/GB.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/GR.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/HK.txt
-https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/HU.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/ID.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/IL.txt
 https://raw.githubusercontent.com/tammader/freesub/main/output/by-country/IN.txt
