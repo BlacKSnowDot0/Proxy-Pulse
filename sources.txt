@@ -178,6 +178,11 @@ https://raw.githubusercontent.com/Codezumriddle/Codezumriddle.github.io/main/rob
 https://raw.githubusercontent.com/Coriou/coolify-harness-api/main/test/fixtures/coolify/v4.5/server-proxy.json
 https://raw.githubusercontent.com/Coriou/coolify-harness-api/main/test/fixtures/coolify/v4.7/server-proxy.json
 https://raw.githubusercontent.com/Cyborg23199/service-desk-platform/main/requirements.txt
+https://raw.githubusercontent.com/DataDog/pg-proxy/main/test/regress/baseline/pg14.txt
+https://raw.githubusercontent.com/DataDog/pg-proxy/main/test/regress/baseline/pg15.txt
+https://raw.githubusercontent.com/DataDog/pg-proxy/main/test/regress/baseline/pg16.txt
+https://raw.githubusercontent.com/DataDog/pg-proxy/main/test/regress/baseline/pg17.txt
+https://raw.githubusercontent.com/DataDog/pg-proxy/main/test/regress/baseline/pg18.txt
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/dnstt.txt
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/meek_lite.txt
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/obfs4.txt
@@ -196,7 +201,6 @@ https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bri
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/webtunnel.txt
 https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges-Collector/main/bridge/webtunnel_72h.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/all_configs.txt
-https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-11-12.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-11-13.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-11-14.txt
 https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/archive/all_configs_2026-11-16_010725.txt
@@ -304,6 +308,7 @@ https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/subscriptio
 https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/subscriptions/subscription-101.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/subscriptions/subscription-102.txt
 https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/subscriptions/subscription-103.txt
+https://raw.githubusercontent.com/FrankHan052176/ProxyHub-Har/main/keepalive/src/main/cpp/CMakeLists.txt
 https://raw.githubusercontent.com/FubaxuQeko52/steam-key-checker/main/CMakeLists.txt
 https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/all.txt
 https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/countries/AE.txt
@@ -418,6 +423,8 @@ https://raw.githubusercontent.com/LouseApplaud/LouseApplaud.github.io/main/robot
 https://raw.githubusercontent.com/M1noa/proxypool/main/internal/geoip/countries.txt
 https://raw.githubusercontent.com/MFDI-hub/rfc9180-py/main/rfc9180.txt
 https://raw.githubusercontent.com/MadbHatter/opengl-proxy-dod-fix/main/glfix/exports.txt
+https://raw.githubusercontent.com/MahBoiDeveloper/TelegramProxies/main/Proxies.txt
+https://raw.githubusercontent.com/MahBoiDeveloper/TelegramProxies/main/requirements.txt
 https://raw.githubusercontent.com/Maitreyee26/db-validation-agent/main/requirements.txt
 https://raw.githubusercontent.com/Mamalitaa/Proxy-Generator/main/mamalitaa_calisanlar.txt
 https://raw.githubusercontent.com/Mamalitaa/Proxy-Generator/main/requirements.txt
@@ -1121,15 +1128,9 @@ https://raw.githubusercontent.com/gnxD3RfTT2WE/live-socks5-proxies/main/socks5.t
 https://raw.githubusercontent.com/gnxD3RfTT2WE/open-source-proxy-list/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/open-source-proxy-list/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/open-source-proxy-list/main/socks5.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-st-free/main/http.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-st-free/main/socks5.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-endpoints-free/main/http.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-endpoints-free/main/socks4.txt
 https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-endpoints-free/main/socks5.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-feed/main/http.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-feed/main/socks5.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/verified-proxy-list/main/http.txt
-https://raw.githubusercontent.com/gnxD3RfTT2WE/verified-proxy-list/main/socks5.txt
 https://raw.githubusercontent.com/goastian/midopress/main/internal/jxlcodec/lib/licenses/brotli.txt
 https://raw.githubusercontent.com/goastian/midopress/main/internal/jxlcodec/lib/licenses/highway.txt
 https://raw.githubusercontent.com/goastian/midopress/main/internal/jxlcodec/lib/licenses/lcms.txt
@@ -1250,7 +1251,9 @@ https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KE/pro
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KG/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KH/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KR/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/KZ/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/MX/proxies.txt
+https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/NE/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/NG/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/NL/proxies.txt
 https://raw.githubusercontent.com/iplocate/free-proxy-list/main/countries/NP/proxies.txt
@@ -1322,6 +1325,7 @@ https://raw.githubusercontent.com/komutan234/Proxy-List-Free/main/requirements.t
 https://raw.githubusercontent.com/kotpers67-spec/socks5-proxy-android/main/third_party_licenses/hevtunnel-Apache-2.0.txt
 https://raw.githubusercontent.com/kotpers67-spec/socks5-proxy-android/main/third_party_licenses/libxray-MIT.txt
 https://raw.githubusercontent.com/kotpers67-spec/socks5-proxy-android/main/third_party_licenses/xray-core-MPL-2.0.txt
+https://raw.githubusercontent.com/kzeng/free-proxy-airport/main/output/v2rayng.txt
 https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http.txt
 https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/AE.txt
 https://raw.githubusercontent.com/lalifeier/proxy-scraper/main/proxies/http/AF.txt
@@ -1912,6 +1916,7 @@ https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Coun
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/http.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/https.txt
 https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AR/socks4.txt
+https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/Country/AT/http.txt
 https://raw.githubusercontent.com/vut08905/proxy-sub/main/sub.txt
 https://raw.githubusercontent.com/wangwanjie/gately/main/internal/diag/README.txt
 https://raw.githubusercontent.com/wangwanjie/gately/main/tools/readme-media/map.txt
@@ -1919,13 +1924,6 @@ https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/de/prox
 https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/en/proxyOptions.json
 https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/es/proxyOptions.json
 https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/fr/proxyOptions.json
-https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/ja/proxyOptions.json
-https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/ko/proxyOptions.json
-https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/pt-BR/proxyOptions.json
-https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/ru/proxyOptions.json
-https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/zh-CN/proxyOptions.json
-https://raw.githubusercontent.com/wangwanjie/gately/main/web/src/locales/zh-TW/proxyOptions.json
-https://raw.githubusercontent.com/wangwanjie/gately/main/website/public/robots.txt
 https://raw.githubusercontent.com/watchttvv/free-proxy-list/main/proxy.txt
 https://raw.githubusercontent.com/watchttvv/free-proxy-list/main/requirements.txt
 https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/PROOF/T-0249-key-expiry-alert-live.txt
@@ -1949,6 +1947,8 @@ https://raw.githubusercontent.com/whiteknightonhorse/APIbase/main/tests/fixtures
 https://raw.githubusercontent.com/wisqqud/opencode2api_upgraded/main/internal/gateway/opencode_prompt_v1.txt
 https://raw.githubusercontent.com/wisqqud/opencode2api_upgraded/main/internal/gateway/opencode_prompt_v2.txt
 https://raw.githubusercontent.com/wisqqud/opencode2api_upgraded/main/internal/gateway/opencode_skills_v2.txt
+https://raw.githubusercontent.com/wq-h/proxylist/main/no_proxy.list
+https://raw.githubusercontent.com/wq-h/proxylist/main/proxy.list
 https://raw.githubusercontent.com/wslkit/wslkit/main/docs/proxy.md
 https://raw.githubusercontent.com/wslkit/wslkit/main/internal/env/collect/testdata/netsh-dynamicport-tcp.txt
 https://raw.githubusercontent.com/wslkit/wslkit/main/internal/env/collect/testdata/netsh-excludedportrange-tcp.txt
